@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sig_download_notification_icon" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_centerVertical="true" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp" android:layout_toStartOf="@id/sig_download_notification_button" android:layout_toEndOf="@id/sig_download_notification_icon">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="14.0sp" android:id="@id/sig_download_notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="app_name" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="15.0dp" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp">
+            <TextView android:textSize="10.0sp" android:gravity="bottom" android:id="@id/sig_download_notification_speed" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="0MB/0MB" android:layout_alignParentStart="true" />
+            <TextView android:textSize="10.0sp" android:gravity="bottom" android:id="@id/sig_download_notification_status" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="下载中" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/sig_download_notification_progressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:indeterminate="false" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+    <Button android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/sig_download_notification_button" android:background="@drawable/sig_cta_bg" android:layout_width="60.0dp" android:layout_height="40.0dp" android:text="暂停" android:layout_centerVertical="true" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingTop="1.5dp" android:paddingBottom="1.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="1.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.FixedWidthTextView android:textSize="@dimen/gstar_text_size_13sp" android:textColor="@color/black" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fixed_char_count="4.5" />
+    <TextView android:textSize="@dimen/gstar_text_size_13sp" android:textColor="@color/black" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="5.0dp" android:layout_toEndOf="@id/tv_title" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sig_ad_rl_root" android:layout_width="wrap_content" android:layout_height="30.0dp" android:radius="15.0dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="16.0sp" android:textColor="#252525" android:gravity="center" android:id="@id/sig_ad_timer" android:background="@drawable/sig_circle_gray" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="100.0dp" android:minWidth="30.0dp" android:text="1" />
+        <ImageView android:id="@id/sig_ad_close" android:background="@drawable/sig_circle_gray" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" />
+    </RelativeLayout>
+    <ImageView android:id="@id/sig_ad_sound" android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:scaleType="fitXY" />
+</RelativeLayout>

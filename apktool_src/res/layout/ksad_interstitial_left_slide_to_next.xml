@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/ksad_interstitial_left_slide_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dp" android:layout_height="14.0dp" android:layout_marginLeft="14.0dp" android:src="@drawable/ksad_interstitial_left_arrow" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ksad_white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="18.0dp" android:layout_marginRight="18.0dp" android:layout_marginBottom="18.0dp" android:text="@string/ksad_left_slide_to_next" android:ems="1" />
+</LinearLayout>

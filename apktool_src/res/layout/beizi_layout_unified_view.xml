@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_bg_container" android:background="#30000000" android:layout_width="match_parent" android:layout_height="450.0dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/rl_anim_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@id/rl_container" android:background="@drawable/beizi_white_corner" android:layout_width="match_parent" android:layout_height="350.0dp" android:layout_alignParentBottom="true">
+                <FrameLayout android:id="@id/fl_img_container" android:layout_width="match_parent" android:layout_height="200.0dp">
+                    <ImageView android:id="@id/iv_imageview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/fl_container_mask" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="200.0dp" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:maxLines="1" android:layout_below="@id/fl_img_container" android:layout_marginStart="30.0dp" />
+                <ImageView android:id="@id/iv_icon" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="230.0dp" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="#666666" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="1" android:layout_below="@id/tv_title" android:layout_marginStart="30.0dp" />
+                <RelativeLayout android:id="@id/rl_action" android:background="@drawable/beizi_blue_corner" android:layout_width="120.0dp" android:layout_height="50.0dp" android:layout_marginTop="20.0dp" android:layout_below="@id/fl_img_container" android:layout_marginEnd="20.0dp" android:layout_alignParentEnd="true">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_action" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_close" android:background="@drawable/beizi_bg_circle" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_margin="22.0dp" android:layout_alignParentEnd="true">
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_close" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    <ImageView android:id="@id/iv_close" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/beizi_ic_white_close" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <FrameLayout android:id="@id/fl_event_container" android:layout_width="match_parent" android:layout_height="350.0dp" android:layout_alignParentBottom="true" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rl_slide_down_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tv_slide_down_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@android:drawable/screen_background_dark_transparent" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+                <ImageView android:id="@id/iv_slide_down_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/beizi_slide_down_close_ad" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

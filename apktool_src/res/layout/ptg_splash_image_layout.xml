@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ptgAdvertLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ptgSplashIv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Image" />
+    </FrameLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:layout_gravity="center|bottom" android:id="@id/ptgSplashHotArea" android:paddingLeft="32.0dp" android:paddingTop="18.0dp" android:paddingRight="32.0dp" android:paddingBottom="18.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dp" android:text="点击跳转至详情页或者第三方应用" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center|bottom" android:orientation="vertical" android:id="@id/ptgSplashShakeLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="135.0dp">
+        <com.ptg.ptgapi.component.widgets.PtgShakeView android:id="@id/ptgSplashShakeIv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

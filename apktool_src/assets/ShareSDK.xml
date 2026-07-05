@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<Wechat Id="1" SortId="1" AppId="APP_ID_PLACEHOLDER" AppSecret="APP_SECRET_PLACEHOLDER" Enable="true" BypassApproval="false" UserName="MINIPROGRAM_PLACEHOLDER" Path="pages/index/index.html?id=1" WithShareTicket="true" MiniprogramType="2" />
+<WechatMoments Id="2" SortId="2" AppId="APP_ID_PLACEHOLDER" AppSecret="APP_SECRET_PLACEHOLDER" Enable="true" BypassApproval="false" />
+<QQ Id="3" SortId="3" AppId="APP_ID_PLACEHOLDER" AppKey="APP_KEY_PLACEHOLDER" ShareByAppClient="true" Enable="true" BypassApproval="false" />
+<SinaWeibo Id="4" SortId="4" AppKey="APP_KEY_PLACEHOLDER" AppSecret="APP_SECRET_PLACEHOLDER" ShareByAppClient="true" Enable="true" RedirectUrl="https://user.gstarcad.com/weibo/getCode" />
+<Facebook Id="5" SortId="5" ShareByAppClient="true" Enable="true" ConsumerKey="1548537031847889" ConsumerSecret="f6e635e3d2ca40dc6c1e0b44becc98d6" RedirectUrl="https://en.dwgfastview.com/account/" />
+<GooglePlus Id="6" SortId="6" ShareByAppClient="true" Enable="true" ClientID="221794388630-b3bigs2rged2v5h6mse01t3b9i44hi0n.apps.googleusercontent.com" RedirectUrl="http://localhost" />
+<LinkedIn Id="7" SortId="7" ShareByAppClient="true" Enable="true" ApiKey="81docybzlmuc33" SecretKey="YrTPRkn6p5EsDCNs" RedirectUrl="https://en.dwgfastview.com/account" />
+</DevInfor>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#3000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_round_white" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ra_pic" android:background="#fff" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@drawable/tt_reward_again_gift" />
+        <TextView android:textSize="14.0sp" android:textColor="#444" android:gravity="center" android:id="@id/ra_title" android:layout_width="200.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="恭喜您已经获得奖励，是否要继续观看视频，获取更多奖励" />
+        <TextView android:textSize="14.0sp" android:textColor="#fff" android:gravity="center" android:id="@id/ra_btn_ok" android:background="@drawable/bg_round_blue" android:layout_width="250.0dp" android:layout_height="45.0dp" android:layout_marginTop="15.0dp" android:text="再看一个获取更多奖励" />
+        <TextView android:textSize="14.0sp" android:textColor="#444" android:id="@id/ra_btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="坚持退出" />
+    </LinearLayout>
+</FrameLayout>

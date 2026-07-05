@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dp" android:layout_marginTop="5.0dp" android:text="@string/account_pay_confirm_activation" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewClose" android:padding="5.0dp" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/icon_close_round_black" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_13sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/account_pay_comfirm_activation_tips" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:gravity="center" android:id="@id/checkBoxPolicyService" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:button="@drawable/selector_checkbox_account" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_black" android:id="@id/textViewPolicyService" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:id="@id/buttonConfirmPay" android:background="@drawable/selector_button_color_blue_rect" android:paddingLeft="50.0dp" android:paddingRight="50.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="10.0dp" android:text="@string/account_pay_comfirm_activation_tips_2" />
+</androidx.appcompat.widget.LinearLayoutCompat>

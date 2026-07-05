@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bz_eav_container_ll" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bz_eav_img_container_rl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bz_eav_img_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/beizi_euler_angle" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <com.beizi.fusion.update.ShakeArcView android:id="@id/bz_eav_sav_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="20.0sp" android:textColor="#ffffff" android:id="@id/bz_eav_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:id="@id/bz_eav_subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end|bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:layout_marginBottom="60.0dp" android:layout_marginEnd="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end|top" android:id="@id/umeng_fi_close" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/umeng_p_fi_close" android:scaleType="fitXY" />
+    <ImageView android:id="@id/umeng_fi_img" android:layout_width="64.0dp" android:layout_height="64.0dp" />
+    <ImageView android:layout_gravity="end|bottom" android:id="@id/umeng_fi_mark" android:layout_width="24.0dp" android:layout_height="10.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/umeng_p_fi_mark" />
+</LinearLayout>

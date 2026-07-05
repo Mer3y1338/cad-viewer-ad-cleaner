@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/my_rounded_halfarc_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.my.adpoymer.weiget.RoundedHalfArcView android:id="@id/my_halfArcView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+    <FrameLayout android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_marginStart="10.0dp">
+        <com.my.adpoymer.weiget.RippleView android:layout_gravity="center" android:id="@id/my_rippleView" android:layout_width="95.0dp" android:layout_height="95.0dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/my_ripple_click" android:layout_width="65.0dp" android:layout_height="65.0dp" android:layout_marginTop="18.0dp" android:src="@drawable/mob_ripple_click" android:layout_marginStart="15.0dp" />
+    </FrameLayout>
+</FrameLayout>

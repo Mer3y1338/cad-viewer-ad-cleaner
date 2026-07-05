@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewFreezeBanner" android:background="#f05151" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height_banner"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewFileIcon" android:padding="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_app_warning" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_white" android:gravity="center_vertical" android:id="@id/textViewFreezeTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/account_user_storage_freezing" android:layout_weight="1.5" />
+    <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/textViewFreezeLink" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/account_user_storage_freezing_link" />
+</LinearLayout>

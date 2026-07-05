@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ksad_landing_page_root" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ksad_kwad_titlebar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/ksad_kwad_web_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/ksad_activity_title_bar_height" layout="@layout/ksad_activity_title_bar" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ksad_reward_land_page_open_tip" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="34.0dp">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#2a252c" android:gravity="center" android:id="@id/ksad_reward_land_page_open_desc" android:layout_width="wrap_content" android:layout_height="16.0dp" android:text="浏览详情页，领取奖励" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_reward_land_page_open_minute" android:background="@drawable/ksad_reward_open_land_page_time_bg" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="6.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ksad_reward_main_color" android:gravity="center" android:id="@id/ksad_reward_land_page_open_colon" android:layout_width="9.0dp" android:layout_height="16.0dp" android:text=":" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_reward_land_page_open_second" android:background="@drawable/ksad_reward_open_land_page_time_bg" android:layout_width="16.0dp" android:layout_height="16.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.kwad.sdk.core.webview.KsAdWebView android:id="@id/ksad_video_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ksad_kwad_titlebar" />
+    <com.kwad.sdk.core.webview.KsAdWebView android:id="@id/ksad_video_webview_h5auth" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ksad_kwad_titlebar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ksad_web_tip_bar" android:background="#fff2e6" android:layout_width="match_parent" android:layout_height="29.0dp" android:layout_alignTop="@id/ksad_video_webview">
+        <TextView android:textSize="14.0dp" android:textColor="@color/ksad_reward_main_color" android:ellipsize="marquee" android:layout_gravity="left|center" android:id="@id/ksad_web_tip_bar_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/ksad_web_tip_close_btn" android:background="@drawable/ksad_web_tip_bar_close_button" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ksad_web_reward_task_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="55.0dp" android:layout_height="64.0dp" android:src="@drawable/ksad_web_reward_task_img" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_web_reward_task_text" android:background="@drawable/ksad_web_reward_task_text_bg" android:layout_width="77.0dp" android:layout_height="22.0dp" android:layout_marginTop="-13.0dp" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/ksad_js_tk_back_dialog" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

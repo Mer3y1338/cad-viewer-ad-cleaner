@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlTemplate1" android:background="@drawable/adsail_bg_draw_botton" android:padding="16.0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/adsail_iv_icon" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="#00ffff" android:scaleType="centerCrop" />
+    <TextView android:textSize="16.0sp" android:textColor="#000000" android:ellipsize="end" android:id="@id/adsail_iv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:text="11111111111111111111111111" android:hint="标题" android:singleLine="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#000" android:ellipsize="end" android:id="@id/adsail_iv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:text="222222222222222222222222222" android:hint="内容描述" android:singleLine="true" android:layout_below="@id/adsail_iv_title" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

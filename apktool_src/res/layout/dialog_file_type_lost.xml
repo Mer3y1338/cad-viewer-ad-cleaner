@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:background="@drawable/roundcorner_dialog" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewTitle" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/file_type_lost_title" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_file_name" />
+        <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/gstar_text_color_black_hint" android:id="@id/editTextFileName" android:background="@drawable/roundcorner_background_color_white" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLength="@dimen/edittext_length_max" android:layout_weight="1.5" android:textCursorDrawable="@null" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_type_lost_tag" />
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/gstar_text_color_black_hint" android:id="@id/textViewTypeValue" android:background="@drawable/roundcorner_background_color_white" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLength="@dimen/edittext_length_max" android:layout_weight="1.5" android:textCursorDrawable="@null" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15.0dp">
+        <com.zhy.view.flowlayout.TagFlowLayout android:id="@id/flowlayout_type" android:layout_width="match_parent" android:layout_height="wrap_content" app:max_select="1" app:tag_gravity="left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textviewTypeCancel" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textviewTypeSubmit" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

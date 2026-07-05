@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/new_friend_empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/new_friend_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_icon_lt_no_message" android:layout_centerInParent="true" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#969696" android:gravity="center" android:id="@id/new_friend_empty_hint_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/chat_no_friend_request" android:layout_alignLeft="@id/new_friend_empty_view" android:layout_alignRight="@id/new_friend_empty_view" android:layout_alignBottom="@id/new_friend_empty_view" />
+        </RelativeLayout>
+        <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/newfriend_recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/friend_request_progressbar_view" android:layout_width="45.0dp" android:layout_height="45.0dp" />
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

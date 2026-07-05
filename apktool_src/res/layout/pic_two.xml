@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/ly_native_ad_container" android:paddingTop="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_one" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/txt_region" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#3f4658" android:ellipsize="end" android:id="@id/txt_one_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:lineSpacingExtra="2.0dp" />
+            <com.my.adpoymer.weiget.CloseImagevIew android:id="@id/icon_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/my_native_close" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rel_img_one" android:layout_width="match_parent" android:layout_height="200.0dp" android:layout_marginTop="8.0dp" android:layout_below="@id/txt_region" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/my_img_blur" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+            <com.my.adpoymer.view.RoundImageTenView android:id="@id/img_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <com.qq.e.ads.nativ.MediaView android:id="@id/media_view_one" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_centerVertical="true" />
+            <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/my_frame_shake" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/niu_shake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_icon_one" android:layout_width="25.0dp" android:layout_height="20.0dp" android:scaleType="fitXY" android:layout_alignBottom="@id/rel_img_one" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/ly_gg" android:background="@drawable/btn_ad_logo" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="18.0dp" android:layout_marginTop="10.0dp" android:text="广告" android:layout_below="@id/rel_img_one" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/txt_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_below="@id/rel_img_one">
+            <TextView android:textSize="12.0sp" android:textColor="#747e8b" android:ellipsize="end" android:id="@id/txt_one" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="30.0dp" />
+            <FrameLayout android:id="@id/frame_shake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/my_native_shake_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dp">
+                    <ImageView android:gravity="center" android:id="@id/my_img_shake" android:background="@drawable/my_ic_shake_hand_new" android:layout_width="15.0dp" android:layout_height="15.0dp" android:scaleType="fitXY" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ea3223" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_noe_shake" android:layout_marginStart="5.0dp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/my_upplogo" android:layout_width="30.0dp" android:layout_height="10.0dp" android:layout_marginBottom="2.0dp" android:layout_alignBottom="@id/rel_img_one" android:layout_marginStart="2.0dp" />
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_parent" android:layout_marginEnd="5.0dp" layout="@layout/my_native_bottom_view" />
+    </RelativeLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

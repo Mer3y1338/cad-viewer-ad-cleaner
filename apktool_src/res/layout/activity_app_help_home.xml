@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/near1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_black2blue" android:id="@id/buttonHelp_Video" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="@string/menu_left_help_video" android:drawableTop="@drawable/mycenter_help_video" android:layout_weight="1.5" />
+        <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="@dimen/gstar_divider_size_gray" android:layout_height="match_parent" android:layout_marginTop="35.0dp" android:layout_marginBottom="35.0dp" />
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_black2blue" android:id="@id/buttonHelp_Local" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="@string/menu_left_help_local" android:drawableTop="@drawable/mycenter_help_local" android:layout_weight="1.5" />
+    </LinearLayout>
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <include android:id="@id/viewWebViewErrorShow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" layout="@layout/popup_webview_error_page" />
+    <RelativeLayout android:id="@id/viewPopupWindowHandle" android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+        <com.stone.app.ui.view.AppX5WebView android:id="@id/appX5WebViewData" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutDialog" android:background="@color/transparent" style="@style/layout_full">
+            <include layout="@layout/dialog_with_progress" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:id="@id/textView" style="@style/layout_full" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/viewAppAboutFollowWX" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_about_follow_wx_title" android:singleLine="true" />
+            <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_black_subhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/app_about_follow_wx_desc" android:singleLine="true" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_blue" android:gravity="right" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_about_go_to_follow" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

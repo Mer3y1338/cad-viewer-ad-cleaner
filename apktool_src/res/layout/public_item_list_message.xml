@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/public_item_list2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageViewMessageIcon" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/file_icon_dwg" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/imageViewIndicatorActivity001" android:background="@drawable/oval_background_red_proint" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:ellipsize="end" android:id="@id/textViewMessageTitle" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+        <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_black_subhead" android:ellipsize="end" android:id="@id/textViewMessageContent" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+        <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/red" android:layout_gravity="right|bottom" android:id="@id/textViewMessageExpireTips" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/app_name" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/imageViewIndicatorActivity" android:background="@drawable/oval_background_red_proint" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:layout_width="10.0dp" android:layout_height="10.0dp" android:contentDescription="@string/app_name" />
+</LinearLayout>

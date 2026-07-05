@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_height="@dimen/listitem_height" style="@style/public_item_list2">
+        <FrameLayout android:id="@id/itemADFrameLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/itemADTextViewClose" android:background="@drawable/roundcorner_background_color_black_half_skip" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_margin="10.0dp" android:text="@string/account_user_vip_ad_close" android:singleLine="true" android:layout_alignParentRight="true" android:alpha="0.3" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/itemADLinearLayout" android:layout_height="@dimen/listitem_height" style="@style/public_item_list2">
+        <ImageView android:id="@id/imageViewAdIcon" android:background="@drawable/roundcorner_color_white" android:layout_width="@dimen/listitem_image_width" android:layout_height="@dimen/listitem_image_height" android:layout_marginLeft="8.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/ad_default_flow" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_15sp" android:textColor="@color/gstar_text_color_gray_item_title" android:ellipsize="end" android:id="@id/textViewAdName" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="1.5" />
+                <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="right" android:id="@id/textViewFlowAD_Cancel" android:background="@drawable/roundcorner_background_color_black_half_skip" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:layout_width="wrap_content" android:layout_height="20.0dp" android:text="@string/account_user_vip_ad_close" android:singleLine="true" android:alpha="0.3" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/gstar_text_size_11sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:id="@id/textViewAdMark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ad_mark" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/viewFileDateAndSize" android:paddingTop="2.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_11sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:gravity="start" android:id="@id/textViewAdSubject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+                <TextView android:textSize="@dimen/gstar_text_size_11sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:gravity="start" android:id="@id/textViewFileFromXXX" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:singleLine="true" android:layout_weight="1.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

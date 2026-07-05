@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/ly_native_ad_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_trans" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.my.adpoymer.view.AutoPlayViewPager android:id="@id/banner_three_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/rel_bottom" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/rel_bottom" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/banner_three_img_one" android:layout_width="0.0dp" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+            <ImageView android:id="@id/banner_three_img_two" android:layout_width="0.0dp" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+            <ImageView android:id="@id/banner_three_img_three" android:layout_width="0.0dp" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/ly_rel_click" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/img_icon" android:layout_width="25.0dp" android:layout_height="20.0dp" android:scaleType="fitXY" android:layout_alignBottom="@id/rel_bottom" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

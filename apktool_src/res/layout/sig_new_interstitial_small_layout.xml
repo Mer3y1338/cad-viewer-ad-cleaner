@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="230.0dp" android:layout_height="443.0dp" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="20.0dp" android:layout_below="@id/sig_ad_rl" android:layout_alignLeft="@id/sig_ad_rl" android:layout_alignRight="@id/sig_ad_rl">
+        <Button android:textSize="18.0sp" android:textColor="#ffffff" android:layout_gravity="center" android:id="@id/sig_cta_button" android:background="@drawable/sig_interstitial_cta_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="cta_button" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/sig_ad_rl" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="392.0dp" android:radius="10.0dp">
+        <RelativeLayout android:id="@id/sig_ad_rl_1" android:layout_width="214.0dp" android:layout_height="380.0dp" android:layout_marginTop="10.0dp" android:layout_centerInParent="true" android:radius="8.0dp">
+            <FrameLayout android:id="@id/sig_ad_container" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.sigmob.sdk.newInterstitial.SigAdInfoView android:id="@id/sig_app_info" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" sig_isSmall="true" />
+            <com.sigmob.sdk.newInterstitial.NewInterstitialHeaderView android:id="@id/sig_ad_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

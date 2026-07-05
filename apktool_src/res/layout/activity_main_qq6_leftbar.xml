@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/background_gradient" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/viewLeftBarWidth" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="0.8">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="10.0dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/roundcorner_background_tab_white" android:layout_width="74.0dp" android:layout_height="74.0dp">
+                <com.stone.app.ui.widget.RCView_ImageView android:layout_gravity="center" android:id="@id/roundImageViewUserHead" android:layout_width="70.0dp" android:layout_height="70.0dp" android:src="@drawable/default_user_head_login_no_larger" android:scaleType="centerCrop" app:round_corner="35.0dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/viewUserInfoClick" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/viewUserInfoShow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="150.0dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:id="@id/textViewUserNickName" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stone.J" android:singleLine="true" android:drawableRight="@drawable/selector_checkbox_vip" android:drawablePadding="5.0dp" />
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="right" android:id="@id/imageViewEmail_Check" android:layout_width="50.0dp" android:layout_height="wrap_content" android:src="@drawable/email_check" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/gstar_text_size_11sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="left" android:id="@id/textViewUserStorage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0M/100M" android:singleLine="true" />
+                    <ProgressBar android:layout_gravity="left" android:id="@id/progressBarStorage" android:focusable="false" android:layout_width="match_parent" android:layout_height="5.0dp" android:max="100" android:progress="40" style="@style/ProgressBar_Stone2" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textViewUserLogin" android:background="@drawable/roundcorner_background_tab_white" android:paddingLeft="30.0dp" android:paddingTop="5.0dp" android:paddingRight="30.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/account_login_account_register" />
+            </LinearLayout>
+            <View android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="10.0dp" android:layout_weight="1.5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUpgradeVIP" android:background="@drawable/mycenter_update_vip_bg" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="20.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="#332513" android:ellipsize="none" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/account_user_upgrade_now" android:singleLine="true" android:drawableLeft="@drawable/mycenter_update_vip_icon1" android:drawableRight="@drawable/mycenter_update_vip_icon2" android:drawablePadding="10.0dp" />
+        </LinearLayout>
+        <View android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+        <ScrollView android:id="@id/scrollView1" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/viewMessage" android:padding="0.0dp" style="@style/public_left_toolsbar_style">
+                    <FrameLayout android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                        <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="right|top" android:id="@id/textViewMessageCount" android:background="@drawable/oval_background_red_proint" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_margin="5.0dp" android:singleLine="true" android:contentDescription="@string/app_name" />
+                        <TextView android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/menu_left_message" android:drawableLeft="@drawable/mycenter_message" style="@style/public_left_toolsbar_style" />
+                    </FrameLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/viewCompany" android:padding="0.0dp" style="@style/public_left_toolsbar_style">
+                    <Button android:background="@color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:text="@string/company_application" android:drawableStart="@drawable/mycenter_company" style="@style/public_left_toolsbar_style" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_11sp" android:textColor="@color/gstar_text_color_white" android:id="@id/textViewCompanySurplusDay" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <Button android:textColor="@color/gold" android:id="@id/buttonUpgradeVIP2" android:visibility="gone" android:text="@string/account_user_upgrade_now" android:drawableLeft="@drawable/mycenter_update_vip" style="@style/public_left_toolsbar_style" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/viewActivityContribution" android:padding="0.0dp" style="@style/public_left_toolsbar_style">
+                    <TextView android:background="@color/transparent" android:layout_width="wrap_content" android:text="@string/menu_left_activity_contribution" android:drawableLeft="@drawable/mycenter_activity" style="@style/public_left_toolsbar_style" />
+                    <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="right|top" android:id="@id/textViewActivityContributionTips" android:background="@drawable/oval_background_red_proint_samll" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:layout_width="7.0dp" android:layout_height="7.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="8.0dp" android:singleLine="true" android:contentDescription="@string/app_name" />
+                    <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:src="@drawable/icon_hot" android:scaleType="center" android:contentDescription="@string/app_name" />
+                </LinearLayout>
+                <Button android:id="@id/buttonMenusHelp" android:text="@string/menu_left_help" android:drawableLeft="@drawable/mycenter_help" style="@style/public_left_toolsbar_style" />
+                <Button android:id="@id/buttonMenusCAD_Skills" android:text="@string/menu_left_cad_skills" android:drawableLeft="@drawable/mycenter_cad_skills" style="@style/public_left_toolsbar_style" />
+                <Button android:id="@id/buttonMenusSocial" android:text="@string/menu_left_social" android:drawableLeft="@drawable/mycenter_social" style="@style/public_left_toolsbar_style" />
+                <Button android:id="@id/buttonMenusFeedBack" android:text="@string/app_about_feedback" android:drawableLeft="@drawable/mycenter_feedback" style="@style/public_left_toolsbar_style" />
+                <Button android:id="@id/buttonMenusPraise" android:text="@string/menu_left_grade" android:drawableLeft="@drawable/mycenter_grade" style="@style/public_left_toolsbar_style" />
+                <Button android:id="@id/buttonMenusShare" android:text="@string/menu_left_share" android:drawableLeft="@drawable/mycenter_share" style="@style/public_left_toolsbar_style" />
+                <Button android:id="@id/buttonMenusAbout" android:text="@string/menu_left_about" android:drawableLeft="@drawable/mycenter_about" style="@style/public_left_toolsbar_style" />
+                <Button android:id="@id/buttonTestWebView" android:text="WebView测试入口" android:drawableLeft="@drawable/mycenter_develop" style="@style/public_left_toolsbar_style" />
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@color/gstar_bg_color_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewMenusScanQRCode" android:background="@drawable/selector_menus_leftbar" android:padding="20.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:drawablePadding="10.0dp" android:drawableStart="@drawable/mycenter_scan_qrcode" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewMenusCustomer_AI" android:background="@drawable/selector_menus_leftbar" android:padding="20.0dp" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:drawableLeft="@drawable/mycenter_customer_ai" android:drawablePadding="10.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewMenusCustomer_WX" android:background="@drawable/selector_menus_leftbar" android:padding="20.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:drawableLeft="@drawable/mycenter_customer_wx" android:drawablePadding="10.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewMenusSetting" android:background="@drawable/selector_menus_leftbar" android:padding="20.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:drawableLeft="@drawable/mycenter_setting" android:drawablePadding="10.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

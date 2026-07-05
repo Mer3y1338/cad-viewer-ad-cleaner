@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.haorui.sdk.core.view.LollipopFixedWebView android:id="@id/adsail_webView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/adsail_img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:src="@drawable/adsail_ic_express_close_big" />
+    <ImageView android:id="@id/adsail_img_share" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:src="@android:drawable/ic_menu_share" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/adsail_webivew_loading" android:background="@drawable/adsail_bg_alpha_rect_r15" android:padding="30.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="@android:color/white" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="Loading..." />
+    </LinearLayout>
+</RelativeLayout>

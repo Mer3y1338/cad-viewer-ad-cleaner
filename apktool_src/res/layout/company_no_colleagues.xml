@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#242d37" android:gravity="center" android:id="@id/no_colleagues_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_no_colleagues" android:layout_centerInParent="true" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/go_to_company_view" android:background="@drawable/roundcorner_color_blue" android:paddingLeft="36.0dp" android:paddingTop="12.0dp" android:paddingRight="36.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:text="@string/company_account_info_menu_manager_background" android:layout_below="@id/no_colleagues_view" android:layout_centerHorizontal="true" />
+</RelativeLayout>

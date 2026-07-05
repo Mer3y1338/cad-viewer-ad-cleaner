@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dialog_new_bg_transparent_shadow" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.RCView_LinearLayout android:orientation="vertical" android:id="@id/viewDrawingAD" android:background="@color/dialog_new_bg_main_black1" android:layout_width="match_parent" android:layout_height="wrap_content" app:clip_background="true" app:round_corner="8.0dp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+            <RelativeLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="50.0dp">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_cmd_measure_area_setting" android:singleLine="true" android:drawablePadding="10.0dp" />
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:id="@id/imageViewClose" android:background="@drawable/selector_cad_cmd_click_shadows" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/icon_close_white2" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/dialog_new_bg_main_black2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+            <RadioGroup android:orientation="vertical" android:id="@id/radioGroupLateralAreaUnit" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatRadioButton android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:id="@id/radioButtonLateralAreaUnit0" android:tag="0" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/cad_cmd_measure_area_unit0" android:maxLines="2" android:drawableEnd="@drawable/selector_radiobutton_select_arrows" />
+                <View android:background="@color/dialog_new_bg_main_black1" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:id="@id/radioButtonLateralAreaUnit1" android:tag="1" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/cad_cmd_measure_area_unit1" android:maxLines="2" android:drawableEnd="@drawable/selector_radiobutton_select_arrows" />
+            </RadioGroup>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2gray" android:id="@id/buttonLateralAreaSettings" android:background="@color/dialog_new_bg_main_black2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:text="@string/ok" />
+    </com.stone.app.ui.widget.RCView_LinearLayout>
+</LinearLayout>

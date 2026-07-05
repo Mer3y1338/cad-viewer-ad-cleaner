@@ -1,0 +1,190 @@
+body {
+	padding:1em 0 3em;
+	margin: 0;
+}
+div.row{
+	position: fixed;
+	top:0;
+	display: block;
+	width: 100%;
+	padding: 1em,0;
+	
+}
+a.newicon{
+	background-image: url(./images/new.png);
+	background-repeat: no-repeat;
+	background-size:2em 2em;
+	background-position: left;
+	background-position-x: 4.2em;
+}
+a {
+	color: #337FE5;
+	text-decoration: none;
+}
+
+.tree {
+	min-height: 1.25rem;
+	margin-bottom: 1.25rem;
+
+}
+
+.tree li {
+	list-style-type: none;
+	padding: 1.5rem 0px 0;
+	position: relative;
+	
+	font-size: 1.0rem;
+}
+.tree li.linestyle{
+	border-bottom:1px solid #f0f0f0;
+	background-color: #f6f6f6;
+	background-color: #fff;
+	padding:0.8rem 0.8rem;
+	font-weight: bold;
+} 
+
+.tree li span {
+	display: block;
+	text-decoration: none;
+	background-image: url(./images/right.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 1rem 1rem;
+	padding: 0.2rem 0; 
+	color: #333;
+}
+
+.tree li span.righticon {
+	background-image: url(./images/right.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 1rem 1rem;
+}
+
+.tree li span.downicon {
+	background-image: url(./images/down.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 1rem 1rem;
+}
+
+.tree ul {
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.tree ul li ul {
+	padding-left: 1.875rem;
+}
+
+.tree ul li ul li ul {
+	padding-left: 1.875rem;
+}
+
+.tree li.parent_li>span {
+	cursor: pointer
+}
+
+.tree li.parent_li>span:hover,
+.tree li.parent_li>span:hover+ul li span {
+	color: #333;
+}
+
+
+a:hover {
+	text-decoration: underline;
+}
+div.tree ul.menu li a{
+	display: block;
+	color: #333;
+	font-weight: normal;
+}
+div.linklist p a{
+	display: block;
+}
+.notice{
+	color:#ff6900;
+}
+ul li {
+	list-style: inherit;
+}
+
+.breadcrumb-wrapper .breadcrumb {
+	line-height: 1rem;
+	margin: 0;
+	padding: 0.5rem;
+	background-color: ;
+}
+
+.item-title {
+	padding:0 1.5rem;
+	font-size: 1.4rem;
+	margin: 1.5rem 0rem;
+}
+
+.container {
+	max-width: 1280px;
+	width: 90%;
+}
+
+.breadcrumb>li,
+.pagination {
+	display: inline-block;
+}
+
+.breadcrumb-wrapper .breadcrumb li {}
+
+h2 {
+	font-weight: 400;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.875rem;
+	margin: 1rem 0;
+	padding: 0.5rem 1.5rem;
+	background-color: #f2f2f2;
+	color: #333;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.875rem;
+	margin: 1rem 0;
+	padding: 0.5rem 1.5rem;
+	color: #333;
+}
+
+p {
+	line-height: 1.625rem;
+	color: rgba(0, 0, 0, .7);
+	margin-top: 1rem;
+}
+
+.breadcrumb-wrapper {
+	background-color: #f8f8f8;
+	padding-left: 1rem;
+}
+
+p {
+	padding: 0 1.5rem;
+}
+
+p.goback {
+	text-align: center;
+	height:3em;
+	line-height: 3em;
+	padding:1em,0;
+	background: #fff;
+	position: fixed;
+	bottom: -1em;
+	left: 0;
+	right: 0;	
+}
+p.goback a{
+	color:#337FE5;
+	display: block;
+}
+ul.breadcrumb li a{
+	color: #337FE5;
+}

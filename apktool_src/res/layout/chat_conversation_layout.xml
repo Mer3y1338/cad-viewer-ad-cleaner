@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qcloud.tim.uikit.component.TitleBarLayout android:id="@id/conversation_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/empty_message_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/new_friend_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_icon_lt_no_message" android:layout_centerInParent="true" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#969696" android:gravity="center" android:id="@id/new_friend_empty_hint_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/chat_not_new_message" android:layout_alignLeft="@id/new_friend_empty_view" android:layout_alignRight="@id/new_friend_empty_view" android:layout_alignBottom="@id/new_friend_empty_view" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListLayout android:id="@id/conversation_list" android:paddingBottom="10.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressbar_view" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="45.0dp" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

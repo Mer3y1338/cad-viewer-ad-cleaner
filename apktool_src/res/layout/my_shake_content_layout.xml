@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/my_shake_parent" android:background="@drawable/my_splash_shape_custom" android:padding="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="@dimen/hiad_10_dp" android:layout_above="@id/ly_bottom_view" android:layout_centerHorizontal="true" android:layout_marginStart="35.0dp" android:layout_marginEnd="35.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/my_img_shake" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/slide_00000" android:scaleType="fitXY" android:layout_marginEnd="10.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_centerVertical="true" android:layout_toEndOf="@id/my_img_shake">
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_more_content" />
+        <TextView android:textSize="12.0sp" android:textColor="#c5c6c9" android:id="@id/tv_custom_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_download_action" />
+    </LinearLayout>
+</RelativeLayout>

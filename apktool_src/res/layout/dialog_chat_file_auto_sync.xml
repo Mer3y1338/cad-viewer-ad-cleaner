@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/line_top_gray" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/networkdisk_operation_sync2" android:lineSpacingMultiplier="1.2" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/checkBoxNoAutoSyncSettings" android:background="@android:color/transparent" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:checked="false" android:button="@drawable/selector_checkbox_account" android:text="@string/chat_file_settings_auto_sync" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/buttonDialogCancel" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/buttonDialogOk" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</LinearLayout>

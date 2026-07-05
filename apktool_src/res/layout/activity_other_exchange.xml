@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/smartRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@id/progressbar_dialog_process" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_margin="40.0dp" style="?android:progressBarStyle" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="#fdf5ed" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="#4b4a49" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_exchange_wenxin_tips" android:drawableLeft="@drawable/netdisk_state_conflict" android:drawablePadding="6.0dp" />
+                <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="#4b4a49" android:paddingLeft="16.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_exchange_tips" android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayoutEmpty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nodata_coupon" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nodata_public" />
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray_item_title" android:layout_gravity="center|bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:text="@string/account_exchange_record" />
+</FrameLayout>

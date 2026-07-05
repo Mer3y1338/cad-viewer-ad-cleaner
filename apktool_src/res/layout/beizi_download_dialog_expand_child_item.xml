@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#8c8c8c" android:id="@id/beizi_addeci_content_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.beizi.ad.internal.download.BeiZiWebView android:id="@id/beizi_addeci_content_wb" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/download_confirm_root" android:background="@drawable/beizi_download_confirm_background_portrait" android:paddingLeft="20.0dp" android:paddingTop="16.0dp" android:paddingRight="20.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="APP详情" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/download_confirm_close" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/beizi_ic_download_confirm_close" android:layout_centerHorizontal="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/download_confirm_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/download_confirm_holder" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/download_confirm_confirm" android:background="@drawable/beizi_download_confirm_background_confirm" android:layout_width="match_parent" android:layout_height="44.0dp" android:text="立即下载" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/download_confirm_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:layout_gravity="center" android:id="@id/download_confirm_reload_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重新加载" />
+    </FrameLayout>
+</LinearLayout>

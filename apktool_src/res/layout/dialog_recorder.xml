@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/voice_dialog_bg" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/id_recorder_dialog_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_recorder" />
+        <ImageView android:id="@id/id_recorder_dialog_voice" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice1" />
+    </LinearLayout>
+    <TextView android:textColor="@android:color/white" android:id="@id/id_record_dialog_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="00:00" />
+    <TextView android:textColor="@android:color/white" android:id="@id/id_recorder_dialog_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/voice_recorder_cancel_tip" />
+</LinearLayout>

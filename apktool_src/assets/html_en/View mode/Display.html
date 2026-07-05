@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Display</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../menu.css" />
+		<script type="text/javascript" src="../common.js"></script>
+	</head>
+	<body>
+		<div class="row breadcrumb-wrapper">
+			<ul class="breadcrumb main-wrapper container">
+				<li><a href="../link.html">Help</a></li>
+				<li>&gt;</li>
+				<li class="active">Display</li>
+			</ul>
+		</div>
+		<div class="item-title">Display</div>
+
+		<p><strong>1. Point marker</strong></p>
+		<p>
+			<img src="../images/icon_point.png" alt="" width="50" height="50" /></p>
+		<p style="padding-left:1em;">It indicates the position of current point. When specifying a point by tapping or
+			dragging, as the finger lifting, the point marker appears.<br />
+			You could drag point marker to adjust its position.</p>
+		<p><strong>2.Coordinate marker</strong></p>
+		<p><img src="../images/icon_coordinate.png" alt="" width="96" height="85" /></p>
+		<p style="padding-left:1em;">Tapping on coordinate marker, it displays the X values and Y values of current point.
+			You could also change them to adjust the point position.<br />
+			In Settings, the coordinate marker hides while &ldquo;Keypad&rdquo; is off.</p>
+		<p><strong>3.Magnifier</strong></p>
+		<p><img src="../images/icon_magnifier.png" alt="" width="91" height="91" /></p>
+		<p style="padding-left:1em;">When editing a drawing, you can open a magnifier by touching(staying more than 0.5s) the
+			drawing area. The magnifier can display the magnified graph of touched area. It is a convenient way for users to
+			view details and snap objects.<br />
+			In Settings, the coordinate marker hides while &ldquo;Keypad&rdquo; is off.<br />You could set the magnifier
+			position in Settings.<br />
+			<strong>Left:</strong> the magnifier displays on the left.<br />
+			<strong>Right: </strong>the magnifier displays on the right.<br />
+			<strong>Follow:</strong> magnifier follows the movement of the finger.<br />
+			The magnifier size could also be changed according to Settings.
+			The magnifier disappears while finger lifting.</p>
+		<p><strong>4.Snap</strong></p>
+		<p>In the new version, Endpoint, Midpoint, Center, Node, Quadrant, Intersection Insertion, Perpendicular, Tangent,
+			Nearest are available.<br />
+			In the drawing area, when specifying a point or executing a command, it will snap points selected in Snap Mode
+			automatically. It will displays markers while snapped as shown in the picture:</p>
+		<p style="padding-left:1em;"><img src="../images/snap.png" alt="" width="99" height="94" /><br />
+			The endpoint has been snapped, and it displays with a green box labeled.<br />In the new version, Object Snap
+			Tracking and Polar Tracking are also available. </p>
+
+
+		<p><strong>5.Auxiliaries</strong></p>
+		<p><img src="../images/icon_Auxiliary.png" alt="" width="102" height="106" /></p>
+		<p style="padding-left:1em;"><strong>Auxiliary point:</strong><br />
+			When drafting, stretching a pinch, or moving an object, auxiliary points will temporarily appear at snapped points.
+			<br />It automatically generates auxiliary lines between two points in horizontal and vertical directions to
+			accurately confirm the point position.<br />
+			<strong>Auxiliary line:</strong><br />
+			The following lines or frames are all auxiliary lines:<br />
+			When drafting, it generates temporarily dimension lines and extension lines on new created object.<br />
+			When selecting objects, all selected objects are surrounded by a rectangle frame.<br />
+			When object snap tracking, it automatically generates lines between two points in horizontal and vertical
+			directions.<br />
+			When editing objects, the temporarily auxiliary lines help display directions or distances. <br />
+			And other conditions.<br />
+			<strong>Auxiliary parameter:</strong><br />
+			When drafting or editing, it displays related auxiliary parameters, such as length, angle, diameter, and so on. </p>
+		<p><strong>6.Keypad</strong></p>
+		<p style="padding-left:2em"><strong>6.1 Category
+			</strong><br />The main keypad including keypads for drafting and keypads for editing.<br />
+			Taking line command for example:
+			Tap &ldquo;Line&rdquo; command, specify the first point according to command prompt on screen, when lifting the
+			finger, the line keypad appears.<br />
+			For the first time it displays Polar coordinates by default.<br />
+			Tap the switch icon in front to change input styles between polar coordinates and relative coordinates.</p>
+		<p style="padding-left:2em"><strong>6.2 Input by keypad</strong></p>
+		<p style="padding-left:2em;"><strong>Polar coordinates:</strong></p>
+		<p style="padding-left:3em;"><strong>Definition:</strong> it defines a polar coordinate position by a length and an
+			angle value.<br /></p>
+		<p style="padding-left:3em;"><strong>Keypad:</strong></p>
+		<div style="width:60%;margin:0 auto;">
+			<img src="../images/keypad_line_polar.png" alt="" style='width:65%;display:block;' />
+		</div>
+		<p style="padding-left:3em;"> <strong>For example:</strong> <br />Create a square inclined 45 degrees by polar
+			coordinates.<br />
+			Operations:<br />
+			<strong>Step 1:</strong> Click the &ldquo;Draw&rdquo; button and select &ldquo;Polyline&rdquo; command;<br />
+			<strong>Step 2:</strong> tap or drag on screen to specify the first endpoint of square;<br />
+			<strong>Step 3:</strong> enter the polar coordinates: length is 8.5, and angle is 45, and then tap &ldquo;+&rdquo;
+			in keypad for next point;<br />
+			<strong>Step 4:</strong> enter the polar coordinates: length is 8.5, and angle is 315, and then tap &ldquo;+&rdquo;
+			in keypad for next point;<br />
+			<strong>Step 5:</strong> enter the polar coordinates: length is 8.5, and angle is 225, and then tap
+			&ldquo;Close&rdquo; keyword behind command prompts to close the square as shown below:
+		</p>
+		<p style="padding-left:2em;"><strong>Relative coordinates:</strong></p>
+		<p style="padding-left:3em;"><strong>Definition:</strong> it defines a point with a relative position of last entered
+			coordinates in drawing area by entering the X increment and Y increment.<br /></p>
+		<p><strong>Keypad:</strong></p>
+		<div style="width:60%;margin:0 auto;">
+			<img src="../images/keypad_polyline_relative.png" alt="" style='width:65%;display:block;' />
+		</div>
+		<p style="padding-left:3em;">
+			<strong>For example:</strong> <br />Create a square with a side length of 8.5 by relative coordinates.<br />
+			Operations:<br />
+			<strong>Step 1:</strong> Click the "Draw" button and select &ldquo;Polyline&rdquo; command;<br />
+			<strong>Step 2:</strong> tap or drag on screen to specify the first endpoint of square;<br />
+			<strong>Step 3:</strong> enter the relative coordinates of the second point: 8.5 and 0, and then tap &ldquo;+&rdquo;
+			in keypad for next point;<br />
+			<strong>Step 4:</strong> enter the relative coordinates of the third point: 0 and 8.5, and then tap &ldquo;+&rdquo;
+			in keypad for next point;<br />
+			<strong>Step 5:</strong> enter the relative coordinates of the forth point: -8.5and 0, and then tap
+			&ldquo;Close&rdquo; keyword behind command prompts to close the square as shown below:
+		</p>
+		<p><strong>7.Keywords</strong></p>
+		<div style="width:60%;margin:0 auto;">
+			<img src="../images/keywords.png" alt="" style='width:65%;display:block;' />
+		</div>
+		<p style="padding-left:1.5em">Keywords display behind command prompts.<br />
+			It displays different keywords in different steps. <br />Taking polyline command for example, after specifying the
+			first point, it displays "Arc" and &ldquo;Cancel&rdquo; keywords; after specifying the third point, it displays five
+			keywords: &ldquo;Arc&rdquo;, &ldquo;Undo&rdquo;, &ldquo;Close&rdquo;, &ldquo;Cancel&rdquo;, and &ldquo;Ok&rdquo;.</p>
+		<p><strong>8.Switches while editing</strong></p>
+		<p style="padding-left:2em;"><strong>8.1 Parameter editing</strong></p>
+		<p style="padding-left:2em;"><img src="../images/icon_parameter edit.png" alt="" width="28" height="28" /><br />
+			Tap to enter parameter editing state. In parameter editing state, you could change related parameters according to
+			the selected object. Such as length or angle for a selected line; radius for a selected circle.</p>
+
+		<p style="padding-left:2em;"><strong>8.2 Pinch editing</strong></p>
+		<p style="padding-left:2em;"><img src="../images/icon_pinch edit.png" alt="" width="28" height="28" /><br />
+			Tap to enter pinch editing state. You could stretch one of their pinches to change the shape of selected object.</p>
+
+		<p style="padding-left:2em;"><strong>8.3 Simple editing</strong></p>
+		<p style="padding-left:2em;"><img src="../images/icon_simple edit.png" alt="" width="28" height="28" /><br />
+			Tap to enter simple editing state. In this state, you could stretch one of their pinches to scale selected object,
+			or move the Move icon in the center to move it, or drag the Rotate icon on the right to change its direction.</p>
+
+		<p style="padding-left:2em;"><strong>8.4 Center unlocked</strong></p>
+		<p style="padding-left:2em;"><img src="../images/icon_center unlock.png" alt="" width="28" height="28" /><br />
+			When editing an arc, it displays &ldquo;Center Unlocked&rdquo; by default. The start point and endpoint of arc are
+			fixed. You could adjust the arc by modifying its radius and central angle.</p>
+
+		<p style="padding-left:2em;"><strong>8.5 Center locked</strong></p>
+		<p style="padding-left:2em;"><img src="../images/icon_center locked.png" alt="" width="28" height="28" /><br />
+			Tap &ldquo;Center Unlocked&rdquo; icon and switch to &ldquo;Center locked&rdquo; state. The arc center is fixed. You
+			could adjust the arc by modifying its radius, start angle, and end angle.</p>
+		<p style="padding-left:2em;"><strong>9. Record result</strong></p>
+		<p style="padding-left:2.5em;"><img src="../images/Record result.png" alt="" width="28" height="28" /></p>
+		<p style="padding-left:2.5em;">This button displays on the top right of measurement pannel. Tap on it to save measure
+			result to list.<br />
+			In settings, if the &ldquo;Auto Record&rdquo; is turned on, the measure result could also be automatically recorded.
+			Its default mode is off.
+		</p>
+		
+	</body>
+</html>

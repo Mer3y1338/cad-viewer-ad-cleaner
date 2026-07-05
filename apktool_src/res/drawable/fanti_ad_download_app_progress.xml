@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <stroke android:width="1.0dp" android:color="@color/fanti_ykn_hide_able_separator" />
+            <corners android:radius="8.0dp" />
+            <solid android:color="@color/fanti_ykn_elevated_secondary_background" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:clipOrientation="horizontal">
+            <shape>
+                <gradient android:startColor="#00c9fd" android:endColor="#00a3f5" android:angle="225.0" />
+                <corners android:radius="7.0dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

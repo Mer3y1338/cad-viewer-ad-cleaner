@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/baseView" android:background="@color/gstar_bg_color_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/base_header" layout="@layout/activity_base_header_view" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/viewErrorMessageBar" android:background="#f5cea8" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="#977351" android:gravity="center" android:id="@id/textViewErrorMessageBar" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_exception_network_no" android:drawableLeft="@drawable/icon_app_exception_network" android:drawablePadding="10.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/base_content" android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+        <View android:layout_gravity="bottom" android:background="@color/gstar_bg_color_black_divider1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+    </LinearLayout>
+</FrameLayout>

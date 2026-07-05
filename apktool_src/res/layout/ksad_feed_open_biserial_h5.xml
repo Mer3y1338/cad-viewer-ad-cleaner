@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="59.0dp" android:layout_height="17.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0dp" android:textColor="#9c9c9c" android:ellipsize="end" android:gravity="left|center" android:id="@id/ksad_h5_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:maxLines="1" android:includeFontPadding="false" />
+    <FrameLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="10.0dp" android:textColor="@color/ksad_feed_main_color" android:gravity="center" android:id="@id/ksad_h5_open_btn" android:background="@drawable/ksad_feed_app_h5_before_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <View android:id="@id/ksad_h5_open_cover" android:background="@drawable/ksad_video_actionbar_cover_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close_iv" android:paddingLeft="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" android:src="@drawable/beizi_icon_back_left" android:layout_alignParentTop="true" />
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="3.0dp" android:progressDrawable="@drawable/beizi_progress" android:minHeight="3.0dp" android:layout_below="@id/close_iv" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <WebView android:id="@id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/progress_bar" />
+</RelativeLayout>

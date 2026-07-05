@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="120.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/liner_swipe_template" android:background="@drawable/jad_swipe_background" android:layout_width="50.0dp" android:layout_height="30.0dp" android:layout_marginBottom="10.0dp" android:layout_above="@id/swipe_liner" android:layout_centerHorizontal="true">
+        <ImageView android:background="@drawable/jad_swipe" android:layout_width="40.0dp" android:layout_height="20.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/swipe_liner" android:background="@drawable/jad_swipe_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="滑动或点击按钮" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="点击前往第三方应用或界面" android:alpha="0.8" />
+    </LinearLayout>
+</RelativeLayout>

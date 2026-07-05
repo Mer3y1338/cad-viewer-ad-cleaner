@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="100.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/ksad_author_icon_layout" android:layout_width="match_parent" android:layout_height="100.0dp">
+        <com.kwad.components.core.widget.KSCornerImageView android:layout_gravity="center" android:id="@id/ksad_author_animator" android:layout_width="96.0dp" android:layout_height="96.0dp" android:src="@drawable/ksad_author_circle" />
+        <com.kwad.components.core.widget.KSCornerImageView android:layout_gravity="center" android:id="@id/ksad_author_animator2" android:layout_width="96.0dp" android:layout_height="96.0dp" android:src="@drawable/ksad_author_circle" />
+        <com.kwad.sdk.widget.KSFrameLayout android:layout_gravity="center" android:id="@id/ksad_author_icon_frame" android:padding="1.0dp" android:layout_width="96.0dp" android:layout_height="96.0dp" app:ksad_radius="200.0dp">
+            <com.kwad.components.core.widget.KSCornerImageView android:layout_gravity="center" android:id="@id/ksad_author_icon" android:layout_width="84.0dp" android:layout_height="84.0dp" app:ksad_radius="200.0dp" />
+        </com.kwad.sdk.widget.KSFrameLayout>
+        <com.kwad.components.core.widget.KSCornerImageView android:layout_gravity="center" android:id="@id/ksad_author_icon_outer" android:background="@drawable/ksad_author_circle" android:layout_width="96.0dp" android:layout_height="96.0dp" />
+    </FrameLayout>
+</LinearLayout>

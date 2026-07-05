@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewFolderIcon" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:src="@drawable/file_path_icon" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/RecyclerViewFilePath" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.5" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewCustom" android:padding="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:text="@string/select_path" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewFolderBack" android:padding="10.0dp" android:layout_width="50.0dp" android:layout_height="match_parent" android:src="@drawable/file_path_back" />
+</androidx.appcompat.widget.LinearLayoutCompat>

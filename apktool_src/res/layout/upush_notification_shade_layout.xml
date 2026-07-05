@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="96.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/upush_notification_shade_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/upush_notification_top_layout" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:paddingStart="16.0dp" android:paddingEnd="12.0dp" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/upush_notification_small_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/upush_notification_title_color" android:id="@id/upush_notification_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160.0dp" android:maxLines="1" android:maxLength="20" android:layout_marginStart="8.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/upush_notification_title_color" android:ellipsize="middle" android:id="@id/upush_notification_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/upush_notification_large_iv" android:layout_width="48.0dp" android:layout_height="48.0dp" android:scaleType="fitXY" android:layout_below="@id/upush_notification_top_layout" android:layout_centerVertical="true" android:layout_marginStart="4.0dp" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/upush_notification_content_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/upush_notification_top_layout" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="4.0dp" android:layout_toStartOf="@id/upush_notification_large_iv">
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Notification.Title" android:textSize="14.0sp" android:textColor="@color/upush_notification_title_color" android:ellipsize="end" android:id="@id/upush_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Notification.Info" android:textSize="14.0sp" android:textColor="@color/upush_notification_content_color" android:ellipsize="end" android:id="@id/upush_notification_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

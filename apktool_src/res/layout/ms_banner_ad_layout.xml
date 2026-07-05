@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meishu.sdk.meishu_ad.banner.MeishuBannerRootView android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meishu.sdk.core.view.gif.GifImageView android:id="@id/ms_banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/ms_banner_close_button" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ms_ad_close" android:scaleType="fitXY" android:cropToPadding="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ms_banner_image" android:layout_alignBottom="@id/ms_banner_image" layout="@layout/ms_ad_tag_view_banner_right" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="80.0dp" android:layout_alignBottom="@id/ms_banner_image">
+        <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/ms_download_layer_textview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/ms_splash_download_desc" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.meishu.sdk.meishu_ad.banner.MeishuBannerRootView>

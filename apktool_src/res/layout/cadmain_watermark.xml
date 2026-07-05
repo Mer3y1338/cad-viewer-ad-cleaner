@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/cad_watermark_normal_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.WatermarkView android:orientation="vertical" android:id="@id/watermark_view" android:layout_width="match_parent" android:layout_height="match_parent" app:model="card" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/watermark_operation_layout" android:background="@drawable/cad_watermark_bg" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" app:layout_constraintBottom_toBottomOf="@id/watermark_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@id/watermark_delete_view" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_note_video_delete" android:layout_marginEnd="6.0dp" />
+        <View android:background="#ff1e1e1e" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp" />
+        <ImageView android:id="@id/watermark_edit_view" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_note_comment_edit" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/watermark_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_watermark_selected" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

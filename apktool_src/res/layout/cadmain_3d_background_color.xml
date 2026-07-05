@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="center_vertical" android:background="@drawable/background_cad_toolbar_new" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="50.0dp" android:cacheColorHint="#00000000" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/radioGroupBackGroundColor" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_cadmain_padding_space" android:layout_margin="@dimen/gstar_cadmain_padding_space" android:layout_weight="1.5" />
+            <RadioButton android:gravity="center" android:id="@id/buttonBackgroundColor_1" android:background="@drawable/selector_cad_3d_background_color_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" />
+            <View android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_cadmain_padding_space" android:layout_margin="@dimen/gstar_cadmain_padding_space" android:layout_weight="1.5" />
+            <RadioButton android:gravity="center" android:id="@id/buttonBackgroundColor_2" android:background="@drawable/selector_cad_3d_background_color_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <View android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_cadmain_padding_space" android:layout_margin="@dimen/gstar_cadmain_padding_space" android:layout_weight="1.5" />
+            <RadioButton android:gravity="center" android:id="@id/buttonBackgroundColor_3" android:background="@drawable/selector_cad_3d_background_color_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <View android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_cadmain_padding_space" android:layout_margin="@dimen/gstar_cadmain_padding_space" android:layout_weight="1.5" />
+            <RadioButton android:gravity="center" android:id="@id/buttonBackgroundColor_4" android:background="@drawable/selector_cad_3d_background_color_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <View android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_cadmain_padding_space" android:layout_margin="@dimen/gstar_cadmain_padding_space" android:layout_weight="1.5" />
+            <RadioButton android:gravity="center" android:id="@id/buttonBackgroundColor_5" android:background="@drawable/selector_cad_3d_background_color_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <View android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_cadmain_padding_space" android:layout_margin="@dimen/gstar_cadmain_padding_space" android:layout_weight="1.5" />
+        </RadioGroup>
+    </LinearLayout>
+</HorizontalScrollView>

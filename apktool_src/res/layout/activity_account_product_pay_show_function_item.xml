@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stone.app.ui.widget.RCView_FrameLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="210.0dp" android:baselineAligned="false" app:clip_background="true" app:round_corner="20.0dp" app:stroke_color="@color/gstar_bg_color_black_divider1" app:stroke_width="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.RCView_ImageView android:id="@id/imageViewFunction_Target" android:background="@color/gstar_bg_color_blue" android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/vip_icon_mobile_white" android:scaleType="centerInside" app:clip_background="true" app:round_corner_bottom_right="20.0dp" app:round_corner_top_left="20.0dp" app:stroke_color="@color/gstar_bg_color_black_divider1" app:stroke_width="0.0dp" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp">
+        <ImageView android:id="@id/imageViewFunctionIcon" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/vip_function_default" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="#131415" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/textViewFunctionName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="#131415" android:gravity="start" android:id="@id/textViewFunctionDesc" android:padding="10.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:lineSpacingMultiplier="1.2" />
+        </ScrollView>
+    </LinearLayout>
+</com.stone.app.ui.widget.RCView_FrameLayout>

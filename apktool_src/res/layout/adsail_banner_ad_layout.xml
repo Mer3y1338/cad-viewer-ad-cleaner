@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.haorui.sdk.adsail_ad.banner.HRBannerRootView android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.haorui.sdk.core.view.gif.GifImageView android:id="@id/adsail_banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/adsail_banner_close_button" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/adsail_close_btn" android:scaleType="fitXY" android:cropToPadding="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/adsail_banner_image" android:layout_alignBottom="@id/adsail_banner_image" layout="@layout/adsail_ad_tag_view_banner_right" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="60.0dp" android:layout_alignBottom="@id/adsail_banner_image">
+        <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/adsail_download_layer_textview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/adsail_splash_download_desc" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    </RelativeLayout>
+</cn.haorui.sdk.adsail_ad.banner.HRBannerRootView>

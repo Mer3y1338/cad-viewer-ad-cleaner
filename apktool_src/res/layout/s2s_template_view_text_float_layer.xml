@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yd.saas.common.widget.RoundedFrameLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:yd_radius="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/s2s_template_view_img" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/s2s_template_action_container" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.yd.saas.common.widget.RoundedFrameLayout android:background="#50000000" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:yd_bottomLeftRadius="8.0dp" app:yd_bottomRightRadius="8.0dp">
+            <include layout="@layout/s2s_template_full_text" />
+        </com.yd.saas.common.widget.RoundedFrameLayout>
+    </LinearLayout>
+</com.yd.saas.common.widget.RoundedFrameLayout>

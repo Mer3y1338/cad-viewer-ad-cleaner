@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="left|bottom" android:orientation="horizontal" android:id="@id/ksad_card_tips_root" android:background="@drawable/ksad_tips_card_bg" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/ksad_live_card_tips_height" android:layout_marginLeft="@dimen/ksad_live_card_tips_margin_left" android:layout_marginBottom="@dimen/ksad_live_card_tips_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="8.0sp" android:textColor="@android:color/white" android:background="@drawable/ksad_main_color_card_bg" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="12.0dp" android:text="@string/ksad_card_tips_pre" android:maxLines="1" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/ksad_card_tips_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:maxWidth="97.0dp" android:maxLines="1" />
+    <ImageView android:background="#66ffffff" android:layout_width="1.0dp" android:layout_height="12.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ksad_card_tips_interested" android:maxLines="1" />
+</LinearLayout>

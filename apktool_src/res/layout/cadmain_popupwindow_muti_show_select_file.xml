@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/roundcorner_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray" android:gravity="center" android:id="@id/textViewSelectFileTitle" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_file_dwg" />
+        <include layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewSelectRecentFile" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cad_cmd_recent_dwg" />
+        <include layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewSelectLocalFile" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_local_dwg" />
+        <include layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewSelectCloudFile" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_cloud_dwg" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewSelectFileCancel" android:background="@drawable/roundcorner_color_white" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/cancel" />
+</androidx.appcompat.widget.LinearLayoutCompat>

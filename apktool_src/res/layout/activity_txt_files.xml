@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/viewPopupWindowHandle" android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.stone.app.ui.view.AppX5WebView android:id="@id/appX5WebViewData" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/flVideoContainer" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutDialog" android:background="@color/transparent" style="@style/layout_full">
+        <include layout="@layout/dialog_with_progress" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:id="@id/textView" style="@style/layout_full" />
+</RelativeLayout>

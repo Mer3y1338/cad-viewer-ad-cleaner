@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="center" android:id="@id/textViewWXPayResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dp" android:text="恭喜您，支付成功！" android:drawableTop="@drawable/pay_success" android:drawablePadding="20.0dp" />
+    <Button android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/buttonResultOK" android:background="@drawable/selector_button_color_orange" android:padding="10.0dp" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="确定" />
+</LinearLayout>

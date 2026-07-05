@@ -1,0 +1,6 @@
+com.yd.saas.fw.mixNative.FWMixNativeHandler
+com.yd.saas.ks.mixNative.KSMixNativeHandler
+com.yd.saas.adhub.mixNative.AdhubMixNativeHandler
+com.yd.saas.hy.mixNative.HYMixNativeHandler
+com.yd.saas.tt.mixNative.TTMixNativeHandler
+com.yd.saas.s2s.mixNative.S2SMixNativeHandler

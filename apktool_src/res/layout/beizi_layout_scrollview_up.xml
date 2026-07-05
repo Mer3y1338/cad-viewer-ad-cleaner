@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/scroll_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/scrollbar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/scrollbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/beizi_scrollbar" android:rotation="180.0" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="top" android:id="@id/hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/beizi_hand" />
+    </FrameLayout>
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@android:drawable/screen_background_dark_transparent" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:shadowColor="@android:drawable/screen_background_dark_transparent" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
+</LinearLayout>

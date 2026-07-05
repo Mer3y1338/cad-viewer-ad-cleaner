@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:padding="5.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/text_tips_color" android:id="@id/chat_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:includeFontPadding="false" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="vertical" android:id="@id/name_message_ll" android:background="@drawable/chat_cad_message_black_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/text_tips_color" android:id="@id/user_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="10.0dp" android:paddingEnd="0.0dp" />
+            <FrameLayout android:id="@id/msg_content_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/msg_content_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.qcloud.tim.uikit.component.UnreadCountTextView android:id="@id/audio_unread" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ProgressBar android:id="@id/message_sending_pb" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_margin="10.0dp" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/text_gray1" android:layout_gravity="center_vertical" android:id="@id/is_read_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/message_status_iv" android:padding="10.0dp" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/chat_message_send_fail" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

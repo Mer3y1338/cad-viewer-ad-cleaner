@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/viewTextEditRoot" android:background="@color/app_color_main_black1" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonEditTextCancel" android:background="@null" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/selector_button_back_white" />
+        <ImageView android:padding="5.0dp" android:visibility="invisible" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/cad_cmd_edit_fontsize" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/textViewTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+        <ImageView android:id="@id/imageViewFontSizeSettings" android:padding="5.0dp" android:visibility="invisible" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/cad_cmd_edit_fontsize" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_white2blue" android:gravity="center" android:id="@id/buttonEditTextSubmit" android:background="@null" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/done" />
+    </LinearLayout>
+    <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" layout="@layout/view_line_horizontal" />
+    <ScrollView android:background="@color/app_color_main_black2" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_white" android:textColorHint="@color/gstar_text_color_black_hint" android:gravity="left|top" android:id="@id/editTextCADTextValue" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/cad_text_input_hint" android:textCursorDrawable="@null" />
+            <View android:layout_width="match_parent" android:layout_height="300.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

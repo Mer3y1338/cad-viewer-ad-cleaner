@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/roundcorner_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray" android:gravity="center" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_account_info_manager_background_tips" />
+        <View android:background="@color/gstar_bg_color_black_divider0" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewCopyManagerUrl" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_account_info_copy_manager_url" />
+        <View android:background="@color/gstar_bg_color_black_divider0" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewOpenSystemWebView" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_account_info_go_on_manager_url" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="center" android:id="@id/textViewCancel" android:background="@drawable/roundcorner_color_white" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/cancel" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/yd_saas_interstitial_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="5.0">
+        <ImageView android:id="@id/yd_saas_interstitial_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <FrameLayout android:id="@id/yd_saas_interstitial_media_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingTop="20.0dp" android:paddingRight="10.0dp" android:paddingBottom="20.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="4.0">
+        <com.yd.saas.common.widget.ShaderRoundImageView android:id="@id/iv_yd_saas_interstitial_icon" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:scaleType="fitCenter" app:yd_radius="8.0dp" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@id/tv_yd_saas_interstitial_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:maxLines="1" />
+        <TextView android:textSize="13.0sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@id/tv_yd_saas_interstitial_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:maxLines="3" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/tv_yd_saas_interstitial_cta" android:background="@drawable/yd_saas_3366ff_bg" android:paddingLeft="20.0dp" android:paddingTop="6.0dp" android:paddingRight="20.0dp" android:paddingBottom="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="查看详情" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

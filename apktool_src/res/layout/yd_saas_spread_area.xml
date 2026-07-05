@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center|bottom" android:id="@id/yd_saas_click_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_click_area" android:layout_width="300.0dp" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+    <TextView android:textSize="18.0sp" android:textColor="#fff" android:gravity="center" android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="45.0dp" android:text="点击跳转\n详情页或第三方应用" android:lineSpacingMultiplier="1.1" />
+    <ImageView android:layout_gravity="right|bottom" android:id="@id/yd_saas_click_area_guide" android:layout_width="50.0dp" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:layout_marginBottom="5.0dp" android:adjustViewBounds="true" />
+</FrameLayout>

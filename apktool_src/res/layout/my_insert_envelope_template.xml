@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/myapi_native_ad_container" android:paddingBottom="40.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/my_content_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50.0dp" android:layout_marginStart="55.0dp" android:layout_marginEnd="55.0dp">
+            <RelativeLayout android:id="@id/my_insert_parent" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/my_img_blur" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+                    <ImageView android:layout_gravity="center" android:id="@id/my_img_pic" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    <com.qq.e.ads.nativ.MediaView android:layout_gravity="center" android:id="@id/my_media_splash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <ImageView android:textSize="15.0sp" android:textColor="#ffffff" android:id="@id/my_txt_close" android:background="@drawable/my_insert_close_btn" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="10.0dp" android:layout_alignParentEnd="true" />
+                <FrameLayout android:id="@id/mob_logo_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+                    <TextView android:textSize="8.0sp" android:textColor="#b3b3b3" android:id="@id/mob_txt_logo" android:background="@drawable/mob_logo_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advertisement_name" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+                    <ImageView android:id="@id/my_img_logo" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+                </FrameLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center|top" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="330.0dp">
+                <ImageView android:id="@id/top_icon" android:layout_width="50.0dp" android:layout_height="45.0dp" android:layout_marginTop="10.0dp" android:scaleType="fitXY" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#674f35" android:id="@id/my_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/ad_title" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#674f35" android:gravity="center" android:id="@id/my_txt_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="25.0dp" android:layout_marginBottom="5.0dp" android:text="@string/description" android:maxLines="2" android:lineSpacingExtra="5.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/my_envelope_parent" android:background="@drawable/my_envelope_bg" android:layout_width="match_parent" android:layout_height="235.0dp" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp">
+            <FrameLayout android:id="@id/my_shake_n_n_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/my_slide_parent" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/my_insert_slide_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:src="@drawable/my_ic_splash_slide_up_new" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/slide_have" android:layout_below="@id/my_insert_slide_up" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/my_custom_parent" android:background="@drawable/my_round_blue_bg" android:layout_width="match_parent" android:layout_height="38.0dp" android:layout_margin="20.0dp" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/my_img_shake" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginEnd="5.0dp" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffffff" android:id="@id/tv_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/shake_more_content" android:layout_toEndOf="@id/my_img_shake" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.my.adpoymer.view.fall.FallingView android:id="@id/falling" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.qq.e.ads.nativ.widget.NativeAdContainer>
+</RelativeLayout>

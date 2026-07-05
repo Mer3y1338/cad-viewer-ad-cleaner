@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/my_native_ad_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_open" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/my_img_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <ImageView android:id="@id/my_img_logo" android:background="@drawable/my_ad_logo_width_txt" android:layout_width="30.0dp" android:layout_height="10.0dp" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffff" android:id="@id/tv_custom" android:background="@drawable/my_splash_shape_custom" android:padding="30.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text=" 点击跳转详情或第三方应用  >>" android:layout_above="@id/ly_bottom_view" android:layout_centerHorizontal="true" />
+        <include layout="@layout/mob_splash_bottom_view" />
+        <include layout="@layout/my_splash_bottom_webview" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.stone.app.ui.view.AppX5WebView android:id="@id/appX5WebViewDetail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50.0dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutDialog" android:background="@color/transparent" style="@style/layout_full">
+        <include layout="@layout/dialog_with_progress" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:id="@id/textView" style="@style/layout_full" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewURL_Debug" android:background="#7f000000" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <EditText android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/blue" android:id="@id/editTextURL" android:background="@drawable/roundcorner_color_trans_frame_blue" android:paddingLeft="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:minHeight="35.0dp" android:layout_weight="1.5" />
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/blue" android:id="@id/buttonURL_GO" android:background="@drawable/selector_cad_button_public" android:layout_width="60.0dp" android:layout_height="35.0dp" android:layout_margin="5.0dp" android:text="@string/open" />
+    </LinearLayout>
+</FrameLayout>

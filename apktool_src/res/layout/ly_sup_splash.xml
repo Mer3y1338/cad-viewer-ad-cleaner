@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_one" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_click" android:background="@drawable/ly_splash_click_bg" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="50.0dp" android:layout_marginRight="50.0dp" android:layout_marginBottom="100.0dp" android:text="点击跳转至详情页或第三方应用" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dp" android:layout_marginRight="24.0dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/tv_time" android:background="@drawable/ly_splash_click_bg" android:padding="18.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过 5s" />
+        </RelativeLayout>
+        <ImageView android:id="@id/tv_logo" android:layout_width="48.0dp" android:layout_height="15.0dp" android:layout_marginLeft="10.0dp" android:layout_marginBottom="10.0dp" android:src="@mipmap/ly_ad_logo" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

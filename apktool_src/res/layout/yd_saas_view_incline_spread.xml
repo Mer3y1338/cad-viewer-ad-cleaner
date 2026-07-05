@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:background="@drawable/yd_saas_slide_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yd.saas.base.widget.InclineView android:id="@id/yd_incline_view" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_toEndOf="@id/yd_incline_view">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前倾 或 点击图标" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="跳转详情页或第三方应用" />
+    </LinearLayout>
+</RelativeLayout>

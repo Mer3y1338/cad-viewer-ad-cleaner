@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/tt_install_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/tt_install_icon" android:duplicateParentState="false" android:layout_width="50.0dp" android:layout_height="50.0dp" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#161823" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tt_install_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#88161823" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tt_install_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:singleLine="true" />
+    </LinearLayout>
+    <Button android:textSize="15.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tt_install_button" android:background="@drawable/tt_adl_install_action_bg" android:layout_width="80.0dp" android:layout_height="34.0dp" android:layout_marginLeft="10.0dp" android:singleLine="true" style="@style/tt_adl_style_notification_title" />
+</LinearLayout>

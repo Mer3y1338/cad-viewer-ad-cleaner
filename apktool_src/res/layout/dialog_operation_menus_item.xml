@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewMenuItemIcon" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/file_menus_share" android:contentDescription="TODO" />
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/black" android:gravity="left|center" android:id="@id/textViewMenuItem" android:background="@drawable/selector_itemclick_list" android:paddingTop="15.0dp" android:paddingRight="10.0dp" android:paddingBottom="15.0dp" android:text="@string/save_to_local" style="@style/layout_height_wrap" />
+</LinearLayout>

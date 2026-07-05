@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_yd_saas_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.yd.saas.common.widget.ShaderRoundImageView android:id="@id/iv_yd_saas_custom_interstitia_icon" android:layout_width="58.0dp" android:layout_height="58.0dp" android:layout_marginTop="22.0dp" android:scaleType="fitXY" app:yd_radius="8.0dp" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@id/tv_yd_saas_custom_interstitia_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:lines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="#666666" android:ellipsize="end" android:gravity="center" android:id="@id/tv_yd_saas_custom_interstitia_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_yd_saas_custom_interstitia_btn" android:background="@drawable/yd_saas_background_btn_circle_origin" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginTop="18.0dp" android:layout_marginBottom="87.0dp" android:text="查看详情" android:maxLines="1" android:layout_marginStart="41.0dp" android:layout_marginEnd="41.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/yd_saas_view_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_above="@id/ll_yd_saas_msg" />
+    <RelativeLayout android:id="@id/yd_saas_interstitial_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp" android:layout_above="@id/ll_yd_saas_msg">
+        <FrameLayout android:id="@id/fl_yd_saas_horizontal_container" android:background="#ffffff" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <FrameLayout android:id="@id/yd_saas_custom_interstitial_media_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_yd_saas_custom_interstitial" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/fl_yd_saas_vertical_container" android:background="@drawable/yd_saas_background_interstitial_vertical" android:paddingLeft="4.0dp" android:paddingTop="4.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="16.0dp" android:layout_centerHorizontal="true">
+            <com.yd.saas.common.widget.RoundedFrameLayout android:id="@id/yd_saas_custom_vertical_interstitial_media_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="-8.0dp" app:yd_radius="8.0dp" />
+            <com.yd.saas.common.widget.ShaderRoundImageView android:id="@id/iv_yd_saas_custom_vertical_interstitial" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="-8.0dp" android:scaleType="fitCenter" android:adjustViewBounds="true" app:yd_radius="8.0dp" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_yd_saas_custom_vertical_adlogo" android:layout_width="wrap_content" android:layout_height="14.0dp" android:layout_margin="10.0dp" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_above="@id/ll_yd_saas_msg" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_yd_saas_media_sound" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="16.0dp" android:src="@drawable/yd_saas_volume_on" />
+</RelativeLayout>

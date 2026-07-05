@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ptgRootView" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ptg.ptgapi.component.base.AdvertRatioLayout android:id="@id/ptgCoverLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ptg.ptgapi.component.video.PtgVideoView android:id="@id/ptgVideoView" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/ptgImgCover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <include android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginBottom="5.0dp" layout="@layout/ptg_advert_logo" />
+        <include android:layout_gravity="center" android:id="@id/ptgShakeLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/ptg_reward_shake" />
+    </com.ptg.ptgapi.component.base.AdvertRatioLayout>
+    <com.ptg.ptgapi.widget.PtgOverlayTopLinerLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/ptg_white" android:ellipsize="end" android:id="@id/ptgTvTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/ptgImgClose" android:paddingLeft="5.0dp" android:paddingTop="2.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ptg_icon_close_home" />
+        </FrameLayout>
+    </com.ptg.ptgapi.widget.PtgOverlayTopLinerLayout>
+</FrameLayout>

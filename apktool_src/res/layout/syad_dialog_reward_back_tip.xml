@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/syad_color_black" android:gravity="center" android:id="@id/syad_tv_reward_back_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="30.0dp" />
+    <View android:background="@color/syad_color_split" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syad_color_black" android:gravity="center" android:id="@id/syad_tv_cancel" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="放弃奖励离开" android:layout_weight="1.0" />
+        <View android:background="@color/syad_color_split" android:layout_width="0.5dp" android:layout_height="match_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syad_color_blue" android:gravity="center" android:id="@id/syad_tv_sure" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="继续观看领取" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

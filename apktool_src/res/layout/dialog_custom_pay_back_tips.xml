@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stone.app.ui.widget.RCView_LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:clip_background="true" app:round_corner="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageViewFileIcon" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/order_pay_back_tips" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewPayBackTipsTitle" android:paddingBottom="10.0dp" android:text="@string/account_user_pay_back_title" style="@style/layout_height_wrap" />
+    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="center" android:id="@id/textViewPayBackTipsValue" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:text="@string/account_user_pay_tips_vip1" android:lineSpacingMultiplier="1.2" style="@style/layout_height_wrap" />
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_white2blue" android:id="@id/buttonPayBackTipsOK" android:background="@drawable/roundcorner_color_orange2" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="10.0dp" android:text="@string/account_user_pay_now" />
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_gray2blue" android:id="@id/buttonPayBackTipsClose" android:background="@drawable/selector_button_color_white2trans" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="10.0dp" android:text="@string/cancel" />
+    </LinearLayout>
+</com.stone.app.ui.widget.RCView_LinearLayout>

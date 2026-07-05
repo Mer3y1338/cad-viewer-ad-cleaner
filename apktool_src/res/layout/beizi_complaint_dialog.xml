@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/beizi_complaint_dialog_shape" android:padding="20.0dp" android:layout_width="340.0dp" android:layout_height="wrap_content">
+        <ImageView android:id="@id/complaint_dialog_close_view" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/beizi_complaint_dialog_close" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/complaint_normal_ui" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/complaint_dialog_close_view">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/dislike_reasons_list_recycleview" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@id/complaint_other_suggest_view" android:background="@drawable/beizi_complaint_edittext_bg" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/beizi_dialog_text_hint" android:drawableLeft="@drawable/beizi_complaint_edit_suggest" android:drawablePadding="5.0dp" android:layout_below="@id/dislike_reasons_list_recycleview" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/complaint_other_suggest_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dp" android:textColor="@android:color/black" android:id="@id/complaint_other_suggest_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="其他投诉" android:layout_centerHorizontal="true" />
+            <View android:id="@id/complaint_input_other_divider" android:background="@color/view_divider_bg" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15.0dp" android:layout_below="@id/complaint_other_suggest_title" />
+            <EditText android:textSize="13.0dp" android:textColorHint="@android:color/darker_gray" android:gravity="left" android:id="@id/complaint_input_other_edittext" android:background="@drawable/beizi_complaint_edittext_normal" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:minLines="8" android:layout_below="@id/complaint_input_other_divider" android:textCursorDrawable="@drawable/beizi_complaint_edittext_cursor" />
+            <TextView android:id="@id/complaint_other_suggest_number_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:hint="0" android:layout_alignBottom="@id/complaint_input_other_edittext" android:layout_marginEnd="10.0dp" android:layout_alignEnd="@id/complaint_input_other_edittext" />
+            <Button android:enabled="false" android:textColor="@android:color/white" android:id="@id/complaint_other_suggest_submit" android:background="@drawable/beizi_complaint_button_disable_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="提交" android:layout_below="@id/complaint_input_other_edittext" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

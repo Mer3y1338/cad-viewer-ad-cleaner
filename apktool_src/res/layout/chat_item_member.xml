@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/gstar_bg_color_white" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/member_icon_layout" android:layout_width="50.0dp" android:layout_height="50.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/item_member_icon_view" android:layout_width="@dimen/contact_avatar_width" android:layout_height="@dimen/contact_avatar_width" android:src="@drawable/ic_launcher" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/item_mute_view" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray_item_title" android:id="@id/item_member_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_cad_operator" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:id="@id/item_member_name_view" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/item_member_status_view" app:layout_constraintStart_toEndOf="@id/member_icon_layout" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/view_line_horizontal" />
+</androidx.appcompat.widget.LinearLayoutCompat>

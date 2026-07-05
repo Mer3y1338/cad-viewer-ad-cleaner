@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="7.0dp" android:topRightRadius="7.0dp" />
+    <solid android:color="@color/fanti_ykn_elevated_primary_background" />
+</shape>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundcorner_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/roundcorner_dialog_button_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="center" android:id="@id/textViewHomeTitle" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:text="@string/cad_open_mode_default" android:layout_weight="1.5" />
+        <ImageView android:id="@id/imageViewOpenModeCancel" android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/input_delete" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cad_open_mode_explain" android:lineSpacingMultiplier="1.0" />
+    <CheckBox android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/checkBoxShowAgain" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:button="@drawable/selector_checkbox_account" android:text="@string/cad_open_mode_tips" />
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginTop="15.0dp" />
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonOpenMode0" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cad_open_mode_look" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonOpenMode1" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cad_open_mode_edit" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</LinearLayout>

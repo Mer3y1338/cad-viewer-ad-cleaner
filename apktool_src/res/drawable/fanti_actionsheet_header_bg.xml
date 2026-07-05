@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/fanti_ykn_elevated_primary_background" />
+    <corners android:radius="@dimen/fanti_radius_large" android:topLeftRadius="@dimen/fanti_radius_large" android:topRightRadius="@dimen/fanti_radius_large" android:bottomLeftRadius="0.0dp" android:bottomRightRadius="0.0dp" />
+</shape>

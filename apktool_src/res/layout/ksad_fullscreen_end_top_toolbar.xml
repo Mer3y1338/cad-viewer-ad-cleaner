@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ksad_play_end_top_toolbar" android:background="@android:color/transparent" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="28.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_end_left_call_btn" android:background="@drawable/ksad_reward_call_bg" android:paddingLeft="12.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginLeft="10.0dp" android:drawableRight="@drawable/ksad_arrow_left" android:drawablePadding="4.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_alignParentRight="true">
+        <TextView android:textSize="14.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_end_right_call_btn" android:background="@drawable/ksad_reward_call_bg" android:paddingLeft="12.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/ksad_arrow_left" android:drawablePadding="4.0dp" />
+        <ImageView android:id="@id/ksad_end_close_btn" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:src="@drawable/ksad_page_close" android:scaleType="centerInside" />
+    </LinearLayout>
+</RelativeLayout>

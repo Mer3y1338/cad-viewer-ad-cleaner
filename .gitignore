@@ -1,0 +1,19 @@
+﻿# local tooling/download cache
+.tools/
+.tmp/
+
+# build outputs
+out/
+build/
+dist/
+*.idsig
+
+# keep decompiled source under version control intentionally
+
+# local/original APK inputs and generated packages
+*.apk
+*.apk.idsig
+
+# Python cache
+__pycache__/
+*.pyc

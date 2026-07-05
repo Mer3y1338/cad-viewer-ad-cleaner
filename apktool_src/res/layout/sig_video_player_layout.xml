@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/sig_native_video_surface_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/sig_native_video_thumb" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/sig_native_video_app_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/sig_native_video_blurImageView" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sig_native_video_big_replay" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/sig_image_video_replay" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="重新播放" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/sig_native_video_bottom_progress" android:layout_width="match_parent" android:layout_height="1.5dp" android:max="100" android:progressDrawable="@drawable/sig_video_bottom_progress" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+    <RelativeLayout android:id="@id/sig_native_video_layout_top" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <RelativeLayout android:id="@id/sig_native_video_back_rl" android:background="@drawable/sig_image_video_background_block" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/sig_native_video_back" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/sig_image_video_back_left" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sig_native_video_replay_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/sig_native_video_replay_btn" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/sig_image_video_replay" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="重播" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/sig_native_video_sound_rl" android:background="@drawable/sig_image_video_background_block" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/sig_native_video_sound_btn" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/sig_image_video_unmute" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/sig_native_video_start_rl" android:background="@drawable/sig_image_video_background_block" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_centerInParent="true">
+        <ImageView android:id="@id/sig_native_video_start_btn" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/sig_image_video_play" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sig_native_video_layout_bottom" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="15.0dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/sig_native_video_fullscreen_rl" android:background="@drawable/sig_image_video_background_block" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/sig_native_video_fullscreen_btn" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/sig_image_video_fullscreen" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

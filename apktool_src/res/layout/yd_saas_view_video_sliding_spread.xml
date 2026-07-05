@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_tips" android:background="@drawable/yd_saas_action_mask" android:layout_width="260.0dp" android:layout_height="44.0dp" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_finger" android:paddingLeft="5.0dp" android:paddingTop="5.0dp" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="随意滑动试试" android:layout_marginStart="16.0dp" />
+    </LinearLayout>
+</RelativeLayout>

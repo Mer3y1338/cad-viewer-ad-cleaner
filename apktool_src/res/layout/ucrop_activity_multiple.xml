@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ucrop_multiple" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/ucrop_color_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize">
+        <TextView android:textSize="18.0sp" android:textColor="@color/ucrop_color_toolbar_widget" android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ucrop_label_edit_photo" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/recycler_gallery" android:layout_below="@id/toolbar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_gallery" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

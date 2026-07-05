@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/roundcorner_dialog" style="@style/layout_height_wrap">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewTitle" android:background="@drawable/roundcorner_color_blue_setting_header" android:padding="10.0dp" android:text="@string/cad_saveas" style="@style/layout_height_wrap" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewDimensionsScale" android:background="@color/gstar_bg_color_white" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cad_export_filename" android:layout_weight="1.0" />
+            <EditText android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="right" android:id="@id/editTextSaveName" android:background="@drawable/roundcorner_color_transparent" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLength="@dimen/edittext_length_max" android:layout_weight="2.0" />
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewExtentSelect" android:background="@color/gstar_bg_color_white" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_type" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="right" android:id="@id/textViewSaveTypeSuffix" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="10.0dp" android:layout_weight="1.5" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/gstar_bg_color_white" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_update_version" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="right" android:id="@id/textViewSaveVersion" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="10.0dp" android:layout_weight="1.5" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include layout="@layout/view_line_horizontal" />
+        <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+            <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogSaveCancel" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+            <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogSaveOK" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

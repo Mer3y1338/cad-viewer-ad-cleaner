@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path name="gdt_sdk_download_path" path="GDTDOWNLOAD" />
+        <external-path name="ext_root" path="AdPoymerDownLoad/" />
+        <external-cache-path name="gdt_sdk_download_path1" path="com_qq_e_download" />
+        <cache-path name="gdt_sdk_download_path2" path="com_qq_e_download" />
+    </paths>
+</resources>

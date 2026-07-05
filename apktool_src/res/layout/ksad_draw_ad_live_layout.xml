@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBaseFrameLayout android:id="@id/ksad_root_live_container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/ksad_video_first_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <View android:id="@id/ksad_draw_live_frame_bg" android:background="@color/ksad_black_alpha50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.kwad.sdk.widget.KSFrameLayout android:layout_gravity="bottom" android:id="@id/ksad_draw_video_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/ksad_video_first_frame_container" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <ViewStub android:layout_gravity="left|bottom" android:id="@id/ksad_draw_live_shop_stub" android:layout="@layout/ksad_draw_actionbar_live_shop" android:layout_width="match_parent" android:layout_height="88.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="23.0dp" android:layout_marginHorizontal="20.0dp" />
+    <ViewStub android:layout_gravity="left|bottom" android:id="@id/ksad_draw_live_base_stub" android:background="@drawable/ksad_draw_live_bottom_base_bg" android:layout="@layout/ksad_draw_actionbar_live_base" android:layout_width="match_parent" android:layout_height="180.0dp" android:layout_marginBottom="7.0dp" />
+    <include android:layout_gravity="center" android:id="@id/ksad_draw_live_end" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/ksad_draw_live_end_card" />
+    <com.kwad.components.core.widget.ComplianceTextView android:textSize="10.0dp" android:textColor="#ffffff" android:id="@id/ksad_compliance_view" android:background="@drawable/ksad_compliance_view_bg" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="56.0dp" android:layout_marginRight="16.0dp" />
+</com.kwad.sdk.core.view.AdBaseFrameLayout>

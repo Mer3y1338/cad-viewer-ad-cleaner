@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/viewTipsMessage" android:background="@color/app_color_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textViewTipsMessageValue" android:padding="3.0dp" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/input_panel_header_tips" android:text="底层命令提示信息" android:layout_weight="1.5" />
+        <ImageView android:id="@id/imageViewTipsMessageHelp" android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginRight="13.0dp" android:src="@drawable/icon_help" />
+        <RadioGroup android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/radioGroupCommandInputPanel_First" android:layout_width="wrap_content" android:layout_height="@dimen/input_panel_header_tips">
+            <RadioButton android:gravity="center" android:id="@id/radioButton0_First" android:background="@null" android:paddingLeft="15.0dp" android:paddingTop="1.0dp" android:paddingRight="15.0dp" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:button="@null" android:singleLine="true" android:drawableTop="@drawable/selector_cad_input_panel_cmd_done" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:background="@null" android:padding="2.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/input_panel_header_tips" android:layout_weight="1.5" />
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radioGroupCommandInputPanel_Second" android:background="@drawable/roundcorner_dialog_black1" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="35.0dp" android:layout_margin="5.0dp">
+            <RadioButton android:gravity="center" android:id="@id/radioButton0_Second" android:background="@null" android:paddingLeft="5.0dp" android:paddingTop="1.0dp" android:paddingRight="5.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:button="@null" android:singleLine="true" android:drawableTop="@drawable/selector_cad_input_panel_cmd_done" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

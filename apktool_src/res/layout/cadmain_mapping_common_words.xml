@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:layout_gravity="right" android:orientation="vertical" android:layout_width="65.0dp" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/frameLayoutCommonWordsHead" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:textSize="1.0dp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/checkBoxMapping_CommonWordsHead" android:background="@drawable/roundcorner_dialog_black1" android:paddingTop="5.0dp" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_margin="10.0dp" android:checked="true" android:button="@null" android:singleLine="true" android:drawableTop="@drawable/cad_cmd_common_words" android:drawableBottom="@drawable/selector_mapping_words_head" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/imageView_CommonWords_vip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/viewCommonWordsChild" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageView_CommonWords_Setting" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/icon_mapping_words_setting" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/recyclerviewCommonWords" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" />
+    </LinearLayout>
+</LinearLayout>

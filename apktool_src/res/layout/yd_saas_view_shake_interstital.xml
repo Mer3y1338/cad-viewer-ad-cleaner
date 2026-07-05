@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yd.saas.base.widget.ShakeView android:layout_gravity="center_horizontal" android:id="@id/yd_shake_view" android:background="@drawable/yd_saas_shake_bg_circle_stroke" android:padding="22.0dp" android:layout_width="92.0dp" android:layout_height="92.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="摇一摇 或 点击图标" android:shadowColor="@android:color/black" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="跳转详情页或第三方应用" android:shadowColor="@android:color/black" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" />
+</LinearLayout>

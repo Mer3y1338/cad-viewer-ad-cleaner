@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/yd_saas_round_white_bg" android:layout_width="310.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginTop="16.0dp" android:src="@mipmap/yd_saas_dialog_tips" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#344563" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="提示" />
+    <TextView android:textSize="14.0sp" android:textColor="#5a607f" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="14.0dp" android:layout_marginRight="40.0dp" android:layout_marginBottom="28.0dp" android:lineSpacingExtra="3.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="32.0dp" android:layout_marginStart="24.0dp" android:layout_marginEnd="24.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="#5a607f" android:gravity="center" android:id="@id/cancel" android:background="@drawable/yd_saas_dialog_left_button_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="取消" android:layout_weight="1.0" />
+        <View android:layout_width="14.0dp" android:layout_height="match_parent" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/submit" android:background="@drawable/yd_saas_dialog_right_button_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

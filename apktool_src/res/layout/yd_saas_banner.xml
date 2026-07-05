@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="6.0dp" android:src="@mipmap/yd_sdk_ad_dialog_close" android:scaleType="fitCenter" />
+    <ImageView android:layout_gravity="right|bottom" android:id="@id/iv_ad_logo" android:layout_width="wrap_content" android:layout_height="12.0dp" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+</FrameLayout>

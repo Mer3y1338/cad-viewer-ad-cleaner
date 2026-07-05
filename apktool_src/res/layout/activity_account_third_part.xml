@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/gstar_bg_color_gray" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_base_header_view2" />
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewThirdWeixin" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black" android:id="@id/textViewThirdTypeWeixin" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/account_login_third_party_weixin" android:layout_weight="1.5" />
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/textViewThirdStatusWeixin" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_login_third_party_bind_no" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewThirdQQ" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black" android:id="@id/textViewThirdTypeQQ" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/account_login_third_party_qq" android:layout_weight="1.5" />
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/textViewThirdStatusQQ" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_login_third_party_bind_no" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewThirdWeibo" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black" android:id="@id/textViewThirdTypeWeibo" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/account_login_third_party_weibo" android:layout_weight="1.5" />
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/textViewThirdStatusWeibo" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_login_third_party_bind_no" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+</LinearLayout>

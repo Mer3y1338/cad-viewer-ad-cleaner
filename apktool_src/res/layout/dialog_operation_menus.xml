@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="#00000000" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.RCView_LinearLayout android:orientation="vertical" android:id="@id/viewDwgShareShow" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:clip_background="true" app:round_corner="10.0dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewMenusShareDwg" android:background="@drawable/selector_itemclick_list" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/file_menus_share_dwg" android:contentDescription="TODO" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/black" android:gravity="left|center" android:paddingTop="15.0dp" android:paddingRight="10.0dp" android:paddingBottom="15.0dp" android:text="@string/note_local_share_local" style="@style/layout_height_wrap" />
+        </LinearLayout>
+        <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewMenusShareDwgAndNote" android:background="@drawable/selector_itemclick_list" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/file_menus_share_note" android:contentDescription="TODO" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/black" android:gravity="left|center" android:paddingTop="15.0dp" android:paddingRight="10.0dp" android:paddingBottom="15.0dp" android:text="@string/note_local_share_all" style="@style/layout_height_wrap" />
+        </LinearLayout>
+        <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewMenusShareWxMiniProgram" android:background="@drawable/selector_itemclick_list" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/file_menus_share_wx_miniapps" android:contentDescription="TODO" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/black" android:gravity="left|center" android:paddingTop="15.0dp" android:paddingRight="10.0dp" android:paddingBottom="15.0dp" android:text="@string/share_wx_mini_program" style="@style/layout_height_wrap" />
+        </LinearLayout>
+    </com.stone.app.ui.widget.RCView_LinearLayout>
+    <com.stone.app.ui.widget.RCView_FrameLayout android:id="@id/viewDrawingAD" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" app:clip_background="true" app:round_corner="10.0dp">
+        <ListView android:gravity="center" android:id="@id/listViewMenusShow" android:background="@drawable/roundcorner_color_white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/selector_itemclick_list" android:cacheColorHint="#00000000" android:divider="@color/gstar_bg_color_black_divider1" android:dividerHeight="@dimen/gstar_divider_size_gray" android:soundEffectsEnabled="true" />
+    </com.stone.app.ui.widget.RCView_FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/viewMenusCancel" android:background="@drawable/roundcorner_dialog" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" />
+</androidx.appcompat.widget.LinearLayoutCompat>

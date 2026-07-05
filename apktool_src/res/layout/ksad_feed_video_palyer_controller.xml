@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSRelativeLayout android:id="@id/ksad_video_root_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ksad_video_thumb_image" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ksad_video_network_unavailable" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0dp" android:textColor="#dadada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频加载失败" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/ksad_data_flow_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ksad_data_flow_play_btn" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/ksad_video_play_165" android:layout_centerInParent="true" />
+        <TextView android:textSize="10.0dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/ksad_data_flow_play_tip" android:background="@drawable/ksad_native_video_duration_bg" android:layout_width="39.0dp" android:layout_height="17.0dp" android:layout_marginTop="9.0dp" android:layout_below="@id/ksad_data_flow_play_btn" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ksad_video_complete_app_container" android:background="#cc000000" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ksad_video_complete_app_icon" android:layout_width="52.0dp" android:layout_height="52.0dp" android:src="@drawable/ksad_default_app_icon" />
+        <TextView android:textSize="16.0dp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/ksad_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="1" />
+        <TextView android:textSize="11.0dp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/ksad_app_download" android:background="@drawable/ksad_video_install_bg" android:layout_width="64.0dp" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ksad_video_complete_h5_container" android:background="#cc000000" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="11.0dp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/ksad_h5_open" android:background="@drawable/ksad_video_install_bg" android:layout_width="64.0dp" android:layout_height="24.0dp" android:layout_marginTop="14.0dp" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ksad_video_error_container" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0dp" android:textColor="#dadada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频加载失败" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/ksad_video_progress" android:layout_width="match_parent" android:layout_height="2.0dp" android:progressDrawable="@drawable/ksad_video_progress" android:layout_alignParentBottom="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+</com.kwad.sdk.widget.KSRelativeLayout>

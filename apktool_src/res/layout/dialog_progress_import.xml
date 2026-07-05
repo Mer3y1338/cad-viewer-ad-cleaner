@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:background="#e6ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="center" android:id="@id/imageViewImportLoading" android:layout_width="match_parent" android:layout_height="100.0dp" android:src="@drawable/qrcode_scan_loading" android:contentDescription="@string/app_name" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewImportTips" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cad_file_import_progress_tips" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewImportCancel" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginBottom="50.0dp" android:src="@drawable/icon_close_cad_back" />
+</androidx.appcompat.widget.LinearLayoutCompat>

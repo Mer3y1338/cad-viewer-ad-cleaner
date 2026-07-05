@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="#2e353d" android:gravity="center" android:id="@id/group_name_view" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="#9b9b9b" android:gravity="center" android:id="@id/content" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_group_dissolve_hint" />
+            <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="10.0dp" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="#9b9b9b" android:ellipsize="end" android:gravity="center" android:id="@id/group_dissolve_view" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/chat_group_dissolve_direct_hint" android:maxEms="5" android:singleLine="true" android:layout_weight="1.0" />
+                <View android:background="#dcdcdc" android:layout_width="1.0dp" android:layout_height="match_parent" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_bg_color_blue" android:ellipsize="end" android:gravity="center" android:id="@id/group_dissolve_and_back_view" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/chat_group_dissolve_back_hint" android:maxEms="5" android:singleLine="true" android:layout_weight="1.0" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right|top" android:id="@id/group_info_cancel_view" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/icon_close_chat_dissolve" />
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

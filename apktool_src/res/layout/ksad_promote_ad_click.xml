@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ksad_black_alpha20" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ksad_center" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_centerInParent="true" />
+    <View android:id="@id/ksad_top_left" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginRight="22.0dp" android:layout_marginBottom="26.0dp" android:layout_toLeftOf="@id/ksad_center" android:layout_above="@id/ksad_center" />
+    <ImageView android:id="@id/ksad_outside_circle" android:background="@drawable/ksad_click_wave_bg" android:visibility="invisible" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginRight="23.0dp" android:layout_marginBottom="20.0dp" android:layout_toLeftOf="@id/ksad_center" android:layout_above="@id/ksad_center" />
+    <ImageView android:id="@id/ksad_inside_circle" android:background="@drawable/ksad_click_wave_bg" android:visibility="invisible" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginRight="23.0dp" android:layout_marginBottom="20.0dp" android:layout_toLeftOf="@id/ksad_center" android:layout_above="@id/ksad_center" />
+    <ImageView android:id="@id/ksad_hand" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ksad_ad_hand" android:layout_alignLeft="@id/ksad_top_left" android:layout_alignTop="@id/ksad_top_left" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/ksad_default_privacy_link_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/ksad_click_immediate" android:shadowColor="@color/ksad_black_alpha100" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="5.0" android:layout_below="@id/ksad_center" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" />
+</RelativeLayout>

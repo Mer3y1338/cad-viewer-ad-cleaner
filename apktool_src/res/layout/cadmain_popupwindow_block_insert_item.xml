@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stone.app.ui.widget.StoneFiexedLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_margin="5.0dp" app:demoHeight="1" app:demoWidth="1" app:standard="w"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.RCView_LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" app:clip_background="true" app:round_corner="10.0dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="8.0">
+            <ImageView android:id="@id/imageViewBlockIconShow" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5.0dp" android:src="@drawable/file_icon_dwg" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+            <ImageView android:layout_gravity="right|top" android:id="@id/imageViewBlock_VIP" android:padding="5.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:scaleType="center" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/textViewBlockNameShow" android:background="@color/dialog_new_bg_main_black2" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:text="@string/app_name" android:maxLines="2" android:layout_weight="4.0" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="1.0sp" android:autoSizeMinTextSize="10.0sp" android:autoSizeMaxTextSize="12.0sp" />
+    </com.stone.app.ui.widget.RCView_LinearLayout>
+</com.stone.app.ui.widget.StoneFiexedLayout>

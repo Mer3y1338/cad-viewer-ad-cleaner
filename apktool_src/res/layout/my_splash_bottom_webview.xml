@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/my_linear_tanchuang" android:background="@drawable/my_bottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="400.0dp" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#000000" android:id="@id/my_txt_tanchuang_title" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用权限" android:layout_centerInParent="true" />
+        <Button android:id="@id/my_btn_close" android:background="@drawable/my_roll_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20.0dp" />
+    </RelativeLayout>
+    <WebView android:id="@id/my_tanchuang_web" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="18.0sp" android:textColor="#000000" android:id="@id/my_quanxian_shuoming" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

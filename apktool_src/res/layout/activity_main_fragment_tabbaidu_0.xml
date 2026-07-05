@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_file_tools_path" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/linearlayoutHeader" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:layout_weight="1.5">
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray" android:id="@id/appTipsShow_TextView" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/networkdisk_tips" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutList" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.stone.app.ui.view.EmptyRecyclerView android:gravity="center" android:id="@id/appDataShow_RecyclerView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:soundEffectsEnabled="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+    <include layout="@layout/public_operation_toolbar_cloud" />
+</LinearLayout>

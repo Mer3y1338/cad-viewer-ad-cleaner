@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/gstar_bg_color_page_main" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/activity_base_header_view2" />
+    <ScrollView android:id="@id/scrollViewMain" android:background="@color/gstar_bg_color_gray" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/viewSettingShow" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewMyUserInfo" android:background="@color/gstar_bg_color_white" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <com.stone.app.ui.widget.RCView_ImageView android:id="@id/roundImageViewUserHead" android:layout_width="70.0dp" android:layout_height="70.0dp" android:src="@drawable/default_user_head_login_no_larger" android:scaleType="centerCrop" app:round_corner="35.0dp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" android:layout_marginStart="10.0dp">
+                    <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_title" android:ellipsize="end" android:id="@id/textViewUserName" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_title" android:id="@id/textViewUserType" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="2.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserTypeExpiration" android:padding="2.0dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray" android:id="@id/textViewUserExpirationTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_expiration" />
+                        <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray" android:id="@id/textViewUserExpiration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2018年1月18日 18:57:49" android:singleLine="true" android:paddingStart="5.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/viewUserProductOpration" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <Button android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_white" android:id="@id/buttonProductUpgrade" android:background="@drawable/roundcorner_color_orange2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="25.0dp" android:layout_marginBottom="5.0dp" android:text="@string/account_user_upgrade" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+                    <Button android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_white" android:id="@id/buttonProductPay" android:background="@drawable/roundcorner_color_blue" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="25.0dp" android:layout_marginTop="5.0dp" android:text="@string/account_user_pay" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/viewUserGoogleHold" android:background="#fff9de" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:background="@drawable/oval_background_red_proint_samll" android:focusable="false" android:visibility="visible" android:layout_width="7.0dp" android:layout_height="7.0dp" android:layout_margin="3.0dp" android:singleLine="true" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_black" android:id="@id/textViewUserGoogleHold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/account_user_google_hold" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="20.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewCloudStorage" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_storage_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_storage" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="end" android:id="@id/textViewUserStorage" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:id="@id/imageViewUserStorage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserType" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_my_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_type" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="end" android:id="@id/textViewUserType2" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:id="@id/imageViewUserType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewAudioAccount" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_chat_audio" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audio_title" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:ellipsize="end" android:gravity="end" android:id="@id/textViewAudioName" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.5" />
+                <ImageView android:id="@id/imageViewAudioName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <View android:layout_width="match_parent" android:layout_height="20.0dp" />
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewNickName" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_username_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_nickname" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="end" android:id="@id/textViewNickName" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewPasswordEdit" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_password_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_password_edit" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewPhone" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_moblie_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_mobile" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="end" android:id="@id/textViewMobile" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include android:id="@id/linePhone" layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewEmail" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_email_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_email" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="end" android:id="@id/textViewEmail" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewBindThird" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_third_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_bind_third" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include android:id="@id/lineBindThird" layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewBindDevice" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_device_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_device_manager" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserLogoutApp" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_logout_user" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_logout" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <View android:layout_width="match_parent" android:layout_height="20.0dp" />
+            <include android:id="@id/lineUserRecords1" layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserRecords" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_records_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_records" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include android:id="@id/lineUserRecords2" layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserExchange" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_prize_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_my_prize" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include android:id="@id/lineUserExchange" layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserOpeningInvoice" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_invoice_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_openning_invoice_mange" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include android:id="@id/lineUserOpeningInvoice" layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserSubscriptionManager" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_info_subscription_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_subscription_manager" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include android:id="@id/lineUserSubscriptionManager" layout="@layout/view_line_horizontal" />
+            <View android:layout_width="match_parent" android:layout_height="20.0dp" />
+            <include layout="@layout/view_line_horizontal" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/red" android:gravity="center" android:orientation="horizontal" android:id="@id/viewLogout" android:background="@color/gstar_bg_color_white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/account_exit_login" />
+            <include layout="@layout/view_line_horizontal" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

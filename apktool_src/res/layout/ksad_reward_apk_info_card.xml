@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ksad_reward_apk_info_card_root" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:ksad_ratio="0.455"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/ksad_reward_apk_info_card_native_container" android:visibility="gone" layout="@layout/ksad_reward_apk_info_card_native" />
+    <com.kwad.sdk.core.webview.KsAdWebView android:layout_gravity="center|bottom" android:id="@id/ksad_reward_apk_info_card_h5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.kwad.sdk.widget.KSFrameLayout>

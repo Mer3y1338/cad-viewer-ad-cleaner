@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp">
+        <com.stone.app.ui.view.EmptyRecyclerView android:id="@id/historyVersionRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/historyVersionBottomToolBar" layout="@layout/public_operation_toolbar_cloud" />
+</androidx.appcompat.widget.LinearLayoutCompat>

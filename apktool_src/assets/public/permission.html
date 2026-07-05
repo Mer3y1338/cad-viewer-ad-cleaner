@@ -1,0 +1,163 @@
+<html>
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8"/>
+    <style>
+    .demo {
+        border:1px solid #D9D9D9;
+        border-collapse:collapse;
+        padding:5px;
+        margin-top: 12px;
+    }
+    .demo th {
+        border:1px solid #D9D9D9;
+        background:#F7F7F7;
+        font-size: 12px;
+        color: #3C3C43;
+        font-weight: bold;
+        height: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .demo td {
+        border:1px solid #D9D9D9;
+        font-size: 12px;
+        color: #666666;
+        font-weight: normal;
+        height: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .content {
+        padding-top: 0px;
+        padding-right: 27px;
+        padding-bottom: 0px;
+        padding-left: 27px;
+    }
+</style>
+<div class="content" id="div1" padding="100px">
+    需要调用 js 方法 createPage 来填充数据
+</div>
+<script>
+    /*
+        创建页面方法，外部传递数据的原因是需要多语言，由外部来处理多语言
+        function creatPage(data)
+
+        最外部为一个数组，内部每一个字典为一个模块，模块包括 title、desc、table
+        desc 可以为空
+        
+        [
+            {
+            "title": "查看",
+            "desc": "查看权限可使用的功能如下：",
+            "table": {
+                "th": ["权限", ""],              // 表格头，表格有多少列通过这个数组中的元素数量决定
+                "td": [                         // 表格内容，每个元素是每一行
+                        ["创建批注", "img:checkmark"],
+                        ["编辑批注", "隶属自己"],
+                        ["删除批注", "隶属自己"],
+                        ["上传图纸", "img:checkmark"],
+                        ["图纸详情", "img:checkmark"],
+                        ["共享聊图", "img:checkmark"],
+                        ["同步", "img:checkmark"],
+                        ["急速看图", "img:checkmark"]
+                    ]
+                }
+            },
+            ...
+        ]
+        
+    */
+
+    var checkmarkImageBase64 = "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"
+
+    function creatPage(dataString) {
+        var data = JSON.parse(dataString);
+
+        div1=document.getElementById('div1')
+        var content = ""
+
+        for (module in data) {
+            content += createModule(data[module])
+        }
+
+        div1.innerHTML=content
+    }
+
+    function createModule(module) {
+        var tab= '<table border=1 width=500">'
+        var content = "<div style=\"display: flex; align-items: center; margin-top: 30px; margin-bottom: 3px\"><div style=\"background-color: #4FBABF; width: 3px; height: 16px;\"> </div><a style = \"margin-left: 3px; color:#3C3C43; font-size:16px; font-weight: bold;\">" + module.title + "</a></div>"
+        if (module.desc != null && module.desc.length > 0) {
+            content += "<a style=\"color:#3C3C43; font-size:12px; font-weight: normal; margin-left: 7px;\">" + module.desc + "</a>"
+        }
+        content += "<table class=\"demo\" width=\"100%\" cellspacing=\"0\" style=\"border-collapse:collapse\"> \
+                    <thead>\
+                    <tr>"
+        
+        var columns = module.table.th.length
+        var c_width = "" + 100/columns + "%"
+        for (thIndex in module.table.th) {
+            content += "<th width=\"" + c_width + "\" style=\"text-align: left\">" + module.table.th[thIndex] + "</th>"
+        }
+
+        content += "</tr> \
+                    </thead> \
+                    <tbody>"
+
+        for (tdIndex in module.table.td) {
+            content += "<tr>"
+            for (rowIndex in module.table.td[tdIndex]) {
+                content += "<td style=\"text-align: left\">"
+                var item = module.table.td[tdIndex][rowIndex]
+                if (item == "img:checkmark") {
+                    content += "<img src=\"data:image/png;base64, " + checkmarkImageBase64 + "\" width=\"12\" height=\"9.5\"/>" + "</td>"
+                } else {
+                    content += item + "</td>"
+                }
+            }
+            content += "</tr>"
+        }
+
+        content += "</tbody> \
+                    </table>"
+
+        return content
+    }
+
+    /*
+    var testData = [
+        {
+            "title": "查看",
+            "desc": "查看权限有：",
+            "table": {
+                "th": ["权限", ""],
+                "td": [
+                    ["创建批注", "img:checkmark"],
+                    ["编辑批注", "隶属自己"],
+                    ["删除批注", "隶属自己"],
+                    ["看图模式", "img:checkmark"]
+                ]
+            }
+        },
+        {
+            "title": "群主",
+            "desc": "",
+            "table": {
+                "th": ["权限", ""],
+                "td": [
+                    ["创建批注", "img:checkmark"],
+                    ["编辑批注", "隶属自己"],
+                    ["删除批注", "隶属自己"],
+                    ["看图模式", "img:checkmark"]
+                ]
+            }
+        }
+    ]
+    creatPage(JSON.stringify(testData))
+    */
+</script>
+</html>
+
+

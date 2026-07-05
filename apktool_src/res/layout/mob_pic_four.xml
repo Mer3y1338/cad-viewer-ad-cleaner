@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/my_native_ad_container" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/rel_three" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/mob_rel_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_alignParentRight="true">
+                <com.my.adpoymer.edimob.view.MobRoundImageView android:id="@id/img_three" android:layout_width="100.0dp" android:layout_height="56.0dp" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                <FrameLayout android:id="@id/media_my_play_three" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="56.0dp" android:layout_centerVertical="true" />
+                <com.my.adpoymer.weiget.AdCornerView android:id="@id/ad_corner_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/img_three" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#3f4658" android:ellipsize="end" android:id="@id/txt_three" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="2" android:layout_marginStart="10.0dp" android:layout_marginEnd="5.0dp" android:layout_toStartOf="@id/mob_rel_left" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/mob_rel_left" android:layout_marginEnd="20.0dp" android:layout_toStartOf="@id/icon_close">
+                <TextView android:textSize="11.0sp" android:textColor="#aaafb8" android:ellipsize="end" android:gravity="start" android:id="@id/my_txt_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+                <FrameLayout android:id="@id/frame_shake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/my_native_shake_line" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:gravity="center" android:id="@id/mob_img_shake" android:background="@drawable/my_ic_shake_hand_new" android:layout_width="15.0dp" android:layout_height="15.0dp" android:scaleType="fitXY" />
+                        <TextView android:textSize="10.0sp" android:textColor="#ea3223" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_noe_shake" android:layout_marginStart="5.0dp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/mob_rel_left" android:layout_below="@id/txt_three" android:layout_marginStart="10.0dp" layout="@layout/my_native_bottom_view" />
+            <com.my.adpoymer.weiget.CloseImagevIew android:id="@id/icon_close" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/mob_native_close" android:layout_toLeftOf="@id/mob_rel_left" android:layout_alignBottom="@id/mob_rel_left" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

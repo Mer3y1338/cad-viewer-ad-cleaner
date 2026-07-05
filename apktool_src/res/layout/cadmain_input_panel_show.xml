@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jni.view.CADInputPanelLine_GZ android:id="@id/viewInputPanelLine_GZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelLine_YZ android:id="@id/viewInputPanelLine_YZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelPolyline_GZ android:id="@id/viewInputPanelPolyline_GZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelBlock android:id="@id/viewInputPanelBlock" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelPolyline_YZ android:id="@id/viewInputPanelPolyline_YZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelCircle_GZ android:id="@id/viewInputPanelCircle_GZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelCircle_YZ android:id="@id/viewInputPanelCircle_YZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelRectangle_GZ android:id="@id/viewInputPanelRectangle_GZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelRectangle_YZ android:id="@id/viewInputPanelRectangle_YZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelCoords_GZ android:id="@id/viewInputPanelCoords_GZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelCoords_YZ android:id="@id/viewInputPanelCoords_YZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelDigital_GZ android:id="@id/viewInputPanelDigital_GZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelDigital_YZ android:id="@id/viewInputPanelDigital_YZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.jni.view.CADInputPanelAngle_GZ android:id="@id/viewInputPanelAngle_GZ" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="right|top" android:id="@id/viewMeasureRecordSave" android:background="@drawable/roundcorner_dialog_black1" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_margin="5.0dp">
+            <ImageButton android:layout_gravity="center" android:id="@id/imageButtonInputPanel_Record22" android:background="@null" android:padding="10.0dp" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/selector_cad_input_panel_cmd_record" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+            <ImageView android:layout_gravity="right|top" android:id="@id/imageViewMeasureResult" android:padding="2.0dp" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <com.jni.view.CADInputPanelMeasureArea android:id="@id/viewInputPanelMeasureArea" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasureLateralArea android:id="@id/viewInputPanelMeasureLateralArea" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasureLength android:id="@id/viewInputPanelMeasureLength" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasureLengthContinue android:id="@id/viewInputPanelMeasureLengthContinue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasureCoord android:id="@id/viewInputPanelMeasureCoord" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasureLine android:id="@id/viewInputPanelMeasureLine" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasureArc android:id="@id/viewInputPanelMeasureArc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasureCircle android:id="@id/viewInputPanelMeasureCircle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasurePLine android:id="@id/viewInputPanelMeasurePLine" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelMeasureAngle android:id="@id/viewInputPanelMeasureAngle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.jni.view.CADInputPanelTextIncrease android:id="@id/viewInputPanelTextIncrease" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.jni.view.CADInputPanelMeasureTotalLength android:id="@id/viewInputPanelMeasureTotalLength" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

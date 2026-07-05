@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/ksad_rotate_combo_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="210.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kwad.components.ad.splashscreen.widget.KsSlideRoundView android:layout_gravity="bottom" android:id="@id/ksad_rotate_combo_slide_round_img" android:layout_width="match_parent" android:layout_height="210.0dp" />
+    <LinearLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="183.0dp">
+        <com.kwad.components.ad.splashscreen.widget.KsSlideArrowView android:layout_gravity="center_horizontal" android:id="@id/ksad_rotate_combo_slide_arrow_top" android:layout_width="19.0dp" android:layout_height="10.0dp" android:layout_marginTop="9.0dp" />
+        <com.kwad.components.ad.splashscreen.widget.KsSlideArrowView android:layout_gravity="center_horizontal" android:id="@id/ksad_rotate_combo_slide_arrow_bottom" android:layout_width="19.0dp" android:layout_height="10.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/ksad_rotate_combo_slide_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxWidth="192.0dp" android:text="@string/ksad_splash_slide_guide_text" android:shadowColor="#66000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.0dp">
+            <com.kwad.components.ad.splashscreen.widget.KsRotateTypeTwoView android:layout_gravity="center" android:id="@id/ksad_rotate_combo_rotate_view" android:layout_width="34.0dp" android:layout_height="34.0dp" />
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:layout_gravity="center" android:id="@id/ksad_rotate_combo_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ksad_splash_rotate_combo_rotate_text" android:maxLines="1" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

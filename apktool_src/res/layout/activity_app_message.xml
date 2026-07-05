@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/base_header" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearlayoutHeader" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_margin="10.0dp" android:layout_weight="1.5">
+        <com.stone.app.ui.view.NoDataTipsWidget android:id="@id/nodata_tipsview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutList" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.stone.app.ui.view.EmptyRecyclerView android:id="@id/recyclerView_DataShow" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

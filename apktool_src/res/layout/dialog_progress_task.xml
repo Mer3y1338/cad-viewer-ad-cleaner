@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#e6ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/imageViewFileIcon" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@drawable/file_icon_dwg" />
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewMessage" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/networkdisk_downloaddata" />
+        <TextView android:textSize="@dimen/text_size_smallest" android:textColor="#a1a1a1" android:gravity="center" android:id="@id/textViewProgressNumber" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0M/0M" />
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewTitle" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/download" />
+        <ProgressBar android:id="@id/progressBarValue" android:focusable="false" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:progress="1" style="@style/ProgressBar_Stone" />
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewProgressPercent" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0%" />
+    </LinearLayout>
+    <ImageView android:id="@id/imageViewDialogCancel" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginBottom="50.0dp" android:src="@drawable/icon_close_cad_back" />
+</LinearLayout>

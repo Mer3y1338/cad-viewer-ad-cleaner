@@ -1,0 +1,1790 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="auto" package="com.gstarmc.android" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-feature android:glEsVersion="0x20000" />
+    <uses-feature android:glEsVersion="0x10001" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <queries>
+        <package android:name="com.tencent.mm" />
+        <package android:name="com.tencent.mobileqq" />
+        <package android:name="com.sina.weibo" />
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <package android:name="com.android.creator" />
+        <package android:name="com.zhuoyi.security.lite" />
+        <package android:name="com.freeme.secureguard" />
+        <package android:name="com.android.secureguard" />
+        <package android:name="com.mdid.msa" />
+        <package android:name="com.samsung.android.deviceidservice" />
+        <package android:name="com.coolpad.deviceidsupport" />
+        <package android:name="com.heytap.openid" />
+        <package android:name="com.qiku.id" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+        <package android:name="com.taobao.taobao" />
+        <package android:name="com.eg.android.AlipayGphone" />
+        <package android:name="com.tmall.wireless" />
+        <package android:name="com.youku.phone" />
+        <package android:name="com.yunos.account" />
+        <package android:name="com.taobao.litetao" />
+        <package android:name="com.UCMobile" />
+        <package android:name="com.tecent.friend" />
+        <package android:name="com.renren.mobile.android" />
+        <package android:name="com.kaixin001.activity" />
+        <package android:name="com.qzone" />
+        <package android:name="com.tencent.WBlog" />
+        <package android:name="im.yixin" />
+        <package android:name="com.alibaba.android.babylon" />
+        <package android:name="com.qihoo.appstore" />
+        <package android:name="com.alibaba.android.rimet" />
+        <package android:name="com.alibaba.android.rimet.aliding" />
+        <package android:name="com.immomo.momo" />
+        <package android:name="com.immomo.momo.timeline" />
+        <package android:name="com.youku.share.sdk.copy.link" />
+        <package android:name="com.youkuchild.android" />
+        <package android:name="com.uc.infoflow" />
+        <package android:name="cmb.pb" />
+        <package android:name="com.alipay.android.app" />
+        <package android:name="com.oplus.synergy" />
+        <package android:name="com.oplus.linker" />
+        <package android:name="com.youku.widget.vivo" />
+        <package android:name="com.ss.android.ugc.aweme" />
+        <package android:name="com.ss.android.ugc.aweme.lite" />
+        <package android:name="com.hihonor.android.magicx.media.audioengine" />
+        <package android:name="com.vivo.videowidgetmix" />
+        <package android:name="com.vivo.daemonService" />
+        <package android:name="com.coloros.ocs.opencapabilityservice" />
+        <package android:name="com.coloros.opencapabilityservice" />
+        <package android:name="com.oplus.ocs.openauthenticate" />
+        <package android:name="com.oplus.ocs" />
+        <package android:name="com.oplus.cosa" />
+        <package android:name="com.oplus.bracketspace" />
+        <package android:name="com.coloros.gamespace" />
+        <package android:name="com.huawei.android.pushagent" />
+        <package android:name="com.hihonor.id" />
+        <package android:name="com.eg.android.AlipayGphoneRC" />
+        <package android:name="hk.alipay.wallet" />
+        <package android:name="hk.alipay.walletRC" />
+        <package android:name="com.hihonor.systemappsupdater" />
+        <package android:name="com.hihonor.appmarket" />
+        <package android:name="com.huawei.works" />
+        <package android:name="com.google.android.gms" />
+        <package android:name="com.android.vending" />
+        <package android:name="com.huawei.hwid" />
+        <package android:name="com.huawei.hwid.tv" />
+        <package android:name="com.huawei.hms" />
+        <package android:name="com.asus.msa.SupplementaryDID" />
+        <package android:name="com.zui.deviceidservice" />
+        <intent>
+            <action android:name="*" />
+            <data android:scheme="tbopen" />
+        </intent>
+        <intent>
+            <action android:name="com.umeng.message.action.notify" />
+        </intent>
+        <intent>
+            <action android:name="com.hihonor.push.action.BIND_PUSH_SERVICE" />
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <permission android:name="com.gstarmc.android.permission.KW_SDK_BROADCAST" android:protectionLevel="signature" />
+    <uses-permission android:name="com.gstarmc.android.permission.KW_SDK_BROADCAST" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+    <permission android:name="com.gstarmc.android.push.permission.MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.gstarmc.android.push.permission.MESSAGE" />
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+    <permission android:name="com.gstarmc.android.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.gstarmc.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <permission android:name="com.gstarmc.android.download.PRIVATE_BROADCAST_PERMISSION" android:protectionLevel="signature" />
+    <uses-permission android:name="com.gstarmc.android.download.PRIVATE_BROADCAST_PERMISSION" />
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+    <uses-permission android:name="freemme.permission.msa" />
+    <uses-permission android:name="freemme.permission.msa.SECURITY_ACCESS" />
+    <uses-permission android:name="oplus.permission.settings.LAUNCH_FOR_EXPORT" />
+    <uses-permission android:name="com.vivo.identifier.permission.OAID_STATE_DIALOG" />
+    <uses-permission android:name="com.nemu.oaid.permission.read" />
+    <uses-permission android:name="com.nemu.oaid.permission.write" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_INFO" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <permission android:name="com.gstarmc.android.permission.MIPUSH_RECEIVE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.gstarmc.android.permission.MIPUSH_RECEIVE" />
+    <permission android:name="com.gstarmc.android.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature" />
+    <permission android:name="com.gstarmc.android.permission.PUSH_PROVIDER" android:protectionLevel="signature" />
+    <permission android:name="com.gstarmc.android.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature" />
+    <uses-permission android:name="com.gstarmc.android.permission.PROCESS_PUSH_MSG" />
+    <uses-permission android:name="com.gstarmc.android.permission.PUSH_PROVIDER" />
+    <uses-permission android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.stub.StubApp" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="fc06ded00e1ec6415c1cce1fee53ee02" />
+        <service android:name="com.amap.api.location.APSService" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <meta-data android:name="android.notch_support" android:value="true" />
+        <meta-data android:name="android.max_aspect" android:value="2.4" />
+        <meta-data android:name="android.min_aspect" android:value="1.0" />
+        <meta-data android:name="android.allow_multiple_resumed_activities" android:value="true" />
+        <property android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDE" android:value="true" />
+        <provider android:authorities="com.gstarmc.android.android7.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data android:name="ScopedStorage" android:value="true" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppTestActivity" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.stone.app.ui.activity.AppTransparentDistributeActivity" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="application/bin" />
+                <data android:mimeType="application/dwg" />
+                <data android:mimeType="application/ocf" />
+                <data android:mimeType="application/dxf" />
+                <data android:mimeType="application/acad" />
+                <data android:mimeType="application/autocad" />
+                <data android:mimeType="application/x-dwg" />
+                <data android:mimeType="application/x-ocf" />
+                <data android:mimeType="application/x-dxf" />
+                <data android:mimeType="application/x-dwt" />
+                <data android:mimeType="application/x-dws" />
+                <data android:mimeType="application/x-dwf" />
+                <data android:mimeType="application/x-acad" />
+                <data android:mimeType="application/x-autocad" />
+                <data android:mimeType="application/autocad_dwg" />
+                <data android:mimeType="image/vnd.dwg" />
+                <data android:mimeType="image/vnd.dxf" />
+                <data android:mimeType="image/vnd.dwf" />
+                <data android:mimeType="image/vnd.dwf" />
+                <data android:mimeType="image/vnd.dwt" />
+                <data android:mimeType="image/vnd.dws" />
+                <data android:mimeType="image/vnd.ocf" />
+                <data android:mimeType="image/x-dwg" />
+                <data android:mimeType="image/x-dxf" />
+                <data android:mimeType="image/x-dwf" />
+                <data android:mimeType="image/x-dwt" />
+                <data android:mimeType="image/x-dws" />
+                <data android:mimeType="image/x-ocf" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:pathPattern=".*..*..*..*..*.dwg" />
+                <data android:pathPattern=".*..*..*..*.dwg" />
+                <data android:pathPattern=".*..*..*.dwg" />
+                <data android:pathPattern=".*..*.dwg" />
+                <data android:pathPattern=".*.dwg" />
+                <data android:pathPattern=".*..*..*..*..*.DWG" />
+                <data android:pathPattern=".*..*..*..*.DWG" />
+                <data android:pathPattern=".*..*..*.DWG" />
+                <data android:pathPattern=".*..*.DWG" />
+                <data android:pathPattern=".*.DWG" />
+                <data android:pathPattern=".*..*..*..*..*.ocf" />
+                <data android:pathPattern=".*..*..*..*.ocf" />
+                <data android:pathPattern=".*..*..*.ocf" />
+                <data android:pathPattern=".*..*.ocf" />
+                <data android:pathPattern=".*.ocf" />
+                <data android:pathPattern=".*..*..*..*..*.OCF" />
+                <data android:pathPattern=".*..*..*..*.OCF" />
+                <data android:pathPattern=".*..*..*.OCF" />
+                <data android:pathPattern=".*..*.OCF" />
+                <data android:pathPattern=".*.OCF" />
+                <data android:pathPattern=".*..*..*..*..*.dxf" />
+                <data android:pathPattern=".*..*..*..*.dxf" />
+                <data android:pathPattern=".*..*..*.dxf" />
+                <data android:pathPattern=".*..*.dxf" />
+                <data android:pathPattern=".*.dxf" />
+                <data android:pathPattern=".*..*..*..*..*.DXF" />
+                <data android:pathPattern=".*..*..*..*.DXF" />
+                <data android:pathPattern=".*..*..*.DXF" />
+                <data android:pathPattern=".*..*.DXF" />
+                <data android:pathPattern=".*.DXF" />
+                <data android:pathPattern=".*..*..*..*..*.dwt" />
+                <data android:pathPattern=".*..*..*..*.dwt" />
+                <data android:pathPattern=".*..*..*.dwt" />
+                <data android:pathPattern=".*..*.dwt" />
+                <data android:pathPattern=".*.dwt" />
+                <data android:pathPattern=".*..*..*..*..*.DWT" />
+                <data android:pathPattern=".*..*..*..*.DWT" />
+                <data android:pathPattern=".*..*..*.DWT" />
+                <data android:pathPattern=".*..*.DWT" />
+                <data android:pathPattern=".*.DWT" />
+                <data android:pathPattern=".*..*..*..*..*.dws" />
+                <data android:pathPattern=".*..*..*..*.dws" />
+                <data android:pathPattern=".*..*..*.dws" />
+                <data android:pathPattern=".*..*.dws" />
+                <data android:pathPattern=".*.dws" />
+                <data android:pathPattern=".*..*..*..*..*.DWS" />
+                <data android:pathPattern=".*..*..*..*.DWS" />
+                <data android:pathPattern=".*..*..*.DWS" />
+                <data android:pathPattern=".*..*.DWS" />
+                <data android:pathPattern=".*.DWS" />
+                <data android:pathPattern=".*.dwg" />
+                <data android:pathPattern=".*..*.dwg" />
+                <data android:pathPattern=".*..*..*.dwg" />
+                <data android:pathPattern=".*..*..*..*.dwg" />
+                <data android:pathPattern=".*.DWG" />
+                <data android:pathPattern=".*..*.DWG" />
+                <data android:pathPattern=".*..*..*.DWG" />
+                <data android:pathPattern=".*..*..*..*.DWG" />
+                <data android:pathPattern=".*.ocf" />
+                <data android:pathPattern=".*..*.ocf" />
+                <data android:pathPattern=".*..*..*.ocf" />
+                <data android:pathPattern=".*..*..*..*.ocf" />
+                <data android:pathPattern=".*.OCF" />
+                <data android:pathPattern=".*..*.OCF" />
+                <data android:pathPattern=".*..*..*.OCF" />
+                <data android:pathPattern=".*..*..*..*.OCF" />
+                <data android:pathPattern=".*.dxf" />
+                <data android:pathPattern=".*..*.dxf" />
+                <data android:pathPattern=".*..*..*.dxf" />
+                <data android:pathPattern=".*..*..*..*.dxf" />
+                <data android:pathPattern=".*.DXF" />
+                <data android:pathPattern=".*..*.DXF" />
+                <data android:pathPattern=".*..*..*.DXF" />
+                <data android:pathPattern=".*..*..*..*.DXF" />
+                <data android:pathPattern=".*.dwt" />
+                <data android:pathPattern=".*..*.dwt" />
+                <data android:pathPattern=".*..*..*.dwt" />
+                <data android:pathPattern=".*..*..*..*.dwt" />
+                <data android:pathPattern=".*.DWT" />
+                <data android:pathPattern=".*..*.DWT" />
+                <data android:pathPattern=".*..*..*.DWT" />
+                <data android:pathPattern=".*..*..*..*.DWT" />
+                <data android:pathPattern=".*.dws" />
+                <data android:pathPattern=".*..*.dws" />
+                <data android:pathPattern=".*..*..*.dws" />
+                <data android:pathPattern=".*..*..*..*.dws" />
+                <data android:pathPattern=".*.DWS" />
+                <data android:pathPattern=".*..*.DWS" />
+                <data android:pathPattern=".*..*..*.DWS" />
+                <data android:pathPattern=".*..*..*..*.DWS" />
+                <data android:pathPattern=".*.dwf" />
+                <data android:pathPattern=".*..*.dwf" />
+                <data android:pathPattern=".*..*..*.dwf" />
+                <data android:pathPattern=".*..*..*..*.dwf" />
+                <data android:pathPattern=".*.DWF" />
+                <data android:pathPattern=".*..*.DWF" />
+                <data android:pathPattern=".*..*..*.DWF" />
+                <data android:pathPattern=".*..*..*..*.DWF" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*..*..*..*..*.dwg" />
+                <data android:pathPattern=".*..*..*..*.dwg" />
+                <data android:pathPattern=".*..*..*.dwg" />
+                <data android:pathPattern=".*..*.dwg" />
+                <data android:pathPattern=".*.dwg" />
+                <data android:pathPattern=".*..*..*..*..*.DWG" />
+                <data android:pathPattern=".*..*..*..*.DWG" />
+                <data android:pathPattern=".*..*..*.DWG" />
+                <data android:pathPattern=".*..*.DWG" />
+                <data android:pathPattern=".*.DWG" />
+                <data android:pathPattern=".*..*..*..*..*.ocf" />
+                <data android:pathPattern=".*..*..*..*.ocf" />
+                <data android:pathPattern=".*..*..*.ocf" />
+                <data android:pathPattern=".*..*.ocf" />
+                <data android:pathPattern=".*.ocf" />
+                <data android:pathPattern=".*..*..*..*..*.OCF" />
+                <data android:pathPattern=".*..*..*..*.OCF" />
+                <data android:pathPattern=".*..*..*.OCF" />
+                <data android:pathPattern=".*..*.OCF" />
+                <data android:pathPattern=".*.OCF" />
+                <data android:pathPattern=".*..*..*..*..*.dxf" />
+                <data android:pathPattern=".*..*..*..*.dxf" />
+                <data android:pathPattern=".*..*..*.dxf" />
+                <data android:pathPattern=".*..*.dxf" />
+                <data android:pathPattern=".*.dxf" />
+                <data android:pathPattern=".*..*..*..*..*.DXF" />
+                <data android:pathPattern=".*..*..*..*.DXF" />
+                <data android:pathPattern=".*..*..*.DXF" />
+                <data android:pathPattern=".*..*.DXF" />
+                <data android:pathPattern=".*.DXF" />
+                <data android:pathPattern=".*..*..*..*..*.dwt" />
+                <data android:pathPattern=".*..*..*..*.dwt" />
+                <data android:pathPattern=".*..*..*.dwt" />
+                <data android:pathPattern=".*..*.dwt" />
+                <data android:pathPattern=".*.dwt" />
+                <data android:pathPattern=".*..*..*..*..*.DWT" />
+                <data android:pathPattern=".*..*..*..*.DWT" />
+                <data android:pathPattern=".*..*..*.DWT" />
+                <data android:pathPattern=".*..*.DWT" />
+                <data android:pathPattern=".*.DWT" />
+                <data android:pathPattern=".*..*..*..*..*.dws" />
+                <data android:pathPattern=".*..*..*..*.dws" />
+                <data android:pathPattern=".*..*..*.dws" />
+                <data android:pathPattern=".*..*.dws" />
+                <data android:pathPattern=".*.dws" />
+                <data android:pathPattern=".*..*..*..*..*.DWS" />
+                <data android:pathPattern=".*..*..*..*.DWS" />
+                <data android:pathPattern=".*..*..*.DWS" />
+                <data android:pathPattern=".*..*.DWS" />
+                <data android:pathPattern=".*.DWS" />
+                <data android:pathPattern=".*..*..*..*..*.dwf" />
+                <data android:pathPattern=".*..*..*..*.dwf" />
+                <data android:pathPattern=".*..*..*.dwf" />
+                <data android:pathPattern=".*..*.dwf" />
+                <data android:pathPattern=".*.dwf" />
+                <data android:pathPattern=".*..*..*..*..*.DWF" />
+                <data android:pathPattern=".*..*..*..*.DWF" />
+                <data android:pathPattern=".*..*..*.DWF" />
+                <data android:pathPattern=".*..*.DWF" />
+                <data android:pathPattern=".*.DWF" />
+                <data android:pathPattern=".*.dwg" />
+                <data android:pathPattern=".*..*.dwg" />
+                <data android:pathPattern=".*..*..*.dwg" />
+                <data android:pathPattern=".*..*..*..*.dwg" />
+                <data android:pathPattern=".*.DWG" />
+                <data android:pathPattern=".*..*.DWG" />
+                <data android:pathPattern=".*..*..*.DWG" />
+                <data android:pathPattern=".*..*..*..*.DWG" />
+                <data android:pathPattern=".*.ocf" />
+                <data android:pathPattern=".*..*.ocf" />
+                <data android:pathPattern=".*..*..*.ocf" />
+                <data android:pathPattern=".*..*..*..*.ocf" />
+                <data android:pathPattern=".*.OCF" />
+                <data android:pathPattern=".*..*.OCF" />
+                <data android:pathPattern=".*..*..*.OCF" />
+                <data android:pathPattern=".*..*..*..*.OCF" />
+                <data android:pathPattern=".*.dxf" />
+                <data android:pathPattern=".*..*.dxf" />
+                <data android:pathPattern=".*..*..*.dxf" />
+                <data android:pathPattern=".*..*..*..*.dxf" />
+                <data android:pathPattern=".*.DXF" />
+                <data android:pathPattern=".*..*.DXF" />
+                <data android:pathPattern=".*..*..*.DXF" />
+                <data android:pathPattern=".*..*..*..*.DXF" />
+                <data android:pathPattern=".*.dwt" />
+                <data android:pathPattern=".*..*.dwt" />
+                <data android:pathPattern=".*..*..*.dwt" />
+                <data android:pathPattern=".*..*..*..*.dwt" />
+                <data android:pathPattern=".*.DWT" />
+                <data android:pathPattern=".*..*.DWT" />
+                <data android:pathPattern=".*..*..*.DWT" />
+                <data android:pathPattern=".*..*..*..*.DWT" />
+                <data android:pathPattern=".*.dws" />
+                <data android:pathPattern=".*..*.dws" />
+                <data android:pathPattern=".*..*..*.dws" />
+                <data android:pathPattern=".*..*..*..*.dws" />
+                <data android:pathPattern=".*.DWS" />
+                <data android:pathPattern=".*..*.DWS" />
+                <data android:pathPattern=".*..*..*.DWS" />
+                <data android:pathPattern=".*..*..*..*.DWS" />
+                <data android:pathPattern=".*..*.dwf" />
+                <data android:pathPattern=".*..*..*.dwf" />
+                <data android:pathPattern=".*..*..*..*.dwf" />
+                <data android:pathPattern=".*.DWF" />
+                <data android:pathPattern=".*..*.DWF" />
+                <data android:pathPattern=".*..*..*.DWF" />
+                <data android:pathPattern=".*..*..*..*.DWF" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="application/x-pdf" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:pathPattern=".*..*..*..*..*.pdf" />
+                <data android:pathPattern=".*..*..*..*.pdf" />
+                <data android:pathPattern=".*..*..*.pdf" />
+                <data android:pathPattern=".*..*.pdf" />
+                <data android:pathPattern=".*.pdf" />
+                <data android:pathPattern=".*..*..*..*..*.PDF" />
+                <data android:pathPattern=".*..*..*..*.PDF" />
+                <data android:pathPattern=".*..*..*.PDF" />
+                <data android:pathPattern=".*..*.PDF" />
+                <data android:pathPattern=".*.PDF" />
+                <data android:pathPattern=".*.pdf" />
+                <data android:pathPattern=".*..*.pdf" />
+                <data android:pathPattern=".*..*..*.pdf" />
+                <data android:pathPattern=".*..*..*..*.pdf" />
+                <data android:pathPattern=".*.PDF" />
+                <data android:pathPattern=".*..*.PDF" />
+                <data android:pathPattern=".*..*..*.PDF" />
+                <data android:pathPattern=".*..*..*..*.PDF" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*..*..*..*..*.pdf" />
+                <data android:pathPattern=".*..*..*..*.pdf" />
+                <data android:pathPattern=".*..*..*.pdf" />
+                <data android:pathPattern=".*..*.pdf" />
+                <data android:pathPattern=".*.pdf" />
+                <data android:pathPattern=".*..*..*..*..*.PDF" />
+                <data android:pathPattern=".*..*..*..*.PDF" />
+                <data android:pathPattern=".*..*..*.PDF" />
+                <data android:pathPattern=".*..*.PDF" />
+                <data android:pathPattern=".*.PDF" />
+                <data android:pathPattern=".*.pdf" />
+                <data android:pathPattern=".*..*.pdf" />
+                <data android:pathPattern=".*..*..*.pdf" />
+                <data android:pathPattern=".*..*..*..*.pdf" />
+                <data android:pathPattern=".*.PDF" />
+                <data android:pathPattern=".*..*.PDF" />
+                <data android:pathPattern=".*..*..*.PDF" />
+                <data android:pathPattern=".*..*..*..*.PDF" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/rar" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/7z" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:pathPattern=".*..*..*..*..*.rar" />
+                <data android:pathPattern=".*..*..*..*.rar" />
+                <data android:pathPattern=".*..*..*.rar" />
+                <data android:pathPattern=".*..*.rar" />
+                <data android:pathPattern=".*.rar" />
+                <data android:pathPattern=".*..*..*..*..*.RAR" />
+                <data android:pathPattern=".*..*..*..*.RAR" />
+                <data android:pathPattern=".*..*..*.RAR" />
+                <data android:pathPattern=".*..*.RAR" />
+                <data android:pathPattern=".*.RAR" />
+                <data android:pathPattern=".*..*..*..*..*.zip" />
+                <data android:pathPattern=".*..*..*..*.zip" />
+                <data android:pathPattern=".*..*..*.zip" />
+                <data android:pathPattern=".*..*.zip" />
+                <data android:pathPattern=".*.zip" />
+                <data android:pathPattern=".*..*..*..*..*.ZIP" />
+                <data android:pathPattern=".*..*..*..*.ZIP" />
+                <data android:pathPattern=".*..*..*.ZIP" />
+                <data android:pathPattern=".*..*.ZIP" />
+                <data android:pathPattern=".*.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*.7z" />
+                <data android:pathPattern=".*..*..*..*.7z" />
+                <data android:pathPattern=".*..*..*.7z" />
+                <data android:pathPattern=".*..*.7z" />
+                <data android:pathPattern=".*.7z" />
+                <data android:pathPattern=".*..*..*..*..*.7Z" />
+                <data android:pathPattern=".*..*..*..*.7Z" />
+                <data android:pathPattern=".*..*..*.7Z" />
+                <data android:pathPattern=".*..*.7Z" />
+                <data android:pathPattern=".*.7Z" />
+                <data android:pathPattern=".*.rar" />
+                <data android:pathPattern=".*..*.rar" />
+                <data android:pathPattern=".*..*..*.rar" />
+                <data android:pathPattern=".*..*..*..*.rar" />
+                <data android:pathPattern=".*.RAR" />
+                <data android:pathPattern=".*..*.RAR" />
+                <data android:pathPattern=".*..*..*.RAR" />
+                <data android:pathPattern=".*..*..*..*.RAR" />
+                <data android:pathPattern=".*.zip" />
+                <data android:pathPattern=".*..*.zip" />
+                <data android:pathPattern=".*..*..*.zip" />
+                <data android:pathPattern=".*..*..*..*.zip" />
+                <data android:pathPattern=".*.ZIP" />
+                <data android:pathPattern=".*..*.ZIP" />
+                <data android:pathPattern=".*..*..*.ZIP" />
+                <data android:pathPattern=".*..*..*..*.ZIP" />
+                <data android:pathPattern=".*.7z" />
+                <data android:pathPattern=".*..*.7z" />
+                <data android:pathPattern=".*..*..*.7z" />
+                <data android:pathPattern=".*..*..*..*.7z" />
+                <data android:pathPattern=".*.7Z" />
+                <data android:pathPattern=".*..*.7Z" />
+                <data android:pathPattern=".*..*..*.7Z" />
+                <data android:pathPattern=".*..*..*..*.7Z" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*..*..*..*..*.rar" />
+                <data android:pathPattern=".*..*..*..*.rar" />
+                <data android:pathPattern=".*..*..*.rar" />
+                <data android:pathPattern=".*..*.rar" />
+                <data android:pathPattern=".*.rar" />
+                <data android:pathPattern=".*..*..*..*..*.RAR" />
+                <data android:pathPattern=".*..*..*..*.RAR" />
+                <data android:pathPattern=".*..*..*.RAR" />
+                <data android:pathPattern=".*..*.RAR" />
+                <data android:pathPattern=".*.RAR" />
+                <data android:pathPattern=".*..*..*..*..*.zip" />
+                <data android:pathPattern=".*..*..*..*.zip" />
+                <data android:pathPattern=".*..*..*.zip" />
+                <data android:pathPattern=".*..*.zip" />
+                <data android:pathPattern=".*.zip" />
+                <data android:pathPattern=".*..*..*..*..*.ZIP" />
+                <data android:pathPattern=".*..*..*..*.ZIP" />
+                <data android:pathPattern=".*..*..*.ZIP" />
+                <data android:pathPattern=".*..*.ZIP" />
+                <data android:pathPattern=".*.ZIP" />
+                <data android:pathPattern=".*..*..*..*..*.7z" />
+                <data android:pathPattern=".*..*..*..*.7z" />
+                <data android:pathPattern=".*..*..*.7z" />
+                <data android:pathPattern=".*..*.7z" />
+                <data android:pathPattern=".*.7z" />
+                <data android:pathPattern=".*..*..*..*..*.7Z" />
+                <data android:pathPattern=".*..*..*..*.7Z" />
+                <data android:pathPattern=".*..*..*.7Z" />
+                <data android:pathPattern=".*..*.7Z" />
+                <data android:pathPattern=".*.7Z" />
+                <data android:pathPattern=".*.rar" />
+                <data android:pathPattern=".*..*.rar" />
+                <data android:pathPattern=".*..*..*.rar" />
+                <data android:pathPattern=".*..*..*..*.rar" />
+                <data android:pathPattern=".*.RAR" />
+                <data android:pathPattern=".*..*.RAR" />
+                <data android:pathPattern=".*..*..*.RAR" />
+                <data android:pathPattern=".*..*..*..*.RAR" />
+                <data android:pathPattern=".*.zip" />
+                <data android:pathPattern=".*..*.zip" />
+                <data android:pathPattern=".*..*..*.zip" />
+                <data android:pathPattern=".*..*..*..*.zip" />
+                <data android:pathPattern=".*.ZIP" />
+                <data android:pathPattern=".*..*.ZIP" />
+                <data android:pathPattern=".*..*..*.ZIP" />
+                <data android:pathPattern=".*..*..*..*.ZIP" />
+                <data android:pathPattern=".*.7z" />
+                <data android:pathPattern=".*..*.7z" />
+                <data android:pathPattern=".*..*..*.7z" />
+                <data android:pathPattern=".*..*..*..*.7z" />
+                <data android:pathPattern=".*.7Z" />
+                <data android:pathPattern=".*..*.7Z" />
+                <data android:pathPattern=".*..*..*.7Z" />
+                <data android:pathPattern=".*..*..*..*.7Z" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:mimeType="application/rvt" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="application/vnd.asm" />
+                <data android:mimeType="application/vnd.prt" />
+                <data android:mimeType="application/vnd.asm.*" />
+                <data android:mimeType="application/vnd.prt.*" />
+                <data android:mimeType="application/vnd.neu.*" />
+                <data android:mimeType="application/x-asm" />
+                <data android:mimeType="application/x-prt" />
+                <data android:mimeType="application/x-neu" />
+                <data android:mimeType="application/x-asm.*" />
+                <data android:mimeType="application/x-prt.*" />
+                <data android:mimeType="application/x-neu.*" />
+                <data android:mimeType="image/vnd.asm" />
+                <data android:mimeType="image/vnd.prt" />
+                <data android:mimeType="image/vnd.neu" />
+                <data android:mimeType="image/vnd.asm.*" />
+                <data android:mimeType="image/vnd.prt.*" />
+                <data android:mimeType="image/vnd.neu.*" />
+                <data android:mimeType="image/x-asm" />
+                <data android:mimeType="image/x-prt" />
+                <data android:mimeType="image/x-neu" />
+                <data android:mimeType="image/x-asm.*" />
+                <data android:mimeType="image/x-prt.*" />
+                <data android:mimeType="image/x-neu.*" />
+                <data android:mimeType="model/*" />
+                <data android:mimeType="*/asm" />
+                <data android:mimeType="*/prt" />
+                <data android:mimeType="*/neu" />
+                <data android:mimeType="*/rvt" />
+                <data android:mimeType="*/stl" />
+                <data android:mimeType="application/vnd.ms-pki.stl" />
+                <data android:mimeType="application/vnd.ms-pki.prt" />
+                <data android:mimeType="application/rvt" />
+                <data android:mimeType="application/3dxml" />
+                <data android:mimeType="application/sat" />
+                <data android:mimeType="application/sab" />
+                <data android:mimeType="application/model" />
+                <data android:mimeType="application/catpart" />
+                <data android:mimeType="application/cgr" />
+                <data android:mimeType="application/ifc" />
+                <data android:mimeType="application/igs" />
+                <data android:mimeType="application/iges" />
+                <data android:mimeType="application/ipt" />
+                <data android:mimeType="application/iam" />
+                <data android:mimeType="application/jt" />
+                <data android:mimeType="application/prt" />
+                <data android:mimeType="application/obj" />
+                <data android:mimeType="application/x_t" />
+                <data android:mimeType="application/x_b" />
+                <data android:mimeType="application/3dm" />
+                <data android:mimeType="application/par" />
+                <data android:mimeType="application/asm" />
+                <data android:mimeType="application/psm" />
+                <data android:mimeType="application/sldprt" />
+                <data android:mimeType="application/sldasm" />
+                <data android:mimeType="application/stp" />
+                <data android:mimeType="application/step" />
+                <data android:mimeType="application/stl" />
+                <data android:mimeType="application/vda" />
+                <data android:mimeType="application/catproduct" />
+                <data android:mimeType="application/gltf" />
+                <data android:mimeType="application/skp" />
+                <data android:mimeType="application/rfa" />
+                <data android:mimeType="application/neu" />
+                <data android:mimeType="application/neu.*" />
+                <data android:mimeType="application/catshape" />
+                <data android:mimeType="application/dlv" />
+                <data android:mimeType="application/exp" />
+                <data android:mimeType="application/xmt" />
+                <data android:mimeType="application/xmt_txt" />
+                <data android:mimeType="application/3mf" />
+                <data android:mimeType="application/glb" />
+                <data android:mimeType="application/fbx" />
+                <data android:mimeType="application/dae" />
+                <data android:mimeType="application/nwd" />
+                <data android:mimeType="application/dgn" />
+                <data android:mimeType="application/ifczip" />
+                <data android:mimeType="application/RVT" />
+                <data android:mimeType="application/3DXML" />
+                <data android:mimeType="application/SAT" />
+                <data android:mimeType="application/SAB" />
+                <data android:mimeType="application/MODEL" />
+                <data android:mimeType="application/CATPart" />
+                <data android:mimeType="application/CGR" />
+                <data android:mimeType="application/IFC" />
+                <data android:mimeType="application/IGS" />
+                <data android:mimeType="application/IGES" />
+                <data android:mimeType="application/IPT" />
+                <data android:mimeType="application/IAM" />
+                <data android:mimeType="application/JT" />
+                <data android:mimeType="application/PRT" />
+                <data android:mimeType="application/OBJ" />
+                <data android:mimeType="application/X_T" />
+                <data android:mimeType="application/X_B" />
+                <data android:mimeType="application/3DM" />
+                <data android:mimeType="application/PAR" />
+                <data android:mimeType="application/ASM" />
+                <data android:mimeType="application/PSM" />
+                <data android:mimeType="application/SLDPRT" />
+                <data android:mimeType="application/SLDASM" />
+                <data android:mimeType="application/STP" />
+                <data android:mimeType="application/STEP" />
+                <data android:mimeType="application/STL" />
+                <data android:mimeType="application/VDA" />
+                <data android:mimeType="application/CATProduct" />
+                <data android:mimeType="application/GLTF" />
+                <data android:mimeType="application/SKP" />
+                <data android:mimeType="application/RFA" />
+                <data android:mimeType="application/NEU" />
+                <data android:mimeType="application/NEU.*" />
+                <data android:mimeType="application/CATShape" />
+                <data android:mimeType="application/DLV" />
+                <data android:mimeType="application/EXP" />
+                <data android:mimeType="application/XMT" />
+                <data android:mimeType="application/XMT_TXT" />
+                <data android:mimeType="application/3MF" />
+                <data android:mimeType="application/GLB" />
+                <data android:mimeType="application/FBX" />
+                <data android:mimeType="application/DAE" />
+                <data android:mimeType="application/NWD" />
+                <data android:mimeType="application/DGN" />
+                <data android:mimeType="application/IFCZIP" />
+                <data android:mimeType="application/1" />
+                <data android:mimeType="application/2" />
+                <data android:mimeType="application/3" />
+                <data android:mimeType="application/4" />
+                <data android:mimeType="application/5" />
+                <data android:mimeType="application/6" />
+                <data android:mimeType="application/7" />
+                <data android:mimeType="application/8" />
+                <data android:mimeType="application/9" />
+                <data android:mimeType="application/10" />
+                <data android:mimeType="application/11" />
+                <data android:mimeType="application/12" />
+                <data android:mimeType="application/13" />
+                <data android:mimeType="application/14" />
+                <data android:mimeType="application/15" />
+                <data android:mimeType="application/16" />
+                <data android:mimeType="application/17" />
+                <data android:mimeType="application/18" />
+                <data android:mimeType="application/19" />
+                <data android:mimeType="application/20" />
+                <data android:mimeType="application/21" />
+                <data android:mimeType="application/22" />
+                <data android:mimeType="application/23" />
+                <data android:mimeType="application/24" />
+                <data android:mimeType="application/25" />
+                <data android:mimeType="application/26" />
+                <data android:mimeType="application/27" />
+                <data android:mimeType="application/28" />
+                <data android:mimeType="application/29" />
+                <data android:mimeType="application/30" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:pathPattern=".*.rvt" />
+                <data android:pathPattern=".*..*.rvt" />
+                <data android:pathPattern=".*..*..*.rvt" />
+                <data android:pathPattern=".*..*..*..*.rvt" />
+                <data android:pathPattern=".*..*..*..*..*.rvt" />
+                <data android:pathPattern=".*..*..*..*..*..*.rvt" />
+                <data android:pathPattern=".*..*..*..*..*..*..*.rvt" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*.rvt" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*.rvt" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*.rvt" />
+                <data android:pathPattern=".*.RVT" />
+                <data android:pathPattern=".*..*.RVT" />
+                <data android:pathPattern=".*..*..*.RVT" />
+                <data android:pathPattern=".*..*..*..*.RVT" />
+                <data android:pathPattern=".*..*..*..*..*.RVT" />
+                <data android:pathPattern=".*..*..*..*..*..*.RVT" />
+                <data android:pathPattern=".*..*..*..*..*..*..*.RVT" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*.RVT" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*.RVT" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*.RVT" />
+                <data android:pathPattern=".*.prt" />
+                <data android:pathPattern=".*..*.prt" />
+                <data android:pathPattern=".*..*..*.prt" />
+                <data android:pathPattern=".*..*..*..*.prt" />
+                <data android:pathPattern=".*..*..*..*..*.prt" />
+                <data android:pathPattern=".*..*..*..*..*..*.prt" />
+                <data android:pathPattern=".*..*..*..*..*..*..*.prt" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*.prt" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*.prt" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*.prt" />
+                <data android:pathPattern=".*.PRT" />
+                <data android:pathPattern=".*..*.PRT" />
+                <data android:pathPattern=".*..*..*.PRT" />
+                <data android:pathPattern=".*..*..*..*.PRT" />
+                <data android:pathPattern=".*..*..*..*..*.PRT" />
+                <data android:pathPattern=".*..*..*..*..*..*.PRT" />
+                <data android:pathPattern=".*..*..*..*..*..*..*.PRT" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*.PRT" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*.PRT" />
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*.PRT" />
+                <data android:pathPattern=".*.3dxml" />
+                <data android:pathPattern=".*..*.3dxml" />
+                <data android:pathPattern=".*..*..*.3dxml" />
+                <data android:pathPattern=".*.3DXML" />
+                <data android:pathPattern=".*..*.3DXML" />
+                <data android:pathPattern=".*..*..*.3DXML" />
+                <data android:pathPattern=".*.sat" />
+                <data android:pathPattern=".*..*.sat" />
+                <data android:pathPattern=".*..*..*.sat" />
+                <data android:pathPattern=".*.SAT" />
+                <data android:pathPattern=".*..*.SAT" />
+                <data android:pathPattern=".*..*..*.SAT" />
+                <data android:pathPattern=".*.sab" />
+                <data android:pathPattern=".*..*.sab" />
+                <data android:pathPattern=".*..*..*.sab" />
+                <data android:pathPattern=".*.SAB" />
+                <data android:pathPattern=".*..*.SAB" />
+                <data android:pathPattern=".*..*..*.SAB" />
+                <data android:pathPattern=".*.model" />
+                <data android:pathPattern=".*..*.model" />
+                <data android:pathPattern=".*..*..*.model" />
+                <data android:pathPattern=".*.MODEL" />
+                <data android:pathPattern=".*..*.MODEL" />
+                <data android:pathPattern=".*..*..*.MODEL" />
+                <data android:pathPattern=".*.catpart" />
+                <data android:pathPattern=".*..*.catpart" />
+                <data android:pathPattern=".*..*..*.catpart" />
+                <data android:pathPattern=".*.CATPart" />
+                <data android:pathPattern=".*..*.CATPart" />
+                <data android:pathPattern=".*..*..*.CATPart" />
+                <data android:pathPattern=".*.cgr" />
+                <data android:pathPattern=".*..*.cgr" />
+                <data android:pathPattern=".*..*..*.cgr" />
+                <data android:pathPattern=".*.CGR" />
+                <data android:pathPattern=".*..*.CGR" />
+                <data android:pathPattern=".*..*..*.CGR" />
+                <data android:pathPattern=".*.ifc" />
+                <data android:pathPattern=".*..*.ifc" />
+                <data android:pathPattern=".*..*..*.ifc" />
+                <data android:pathPattern=".*.IFC" />
+                <data android:pathPattern=".*..*.IFC" />
+                <data android:pathPattern=".*..*..*.IFC" />
+                <data android:pathPattern=".*.igs" />
+                <data android:pathPattern=".*..*.igs" />
+                <data android:pathPattern=".*..*..*.igs" />
+                <data android:pathPattern=".*.IGS" />
+                <data android:pathPattern=".*..*.IGS" />
+                <data android:pathPattern=".*..*..*.IGS" />
+                <data android:pathPattern=".*.iges" />
+                <data android:pathPattern=".*..*.iges" />
+                <data android:pathPattern=".*..*..*.iges" />
+                <data android:pathPattern=".*.IGES" />
+                <data android:pathPattern=".*..*.IGES" />
+                <data android:pathPattern=".*..*..*.IGES" />
+                <data android:pathPattern=".*.ipt" />
+                <data android:pathPattern=".*..*.ipt" />
+                <data android:pathPattern=".*..*..*.ipt" />
+                <data android:pathPattern=".*.IPT" />
+                <data android:pathPattern=".*..*.IPT" />
+                <data android:pathPattern=".*..*..*.IPT" />
+                <data android:pathPattern=".*.iam" />
+                <data android:pathPattern=".*..*.iam" />
+                <data android:pathPattern=".*..*..*.iam" />
+                <data android:pathPattern=".*.IAM" />
+                <data android:pathPattern=".*..*.IAM" />
+                <data android:pathPattern=".*..*..*.IAM" />
+                <data android:pathPattern=".*.jt" />
+                <data android:pathPattern=".*..*.jt" />
+                <data android:pathPattern=".*..*..*.jt" />
+                <data android:pathPattern=".*.JT" />
+                <data android:pathPattern=".*..*.JT" />
+                <data android:pathPattern=".*..*..*.JT" />
+                <data android:pathPattern=".*.obj" />
+                <data android:pathPattern=".*..*.obj" />
+                <data android:pathPattern=".*..*..*.obj" />
+                <data android:pathPattern=".*.OBJ" />
+                <data android:pathPattern=".*..*.OBJ" />
+                <data android:pathPattern=".*..*..*.OBJ" />
+                <data android:pathPattern=".*.x_t" />
+                <data android:pathPattern=".*..*.x_t" />
+                <data android:pathPattern=".*..*..*.x_t" />
+                <data android:pathPattern=".*.X_T" />
+                <data android:pathPattern=".*..*.X_T" />
+                <data android:pathPattern=".*..*..*.X_T" />
+                <data android:pathPattern=".*.x_b" />
+                <data android:pathPattern=".*..*.x_b" />
+                <data android:pathPattern=".*..*..*.x_b" />
+                <data android:pathPattern=".*.X_B" />
+                <data android:pathPattern=".*..*.X_B" />
+                <data android:pathPattern=".*..*..*.X_B" />
+                <data android:pathPattern=".*.3dm" />
+                <data android:pathPattern=".*..*.3dm" />
+                <data android:pathPattern=".*..*..*.3dm" />
+                <data android:pathPattern=".*.3DM" />
+                <data android:pathPattern=".*..*.3DM" />
+                <data android:pathPattern=".*..*..*.3DM" />
+                <data android:pathPattern=".*.par" />
+                <data android:pathPattern=".*..*.par" />
+                <data android:pathPattern=".*..*..*.par" />
+                <data android:pathPattern=".*.PAR" />
+                <data android:pathPattern=".*..*.PAR" />
+                <data android:pathPattern=".*..*..*.PAR" />
+                <data android:pathPattern=".*.asm" />
+                <data android:pathPattern=".*..*.asm" />
+                <data android:pathPattern=".*..*..*.asm" />
+                <data android:pathPattern=".*.ASM" />
+                <data android:pathPattern=".*..*.ASM" />
+                <data android:pathPattern=".*..*..*.ASM" />
+                <data android:pathPattern=".*.psm" />
+                <data android:pathPattern=".*..*.psm" />
+                <data android:pathPattern=".*..*..*.psm" />
+                <data android:pathPattern=".*.PSM" />
+                <data android:pathPattern=".*..*.PSM" />
+                <data android:pathPattern=".*..*..*.PSM" />
+                <data android:pathPattern=".*.sldprt" />
+                <data android:pathPattern=".*..*.sldprt" />
+                <data android:pathPattern=".*..*..*.sldprt" />
+                <data android:pathPattern=".*.SLDPRT" />
+                <data android:pathPattern=".*..*.SLDPRT" />
+                <data android:pathPattern=".*..*..*.SLDPRT" />
+                <data android:pathPattern=".*.sldasm" />
+                <data android:pathPattern=".*..*.sldasm" />
+                <data android:pathPattern=".*..*..*.sldasm" />
+                <data android:pathPattern=".*.SLDASM" />
+                <data android:pathPattern=".*..*.SLDASM" />
+                <data android:pathPattern=".*..*..*.SLDASM" />
+                <data android:pathPattern=".*.stp" />
+                <data android:pathPattern=".*..*.stp" />
+                <data android:pathPattern=".*..*..*.stp" />
+                <data android:pathPattern=".*.STP" />
+                <data android:pathPattern=".*..*.STP" />
+                <data android:pathPattern=".*..*..*.STP" />
+                <data android:pathPattern=".*.step" />
+                <data android:pathPattern=".*..*.step" />
+                <data android:pathPattern=".*..*..*.step" />
+                <data android:pathPattern=".*.STEP" />
+                <data android:pathPattern=".*..*.STEP" />
+                <data android:pathPattern=".*..*..*.STEP" />
+                <data android:pathPattern=".*.stl" />
+                <data android:pathPattern=".*..*.stl" />
+                <data android:pathPattern=".*..*..*.stl" />
+                <data android:pathPattern=".*.STL" />
+                <data android:pathPattern=".*..*.STL" />
+                <data android:pathPattern=".*..*..*.STL" />
+                <data android:pathPattern=".*.vda" />
+                <data android:pathPattern=".*..*.vda" />
+                <data android:pathPattern=".*..*..*.vda" />
+                <data android:pathPattern=".*.VDA" />
+                <data android:pathPattern=".*..*.VDA" />
+                <data android:pathPattern=".*..*..*.VDA" />
+                <data android:pathPattern=".*.catproduct" />
+                <data android:pathPattern=".*..*.catproduct" />
+                <data android:pathPattern=".*..*..*.catproduct" />
+                <data android:pathPattern=".*.CATProduct" />
+                <data android:pathPattern=".*..*.CATProduct" />
+                <data android:pathPattern=".*..*..*.CATProduct" />
+                <data android:pathPattern=".*.gltf" />
+                <data android:pathPattern=".*..*.gltf" />
+                <data android:pathPattern=".*..*..*.gltf" />
+                <data android:pathPattern=".*.GLTF" />
+                <data android:pathPattern=".*..*.GLTF" />
+                <data android:pathPattern=".*..*..*.GLTF" />
+                <data android:pathPattern=".*.skp" />
+                <data android:pathPattern=".*..*.skp" />
+                <data android:pathPattern=".*..*..*.skp" />
+                <data android:pathPattern=".*.SKP" />
+                <data android:pathPattern=".*..*.SKP" />
+                <data android:pathPattern=".*..*..*.SKP" />
+                <data android:pathPattern=".*.rfa" />
+                <data android:pathPattern=".*..*.rfa" />
+                <data android:pathPattern=".*..*..*.rfa" />
+                <data android:pathPattern=".*.RFA" />
+                <data android:pathPattern=".*..*.RFA" />
+                <data android:pathPattern=".*..*..*.RFA" />
+                <data android:pathPattern=".*.neu" />
+                <data android:pathPattern=".*..*.neu" />
+                <data android:pathPattern=".*..*..*.neu" />
+                <data android:pathPattern=".*.NEU" />
+                <data android:pathPattern=".*..*.NEU" />
+                <data android:pathPattern=".*..*..*.NEU" />
+                <data android:pathPattern=".*.neu.*" />
+                <data android:pathPattern=".*..*.neu.*" />
+                <data android:pathPattern=".*..*..*.neu.*" />
+                <data android:pathPattern=".*.NEU.*" />
+                <data android:pathPattern=".*..*.NEU.*" />
+                <data android:pathPattern=".*..*..*.NEU.*" />
+                <data android:pathPattern=".*.catshape" />
+                <data android:pathPattern=".*..*.catshape" />
+                <data android:pathPattern=".*..*..*.catshape" />
+                <data android:pathPattern=".*.CATShape" />
+                <data android:pathPattern=".*..*.CATShape" />
+                <data android:pathPattern=".*..*..*.CATShape" />
+                <data android:pathPattern=".*.dlv" />
+                <data android:pathPattern=".*..*.dlv" />
+                <data android:pathPattern=".*..*..*.dlv" />
+                <data android:pathPattern=".*.DLV" />
+                <data android:pathPattern=".*..*.DLV" />
+                <data android:pathPattern=".*..*..*.DLV" />
+                <data android:pathPattern=".*.exp" />
+                <data android:pathPattern=".*..*.exp" />
+                <data android:pathPattern=".*..*..*.exp" />
+                <data android:pathPattern=".*.EXP" />
+                <data android:pathPattern=".*..*.EXP" />
+                <data android:pathPattern=".*..*..*.EXP" />
+                <data android:pathPattern=".*.xmt" />
+                <data android:pathPattern=".*..*.xmt" />
+                <data android:pathPattern=".*..*..*.xmt" />
+                <data android:pathPattern=".*.XMT" />
+                <data android:pathPattern=".*..*.XMT" />
+                <data android:pathPattern=".*..*..*.XMT" />
+                <data android:pathPattern=".*.xmt_txt" />
+                <data android:pathPattern=".*..*.xmt_txt" />
+                <data android:pathPattern=".*..*..*.xmt_txt" />
+                <data android:pathPattern=".*.XMT_TXT" />
+                <data android:pathPattern=".*..*.XMT_TXT" />
+                <data android:pathPattern=".*..*..*.XMT_TXT" />
+                <data android:pathPattern=".*.3mf" />
+                <data android:pathPattern=".*..*.3mf" />
+                <data android:pathPattern=".*..*..*.3mf" />
+                <data android:pathPattern=".*.3MF" />
+                <data android:pathPattern=".*..*.3MF" />
+                <data android:pathPattern=".*..*..*.3MF" />
+                <data android:pathPattern=".*.glb" />
+                <data android:pathPattern=".*..*.glb" />
+                <data android:pathPattern=".*..*..*.glb" />
+                <data android:pathPattern=".*.GLB" />
+                <data android:pathPattern=".*..*.GLB" />
+                <data android:pathPattern=".*..*..*.GLB" />
+                <data android:pathPattern=".*.fbx" />
+                <data android:pathPattern=".*..*.fbx" />
+                <data android:pathPattern=".*..*..*.fbx" />
+                <data android:pathPattern=".*.FBX" />
+                <data android:pathPattern=".*..*.FBX" />
+                <data android:pathPattern=".*..*..*.FBX" />
+                <data android:pathPattern=".*.dae" />
+                <data android:pathPattern=".*..*.dae" />
+                <data android:pathPattern=".*..*..*.dae" />
+                <data android:pathPattern=".*.DAE" />
+                <data android:pathPattern=".*..*.DAE" />
+                <data android:pathPattern=".*..*..*.DAE" />
+                <data android:pathPattern=".*.nwd" />
+                <data android:pathPattern=".*..*.nwd" />
+                <data android:pathPattern=".*..*..*.nwd" />
+                <data android:pathPattern=".*.NWD" />
+                <data android:pathPattern=".*..*.NWD" />
+                <data android:pathPattern=".*..*..*.NWD" />
+                <data android:pathPattern=".*.dgn" />
+                <data android:pathPattern=".*..*.dgn" />
+                <data android:pathPattern=".*..*..*.dgn" />
+                <data android:pathPattern=".*.DGN" />
+                <data android:pathPattern=".*..*.DGN" />
+                <data android:pathPattern=".*..*..*.DGN" />
+                <data android:pathPattern=".*.ifczip" />
+                <data android:pathPattern=".*..*.ifczip" />
+                <data android:pathPattern=".*..*..*.ifczip" />
+                <data android:pathPattern=".*.IFCZIP" />
+                <data android:pathPattern=".*..*.IFCZIP" />
+                <data android:pathPattern=".*..*..*.IFCZIP" />
+                <data android:pathPattern=".*.1" />
+                <data android:pathPattern=".*..*.1" />
+                <data android:pathPattern=".*..*..*.1" />
+                <data android:pathPattern=".*.2" />
+                <data android:pathPattern=".*..*.2" />
+                <data android:pathPattern=".*..*..*.2" />
+                <data android:pathPattern=".*.3" />
+                <data android:pathPattern=".*..*.3" />
+                <data android:pathPattern=".*..*..*.3" />
+                <data android:pathPattern=".*.4" />
+                <data android:pathPattern=".*..*.4" />
+                <data android:pathPattern=".*..*..*.4" />
+                <data android:pathPattern=".*.5" />
+                <data android:pathPattern=".*..*.5" />
+                <data android:pathPattern=".*..*..*.5" />
+                <data android:pathPattern=".*.6" />
+                <data android:pathPattern=".*..*.6" />
+                <data android:pathPattern=".*..*..*.6" />
+                <data android:pathPattern=".*.7" />
+                <data android:pathPattern=".*..*.7" />
+                <data android:pathPattern=".*..*..*.7" />
+                <data android:pathPattern=".*.8" />
+                <data android:pathPattern=".*..*.8" />
+                <data android:pathPattern=".*..*..*.8" />
+                <data android:pathPattern=".*.9" />
+                <data android:pathPattern=".*..*.9" />
+                <data android:pathPattern=".*..*..*.9" />
+                <data android:pathPattern=".*.10" />
+                <data android:pathPattern=".*..*.10" />
+                <data android:pathPattern=".*..*..*.10" />
+                <data android:pathPattern=".*.11" />
+                <data android:pathPattern=".*..*.11" />
+                <data android:pathPattern=".*..*..*.11" />
+                <data android:pathPattern=".*.12" />
+                <data android:pathPattern=".*..*.12" />
+                <data android:pathPattern=".*..*..*.12" />
+                <data android:pathPattern=".*.13" />
+                <data android:pathPattern=".*..*.13" />
+                <data android:pathPattern=".*..*..*.13" />
+                <data android:pathPattern=".*.14" />
+                <data android:pathPattern=".*..*.14" />
+                <data android:pathPattern=".*..*..*.14" />
+                <data android:pathPattern=".*.15" />
+                <data android:pathPattern=".*..*.15" />
+                <data android:pathPattern=".*..*..*.15" />
+                <data android:pathPattern=".*.16" />
+                <data android:pathPattern=".*..*.16" />
+                <data android:pathPattern=".*..*..*.16" />
+                <data android:pathPattern=".*.17" />
+                <data android:pathPattern=".*..*.17" />
+                <data android:pathPattern=".*..*..*.17" />
+                <data android:pathPattern=".*.18" />
+                <data android:pathPattern=".*..*.18" />
+                <data android:pathPattern=".*..*..*.18" />
+                <data android:pathPattern=".*.19" />
+                <data android:pathPattern=".*..*.19" />
+                <data android:pathPattern=".*..*..*.19" />
+                <data android:pathPattern=".*.20" />
+                <data android:pathPattern=".*..*.20" />
+                <data android:pathPattern=".*..*..*.20" />
+                <data android:pathPattern=".*.21" />
+                <data android:pathPattern=".*..*.21" />
+                <data android:pathPattern=".*..*..*.21" />
+                <data android:pathPattern=".*.22" />
+                <data android:pathPattern=".*..*.22" />
+                <data android:pathPattern=".*..*..*.22" />
+                <data android:pathPattern=".*.23" />
+                <data android:pathPattern=".*..*.23" />
+                <data android:pathPattern=".*..*..*.23" />
+                <data android:pathPattern=".*.24" />
+                <data android:pathPattern=".*..*.24" />
+                <data android:pathPattern=".*..*..*.24" />
+                <data android:pathPattern=".*.25" />
+                <data android:pathPattern=".*..*.25" />
+                <data android:pathPattern=".*..*..*.25" />
+                <data android:pathPattern=".*.26" />
+                <data android:pathPattern=".*..*.26" />
+                <data android:pathPattern=".*..*..*.26" />
+                <data android:pathPattern=".*.27" />
+                <data android:pathPattern=".*..*.27" />
+                <data android:pathPattern=".*..*..*.27" />
+                <data android:pathPattern=".*.28" />
+                <data android:pathPattern=".*..*.28" />
+                <data android:pathPattern=".*..*..*.28" />
+                <data android:pathPattern=".*.29" />
+                <data android:pathPattern=".*..*.29" />
+                <data android:pathPattern=".*..*..*.29" />
+                <data android:pathPattern=".*.30" />
+                <data android:pathPattern=".*..*.30" />
+                <data android:pathPattern=".*..*..*.30" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.stone.app.ui.activity.AppTransparentActivity" android:theme="@style/AppThemeTransparent">
+            <intent-filter>
+                <data android:host="app" android:path="/start_app" android:port="8888" android:scheme="dwgfastview" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <data android:host="app.com" android:path="/start_app" android:scheme="dwgfastview" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="@string/app_name" android:name="com.stone.app.ui.activity.AppTransparentDialogActivity" android:theme="@style/AppThemeTransparent" />
+        <activity android:name="com.codex.clean.NoAdLauncherActivity" android:exported="true" android:label="@string/app_name" android:theme="@style/AppThemeSplash" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:label="@string/app_name" android:name="com.stone.app.ui.activity.AppSplashActivity" android:theme="@style/AppThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="um.525f7baa56240b4be0104947" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.TestPrivacyComplianceActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.MainActivityHome" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppBeginnerGuideActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.stone.app.ui.activity.CADFilesActivity" android:theme="@style/AppThemeCAD" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="@string/app_name_zip" android:launchMode="singleTask" android:name="com.stone.app.ui.activity.ZipFilesActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.stone.app.ui.activity.PDFShowActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.stone.app.ui.activity.TXTShowActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.stone.app.ui.activity.CADFiles3D_HoopsActivity" android:theme="@style/AppThemeCAD" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:label="@string/app_name" android:name="com.stone.app.ui.activity.CADFiles3DActivity" android:theme="@style/AppThemeTransparent" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.TaskListActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountActivateActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountBindDeviceActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountLoginActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountRegisterActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountRegisterForeignActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountThirdPartActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountPasswordFindActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountPasswordEditActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountLoginOtherForeignActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountLoginOther1Activity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountUserInfoActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.CloudStorageActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountUserInfoEditActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountUserInvoiceActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountUserSubscriptionManagerActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountUserLogoutActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountUserLogoutCheckActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountProductShowActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountProductMyActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountProductShowWebViewActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountProductPayShowActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountProductRecordsActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AccountWebViewShowActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.ActivityEnergyWebViewActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.ImagePreviewActivity" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.ImageShowActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WebViewActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WebViewActivityAI" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WebViewActivityEduPay" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WebViewFoldScreenActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileLocalShowActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetail3DActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailMyCloudActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileHistoryVersionActivity" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailBaiduActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchMyCloudActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchBaiduActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileMoveActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppSettingActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppSettingChildActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppSettingLineTypeActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppSettingLineTypeAddActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.ClearCacheActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppSettingChildAccuracyActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadMyCloudActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadBaiduActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FontsManageActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSelectActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppHistoryActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppHelpHomeActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppHelpActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppAboutActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppMessageActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.CompanyBeginningActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.CompanyApplyActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.CompanyRightsKeepActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.stone.app.ui.activity.LoginOneDriveBusinessActivity" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="login.live.com" android:path="/oauth20_desktop.srf" android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchOneDriveBusinessActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadOneDriveBusinessActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailOneDriveBusinessActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.stone.app.ui.activity.LoginOneDriveActivity" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="login.live.com" android:path="/oauth20_desktop.srf" android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchOneDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadOneDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailOneDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.stone.app.ui.activity.LoginGoogleDriveActivity" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="127.0.0.1" android:port="9004" android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchGoogleDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadGoogleDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailGoogleDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.stone.app.ui.activity.LoginBoxDriveActivity" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="dwgfastview.com" android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.stone.app.ui.activity.LoginBaiduDriveActivity" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="dwgfastview.com" android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchBoxDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadBoxDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailBoxDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.stone.app.ui.activity.LoginDropBoxDriveActivity" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="localhost" android:port="3000" android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchDropBoxDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadDropBoxDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailDropBoxDriveActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.stone.app.ui.activity.LoginHuaweiDriveKitActivity" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchHuaweiDriveKitActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadHuaweiDriveKitActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailHuaweiDriveKitActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.LoginWebDAVActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileSearchWebDAVActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileUploadWebDAVActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.FileDetailWebDAVActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.QRCodeActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.stone.app.ui.activity.QRCodeSelectPhotoActivity" android:theme="@style/AppThemeTransparent" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.QRCodeBusinessActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.NetDiskCloudDownloadActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.chat.ChatSettingsActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.stone.app.chat.chat.ChatActivity" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <data android:host="com.tencent.qcloud" android:path="/detail" android:scheme="pushscheme" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:host="com.tencent.qcloud" android:scheme="pushscheme" />
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.friend.ChatFriendProfileActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.group.ChatGroupListActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.friend.ChatNewFriendActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.stone.app.chat.contact.ChatContactsActivity" android:windowSoftInputMode="adjustNothing" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.contact.ChatMobileContactsActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.friend.ChatSendFriendRequestActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.contact.ChatEditContactNameActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.friend.ChatFriendAcceptActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.friend.ChatNotCADUserActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.group.ChatGroupInfoActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.contact.ChatSelectContactsActivity" android:windowSoftInputMode="adjustNothing" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.chat.ChatSelectFriendGroupActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.chat.ChatCadFileListActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.group.ChatGroupNameActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.group.ChatGroupMemberNameActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.contact.ChatContactsSearchActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.chat.ChatDetailActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.chat.ChatRecordSearchActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.chat.ChatExpiredActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.chat.chat.ChatHelpActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppEquityDiagnosisActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppPrivacyManageActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.AppSettingChildPermissionsActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.tencent.qcloud.tim.uikit.component.video.ChatCameraActivity" android:screenOrientation="portrait" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.tencent.qcloud.tim.uikit.component.video.VideoPlayActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity" />
+        <receiver android:name="com.stone.app.chat.push.ChatNotificationReceiver" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.company.activity.CompanyInfoActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.stone.app.company.activity.CompanyFontActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.stone.app.ui.activity.CommonWordsActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:name="com.stone.app.chat.group.GroupMemberPermissionActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.chat.chat.ChatGroupPermissionWebViewActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.ui.activity.MyPrizeActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.MyCouponActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.ui.activity.MyExchangeActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.ui.activity.AccountExchangeActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.ui.activity.AccountUserExchangeActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.ui.activity.ExchangeOtherActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.chat.chat.ChatFileHistoryVersionActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.chat.chat.ChatExplainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.ui.activity.NoteConditionActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.stone.app.chat.project.ChatProjectActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.chat.chat.ChatMessageActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WatermarkManagerActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WatermarkListActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WatermarkFieldListActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.NoteCommentActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WatermarkFieldEditActivity" />
+        <receiver android:exported="true" android:name="com.stone.app.receiver.LocalChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.stone.app.receiver.CompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="UMENG_APPKEY" android:value="@string/umeng_appkey" />
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="@string/umeng_pushSecret" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="mkt_ch1" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+        <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/app_name" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.gstarmc.android.wxapi.WXPayEntryActivity" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wechat-placeholder" />
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.gstarmc.android.wxapi.WXEntryActivity" android:theme="@android:style/Theme.NoDisplay" />
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.stone.app.UMPushActivity" />
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=10062612" />
+        <receiver android:exported="true" android:name="com.gstarmc.android.UMMeizuPushReceiver">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+                <category android:name="com.gstarmc.android" />
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.cmic.gen.sdk.view.GenLoginAuthActivity" android:screenOrientation="behind" />
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice" />
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice" />
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE" />
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.mipush.sdk.MessageHandleService" />
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.stone.app.chat.push.ChatXiaomiMsgReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.stone.app.chat.push.ChatHUAWEIPushReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG" />
+                <action android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.hihonor.push.app_id" android:value="104413433" />
+        <receiver android:exported="true" android:name="com.stone.app.chat.push.ChatMEIZUPushReceiver">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+                <category android:name="com.gstarmc.android" />
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.vivo.push.sdk.service.CommandClientService" />
+        <activity android:exported="true" android:name="com.vivo.push.sdk.LinkProxyClientActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <receiver android:exported="true" android:name="com.stone.app.chat.push.ChatVIVOPushMessageReceiverImpl">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.vivo.push.api_key" android:value="73c9c0b1-4b70-410a-9412-14a92ea13b54" />
+        <meta-data android:name="com.vivo.push.app_id" android:value="14568" />
+        <service android:exported="true" android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.heytap.msp.push.service.DataMessageCallbackService" android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity" android:theme="@style/Base.Theme.NoActionBar" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity" android:theme="@style/Picture.Theme.Translucent" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.stone.app.ui.activity.WatermarkStyleActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.stone.app.ui.activity.WatermarkCameraActivity" android:screenOrientation="portrait" />
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.62.300" />
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:hardwareAccelerated="true" android:name="cj.mobile.jt.core.ui.JuTuiWebActivity" android:screenOrientation="locked" android:theme="@style/JuTuiWebTheme" android:windowSoftInputMode="adjustResize" />
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.oauth.sdk.view.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/OauthSdkTheme" android:windowSoftInputMode="stateHidden" />
+        <receiver android:enabled="true" android:exported="false" android:name="com.bytedance.embedapplog.collector.Collector" />
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.H5OpenAuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.APayEntranceActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <service android:exported="false" android:name="com.umeng.message.component.UmengIntentService">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.umeng.message.component.UmengMessageReceiverService">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.umeng.message.component.UmengMessageHandlerService">
+            <intent-filter>
+                <action android:name="com.umeng.message.action" />
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.gstarmc.android.umeng.message" android:exported="false" android:name="com.umeng.message.component.UmengMessageProvider" />
+        <receiver android:exported="false" android:name="com.umeng.message.component.UmengNotificationReceiver" />
+        <activity android:exported="false" android:name="com.umeng.message.component.UmengNotificationClickActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <service android:exported="false" android:name="com.taobao.accs.ChannelService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_SERVICE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.taobao.accs.ChannelService$KernelService" />
+        <service android:exported="true" android:name="com.taobao.accs.data.MsgDistributeService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+                <action android:name="com.umeng.message.action.notify" />
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.taobao.accs.internal.AccsJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:exported="false" android:name="org.android.agoo.accs.AgooService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.taobao.accs.ServiceReceiver">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false" />
+        <uses-library android:name="androidx.window.sidecar" android:required="false" />
+        <activity android:name="com.lxj.xpopup.util.XPermission$PermissionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <provider android:authorities="com.gstarmc.android.luckProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.luck.picture.lib.basic.PictureFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ps_file_paths" />
+        </provider>
+        <service android:enabled="true" android:foregroundServiceType="location" android:name="com.luck.picture.lib.service.ForegroundService" />
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yalantis.ucrop.UCropMultipleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <provider android:authorities="com.gstarmc.android.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
+            <meta-data android:name="com.king.logx.initialize.LogXInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup" />
+        </provider>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="sdkVersion" android:value="3400" />
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.sina.weibo.sdk.web.WebActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.sina.weibo.sdk.share.ShareTransActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.gstarmc.android.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sina.weibo.sdk.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths" />
+        </provider>
+        <provider android:authorities="com.gstarmc.android.cn.fly.FlyProvider" android:exported="false" android:multiprocess="true" android:name="cn.fly.FlyProvider" />
+        <meta-data android:name="fly_id_ver" android:value="40000" />
+        <activity android:exported="true" android:name="cn.fly.id.FlyIDActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="cn.fly.id.app_30000" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="cn.fly.id.FlyIDService">
+            <intent-filter>
+                <action android:name="cn.fly.intent.FLY_ID_SERVICE" />
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.mob.id.MobIDActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.id.app_30000" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.mob.id.MobIDService">
+            <intent-filter>
+                <action android:name="com.mob.intent.MOB_ID_SERVICE" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="mob_id_ver" android:value="30000" />
+        <service android:enabled="true" android:exported="false" android:name="com.efs.sdk.memleaksdk.monitor.UMonitorService" android:process=":u_heap" />
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="50909" />
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="5_9_9-C" />
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="supportStyle" android:value="scene|voip" />
+        </activity>
+        <receiver android:exported="true" android:name="org.android.agoo.xiaomi.MiPushBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.gstarmc.android.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+                <action android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.gstarmc.android.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.gstarmc.android.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.gstarmc.android.permission.PUSH_PROVIDER" android:writePermission="com.gstarmc.android.permission.PUSH_WRITE_PROVIDER" />
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.12.0.300" />
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1" />
+        <activity android:exported="false" android:name="com.huawei.hms.support.api.push.TransActivity" />
+        <service android:exported="false" android:name="org.android.agoo.huawei.HuaweiRcvService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.hihonor.push.sdk_version" android:value="7.0.61.303" />
+        <service android:exported="false" android:name="org.android.agoo.honor.HonorMsgService">
+            <intent-filter>
+                <action android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.meizu.cloud.pushsdk.NotificationService" android:permission="com.meizu.cloud.push.permission.MESSAGE" />
+        <receiver android:exported="false" android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="sdk_version_vivo" android:value="488" />
+        <meta-data android:name="local_iv" android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+        <meta-data android:name="com.vivo.push.support_monitor" android:value="1" />
+        <receiver android:exported="false" android:name="org.android.agoo.vivo.PushMessageReceiverImpl">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="org.webrtc.mozi.JavaScreenCapturer$ScreenCaptureAssistantActivity" android:theme="@android:style/Theme.Translucent" />
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" android:name="org.webrtc.mozi.AndroidScreenCapService" />
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.12.0.300" />
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1" />
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.11.0.302" />
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1" />
+        <meta-data android:name="availableLoaded" android:value="yes" />
+        <activity android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity" />
+        <provider android:authorities="com.gstarmc.android.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider" />
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery" />
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=10062612" />
+        <meta-data android:name="Mob-AppKey" android:value="1ff10020bab60" />
+        <meta-data android:name="Mob-AppSecret" android:value="2b52fca36b145e5a92393c609ae377af" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.mob.tools.MobUIShell" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="cn.sharesdk.wechat.utils.WechatHandlerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:exported="true" android:launchMode="singleTask" android:name="cn.sharesdk.tencent.qq.ReceiveActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tencent101423414" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <provider android:authorities="com.gstarmc.android.com.mob.MobProvider" android:exported="false" android:multiprocess="true" android:name="com.mob.MobProvider" />
+        <provider android:authorities="com.gstarmc.android.cn.sharesdk.ShareSDKFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="cn.sharesdk.framework.utils.ShareSDKFileProvider" />
+    </application>
+    <queries>
+        <package android:name="com.tencent.mm" />
+    </queries>
+</manifest>

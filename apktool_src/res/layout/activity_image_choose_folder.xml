@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_item_public" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/icon_image_select_bg" android:padding="10.0dp" android:layout_width="100.0dp" android:layout_height="100.0dp">
+        <ImageView android:id="@id/imageViewLogo" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/default_image_show_square" android:scaleType="centerCrop" android:contentDescription="TODO" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="80.0dp" android:layout_weight="1.5">
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:id="@id/name" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_gray" android:id="@id/count" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/imageViewSelected" android:padding="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:src="@drawable/icon_image_selected" android:contentDescription="@string/app_name" />
+</LinearLayout>

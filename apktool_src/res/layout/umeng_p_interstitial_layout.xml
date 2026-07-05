@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/um_interstitial_content" android:background="#0000" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingBottom="16.0dp" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="end|top" android:id="@id/um_interstitial_iv_close" android:paddingLeft="4.0dp" android:paddingTop="4.0dp" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/umeng_p_fi_close" android:paddingStart="4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/um_interstitial_frame" android:background="#08ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="start|bottom" android:id="@id/um_interstitial_mark" android:layout_width="22.0dp" android:layout_height="10.0dp" android:layout_marginLeft="4.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/umeng_p_interstitial_mark" android:scaleType="fitXY" android:layout_marginStart="4.0dp" />
+    </FrameLayout>
+    <include android:id="@id/um_interstitial_bottom" layout="@layout/umeng_p_interstitial_btm_layout" />
+</LinearLayout>

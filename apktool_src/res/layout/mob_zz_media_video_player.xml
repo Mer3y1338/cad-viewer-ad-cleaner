@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/zz_player_player_container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/vp_rl_app_show" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.my.adpoymer.edimob.view.mobvideoplayer.widget.ZZVideoView android:id="@id/zzvv_main" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <FrameLayout android:id="@id/zz_player_fl_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center" android:id="@id/zz_player_pb_loading" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="38.0dp" android:maxHeight="38.0dp" android:indeterminateDrawable="@drawable/mob_zz_player_loading_rotate" android:minWidth="38.0dp" android:minHeight="38.0dp" />
+        </FrameLayout>
+        <ImageView android:id="@id/img_replay" android:background="@drawable/mob_play" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

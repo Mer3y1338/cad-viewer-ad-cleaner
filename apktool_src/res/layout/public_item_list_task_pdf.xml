@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/gstar_bg_color_white" android:padding="10.0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp">
+        <CheckBox android:id="@id/checkBoxFileSelect" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:button="@drawable/selector_checkbox_circle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5">
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray_item_title" android:ellipsize="end" android:id="@id/textViewFileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="2" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/viewFileDateAndSize" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_11sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:gravity="start" android:id="@id/textViewFileDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016-7-31 16:30" android:singleLine="true" />
+            <TextView android:textSize="@dimen/gstar_text_size_11sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:id="@id/textViewFileSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="1.66MB" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewTaskStatus" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="10.0dp" android:src="@drawable/pdf_progress_task" android:contentDescription="@string/app_name" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewTaskArrow" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+</LinearLayout>

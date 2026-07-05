@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jad_feed_white" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/jad_feed_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#979797" android:gravity="end|top" android:layout_gravity="end|top" android:id="@id/jad_feed_close" android:paddingTop="3.0dp" android:paddingRight="5.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:text="✕" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="#88000000" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="36.0dp">
+            <TextView android:textSize="14.0dp" android:textColor="#fff" android:id="@id/jad_feed_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="end|center" android:layout_width="32.0dp" android:layout_height="12.0dp" android:src="@drawable/jad_feed_logo_default" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

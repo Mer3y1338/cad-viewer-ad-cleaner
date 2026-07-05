@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="72.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:enabled="false" android:textSize="12.0sp" android:textColor="#ffff" android:id="@id/um_interstitial_btn_detail" android:background="@drawable/umeng_p_btn_blue" android:focusable="false" android:clickable="false" android:layout_width="72.0dp" android:layout_height="28.0dp" android:text="@string/umeng_p_btn_detail" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="4.0dp" android:layout_toLeftOf="@id/um_interstitial_btn_detail" android:layout_marginEnd="4.0dp" android:layout_toStartOf="@id/um_interstitial_btn_detail">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/um_interstitial_iv_logo" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:scaleType="fitXY" android:paddingEnd="4.0dp" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#252934" android:id="@id/um_interstitial_tv_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#252934" android:id="@id/um_interstitial_tv_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

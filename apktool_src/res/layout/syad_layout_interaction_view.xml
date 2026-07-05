@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/syad_layout_interaction_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_alignParentBottom="true">
+        <com.sy.adsdk.ui.view.AdShakeView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/syad_shake_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <com.sy.adsdk.ui.view.AdTwistView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/syad_twist_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:id="@id/syad_layout_ad_slide" android:visibility="gone" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:minHeight="300.0dp" android:layout_marginHorizontal="30.0dp">
+            <com.sy.adsdk.ui.view.AdSlideUpView android:id="@id/syad_slide_up_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/syad_layout_shimmer_click" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginRight="40.0dp" android:layout_marginHorizontal="40.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syad_color_white" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/syad_tv_ad_click" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="点击跳转详情页或第三方应用>>>" android:lineSpacingExtra="5.0dp" android:paddingVertical="15.0dp" />
+        </FrameLayout>
+        <com.sy.adsdk.ui.view.AdWipeOverlayView android:id="@id/syad_wipe_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

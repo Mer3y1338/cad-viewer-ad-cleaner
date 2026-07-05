@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/my_cloud_storage" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_white" android:id="@id/buttonStorageExpansion" android:background="@drawable/roundcorner_color_blue" android:layout_width="wrap_content" android:layout_height="25.0dp" android:text="@string/account_user_storage_expansion" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_11sp" android:textColor="@color/gstar_text_color_gray" android:id="@id/textViewUserStorage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        <ProgressBar android:layout_gravity="left" android:id="@id/progressBarStorage" android:focusable="false" android:layout_width="match_parent" android:layout_height="5.0dp" android:layout_marginTop="5.0dp" android:max="100" android:progress="10" style="@style/ProgressBar_Stone" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/chat_cloud_dwg" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewCloudDrawingStoragess" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="0KB" android:layout_weight="1.0" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_13sp" android:textColor="@color/gstar_text_color_gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/my_cloud_storage_cloud_dwg_desc" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <include android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="20.0dp" layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/chat_cooperation_data" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewCooperationDataStorage" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="0KB" android:layout_weight="1.0" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_13sp" android:textColor="@color/gstar_text_color_gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/my_cloud_storage_cooperation_data_desc" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

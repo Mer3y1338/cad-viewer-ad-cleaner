@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/closeImageView" android:padding="15.0dp" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/icon_close_black" />
+    <ImageView android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="30.0dp" android:src="@drawable/ic_launcher" />
+    <TextView android:id="@id/numberTextView" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="20.0dp" />
+    <TextView android:textSize="@dimen/gstar_text_size_14sp" android:layout_gravity="start" android:id="@id/operatorTypeTextView" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginLeft="60.0dp" android:layout_marginTop="80.0dp" />
+    <Button android:id="@id/oneClickLoginBtn" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="60.0dp" android:layout_marginRight="10.0dp" />
+    <Button android:textSize="14.0sp" android:textColor="@color/gstar_text_color_black" android:id="@id/otherLoginBtn" android:background="@drawable/roundcorner_item_bg_color_white" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_margin="10.0dp" android:text="@string/other_method_login_register" />
+</LinearLayout>

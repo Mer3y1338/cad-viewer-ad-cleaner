@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <ImageButton android:id="@id/imageButtonBackPayType" android:background="@drawable/selector_cad_cmd_click_shadows" android:layout_width="@dimen/toolbar_height" android:layout_height="@dimen/toolbar_height" android:src="@drawable/selector_button_back_black" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/text_size_small" android:textStyle="bold" android:textColor="@color/gstar_text_color_black_title" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/account_user_pay_type_tips" android:layout_weight="1.5" />
+        <ImageButton android:background="@drawable/selector_cad_cmd_click_shadows" android:visibility="invisible" android:layout_width="@dimen/toolbar_height" android:layout_height="@dimen/toolbar_height" android:src="@drawable/icon_close_black" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_vertical" />
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:id="@id/radioGroupPayTypeSelect_Show" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/black" android:id="@id/radioButtonWX_Show" android:tag="0" android:background="@color/transparent" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:button="@null" android:text="@string/account_user_pay_type_weixin" android:drawableLeft="@drawable/pay_type_logo_weixin" android:drawableRight="@drawable/selector_radiobutton_select_arrows" android:drawablePadding="10.0dp" />
+            <include android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_vertical" />
+            <RadioButton android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/black" android:id="@id/radioButtonALI_Show" android:tag="1" android:background="@color/transparent" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:button="@null" android:text="@string/account_user_pay_type_ali" android:drawableLeft="@drawable/pay_type_logo_ali" android:drawableRight="@drawable/selector_radiobutton_select_arrows" android:drawablePadding="10.0dp" />
+        </RadioGroup>
+        <include android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginBottom="200.0dp" layout="@layout/view_line_vertical" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

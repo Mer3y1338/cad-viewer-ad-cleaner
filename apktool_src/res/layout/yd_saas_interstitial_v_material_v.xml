@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_yd_saas_custom_vertical_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/iv_yd_saas_custom_vertical_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/rl_yd_saas_custom_content" android:background="#40000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/tv_yd_saas_custom_vertical_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:maxLines="1" android:layout_toLeftOf="@id/tv_yd_saas_custom_vertical_btn" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:id="@id/tv_yd_saas_custom_vertical_btn" android:background="@drawable/yd_saas_background_hollow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_yd_saas_custom_vertical_adlogo" android:layout_width="wrap_content" android:layout_height="12.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="5.0dp" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_above="@id/rl_yd_saas_custom_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

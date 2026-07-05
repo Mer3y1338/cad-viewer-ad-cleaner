@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/open_file_system_button" android:background="@color/gstar_bg_color_blue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="打开系统文件管理器" />
+    <include layout="@layout/public_file_tools_path" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearlayoutHeader" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:layout_weight="1.5">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutList" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.stone.app.ui.view.EmptyRecyclerView android:gravity="center" android:id="@id/app_data_show_recyclerview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:soundEffectsEnabled="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <include layout="@layout/public_operation_toolbar_local" />
+</LinearLayout>

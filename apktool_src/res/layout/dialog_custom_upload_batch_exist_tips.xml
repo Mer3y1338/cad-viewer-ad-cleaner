@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:gravity="center" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/toast_uploadfailed" />
+    <ScrollView android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="200.0dp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upload_batch_file_exist_tips" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewFileNames" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_blue" android:id="@id/dialogButtonOk" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ok" />
+</androidx.appcompat.widget.LinearLayoutCompat>

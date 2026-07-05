@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stone.app.ui.widget.RCView_FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/dialog_layout" android:background="@color/gstar_bg_color_white" android:minWidth="250.0dp" app:clip_background="true" app:round_corner="10.0dp" app:stroke_color="@color/gstar_bg_color_black_divider1" app:stroke_width="@dimen/gstar_divider_size_gray" style="@style/layout_height_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="0.0dp" style="@style/layout_height_wrap">
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center_horizontal" android:id="@id/textViewTitle" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="15.0dp" android:text="@string/account_login_title_title" style="@style/layout_height_wrap" />
+            <View android:layout_gravity="center_horizontal" android:id="@id/viewTitleSpace" android:layout_width="50.0dp" android:layout_height="10.0dp" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/black" android:gravity="center" android:id="@id/textViewMessage" android:layout_height="match_parent" android:maxHeight="250.0dp" android:minHeight="10.0dp" android:text="@string/account_login_descr_tips" android:lineSpacingMultiplier="1.2" android:textIsSelectable="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" style="@style/layout_height_wrap" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/viewAppInnerAD" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <com.stone.app.ui.widget.StoneFiexedLayout android:id="@id/viewAppInnerCouponShow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" app:demoHeight="1" app:demoWidth="3" app:standard="w">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewCouponShow" android:background="@drawable/roundcorner_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ad_default_banner" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+                </com.stone.app.ui.widget.StoneFiexedLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewUsed" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_marginTop="10.0dp" style="@style/layout_height_wrap">
+                <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_login" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/account_login" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+                <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_detail" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/account_user_open_detail" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|top" android:id="@id/dialog_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="8.0dp" android:src="@drawable/icon_close_round_black" />
+    </FrameLayout>
+</com.stone.app.ui.widget.RCView_FrameLayout>

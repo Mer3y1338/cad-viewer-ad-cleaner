@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/base_header" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/gstar_bg_color_white" android:paddingLeft="6.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <FrameLayout android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <EditText android:textSize="16.0sp" android:textColor="@color/gstar_text_color_black" android:gravity="left|center" android:id="@id/editTextSearchValue" android:background="@drawable/roundcorner_color_gray2" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:drawablePadding="5.0dp" android:imeOptions="actionSearch|flagNoExtractUi" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/imageViewClearValue" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete" android:contentDescription="TODO" />
+        </FrameLayout>
+        <ImageView android:id="@id/imageViewFileSearchNow" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="match_parent" android:src="@drawable/selector_button_search2" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <include layout="@layout/public_file_tools_path_no" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearlayoutHeader" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:layout_weight="1.5">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutList" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.stone.app.ui.view.EmptyRecyclerView android:gravity="center" android:id="@id/app_data_show_recyclerview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@color/gstar_bg_color_gray" android:soundEffectsEnabled="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <include layout="@layout/public_operation_toolbar_local" />
+</LinearLayout>

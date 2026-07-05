@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gstar_text_size_20sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="center" android:id="@id/textViewShow" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="游客模式" />
+    <Button android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/buttonShow" android:background="@drawable/roundcorner_color_blue" android:padding="15.0dp" android:layout_width="180.0dp" android:layout_height="wrap_content" android:layout_margin="30.0dp" android:text="显示隐私合规弹框" />
+</LinearLayout>

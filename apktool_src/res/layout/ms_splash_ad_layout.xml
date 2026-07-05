@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meishu.sdk.meishu_ad.splash.MeishuSplashRootView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ms_splash_click_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/ms_splash_image_bg" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.meishu.sdk.core.view.gif.GifImageView android:id="@id/ms_splash_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/ms_splash_video" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.meishu.sdk.core.view.SwipeView android:id="@id/ms_SwipeViewParent" android:background="#00ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ms_shakeRoot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="80.0dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ms_up_move_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ms_up_move_iv" android:background="@drawable/ms_bg_alpha_rect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ms_up_arraw" />
+        </RelativeLayout>
+        <ImageView android:id="@id/ms_any_move_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ms_small_move" />
+        <RelativeLayout android:id="@id/ms_shake_img_container" android:background="@drawable/ms_bg_alpha_oval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ms_shake_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ms_shake" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ms_shake_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="摇一摇手机" android:maxLines="1" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ms_shake_text_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="摇动下载或跳转至第三方应用" android:maxLines="1" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ms_jump_btn" android:background="@drawable/ms_bg_oval_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="49.0dp" android:layout_marginRight="49.0dp" android:layout_marginBottom="30.0dp" android:text="点击前往至第三方应用" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="60.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/ms_download_layer_textview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/ms_splash_download_desc" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/ms_ad_tag_view_right" />
+    </FrameLayout>
+    <com.meishu.sdk.meishu_ad.splash.SplashSkipView android:id="@id/ms_skipView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_marginRight="20.0dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="@android:style/Widget.ProgressBar" />
+    <ImageView android:id="@id/ms_click_eye_close" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/ms_ic_express_close_big" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+</com.meishu.sdk.meishu_ad.splash.MeishuSplashRootView>

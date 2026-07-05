@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.RCView_LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/dialog_new_bg_main_black1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:clip_background="true" app:round_corner="10.0dp">
+        <FrameLayout android:gravity="center" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+            <ImageButton android:background="@drawable/selector_cad_cmd_click_shadows" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_cad_back" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/textViewBlockInsertTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/setting_line_type_setting" android:drawablePadding="5.0dp" />
+            <ImageButton android:layout_gravity="right" android:id="@id/imageButtonBlockInsertClose" android:background="@drawable/selector_cad_cmd_click_shadows" android:padding="10.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/icon_close_round_white" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/dialog_new_bg_main_black2" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:layout_weight="1.5">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewLineType" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="0.0dp" android:layout_marginBottom="2.0dp" />
+        </LinearLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/viewTextColorCancel" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+            <View android:background="@color/dialog_new_bg_main_black1" android:layout_width="1.0dp" android:layout_height="match_parent" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/viewTextColorOk" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.stone.app.ui.widget.RCView_LinearLayout>
+</LinearLayout>

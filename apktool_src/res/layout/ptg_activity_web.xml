@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ptg.ptgapi.widget.titlebar.PtgTitleBarWeb android:id="@id/ptgTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/webContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ptg.ptgapi.widget.PtgWebProgressBar android:id="@id/ptgProgressBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3.0dp" android:max="100" android:progress="20" style="@style/ptg_style_progress_bar" />
+    </FrameLayout>
+</LinearLayout>

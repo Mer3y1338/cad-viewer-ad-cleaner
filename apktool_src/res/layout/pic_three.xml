@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/ly_native_ad_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_three" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/linear_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp">
+            <ImageView android:id="@id/img_three_qm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <com.qq.e.ads.nativ.MediaView android:id="@id/media_view_three" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/img_icon_three" android:layout_width="12.5dp" android:layout_height="10.0dp" android:scaleType="fitXY" android:layout_alignRight="@id/linear_m" android:layout_alignBottom="@id/linear_m" />
+        <TextView android:textSize="@dimen/sdk_text_size" android:textColor="#333333" android:ellipsize="end" android:id="@id/ly_txt_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="10.0dp" android:maxLines="2" android:layout_toRightOf="@id/linear_m" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/ly_gg" android:background="@drawable/btn_ad_logo" android:layout_width="32.0dp" android:layout_height="18.0dp" android:layout_marginLeft="10.0dp" android:text="广告" android:layout_toRightOf="@id/linear_m" android:layout_alignBottom="@id/linear_m" />
+        <TextView android:textSize="12.0sp" android:textColor="#666666" android:ellipsize="end" android:id="@id/txt_three_qm" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="10.0dp" android:lines="1" android:layout_toRightOf="@id/ly_gg" android:layout_alignBottom="@id/ly_gg" />
+        <ImageView android:id="@id/icon_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="50.0dp" android:layout_marginBottom="5.0dp" android:src="@drawable/my_native_close" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

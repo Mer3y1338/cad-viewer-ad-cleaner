@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/selector_text_white2blue" android:gravity="center" android:id="@id/textViewTagValue" android:background="@drawable/selector_button_color_blue" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:text="@string/app_name" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

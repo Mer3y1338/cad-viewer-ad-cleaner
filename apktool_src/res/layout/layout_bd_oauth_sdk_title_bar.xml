@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bd_oauth_title_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="46.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/oauth_title_back" android:paddingLeft="@dimen/bd_oauth_sdk_title_padding_left" android:paddingTop="5.0dp" android:paddingRight="@dimen/bd_oauth_sdk_title_padding_right" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bd_oauth_sdk_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="19.0dp" android:textColor="@color/bd_oauth_sdk_edit_text_color" android:id="@id/oauth_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <View android:background="@color/bd_oauth_sdk_title_division_line_color" android:layout_width="match_parent" android:layout_height="@dimen/bd_oauth_sdk_title_division_line_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

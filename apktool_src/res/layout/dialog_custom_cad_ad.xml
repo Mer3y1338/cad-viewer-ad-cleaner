@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/roundcorner_dialog" android:padding="0.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:maxHeight="400.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+        <LinearLayout android:orientation="vertical" android:id="@id/viewDrawingADRoot" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+            <com.stone.app.ui.widget.RCView_FrameLayout android:id="@id/viewDrawingAD" android:background="@color/black" android:layout_width="match_parent" android:layout_height="300.0dp" android:layout_margin="10.0dp" app:clip_background="true" app:round_corner="10.0dp">
+                <ImageView android:id="@id/imageViewDrawingAD" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressbar_ad_dialog" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:indeterminateDrawable="@drawable/white_progressbar" />
+                <FrameLayout android:id="@id/viewADLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <Button android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_white" android:layout_gravity="right" android:id="@id/buttonDrawingAD_Cancel" android:background="@drawable/roundcorner_background_color_black_half_skip" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_margin="5.0dp" android:text="@string/account_user_vip_ad_close" android:singleLine="true" />
+            </com.stone.app.ui.widget.RCView_FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewDialogTitle" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_exit_tips" />
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogCancel" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogExit" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cad_exit" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</LinearLayout>

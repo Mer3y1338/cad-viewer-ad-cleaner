@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewFilePathShow" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_margin="5.0dp">
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:src="@drawable/file_path_icon" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/RecyclerViewFilePath" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/imageViewFolderBack" android:padding="10.0dp" android:layout_width="50.0dp" android:layout_height="match_parent" android:src="@drawable/file_path_back" />
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp">
+            <ListView android:gravity="center" android:id="@id/listViewNetdiskFiles" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@color/gstar_bg_color_gray" android:soundEffectsEnabled="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/viewToolBar_Local" android:background="@drawable/footer_tab_bg_linet" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <Button android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/selector_text_blue2white" android:gravity="center" android:id="@id/buttonUploadCancel" android:background="@drawable/selector_menus_leftbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <include layout="@layout/view_line_vertical" />
+        <Button android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/selector_text_white2black" android:gravity="center" android:id="@id/buttonUploadOK" android:background="@drawable/selector_button_color_blue_rect_noradius" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

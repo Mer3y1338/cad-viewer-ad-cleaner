@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewSelect" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/file_filter_sort_select_yes" android:contentDescription="TODO" />
+    <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/selector_text_gray2black" android:ellipsize="end" android:gravity="center" android:id="@id/textViewValue" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/app_name" android:singleLine="true" />
+    <TextView android:id="@id/textViewSpace" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+    <ImageView android:id="@id/imageViewSelectRight" android:padding="5.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/file_filter_sort_select_yes" />
+</LinearLayout>

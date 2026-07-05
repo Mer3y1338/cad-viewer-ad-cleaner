@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/beizi_addep_item_divider_view" android:background="@drawable/beizi_divider_dotted_line" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginTop="15.0dp" android:layerType="software" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginRight="5.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="#333333" android:id="@id/beizi_addep_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/beizi_addep_fold_iv" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/viewTag" android:background="@drawable/roundcorner_color_trans_frame_blue" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_bg_color_white" android:gravity="center" android:id="@id/textMeasureType" android:background="@color/gstar_bg_color_blue" android:layout_width="30.0dp" android:layout_height="match_parent" android:text="L" android:singleLine="true" />
+    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_bg_color_blue" android:gravity="center" android:id="@id/textMeasureValue" android:background="@color/gstar_bg_color_white" android:paddingLeft="10.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="49.85mm" android:singleLine="true" />
+    <ImageView android:id="@id/imageViewMeasureClose" android:background="@color/gstar_bg_color_white" android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="match_parent" android:src="@drawable/input_delete3" android:contentDescription="@string/app_name" />
+</LinearLayout>

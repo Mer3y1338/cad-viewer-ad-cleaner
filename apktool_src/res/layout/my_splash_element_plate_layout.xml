@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/tanx_native_ad_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/my_container_close" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/father_background_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/my_container_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="105.0dp" android:layout_below="@id/rel_close">
+            <com.my.adpoymer.weiget.RoundedRelativeLayout android:id="@id/round_parent" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_region_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="20.0dp" android:layout_marginStart="16.0dp">
+                    <com.my.adpoymer.view.RoundImageView android:id="@id/top_icon" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:id="@id/my_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ad_title" android:maxLines="2" android:layout_marginStart="10.0dp" android:layout_marginEnd="25.0dp" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/media_region_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/title_region_parent" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+                    <ImageView android:id="@id/my_img_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+                    <com.qq.e.ads.nativ.MediaView android:id="@id/media_splash_img_pic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#674f35" android:gravity="center" android:id="@id/my_txt_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="25.0dp" android:text="@string/description" android:maxLines="2" android:layout_below="@id/media_region_parent" android:layout_centerHorizontal="true" android:lineSpacingExtra="5.0dp" />
+            </com.my.adpoymer.weiget.RoundedRelativeLayout>
+            <com.my.adpoymer.weiget.ArcLineView android:id="@id/my_arc_line_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/my_shake_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="70.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="25.0dp" android:layout_marginEnd="25.0dp">
+            <include android:layout_gravity="bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" layout="@layout/my_shake_content_layout" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/frame_shake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center" android:background="@drawable/my_shake_round_parcel" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dp">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/my_img_shake_ssp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/my_ic_sig_image_shake_new" android:scaleType="fitXY" />
+                </FrameLayout>
+                <TextView android:textSize="11.0sp" android:textColor="@color/white" android:background="@drawable/my_splash_shape_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/shake_more_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/my_shake_hot_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="250.0dp" android:layout_alignParentBottom="true">
+            <com.my.adpoymer.weiget.SplashRoundedLayout android:id="@id/footer_rounded_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/my_top_slide_view" />
+        <include layout="@layout/my_splash_bottom_webview" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+                <include layout="@layout/my_splash_bottom_view" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="right|bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.my.adpoymer.weiget.AdCornerMarkView android:layout_gravity="center" android:id="@id/adx_corner_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dp">
+            <TextView android:textSize="8.0sp" android:textColor="#b3b3b3" android:layout_gravity="bottom" android:id="@id/mob_txt_logo" android:background="@drawable/mob_logo_shape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advertisement_name" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/my_img_logo" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

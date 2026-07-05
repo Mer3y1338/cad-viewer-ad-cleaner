@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/adsail_instream_ad_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.huawei.hms.ads.instreamad.InstreamView android:id="@id/adsail_instream_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextView android:id="@id/adsail_instream_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/adsail_instream_count_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/adsail_instream_ad_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/adsail_instream_why_this_ad" android:layout_width="14.0dp" android:layout_height="14.0dp" />
+        <TextView android:id="@id/adsail_instream_call_to_action" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

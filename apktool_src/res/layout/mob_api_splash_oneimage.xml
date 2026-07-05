@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/my_native_ad_container" android:background="#ff7f00" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_open" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rel_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="15.0sp" android:textColor="#ffffff" android:id="@id/my_txt_close" android:background="@drawable/mob_txt_shape" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/my_img_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <FrameLayout android:id="@id/media_my_splash" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.my.adpoymer.weiget.AdCornerView android:id="@id/ad_corner_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <FrameLayout android:id="@id/frame_shake" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dp" android:layout_alignParentBottom="true">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/mob_img_shake" android:layout_width="150.0dp" android:layout_height="150.0dp" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/mob_scroll_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/scrollbar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/scrollbar" android:layout_width="35.0dp" android:layout_height="120.0dp" android:src="@drawable/mob_scrollbar" android:rotation="180.0" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="top" android:id="@id/mob_hand" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/mob_hand" />
+        </FrameLayout>
+        <include layout="@layout/mob_splash_bottom_view" />
+        <include layout="@layout/my_splash_bottom_webview" />
+    </RelativeLayout>
+</FrameLayout>

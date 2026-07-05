@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/native_ad_tpbt_container_ll" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/native_ad_tpbt_img_container_fl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.beizi.fusion.widget.CustomRoundImageView android:id="@id/native_ad_tpbt_image_iv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/native_ad_tpbt_content_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/native_ad_tpbt_title_ll" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toLeftOf="@id/native_ad_tpbt_go_rl">
+            <TextView android:textSize="14.0sp" android:textColor="#1c1c1c" android:ellipsize="end" android:id="@id/native_ad_tpbt_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#999999" android:ellipsize="end" android:id="@id/native_ad_tpbt_subtitle_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/native_ad_tpbt_go_rl" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10.0dp">
+            <TextView android:textSize="13.0sp" android:textColor="#ffffff" android:id="@id/native_ad_tpbt_go_tv" android:background="#fb5563" android:paddingLeft="10.0dp" android:paddingTop="4.0dp" android:paddingRight="10.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/native_ad_tpbt_go_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

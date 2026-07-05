@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yd.saas.common.widget.InterceptClickLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="right|bottom" android:id="@id/iv_ad_logo" android:layout_width="wrap_content" android:layout_height="12.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="4.0dp" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+    <include layout="@layout/yd_saas_spread_area" />
+    <View android:layout_gravity="right|top" android:id="@id/v_click" android:layout_width="70.0dp" android:layout_height="40.0dp" android:layout_marginTop="45.0dp" android:layout_marginRight="12.0dp" />
+    <com.yd.saas.common.widget.SkipView android:layout_gravity="right|top" android:id="@id/v_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dp" android:layout_marginRight="12.0dp" />
+</com.yd.saas.common.widget.InterceptClickLayout>

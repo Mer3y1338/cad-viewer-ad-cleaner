@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:id="@id/video" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <View android:id="@id/v_click" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="10.0dp">
+        <ImageView android:id="@id/iv_voice" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" android:src="@mipmap/ly_voiced" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="15.0dp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_time" android:background="@drawable/ly_background_down_time" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginRight="20.0dp" android:minWidth="30.0dp" />
+            <ImageView android:id="@id/iv_close" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginRight="20.0dp" android:src="@mipmap/ly_reward_close" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="16.0dp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_btn" android:background="@drawable/ly_bg_circular_bead_blue" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="30.0dp" android:text="查看详情" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/tv_logo" android:layout_width="48.0dp" android:layout_height="15.0dp" android:layout_marginLeft="10.0dp" android:layout_marginBottom="10.0dp" android:src="@mipmap/ly_ad_logo" android:layout_alignParentBottom="true" />
+</RelativeLayout>

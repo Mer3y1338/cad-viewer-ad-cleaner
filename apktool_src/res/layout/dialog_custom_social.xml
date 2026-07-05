@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10.0dp" style="@style/layout_height_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/viewSocialFacebook" android:background="@drawable/selector_itemclick_list" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="70.0dp" android:src="@drawable/social_facebook" android:layout_weight="1.0" />
+    <ImageView android:id="@id/viewSocialTwitter" android:background="@drawable/selector_itemclick_list" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="70.0dp" android:src="@drawable/social_twitter" android:layout_weight="1.0" />
+    <ImageView android:id="@id/viewSocialYouTube" android:background="@drawable/selector_itemclick_list" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="70.0dp" android:src="@drawable/social_youtube" android:layout_weight="1.0" />
+</LinearLayout>

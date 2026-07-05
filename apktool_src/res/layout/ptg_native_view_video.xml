@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ptg.ptgapi.component.base.AdvertRatioLayout android:id="@id/advertMaxLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ptg.ptgapi.component.videoplayer2.PtgCoreVideo android:id="@id/myvideo" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/ptgImgCover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/playButton" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ptg_ic_player_center_start" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/soundButton" android:padding="12.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ptg_ic_player_mute" android:scaleType="centerCrop" />
+    </com.ptg.ptgapi.component.base.AdvertRatioLayout>
+</FrameLayout>

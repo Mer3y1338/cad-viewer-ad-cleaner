@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/public_cad_input_panel_all"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/input_panel_header">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_input_panel_header" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_x" style="@style/public_cad_input_panel_textview_style" />
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+            <com.stone.app.ui.widget.AutoResizeEditText android:id="@id/editTextInputX" android:layout_width="match_parent" android:hint="" style="@style/public_cad_input_panel_edittext_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_input_panel_header" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_y" style="@style/public_cad_input_panel_textview_style" />
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+            <com.stone.app.ui.widget.AutoResizeEditText android:id="@id/editTextInputY" android:layout_width="match_parent" android:hint="" style="@style/public_cad_input_panel_edittext_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/input_panel_keyboard_height" android:layout_marginTop="5.0dp" layout="@layout/cadmain_input_panel_public_keyboard" />
+</LinearLayout>

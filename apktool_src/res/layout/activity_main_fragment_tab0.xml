@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_main_fragment_tab_model" />
+    <ImageView android:id="@id/imageViewFileCreate" android:layout_width="54.0dp" android:layout_height="54.0dp" android:src="@drawable/selector_button_file_create" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

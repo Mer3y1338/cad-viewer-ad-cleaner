@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/gstar_bg_color_gray" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_base_header_view2" />
+    <View android:layout_width="match_parent" android:layout_height="20.0dp" />
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="@string/webdav_server" />
+            <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/editTextWebDAV_Server" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/webdav_server_hint" android:singleLine="true" android:maxLength="100" android:layout_weight="1.5" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/imageViewClear_Server" android:padding="10.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="@string/webdav_username" />
+            <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/editTextWebDAV_UserName" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/webdav_username_hint" android:singleLine="true" android:maxLength="100" android:layout_weight="1.5" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/imageViewClear_UserName" android:padding="10.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="@string/webdav_password" />
+            <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/editTextWebDAV_Password" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/webdav_password_hint" android:singleLine="true" android:maxLength="100" android:layout_weight="1.5" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/imageViewClear_Password" android:padding="10.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <Button android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/buttonOK" android:background="@drawable/selector_button_color_blue" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="80.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="80.0dp" android:text="@string/ok" />
+</LinearLayout>
