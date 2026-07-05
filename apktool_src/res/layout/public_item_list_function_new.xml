@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:descendantFocusability="afterDescendants" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewFunctionIcon" android:padding="5.0dp" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/vip_function_default" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_black_title" android:ellipsize="end" android:gravity="center" android:id="@id/textViewFunctionName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="你们好的打交道" android:maxLines="2" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ly_bottom_view" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/my_linder_appinfo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/my_linder_one" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用名称：" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:id="@id/my_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | 应用版本：" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:id="@id/my_app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | 开发者: " />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:ellipsize="end" android:id="@id/my_app_version_develop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:id="@id/my_app_version_quanxian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="| 权限详情 > " />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:id="@id/my_app_version_yinsixieyi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="| 隐私详情 > " />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:id="@id/my_app_version_gongnengjieshao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="| 功能介绍 > " />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

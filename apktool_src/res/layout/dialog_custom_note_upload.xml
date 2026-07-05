@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/line_top_gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewNoteUploadTips" android:layout_height="wrap_content" android:minHeight="10.0dp" android:text="@string/cad_cmd_note_upload_tips_local" android:textIsSelectable="true" style="@style/layout_height_wrap" />
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewNoteUploadHelp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:text="@string/detail" />
+        <CheckBox android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/checkBoxNoteUploadShowMode" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/selector_checkbox_account" android:text="@string/public_no_remind" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogNoteUploadCancel" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cad_cmd_note_upload_no" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogNoteUploadDone" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cad_cmd_note_upload_yes" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</LinearLayout>

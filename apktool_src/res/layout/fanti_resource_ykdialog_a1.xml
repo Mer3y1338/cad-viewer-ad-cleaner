@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/yk_dialog_holder" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|bottom" android:id="@id/yk_dialog_root" android:background="@drawable/fanti_actionsheet_header_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/fanti_popup_maintitle" android:gravity="center" android:layout_gravity="center" android:id="@id/yk_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fanti_dialog_title_margin_lr" android:layout_marginTop="@dimen/fanti_dialog_title_margin_top" android:layout_marginRight="@dimen/fanti_dialog_title_margin_lr" android:text="消息提示" style="@style/fanti_text_view_2a" />
+            <TextView android:textSize="@dimen/fanti_popup_text" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/yk_dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fanti_dialog_msg_margin_lr" android:layout_marginTop="@dimen/fanti_dialog_msg_margin_top" android:layout_marginRight="@dimen/fanti_dialog_msg_margin_lr" android:text="提示消息" style="@style/fanti_text_view_5c" />
+            <View android:id="@id/yk_dialog_divider" android:background="@color/fanti_ykn_seconary_separator" android:layout_width="match_parent" android:layout_height="@dimen/fanti_resource_size_0_dot_5" android:layout_marginTop="@dimen/fanti_dialog_div_margin_top" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/fanti_dialog_button_height">
+                <TextView android:textSize="@dimen/fanti_popup_button_text_l" android:gravity="center" android:id="@id/yk_dialog_no" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="No" android:layout_weight="1.0" style="@style/fanti_text_view_3a" />
+                <View android:background="@color/fanti_ykn_seconary_separator" android:layout_width="@dimen/fanti_resource_size_0_dot_5" android:layout_height="match_parent" />
+                <TextView android:textSize="@dimen/fanti_popup_button_text_l" android:textStyle="bold" android:textColor="@color/fanti_ykn_brand_info" android:gravity="center" android:id="@id/yk_dialog_yes" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Yes" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

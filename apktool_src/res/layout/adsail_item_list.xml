@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/adsail_item_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:text="存储" />
+    <TextView android:textSize="14.0sp" android:textColor="#a0a0a0" android:id="@id/adsail_item_list_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="6.0dp" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/yd_saas_shake_bg_template" android:layout_width="280.0dp" android:layout_height="80.0dp">
+        <com.yd.saas.base.widget.ShakeView android:id="@id/yd_shake_view" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_toEndOf="@id/yd_shake_view">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="摇一摇或点击图标" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳转详情页或第三方应用" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

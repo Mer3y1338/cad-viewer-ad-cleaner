@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:background="@drawable/background_cad_toolbar_new" android:paddingBottom="5.0dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_top" android:text="@string/cad_3d_view_direction_top" android:drawableTop="@drawable/selector_cad_3d_view_direction_top" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_bottom" android:text="@string/cad_3d_view_direction_bottom" android:drawableTop="@drawable/selector_cad_3d_view_direction_bottom" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_left" android:text="@string/cad_3d_view_direction_left" android:drawableTop="@drawable/selector_cad_3d_view_direction_left" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_right" android:text="@string/cad_3d_view_direction_right" android:drawableTop="@drawable/selector_cad_3d_view_direction_right" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_front" android:text="@string/cad_3d_view_direction_front" android:drawableTop="@drawable/selector_cad_3d_view_direction_front" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_back" android:text="@string/cad_3d_view_direction_back" android:drawableTop="@drawable/selector_cad_3d_view_direction_back" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_ws" android:text="@string/cad_3d_view_direction_ws" android:drawableTop="@drawable/selector_cad_3d_view_direction_ws" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_es" android:text="@string/cad_3d_view_direction_es" android:drawableTop="@drawable/selector_cad_3d_view_direction_es" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_en" android:text="@string/cad_3d_view_direction_en" android:drawableTop="@drawable/selector_cad_3d_view_direction_en" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonViewDirection_wn" android:text="@string/cad_3d_view_direction_wn" android:drawableTop="@drawable/selector_cad_3d_view_direction_wn" style="@style/public_cad_menus_first_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <View android:layout_width="10.0dp" android:layout_height="match_parent" />
+    </LinearLayout>
+</HorizontalScrollView>

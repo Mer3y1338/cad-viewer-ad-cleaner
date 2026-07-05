@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundcorner_dialog" style="@style/layout_height_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewTitle" android:background="@drawable/roundcorner_color_blue_setting_header" android:padding="10.0dp" android:text="@string/cad_cmd_measure_scale_add" style="@style/layout_height_wrap" />
+    <LinearLayout android:orientation="vertical" android:layout_margin="20.0dp" style="@style/layout_height_wrap">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_measure_scale_new_length" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="end" android:id="@id/textViewSacleLength_Measure" android:paddingLeft="20.0dp" android:paddingRight="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp">
+            <TextView android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" />
+            <EditText android:textSize="@dimen/text_size_small" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/gstar_text_color_black_hint" android:gravity="end" android:id="@id/editTextScaleLength_Expected" android:background="@drawable/roundcorner_background_color_white" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:maxWidth="200.0dp" android:minWidth="120.0dp" android:layout_alignParentRight="true" android:inputType="numberDecimal" android:textCursorDrawable="@null" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_measure_scale_new_length_expected" android:singleLine="true" android:layout_toLeftOf="@id/editTextScaleLength_Expected" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_measure_scale_new_scale" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_blue" android:gravity="end" android:id="@id/textViewSacleNew" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_weight="1.5" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogCancel" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogOK" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</LinearLayout>

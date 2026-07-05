@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="55.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:ellipsize="end" android:id="@id/buttonCmd_Name" android:text="@string/app_name" android:maxLines="2" android:drawableTop="@drawable/cad_cmd_measure_area" style="@style/public_cad_menus_second_button_style" />
+        <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+</LinearLayout>

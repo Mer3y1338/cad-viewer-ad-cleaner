@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/adsail_dialog_layout" android:background="@drawable/adsail_shape_download_alertdialog" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginRight="40.0dp">
+        <ImageView android:id="@id/adsail_dialog_download_imageview" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/adsail_download_round" android:scaleType="fitXY" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/adsail_dialog_download_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#666666" android:id="@id/adsail_dialog_download_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#666666" android:id="@id/adsail_dialog_download_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <TextView android:textColor="#6593cf" android:gravity="center" android:id="@id/adsail_dialog_download_appdetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用详情" android:layout_weight="1.0" />
+            <View android:id="@id/adsail_dialog_download_divider" android:background="#999999" android:layout_width="1.0dp" android:layout_height="8.0dp" />
+            <TextView android:textColor="#6593cf" android:gravity="center" android:id="@id/adsail_dialog_download_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私协议" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/adsail_dialog_download_downloadBtn" android:background="@drawable/adsail_bg_button_blue" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="立即下载" />
+        <TextView android:textSize="12.0sp" android:textColor="#666666" android:id="@id/adsail_dialog_download_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:text="放弃下载" />
+    </LinearLayout>
+</RelativeLayout>

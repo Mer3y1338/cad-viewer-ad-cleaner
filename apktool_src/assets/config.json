@@ -1,0 +1,201 @@
+{
+    "editor":
+    {
+        "aperture": 20,
+        
+        "default":
+        {
+            "size":         20.0,
+            "margin":       2.0,
+            "color":        "#9FA0A0",
+            "background":   "#9FA0A0",
+            "border":       "#9FA0A0",
+            "stroke-style": "solid",
+            "stroke-width": 2.0
+        },
+        
+        "pointer":
+        {
+            "size":         20.0,
+            "margin":       2.0,
+            "color":        "#23BFC6",
+            "background":   "#FFFFFF",
+            "border":       "#23BFC6",
+            "stroke-style": "solid",
+            "stroke-width": 2.0
+        },
+        
+        "cursor":
+        {
+            "size":         20.0,
+            "color":        "#23BFC6",
+            "stroke-style": "solid",
+            "stroke-width": 3.0
+        },
+        
+        "icon":
+        {
+            "size":   64.0
+        },
+        
+        "grip":
+        {
+            "size":         20.0,
+            "margin":       2.0,
+            "color":        "#23BFC6",
+            "background":   "#FFFFFF",
+            "border":       "#23BFC6",
+            "stroke-style": "solid",
+            "stroke-width": 2.0
+        },
+        
+        "osnap":
+        {
+            "size":         20.0,
+            "color":        "#3DC98C",
+            "stroke-style": "solid",
+            "stroke-width": 3.0
+        },
+        
+        "trace":
+        {
+            "color":        "#9FA0A0",
+            "stroke-style": "dashed",
+            "stroke-width": 1.0
+        },
+        
+        "otrack":
+        {
+            "color":        "#3DC98C",
+            "stroke-style": "dashed",
+            "stroke-width": 1.0
+        },
+        
+        "omark":
+        {
+            "color":        "#23BFC6",
+            "stroke-style": "solid",
+            "stroke-width": 1.0
+        },
+        
+        "text":
+        {
+            "default":
+            {
+                "size":         20.0,
+                "margin":       5.0,
+                "color":        "#808080"
+            },
+            
+            "enabled":
+            {
+                "size":         20.0,
+                "margin":       8.0,
+                "color":        "#FFFFFF",
+                "background":   "#23BFC6",
+                "border":       "#23BFC6",
+                "stroke-style": "solid",
+                "stroke-width": 1.0
+            },
+
+            "focused":
+            {
+                "size":         20.0,
+                "margin":       5.0,
+                "color":        "#23BFC6"
+            },
+            
+            "enabled&focused":
+            {
+                "size":         20.0,
+                "margin":       8.0,
+                "color":        "#FFFFFF",
+                "background":   "#000000",
+                "border":       "#23BFC6",
+                "stroke-style": "solid",
+                "stroke-width": 1.0
+            }
+        },
+        
+        "dimension":
+        {
+            "default":
+            {
+                "color":        "#9FA0A0",
+                "stroke-style": "dotted",
+                "stroke-width": 1.5
+            },
+            
+            "enabled":
+            {
+                "color":        "#9FA0A0",
+                "stroke-style": "dotted",
+                "stroke-width": 1.5
+            },
+
+            "focused":
+            {
+                "color":        "#23BFC6",
+                "stroke-style": "dotted",
+                "stroke-width": 1.5
+            },
+            
+            "enabled&focused":
+            {
+                "color":        "#23BFC6",
+                "stroke-style": "dotted",
+                "stroke-width": 1.5
+            }
+        },
+        
+        "bound":
+        {
+            "color":        "#23BFC6",
+            "stroke-style": "dashed",
+            "stroke-width": 2.0
+        },
+        
+        "box":
+        {
+            "color":        "#9FA0A0",
+            "background":   "#23BFC6",
+            "border":       "#9FA0A0",
+            "opacity":      0.5,
+            "stroke-style": "solid",
+            "stroke-width": 2.0
+        },
+        
+        "xbox":
+        {
+            "color":        "#9FA0A0",
+            "background":   "#3DC98C",
+            "border":       "#9FA0A0",
+            "opacity":      0.5,
+            "stroke-style": "dashed",
+            "stroke-width": 2.0
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_main_qq6_topbar" />
+    <include layout="@layout/view_line_horizontal" />
+    <com.stone.app.ui.view.NoDataTipsWidget android:id="@id/nodata_tipsview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.stone.app.ui.widget.StoneViewPaper android:layout_gravity="center" android:id="@id/vPager" android:background="#000000" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:flipInterval="30" android:layout_weight="1.0" />
+</LinearLayout>

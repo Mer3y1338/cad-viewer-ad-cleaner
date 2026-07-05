@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="10.0dp" style="@style/layout_height_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_line_horizontal" />
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewMessageShow" android:padding="15.0dp" android:visibility="gone" android:layout_height="match_parent" android:maxHeight="200.0dp" android:minHeight="10.0dp" android:text="你们好我是中国人我是中国人尼玛看看那你呢" android:textIsSelectable="true" style="@style/layout_height_wrap" />
+    <FrameLayout android:id="@id/dialog_button_PDF" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_weight="1.0" style="@style/layout_height_wrap">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/textView_Mark_VIP_PDF" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_menu_export_single_pdf" style="@style/layout_height_wrap" />
+    </FrameLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <FrameLayout android:id="@id/dialog_button_multi_PDF" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_weight="1.0" style="@style/layout_height_wrap">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/textView_multi_Mark_VIP_PDF" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_menu_export_multi_pdf" style="@style/layout_height_wrap" />
+    </FrameLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <FrameLayout android:id="@id/dialog_button_Image" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_weight="1.0" style="@style/layout_height_wrap">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/textView_Mark_VIP_Image" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_export_image" style="@style/layout_height_wrap" />
+    </FrameLayout>
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_button_Cancel" android:background="@drawable/selector_dialog_button_single" android:padding="10.0dp" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+</LinearLayout>

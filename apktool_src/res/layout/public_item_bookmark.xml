@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_white2blue" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/textViewValue" android:paddingLeft="15.0dp" android:duplicateParentState="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="1.5" />
+    <ImageView android:id="@id/imageViewTagEdit" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/cad_cmd_note_edit_text" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/imageViewTagDelete" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/cad_cmd_note_edit_delete" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+    <TextView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:drawableRight="@drawable/icon_arrow" />
+</LinearLayout>

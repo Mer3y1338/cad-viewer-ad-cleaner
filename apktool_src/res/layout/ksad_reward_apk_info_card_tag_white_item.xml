@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:text="第三人称射击" style="@style/ksad_RewardCardTagWhite"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

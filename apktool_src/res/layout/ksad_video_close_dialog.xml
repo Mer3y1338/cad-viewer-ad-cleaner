@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/ksad_video_closedialog_bg" android:layout_width="280.0dp" android:layout_height="142.0dp">
+        <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/ksad_title" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="49.0dp">
+            <TextView android:textSize="17.0dp" android:textColor="#666666" android:gravity="center" android:id="@id/ksad_close_btn" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="关闭广告" android:layout_weight="1.0" />
+            <View android:background="#eaeaea" android:layout_width="1.0dp" android:layout_height="match_parent" />
+            <TextView android:textSize="17.0dp" android:textColor="@color/ksad_reward_main_color" android:gravity="center" android:id="@id/ksad_continue_btn" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="继续观看" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:paddingTop="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fragmeLayoutMenuItem" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/imageViewMenusItem" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/selector_button_file_share" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/gstar_text_size_14sp" android:gravity="center_horizontal" android:id="@id/textViewMenusItem" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share" android:contentDescription="@string/app_name" />
+</LinearLayout>

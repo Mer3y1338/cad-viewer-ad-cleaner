@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/m_F0F1F2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="1.0dp" android:paddingStart="8.0dp" android:paddingEnd="8.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/sort_name" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+            <EditText android:textSize="@dimen/gstar_text_size_16sp" android:ellipsize="end" android:gravity="start" android:id="@id/watermark_key_edit_view" android:background="@drawable/selector_cad_watermark_input_edittext" android:padding="10.0dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:hint="@string/cad_please_input_name" android:singleLine="false" android:maxLength="10" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="@string/cad_watermark_content" />
+            <EditText android:textSize="@dimen/gstar_text_size_16sp" android:ellipsize="end" android:gravity="start" android:id="@id/watermark_value_edit_view" android:background="@drawable/selector_cad_watermark_input_edittext" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:minHeight="80.0dp" android:hint="@string/cad_please_input_content" android:singleLine="false" android:maxLength="50" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_5DC8CD" android:layout_gravity="end" android:id="@id/textviewRequestLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/cad_watermark_reload_location" android:layout_marginEnd="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

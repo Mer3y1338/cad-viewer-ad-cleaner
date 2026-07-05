@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="5.0dp" style="@style/layout_height_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:orientation="vertical" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewBlockCopyTips" android:layout_height="match_parent" android:minHeight="10.0dp" android:text="@string/cad_cmd_insert_block_addto_ask" android:textIsSelectable="true" style="@style/layout_height_wrap" />
+        <CheckBox android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/checkBoxBlockCopyUsedToAll" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:checked="false" android:button="@drawable/selector_checkbox_account" android:text="@string/file_copy_tips2" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_button1" android:background="@drawable/selector_dialog_button_center" android:padding="10.0dp" android:text="@string/cad_cmd_insert_block_addto_replace" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_button2" android:background="@drawable/selector_dialog_button_center" android:padding="10.0dp" android:text="@string/cad_cmd_insert_block_addto_new" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_button3" android:background="@drawable/selector_dialog_button_center" android:padding="10.0dp" android:text="@string/app_start_skip" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_button4" android:background="@drawable/selector_dialog_button_single" android:padding="10.0dp" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+</LinearLayout>

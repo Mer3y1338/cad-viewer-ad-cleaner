@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/search_layout" android:background="@drawable/chat_lt_search_edit_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp">
+        <androidx.appcompat.widget.SearchView android:id="@id/group_search_view" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35.0dp" app:iconifiedByDefault="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:queryHint="@string/chat_lt_chat_search" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/group_search_hint_view" android:layout_width="wrap_content" android:layout_height="35.0dp" android:hint="@string/chat_lt_chat_search" android:drawableLeft="@drawable/chat_icon_search" android:drawablePadding="5.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tencent.qcloud.tim.uikit.modules.contact.ContactLayout android:id="@id/contact_layout_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_search_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nodata_search" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_no_search_result" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

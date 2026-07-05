@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/base_header" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_file_tools_path" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearlayoutHeader" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:layout_weight="1.5">
+        <com.stone.app.ui.view.NoDataTipsWidget android:id="@id/nodata_tipsview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutList" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:gravity="center" android:id="@id/appDataShow_ListView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@color/gstar_bg_color_gray" android:soundEffectsEnabled="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutGrid" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <GridView android:gravity="center" android:id="@id/appDataShow_GridView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:columnWidth="100.0dp" android:numColumns="2" android:divider="@color/gstar_bg_color_gray" android:soundEffectsEnabled="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <include layout="@layout/public_operation_toolbar_local" />
+</LinearLayout>

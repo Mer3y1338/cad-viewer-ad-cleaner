@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayoutXrefPopupView" android:background="@drawable/roundcorner_dialog_black1" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:id="@id/textViewMessageXrefPopupView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_cmd_find_xref_now" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:id="@id/textViewProgressXrefPopupView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/3" android:layout_marginStart="10.0dp" />
+    <ProgressBar android:id="@id/progressBarXrefPopupView" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginStart="10.0dp" style="@android:style/Widget.Material.ProgressBar" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="top" android:id="@id/imageViewCloseXrefPopupView" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/icon_close_white" android:layout_marginStart="10.0dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

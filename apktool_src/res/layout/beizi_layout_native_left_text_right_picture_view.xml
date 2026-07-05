@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/native_ad_ltrg_container_rl" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="left" android:id="@id/native_ad_ltrg_content_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/native_ad_ltrg_image_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+            <com.beizi.fusion.widget.CustomRoundImageView android:id="@id/native_ad_ltrg_image_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/native_ad_ltrg_title_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toStartOf="@id/native_ad_ltrg_image_rl">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@id/native_ad_ltrg_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+            <RelativeLayout android:id="@id/native_ad_ltrg_subtitle_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/native_ad_ltrg_go_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true">
+                    <TextView android:textSize="13.0sp" android:textColor="#ffffff" android:id="@id/native_ad_ltrg_go_tv" android:background="#71a0ff" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/native_ad_ltrg_go_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dp" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="11.0sp" android:textColor="#999999" android:ellipsize="end" android:id="@id/native_ad_ltrg_subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/native_ad_ltrg_go_rl" android:layout_alignTop="@id/native_ad_ltrg_go_rl" android:layout_alignBottom="@id/native_ad_ltrg_go_rl" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/native_ad_ltrg_ad_text_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_below="@id/native_ad_ltrg_content_rl" />
+</RelativeLayout>

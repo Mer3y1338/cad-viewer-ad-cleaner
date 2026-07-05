@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/radioGroupTopBar" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="40.0dp" android:checkedButton="@id/radioButton0">
+        <RadioButton android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/selector_text_gray2blue2" android:gravity="center" android:id="@id/radioButton0" android:tag="0" android:background="@color/transparent" android:layout_width="0.0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/account_exchange_not_used" android:drawableBottom="@drawable/selector_radiobutton_tabline_view" android:drawablePadding="5.0dp" android:layout_weight="1.0" android:backgroundTint="@color/transparent" />
+        <RadioButton android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/selector_text_gray2blue2" android:gravity="center" android:id="@id/radioButton1" android:tag="1" android:background="#ffffffff" android:layout_width="0.0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/account_user_pay_order_status1" android:drawableBottom="@drawable/selector_radiobutton_tabline_view" android:drawablePadding="5.0dp" android:layout_weight="1.0" />
+        <RadioButton android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/selector_text_gray2blue2" android:gravity="center" android:id="@id/radioButton2" android:tag="2" android:background="#ffffffff" android:layout_width="0.0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/coupon_status_expired" android:drawableBottom="@drawable/selector_radiobutton_tabline_view" android:drawablePadding="5.0dp" android:layout_weight="1.0" />
+    </RadioGroup>
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPagerExchange" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

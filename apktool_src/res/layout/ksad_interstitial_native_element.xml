@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ksad_interstitial_playing" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="left|top" android:id="@id/ksad_interstitial_mute" android:background="@drawable/ksad_interstitial_btn_bg" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/ksad_interstitial_btn_voice" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="right|top" android:id="@id/ksad_interstitial_count_down" android:background="@drawable/ksad_interstitial_btn_bg" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="22.0dp" />
+    </FrameLayout>
+    <ImageView android:id="@id/ksad_interstitial_tail_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="left|bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ksad_interstitial_download_bar_height">
+        <com.kwad.components.core.widget.KsLogoView android:id="@id/ksad_ad_interstitial_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginBottom="6.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/ksad_interstitial_playable_timer" android:background="@drawable/ksad_interstitial_playable_timer_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/ksad_interstitial_play_end" android:background="#cc000000" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="52.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/ksad_interstitial_logo" android:focusable="true" android:clickable="true" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ksad_sdk_logo" />
+            <TextView android:textSize="18.0sp" android:textColor="#c5c5c5" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/ksad_interstitial_name" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxWidth="180.0dp" android:maxLines="1" />
+            <TextView android:textSize="10.0sp" android:textColor="#c5c5c5" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/ksad_interstitial_desc" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxWidth="180.0dp" android:maxLines="1" />
+            <com.kwad.components.core.page.widget.TextProgressBar android:id="@id/ksad_app_download_btn" android:focusable="true" android:clickable="true" android:layout_width="140.0dp" android:layout_height="36.0dp" android:layout_marginTop="18.0dp" android:indeterminateOnly="false" android:progressDrawable="@drawable/ksad_interstitial_actionbar_app_progress" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="right|top" android:id="@id/ksad_interstitial_close_outer" android:background="@drawable/ksad_interstitial_btn_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="9.0dp" android:layout_height="9.0dp" android:src="@drawable/ksad_interstitial_close" />
+    </FrameLayout>
+    <include android:layout_gravity="bottom" android:id="@id/ksad_ad_download_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/ksad_interstitial_download_bar_height" layout="@layout/ksad_interstitial_download" />
+</FrameLayout>

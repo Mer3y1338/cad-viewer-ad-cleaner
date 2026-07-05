@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/netdisk_main" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/activity_main_fragment_tab3_netdisk" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/netdisk_fragment" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+</LinearLayout>

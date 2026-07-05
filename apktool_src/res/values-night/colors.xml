@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ad_appdownloader_notification_text">#ffffff</color>
+    <color name="color_dayima_txt_five">#ff111111</color>
+    <color name="upush_notification_content_color">#b3ffffff</color>
+    <color name="upush_notification_title_color">#ffffffff</color>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/group_permission_avatar" android:layout_width="54.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/item_group_member_icon_view" android:layout_width="54.0dp" android:layout_height="54.0dp" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom" android:id="@id/item_group_company_badge_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/item_group_permission_view" android:background="@color/colorWhite" android:paddingLeft="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/group_permission_color" android:id="@id/item_group_member_permission_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_permission_check" android:layout_centerVertical="true" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/item_group_right_arrow_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_icon_lt_arrow_right" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="#4b4b4b" android:ellipsize="end" android:id="@id/item_group_member_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="10.0dp" android:singleLine="true" android:layout_toLeftOf="@id/item_group_permission_view" android:layout_toRightOf="@id/group_permission_avatar" android:layout_centerVertical="true" />
+    <View android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/group_permission_avatar" />
+</RelativeLayout>

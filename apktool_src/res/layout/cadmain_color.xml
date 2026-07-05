@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="center_vertical" android:padding="5.0dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:minHeight="48.0dp" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonColor_red" android:text="@string/cad_colorredT" android:drawableTop="@drawable/selector_cad_color_red" style="@style/public_cad_menus_second_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonColor_yellow" android:text="@string/cad_coloryellowT" android:drawableTop="@drawable/selector_cad_color_yellow" style="@style/public_cad_menus_second_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonColor_green" android:text="@string/cad_colorgreenT" android:drawableTop="@drawable/selector_cad_color_green" style="@style/public_cad_menus_second_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonColor_cyan" android:text="@string/cad_colorcyanT" android:drawableTop="@drawable/selector_cad_color_cyan" style="@style/public_cad_menus_second_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonColor_blue" android:text="@string/cad_colorblueT" android:drawableTop="@drawable/selector_cad_color_blue" style="@style/public_cad_menus_second_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonColor_purple" android:text="@string/cad_colorpurpleT" android:drawableTop="@drawable/selector_cad_color_purple" style="@style/public_cad_menus_second_button_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonColor_white" android:text="@string/cad_colorwhiteT" android:drawableTop="@drawable/selector_cad_color_white" style="@style/public_cad_menus_second_button_style" />
+        <include android:id="@id/buttonColor_white_padding" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonColor_black" android:text="@string/cad_colorblackT" android:drawableTop="@drawable/selector_cad_color_black" style="@style/public_cad_menus_second_button_style" />
+        <include android:id="@id/buttonColor_black_padding" layout="@layout/cadmain_padding_space_view" />
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/viewUserTag" android:background="@color/gstar_text_color_white" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/gstar_text_color_black" android:layout_gravity="end" android:id="@id/textViewSkip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_start_skip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_industry_select_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gstar_text_color_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/user_industry_select_tips" />
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollViewMain" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="10.0dp" android:cacheColorHint="#00000000" android:layout_weight="1.5">
+        <LinearLayout android:orientation="vertical" android:id="@id/viewSettingShow" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="460.0dp">
+                <RadioGroup android:gravity="center" android:orientation="vertical" android:id="@id/radioGroupUserTag" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RadioButton android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/radioButtonUserTag0" android:background="@drawable/selector_radiobutton_user_tag" android:layout_width="match_parent" android:layout_height="0.0dp" android:button="@null" android:drawablePadding="20.0dp" android:layout_weight="1.5" />
+                    <RadioButton android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/radioButtonUserTag1" android:background="@drawable/selector_radiobutton_user_tag" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="20.0dp" android:button="@null" android:layout_weight="1.5" />
+                    <RadioButton android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/radioButtonUserTag2" android:background="@drawable/selector_radiobutton_user_tag" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="20.0dp" android:button="@null" android:layout_weight="1.5" />
+                </RadioGroup>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:gravity="center" android:id="@id/viewUserTag0" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+                        <CheckBox android:gravity="center" android:id="@id/checkBoxUserTag0" android:background="@drawable/selector_checkbox_circle_big" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="30.0dp" android:layout_height="30.0dp" android:button="@null" />
+                        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="@string/user_industry_select_0" android:layout_weight="1.5" />
+                        <com.stone.app.ui.widget.StoneFiexedLayout android:layout_width="10.0dp" android:layout_height="match_parent" app:demoHeight="1" app:demoWidth="1" app:standard="h">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_usertag_0" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                        </com.stone.app.ui.widget.StoneFiexedLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/viewUserTag1" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="20.0dp" android:layout_weight="1.5">
+                        <CheckBox android:gravity="center" android:id="@id/checkBoxUserTag1" android:background="@drawable/selector_checkbox_circle_big" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="30.0dp" android:layout_height="30.0dp" android:button="@null" />
+                        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="@string/user_industry_select_1" android:layout_weight="1.5" />
+                        <com.stone.app.ui.widget.StoneFiexedLayout android:layout_width="10.0dp" android:layout_height="match_parent" app:demoHeight="1" app:demoWidth="1" app:standard="h">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_usertag_1" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                        </com.stone.app.ui.widget.StoneFiexedLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/viewUserTag2" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="20.0dp" android:layout_weight="1.5">
+                        <CheckBox android:gravity="center" android:id="@id/checkBoxUserTag2" android:background="@drawable/selector_checkbox_circle_big" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="30.0dp" android:layout_height="30.0dp" android:button="@null" />
+                        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="@string/user_industry_select_2" android:layout_weight="1.5" />
+                        <com.stone.app.ui.widget.StoneFiexedLayout android:layout_width="10.0dp" android:layout_height="match_parent" app:demoHeight="1" app:demoWidth="1" app:standard="h">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_usertag_2" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                        </com.stone.app.ui.widget.StoneFiexedLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:enabled="false" android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/buttonSubmit" android:background="@drawable/selector_button_color_blue_rect" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:minWidth="180.0dp" android:text="@string/user_industry_select_submit" android:alpha="0.2" />
+</LinearLayout>

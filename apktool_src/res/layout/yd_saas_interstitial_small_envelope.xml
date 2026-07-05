@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bottom_bg" android:layout_width="match_parent" android:layout_height="150.0dp" android:layout_marginTop="250.0dp" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/rl_yd_saas_ad_card" android:layout_width="match_parent" android:layout_height="380.0dp" android:layout_marginTop="20.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <RelativeLayout android:id="@id/rl_close" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.yd.saas.common.widget.CountDownTextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_skip_top" android:visibility="invisible" android:layout_width="40.0dp" android:layout_height="20.0dp" android:text="5s" android:layout_alignParentEnd="true" app:yd_bg_color="#60000000" app:yd_bg_radius="20.0dp" app:yd_count="5" />
+            <ImageView android:id="@id/iv_close_top" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@mipmap/yd_sdk_ad_dialog_close" android:scaleType="fitCenter" android:layout_alignParentEnd="true" />
+            <View android:id="@id/v_close_top" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/yd_saas_round_white_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_close">
+            <com.yd.saas.common.widget.AspectRatioRelativeLayout android:id="@id/rl_main" android:background="#000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" app:yd_aspectRatio="1.78">
+                <ImageView android:id="@id/iv_yd_saas_bg_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/iv_yd_saas_custom_img" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <FrameLayout android:id="@id/iv_yd_saas_custom_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <ImageView android:id="@id/iv_yd_saas_custom_logo" android:layout_width="wrap_content" android:layout_height="12.0dp" android:scaleType="fitStart" android:layout_alignParentBottom="true" />
+            </com.yd.saas.common.widget.AspectRatioRelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_main">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_arrow1" android:layout_width="18.0dp" android:layout_height="13.0dp" android:layout_marginTop="24.0dp" android:src="@drawable/yd_saas_icon_arrow_top" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_arrow2" android:layout_width="18.0dp" android:layout_height="13.0dp" android:layout_marginTop="-6.0dp" android:src="@drawable/yd_saas_icon_arrow_top" android:scaleType="fitXY" />
+                <TextView android:textSize="12.0sp" android:textColor="#b4b4b4" android:gravity="center" android:id="@id/tv_arrow" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="轻滑试试" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_yd_saas_custom_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_main">
+                <com.yd.saas.common.widget.ShaderRoundImageView android:id="@id/iv_yd_saas_custom_img_small" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="60.0dp" android:scaleType="centerCrop" app:yd_radius="8.0dp" />
+                <TextView android:textSize="18.0sp" android:textColor="#000000" android:ellipsize="end" android:id="@id/tv_yd_saas_custom_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="1" />
+                <TextView android:textSize="14.0sp" android:textColor="#b4b4b4" android:ellipsize="end" android:gravity="center" android:id="@id/tv_yd_saas_custom_des" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+            </LinearLayout>
+            <com.yd.saas.common.widget.CountDownTextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_skip" android:visibility="invisible" android:layout_width="40.0dp" android:layout_height="20.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="6.0dp" android:text="5s" android:layout_alignParentEnd="true" app:yd_bg_color="#60000000" app:yd_bg_radius="20.0dp" app:yd_count="5" />
+            <ImageView android:id="@id/iv_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="6.0dp" android:src="@mipmap/yd_sdk_ad_dialog_close" android:scaleType="fitCenter" android:layout_alignParentEnd="true" />
+            <View android:id="@id/v_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="6.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_top_bg" android:layout_width="match_parent" android:layout_height="130.0dp" android:layout_marginTop="270.0dp" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_action" android:background="@drawable/yd_saas_envelope_action_background" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="340.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp">
+        <com.yd.saas.base.widget.ShakeView android:id="@id/yd_shake_view" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_yd_saas_custom_btn" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stone.app.ui.widget.RCView_LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dialog_layout" android:background="@color/gstar_bg_color_white" android:minWidth="250.0dp" app:clip_background="true" app:round_corner="10.0dp" app:stroke_color="@color/gstar_bg_color_black_divider1" app:stroke_width="@dimen/gstar_divider_size_gray" style="@style/layout_height_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="0.0dp" style="@style/layout_height_wrap">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black" android:gravity="center_horizontal" android:id="@id/textViewTitle" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="15.0dp" android:text="你们好我是中国人" style="@style/layout_height_wrap" />
+        <View android:layout_gravity="center_horizontal" android:id="@id/viewTitleSpace" android:layout_width="50.0dp" android:layout_height="10.0dp" />
+        <LinearLayout android:orientation="vertical" android:id="@id/viewMessageShow" style="@style/layout_height_wrap">
+            <LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="15.0dp" style="@style/layout_height_wrap">
+                <ProgressBar android:id="@id/progressBarShow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="1" style="?android:progressBarStyleHorizontal" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewMessage" android:layout_height="match_parent" android:maxHeight="250.0dp" android:minHeight="10.0dp" android:text="@string/account_user_pay_renew_message" android:lineSpacingMultiplier="1.2" android:textIsSelectable="true" style="@style/layout_height_wrap" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_subhead" android:layout_gravity="center_vertical" android:id="@id/checkBoxShowAgain" android:padding="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginBottom="15.0dp" android:checked="false" android:button="@drawable/selector_checkbox_account" android:text="@string/public_no_remind" />
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_cancel" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/dialog_ok" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/yes" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <FrameLayout android:id="@id/frameLayoutVipDialogOk" android:background="@drawable/selector_dialog_button_right" android:visibility="gone" android:layout_height="match_parent" android:layout_weight="1.0" style="@style/layout_height_wrap">
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:layout_gravity="center" android:id="@id/textViewVipDialogOk" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/yes" style="@style/layout_height_wrap" />
+        </FrameLayout>
+    </LinearLayout>
+</com.stone.app.ui.widget.RCView_LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ptgVideoImage" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ptgVideoLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="27.0dp" android:layout_height="27.0dp" android:indeterminateDrawable="@drawable/ptg_progress_bar" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/ptgVideoLoadText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="正在缓冲..." />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ptgVideoError" android:background="@android:color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="播放错误，请重试。" />
+        <com.ptg.ptgapi.component.widgets.PtgGrayBtn android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/ptgVideoRetry" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="点击重试" />
+    </LinearLayout>
+    <ImageView android:id="@id/ptgVideoCenterStart" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ptg_ic_player_center_start" android:layout_centerInParent="true" />
+    <com.ptg.ptgapi.widget.PtgWebProgressBar android:id="@id/ptgVideoChangePositionProgress" android:layout_width="match_parent" android:layout_height="2.0dp" android:max="100" android:layout_alignParentBottom="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

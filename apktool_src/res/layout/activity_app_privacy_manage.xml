@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollViewMain" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/viewSettingShow" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="0.0dp" layout="@layout/view_line_horizontal" />
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="0.0dp" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewAdRecommend" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" android:paddingEnd="10.0dp">
+                <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ad_recommend" android:textDirection="locale" android:textAlignment="viewStart" />
+                <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/ad_recommend_tips" android:textDirection="locale" android:textAlignment="viewStart" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <com.kyleduo.switchbutton.SwitchButton android:id="@id/customSwitchButtonAdRecommend" android:layout_width="55.0dp" android:layout_height="30.0dp" app:kswBackColor="@color/switch_bg_gray2blue" app:kswThumbColor="@color/gstar_bg_color_white" app:kswThumbRangeRatio="2.0" />
+        </LinearLayout>
+        <include android:id="@id/lineAdRecommend" layout="@layout/view_line_horizontal" />
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="20.0dp" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserInfo_Dwonload" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:gravity="start" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/settings_privacy_manage_info" android:layout_weight="1.5" android:textDirection="locale" android:textAlignment="viewStart" />
+            <View android:layout_width="54.0dp" android:layout_height="30.0dp" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/textViewUserInfo_Dwonload" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="0.0dp" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserInfo_List" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:gravity="start" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/settings_privacy_manage_list" android:layout_weight="1.5" android:textDirection="locale" android:textAlignment="viewStart" />
+            <View android:layout_width="54.0dp" android:layout_height="30.0dp" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/textViewUserInfo_List" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="0.0dp" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewThirdInfo_Shared" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:gravity="start" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/settings_privacy_manage_third" android:layout_weight="1.5" android:textDirection="locale" android:textAlignment="viewStart" />
+            <View android:layout_width="54.0dp" android:layout_height="30.0dp" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/textViewThirdInfo_Shared" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="0.0dp" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewPrivacyPolicy_Detail" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:gravity="start" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/settings_privacy_manage_detail" android:layout_weight="1.5" android:textDirection="locale" android:textAlignment="viewStart" />
+            <View android:layout_width="54.0dp" android:layout_height="30.0dp" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/textViewPrivacyPolicy_Detail" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="0.0dp" layout="@layout/view_line_horizontal" />
+    </LinearLayout>
+</ScrollView>

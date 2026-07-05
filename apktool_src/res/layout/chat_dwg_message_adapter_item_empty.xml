@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:padding="5.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/text_tips_color" android:id="@id/chat_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:includeFontPadding="false" />
+    <FrameLayout android:id="@id/msg_content_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

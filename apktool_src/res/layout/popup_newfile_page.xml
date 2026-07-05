@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:background="@color/transparent_half_white" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/textViewFileAdd" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_add" android:drawableTop="@drawable/selector_button_newfile_add" android:drawablePadding="10.0dp" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/imageViewClosePage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:src="@drawable/selector_button_newfile_close" android:contentDescription="TODO" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/ksad_install_dialog_bg" android:layout_width="280.0dp" android:layout_height="144.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/ksad_install_tips_content" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="match_parent" android:layout_height="96.0dp" android:maxLines="2" />
+        <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp">
+            <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/ksad_install_cancel" android:layout_width="140.0dp" android:layout_height="match_parent" android:text="取消" />
+            <View android:background="#eaeaea" android:layout_width="1.0px" android:layout_height="match_parent" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff5181fb" android:gravity="center" android:id="@id/ksad_install_tv" android:layout_width="140.0dp" android:layout_height="match_parent" android:text="安装" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

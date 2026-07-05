@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/base_header" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/roundcorner_item_bg_color_white" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp">
+        <com.jni.view.CADMarqueeTextView android:textColor="@android:color/black" android:ellipsize="marquee" android:layout_gravity="left|center" android:id="@id/textViewFontsFolder" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.5" android:marqueeRepeatLimit="marquee_forever" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/filePath_recyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/linearlayoutHeader" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/white" android:id="@id/zip_right_now_button" android:background="@drawable/selector_button_color_blue_rect" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zip_right_now" android:layout_alignParentBottom="true" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:layout_above="@id/zip_right_now_button">
+            <com.stone.app.ui.view.EmptyRecyclerView android:id="@id/recyclerView_DataShow" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</LinearLayout>

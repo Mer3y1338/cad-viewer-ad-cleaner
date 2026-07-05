@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/ly_native_ad_container" android:background="#feeddd" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:star="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rel_open" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rel_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="15.0sp" android:textColor="#ffffff" android:id="@id/ly_txt_close" android:background="@drawable/my_txt_shape" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="#654f37" android:id="@id/ly_open_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" android:text="今日推荐" android:layout_centerHorizontal="true" />
+        <com.my.adpoymer.view.StarRatingView android:id="@id/ly_star_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_below="@id/ly_open_recommend" android:layout_centerHorizontal="true" star:ratable="false" star:star_padding="10.0dp" star:stat_half="@drawable/my_frodo_rate_star_small_on_holo_light" star:stat_off="@drawable/my_frodo_rate_star_small_on_holo_light" star:stat_on="@drawable/my_frodo_rate_star_small_on_holo_light" />
+        <TextView android:id="@id/ly_img_h" android:background="@drawable/my_splash_txt_h_shape" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_marginLeft="24.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="24.0dp" android:layout_below="@id/ly_star_rate" />
+        <TextView android:id="@id/ly_img_l" android:background="@drawable/my_splash_txt_l_shape" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_marginLeft="22.0dp" android:layout_marginRight="22.0dp" android:layout_below="@id/ly_img_h" />
+        <ImageView android:id="@id/ly_img_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:scaleType="fitXY" android:layout_below="@id/ly_img_l" />
+        <com.qq.e.ads.nativ.MediaView android:id="@id/media_splash_img_pic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_below="@id/ly_img_l" />
+        <ImageView android:id="@id/ly_img_logo" android:layout_width="30.0dp" android:layout_height="10.0dp" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#674f35" android:id="@id/ly_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_below="@id/ly_img_pic" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#674f35" android:gravity="center" android:id="@id/ly_txt_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="25.0dp" android:maxLines="2" android:layout_below="@id/ly_txt_title" android:layout_centerHorizontal="true" android:lineSpacingExtra="5.0dp" />
+        <com.my.adpoymer.view.fall.FallingView android:id="@id/falling" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/frame_shake" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/my_shake_parent">
+            <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/my_frame_shake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp" android:layout_alignParentBottom="true">
+            <include layout="@layout/my_shake_content_layout" />
+        </FrameLayout>
+        <include layout="@layout/my_splash_bottom_view" />
+        <include layout="@layout/my_splash_bottom_webview" />
+    </RelativeLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

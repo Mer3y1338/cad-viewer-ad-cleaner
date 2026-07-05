@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_explain_space" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:id="@id/explain_space_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/chat_explain_space_description" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/chat_guide_tips_title2" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:id="@id/explain_file_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/chat_explain_file_manage_description" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:id="@id/explain_manage_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/chat_group_manage" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:id="@id/explain_group_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/chat_explain_file_manage_description" />
+            <com.stone.app.ui.view.AppX5WebView android:scrollbarStyle="insideOverlay" android:id="@id/appX5WebViewHelp" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

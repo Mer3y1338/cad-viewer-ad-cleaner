@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/add_contact_search_layout" android:background="@color/white" android:paddingLeft="8.0dp" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#3a3a3a" android:gravity="center" android:id="@id/search_cancel_view" android:layout_width="wrap_content" android:layout_height="35.0dp" android:layout_marginRight="10.0dp" android:text="@string/cancel" android:textAllCaps="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:background="@drawable/chat_lt_search_edit_bg" android:layout_width="0.0dp" android:layout_height="35.0dp" android:layout_marginRight="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/search_cancel_view" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.SearchView android:id="@id/chat_record_search_view" android:background="@null" android:visibility="visible" android:layout_width="match_parent" android:layout_height="35.0dp" app:iconifiedByDefault="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:queryHint="@string/chat_lt_chat_search" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/chat_record_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/empty_search_hint_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/chat_fast_search" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_search_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nodata_search" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_no_search_result" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

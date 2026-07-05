@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewErrorIcon" android:padding="40.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/webview_error_network" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="center" android:id="@id/textViewErrorTips" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="@string/toast_webview_error_tips" android:lineSpacingMultiplier="1.2" />
+</LinearLayout>

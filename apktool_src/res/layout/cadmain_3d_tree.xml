@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="300.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/viewBlockCount" android:background="@color/dialog_new_bg_main_black1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:gravity="center" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+            <ImageButton android:background="@drawable/selector_cad_cmd_click_shadows" android:padding="10.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_cad_back" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cad_3d_main_menu_structure_tree" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/imageButtonClose" android:background="@drawable/selector_cad_cmd_click_shadows" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/icon_close_round_white" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="300.0dp" android:minHeight="200.0dp">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/tree_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

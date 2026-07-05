@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/beizi_download_dialog_container_fl" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/beizi_download_dialog_shape" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginBottom="25.0dp">
+            <ImageView android:id="@id/beizi_download_dialog_close_iv" android:padding="10.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@mipmap/beizi_icon_close" android:tint="#000000" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/beizi_download_dialog_icon_iv" android:layout_width="65.0dp" android:layout_height="65.0dp" android:layout_marginTop="25.0dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#8c8c8c" android:id="@id/beizi_download_dialog_developer_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginBottom="3.0dp" android:includeFontPadding="false" android:layout_toRightOf="@id/beizi_download_dialog_icon_iv" android:layout_alignBottom="@id/beizi_download_dialog_icon_iv" />
+            <TextView android:textSize="13.0sp" android:textColor="#8c8c8c" android:id="@id/beizi_download_dialog_version_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginBottom="5.0dp" android:includeFontPadding="false" android:layout_toRightOf="@id/beizi_download_dialog_icon_iv" android:layout_above="@id/beizi_download_dialog_developer_tv" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/beizi_download_dialog_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginBottom="5.0dp" android:includeFontPadding="false" android:layout_toRightOf="@id/beizi_download_dialog_icon_iv" android:layout_above="@id/beizi_download_dialog_version_tv" />
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="300.0dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/beizi_download_dialog_download_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_above="@id/beizi_download_dialog_download_ll" android:layout_below="@id/beizi_download_dialog_expand_lv" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/beizi_download_dialog_download_container_ll" android:background="@drawable/beizi_download_button_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp">
+                    <ImageView android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@mipmap/beizi_icon_download" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:gravity="center" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="立即下载" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/beizi_download_dialog_market_container_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/beizi_download_dialog_market_cancel_tv" android:background="@drawable/beizi_download_button_shape" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/beizi_download_dialog_market_confirm_tv" android:background="@drawable/beizi_download_button_shape" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="确定" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <ExpandableListView android:id="@id/beizi_download_dialog_expand_lv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="0.0dp" android:layout_above="@id/beizi_download_dialog_download_ll" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

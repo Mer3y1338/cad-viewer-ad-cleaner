@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.beizi.fusion.widget.ShakeView android:layout_gravity="center" android:id="@id/beizi_twist_top_view" android:layout_width="60.0dp" android:layout_height="80.0dp" />
+    <RelativeLayout android:id="@id/beizi_twist_shake_total_layout" android:background="#d9333333" android:layout_width="340.0dp" android:layout_height="70.0dp" android:layout_marginTop="15.0dp">
+        <RelativeLayout android:id="@id/beizi_twist_total_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="75.0dp" android:layout_toEndOf="@id/beizi_twist_go_imageview">
+                <TextView android:textSize="18.0dp" android:textColor="#ffffff" android:id="@id/beizi_twist_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="向右转动或点击" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0dp" android:textColor="#ffffff" android:id="@id/beizi_twist_describe_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="跳转详情页或第三方应用" android:layout_below="@id/beizi_twist_title_text" android:layout_centerVertical="true" android:layout_alignStart="@id/beizi_twist_title_text" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/beizi_twist_right_total_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <com.beizi.fusion.widget.BackArrowView android:id="@id/beizi_twist_right_first_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:beizi_bav_arrow_style="beizi_wechat_design" app:beizi_bav_color="#ffffffff" app:beizi_bav_stroke_width="6.0dp" />
+                <com.beizi.fusion.widget.BackArrowView android:id="@id/beizi_twist_right_second_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_alignEnd="@id/twist_right_first_image" app:beizi_bav_arrow_style="beizi_wechat_design" app:beizi_bav_color="#99ffffff" app:beizi_bav_stroke_width="6.0dp" />
+                <com.beizi.fusion.widget.BackArrowView android:id="@id/beizi_twist_right_third_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="-20.0dp" android:layout_alignEnd="@id/beizi_twist_right_second_image" app:beizi_bav_arrow_style="beizi_wechat_design" app:beizi_bav_color="#33ffffff" app:beizi_bav_stroke_width="6.0dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/beizi_twist_go_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/beizi_twist_roo_go_image" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</LinearLayout>

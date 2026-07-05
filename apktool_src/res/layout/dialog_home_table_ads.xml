@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/roundcorner_color_transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/imageViewHome_TableAds_Close" android:padding="10.0dp" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/icon_close_round_black" android:contentDescription="@string/app_name" />
+    <com.stone.app.ui.widget.StoneFiexedLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" app:demoHeight="147" app:demoWidth="108" app:standard="w">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewHome_TableAds_Show" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ad_default_flow" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    </com.stone.app.ui.widget.StoneFiexedLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

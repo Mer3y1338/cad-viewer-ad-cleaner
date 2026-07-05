@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/roundcorner_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:src="@drawable/chat_icon_lt_create_group_explain" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_create_group_explain_title" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_create_group_explain_desc" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+    <androidx.appcompat.widget.AppCompatCheckBox android:textSize="@dimen/gstar_text_size_16sp" android:id="@id/create_group_disturb_view" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="@string/cad_open_mode_tips" />
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2gray" android:gravity="center" android:id="@id/create_group_cancel_view" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+        <include layout="@layout/view_line_vertical" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2gray" android:gravity="center" android:id="@id/create_group_view" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/chat_create_group_now" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>帮助</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="./menu.css" />
+		<script type="text/javascript" src="./jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="./menuKeys.js"></script>
+		<style>
+			ul.search-result {
+				margin: 12px 10px 0 10px;
+				padding: 0;
+				border-radius: 6px;
+			}
+			ul.search-result li {
+				list-style: none;
+				padding: 10px 16px;
+				font-size: 15px;
+				border-top: 1px solid #eee;
+				border-bottom: 1px solid #eee;
+				margin: 0;
+			}
+			ul.search-result li:first-child {
+				border-top: none;
+				border-radius: 6px 6px 0 0;
+			}
+			ul.search-result li:last-child {
+				border-bottom: none;
+				border-radius: 0 0 6px 6px;
+			}
+			ul.search-result li a {
+				color: #21a7a7;
+				text-decoration: none;
+				display: block;
+			}
+			ul.search-result li a:hover {
+				text-decoration: underline;
+			}
+			.search-bar-wrap {
+				position: relative;
+				padding: 10px;
+			}
+			#menuSearch {
+				width: 100%;
+				padding: 6px 28px 6px 6px;
+				box-sizing: border-box;
+			}
+			#clearMenuSearch {
+				position: absolute;
+				right: 18px;
+				top: 50%;
+				transform: translateY(-50%);
+				cursor: pointer;
+				color: #bbb;
+				font-size: 18px;
+				line-height: 1;
+				user-select: none;
+				z-index: 2;
+				background: #fff;
+				border-radius: 50%;
+				width: 22px;
+				height: 22px;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				display: none;
+			}
+			#clearMenuSearch:hover {
+				color: #21a7a7;
+				background: #f0f0f0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="tree">
+			<div class="search-bar-wrap">
+				<input id="menuSearch" type="text" placeholder="请输入关键字搜索" autocomplete="off" />
+				<span id="clearMenuSearch" title="清空">×</span>
+			</div>
+			<ul class="menu"></ul>
+		</div>
+		<script>
+		function buildMenu(menuData, isRoot = true) {
+			let $ul = $('<ul>').addClass(isRoot ? 'menu' : '');
+			menuData.forEach(item => {
+				let $li = $('<li>').addClass('parent_li' + (isRoot ? ' linestyle' : ''));
+				if (item.children && item.children.length > 0) {
+					let $span = $('<span>')
+						.attr('title', 'Expand this branch')
+						.append($('<i>').addClass('icon-folder-open'))
+						.append(document.createTextNode(item.label));
+					$li.append($span);
+					let $childUl = buildMenu(item.children, false).hide();
+					$li.append($childUl);
+				} else if (item.href) {
+					let $a = $('<a>')
+						.attr('href', item.href);
+					if ((item.key === 'newFeatures' || item.key === 'view3d') && isRoot) {
+						$a.append($('<strong>').text(item.label));
+					} else {
+						$a.text(item.label);
+					}
+					if (item.key === 'newFeatures') {
+						$a.addClass('newicon');
+					}
+					$li.append($a);
+				} else {
+					$li.append(document.createTextNode(item.label));
+				}
+				$ul.append($li);
+			});
+			return $ul;
+		}
+
+		function flattenMenu(menu, result = []) {
+			menu.forEach(item => {
+				if (item.href) {
+					result.push({ key: item.key, label: item.label, href: item.href });
+				}
+				if (item.children && item.children.length > 0) {
+					flattenMenu(item.children, result);
+				}
+			});
+			return result;
+		}
+
+		$(function() {
+			// 清空原有菜单
+			$('.tree .menu').remove();
+			// 生成新菜单并插入
+			$('.tree').append(buildMenu(window.menuTree, true));
+
+			// 展开/收起逻辑
+			$('.tree').on('click', 'li.parent_li > span', function(e) {
+				var $ul = $(this).siblings('ul');
+				var $children = $ul.find('> li');
+				if ($children.is(':visible')) {
+					$children.hide('fast', function() {
+						$ul.hide();
+					});
+					$(this).attr('title', 'Expand this branch')
+						.find('> i').addClass('icon-folder-open').removeClass('icon-minus-sign');
+				} else {
+					$ul.show();
+					$children.show('fast');
+					$(this).attr('title', 'Collapse this branch')
+						.find('> i').addClass('icon-minus-sign').removeClass('icon-folder-open');
+				}
+				e.stopPropagation();
+			});
+
+			var allMenuItems = flattenMenu(window.menuTree);
+			var $tree = $('.tree');
+			var $menuArea = $tree.find('ul.menu');
+
+			let searchTimer = null;
+			$('#menuSearch').on('input', function() {
+				$('#clearMenuSearch').toggle($(this).val().length > 0);
+				clearTimeout(searchTimer);
+				const val = $(this).val().trim();
+				searchTimer = setTimeout(function() {
+					if (val === '') {
+						$tree.find('ul.menu').show();
+						$tree.find('.search-result').remove();
+						$menuArea.show();
+						return;
+					}
+					$menuArea.hide();
+					$tree.find('.search-result').remove();
+					var matches = allMenuItems.filter(item => item.label.indexOf(val) !== -1);
+					if (matches.length === 0) {
+						$tree.append('<ul class="search-result"><li style="color:#888;padding:8px;">无匹配菜单</li></ul>');
+						return;
+					}
+					var $ul = $('<ul class="search-result"></ul>');
+					matches.forEach(item => {
+						var $li = $('<li></li>');
+						var $a = $('<a></a>').attr('href', item.href).text(item.label);
+						$li.append($a);
+						$ul.append($li);
+					});
+					$tree.append($ul);
+				}, 300);
+			});
+
+			$('#clearMenuSearch').on('click', function() {
+				$('#menuSearch').val('').trigger('input').focus();
+				$(this).hide();
+			});
+		});
+		</script>
+	</body>
+</html>

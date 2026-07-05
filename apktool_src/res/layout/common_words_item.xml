@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/roundcorner_item_bg_color_white" android:padding="10.0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:id="@id/textViewCommonWords" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/app_name" android:layout_weight="1.5" android:layout_toLeftOf="@id/imageViewCommonWords_Delete" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imageViewCommonWords_Delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/icon_delete_black" android:layout_toLeftOf="@id/imageViewCommonWords_Sort" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imageViewCommonWords_Sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/icon_drag_black" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</LinearLayout>

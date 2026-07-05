@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.my.adpoymer.weiget.AdCornerMarkView android:layout_gravity="center" android:id="@id/adx_corner_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:background="@drawable/mob_logo_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+        <TextView android:textSize="8.0sp" android:textColor="#b3b3b3" android:id="@id/mob_txt_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MY 广告" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+    </FrameLayout>
+    <ImageView android:id="@id/my_img_logo" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="10.0dp" />
+</LinearLayout>

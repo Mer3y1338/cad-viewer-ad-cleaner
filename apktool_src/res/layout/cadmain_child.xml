@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutDrawings" android:background="@color/black" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/cadFile_noData_textView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_cad_no_file" android:drawableTop="@drawable/nodata_default" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom" android:id="@id/quickCommandRecyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="65.0dp" android:overScrollMode="never" />
+    <include android:layout_gravity="bottom" android:id="@id/newSecondaryMenusView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dp" layout="@layout/cadmain_menus_secondary" />
+    <include android:layout_gravity="center|bottom" android:id="@id/viewLayerList" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150.0dp" android:layout_marginBottom="50.0dp" layout="@layout/cadmain_layer_list" />
+    <include android:layout_gravity="center|bottom" android:id="@id/cmdTableLayoutItem" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150.0dp" android:layout_marginBottom="60.0dp" layout="@layout/cadmain_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutParentToolsBar" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayoutTopToolsBar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="50.0dp" android:baselineAligned="false">
+            <LinearLayout android:gravity="start|center" android:layout_gravity="start|center" android:orientation="horizontal" android:id="@id/linearLayoutTopToolsBarLeft" android:background="@drawable/roundcorner_dialog_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp">
+                <ImageButton android:id="@id/viewTopBack" android:background="@null" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_cad_back" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include android:id="@id/linearLayoutTopToolsBarRight" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.5" android:layout_marginStart="20.0dp" layout="@layout/cadmain_menus_top_left" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="right" android:id="@id/viewTopChatMode" android:background="@drawable/roundcorner_dialog_black1" android:padding="8.0dp" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_margin="10.0dp" android:src="@drawable/chat_selector_cad_top_btn_chat" android:contentDescription="@string/app_name" />
+        <include android:id="@id/viewRegisterVipTips" layout="@layout/cadmain_vip_tips" />
+        <include android:id="@id/viewPanelTipsMessage" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/cadmain_input_panel_tips" />
+        <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:weightSum="2.0" android:layout_weight="1.5">
+            <include android:id="@id/viewPanelMappingCommonWords" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/cadmain_mapping_common_words" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|clip_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/linearLayoutBottomToolsBar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableLayout android:layout_gravity="center" android:id="@id/cmdTableColorItem" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:gravity="bottom" android:background="@drawable/background_cad_toolbar_new" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp">
+                    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/cadmain_color" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_gravity="center" android:id="@id/cmdTableView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:gravity="bottom" android:background="@drawable/background_cad_toolbar_new" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp">
+                    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/cadmain_cmdview_3d_change" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_gravity="center" android:id="@id/cmdTableView3D" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:gravity="bottom" android:background="@drawable/background_cad_toolbar_new" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp">
+                    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/cadmain_cmdview_3d_mode" />
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:id="@id/cmdTableMainMenus" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <include android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_weight="1.0" layout="@layout/cadmain_menus" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutMutiShow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <ImageButton android:id="@id/viewTopMutiShowBack_0" android:background="@drawable/roundcorner_dialog_black1" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:src="@drawable/icon_close_cad_back" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <View android:background="#484848" android:layout_width="match_parent" android:layout_height="10.0dp" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <ImageButton android:id="@id/viewTopMutiShowBack_1" android:background="@drawable/roundcorner_dialog_black1" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:src="@drawable/icon_close_cad_back" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/linearLayoutTopToolsBarRightToFullScreen" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageButton android:id="@id/viewTopExitScreen" android:background="@drawable/roundcorner_dialog_black1" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="30.0dp" android:src="@drawable/cad_top_btn_exitfullscreen_white" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <ViewStub android:layout_gravity="center|bottom" android:id="@id/viewInputPanelShow" android:layout="@layout/cadmain_input_panel_show" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layoutMenusNew" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_gravity="bottom" android:focusable="true" android:layout_width="match_parent" android:layout_height="60.0dp" layout="@layout/cadmain_menus_new" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutFindResultView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ViewStub android:id="@id/viewstub_text_find" android:layout="@layout/cadmain_text_find" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.stone.app.ui.view.CAD_ViewNoteFind android:id="@id/cad_ViewNoteFind" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.stone.app.ui.view.CAD_ViewGraphSearch android:id="@id/cad_ViewGraphSearch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center|bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layoutEditVIPPanelView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/cadmain_input_panel_edit_vip" />
+    </LinearLayout>
+    <com.stone.app.ui.view.CAD_ViewBlockInsert android:id="@id/cad_ViewBlockInsert" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center|bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layoutViewTagPanelView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/cadmain_view_tag" />
+    </LinearLayout>
+    <com.stone.app.ui.view.CAD_ViewMeasureRecord android:id="@id/cad_ViewMeasureRecord" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.stone.app.ui.view.CAD_ViewMeasureRecordCount android:id="@id/cad_ViewMeasureRecordCount" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.stone.app.ui.view.PopupWindowsCAD_NoteSetting android:gravity="center|bottom" android:layout_gravity="center|bottom" android:id="@id/layoutViewNoteSetting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="110.0dp" />
+    <com.stone.voice.AudioRecorderButton android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_bg_color_white" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/audioRecorderButtonT" android:background="@drawable/selector_button_voice" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginBottom="100.0dp" />
+    <FrameLayout android:layout_gravity="end|bottom" android:id="@id/chat_openInput_layout" android:background="@drawable/chat_roundcorner_background_black_left" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/openInput_image_view" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_margin="10.0dp" android:src="@drawable/chat_selector_lt_cadmain_open_input" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/messageTips_image_view" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginTop="5.0dp" android:src="@drawable/oval_background_red_frame_white" android:layout_marginEnd="5.0dp" />
+    </FrameLayout>
+    <com.stone.app.ui.view.ChatCadInputView android:layout_gravity="bottom" android:id="@id/chat_input_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="400.0dp" />
+    <com.stone.app.ui.view.ChatCadOperatorView android:id="@id/chat_operator_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dp" />
+    <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dp" layout="@layout/xref_losts_load_popup_view" />
+    <com.stone.app.ui.view.PopupWindowsCAD_TextEdit android:id="@id/popupWindowsCADTextEdit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.stone.app.ui.view.CadHatchColorView android:layout_gravity="bottom" android:id="@id/cad_hatch_color_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

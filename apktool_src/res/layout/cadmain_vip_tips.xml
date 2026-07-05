@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/gstar_bg_color_white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/cadmain_vip_tips_icon" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/cadmain_vip_tips_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textStyle="bold" android:textColor="@color/gstar_bg_color_black" android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cadmain_vip_tips_title" />
+            <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/selector_text_blue2black" android:ellipsize="end" android:id="@id/textViewSeeDetailed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/account_user_open_detail" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="right|center" android:orientation="horizontal" android:background="@drawable/roundcorner_background_tab_white" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginRight="30.0dp">
+            <Button android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_white" android:id="@id/buttonLoginRegister" android:background="@drawable/selector_button_color_blue" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_margin="3.0dp" android:text="@string/account_login" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVipTipsClose" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_margin="5.0dp" android:src="@drawable/icon_close_white" />
+</FrameLayout>

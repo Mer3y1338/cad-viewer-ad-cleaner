@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.haorui.sdk.core.view.TouchAdContainer android:id="@id/activity_sdk_interstitial_touchAdContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/adsail_layout_native_interstitial_ll" android:background="@drawable/adsail_shape_alpha_white_round_bg" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_centerInParent="true">
+            <androidx.cardview.widget.CardView android:id="@id/activity_sdk_interstitial_cardview" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="10.0dp" app:cardElevation="0.0dp">
+                <RelativeLayout android:id="@id/activity_sdk_interstitial_rl_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/activity_sdk_interstitial_containerRL" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/activity_sdk_interstitial_imageBg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                        <RelativeLayout android:id="@id/activity_sdk_interstitial_mediaContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <cn.haorui.sdk.core.view.gif.GifImageView android:id="@id/activity_sdk_interstitial_imageview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <ImageView android:id="@id/activity_sdk_interstitial_cacel" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/adsail_close" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/activity_sdk_interstitial_btn" android:background="@drawable/adsail_bg_oval_gray" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="17.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="10.0dp" android:text="点击跳转详情页或第三方应用" android:drawablePadding="10.0dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </cn.haorui.sdk.core.view.TouchAdContainer>
+</RelativeLayout>

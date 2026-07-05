@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:orientation="horizontal" android:id="@id/ly_native_ad_container" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_one" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rel_img_one" android:background="#ededed" android:layout_width="133.0dp" android:layout_height="match_parent" android:layout_marginEnd="5.0dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/my_img_blur" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+                <ImageView android:id="@id/img_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                <com.qq.e.ads.nativ.MediaView android:id="@id/media_view_one" android:background="#50000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" />
+            </FrameLayout>
+            <ImageView android:id="@id/img_icon_one" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="20.0dp" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.my.adpoymer.weiget.CloseImagevIew android:id="@id/icon_close" android:focusable="true" android:clickable="true" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/my_insert_close_btn" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#333333" android:ellipsize="end" android:id="@id/txt_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/app_name" android:maxLines="2" android:lineSpacingExtra="2.5dp" android:layout_marginStart="5.0dp" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/icon_close" android:layout_toEndOf="@id/rel_img_one" />
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" android:layout_toEndOf="@id/rel_img_one" layout="@layout/my_native_bottom_view" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="5.0dp" android:layout_marginEnd="40.0dp" android:layout_toEndOf="@id/rel_img_one">
+            <TextView android:textSize="10.0sp" android:textColor="#999666" android:ellipsize="end" android:id="@id/txt_one_desc" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="2" android:shadowDx="2.0" android:shadowDy="2.0" android:lineSpacingExtra="2.0dp" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/frame_shake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/my_native_shake_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dp">
+                <ImageView android:gravity="center" android:id="@id/my_img_shake" android:layout_width="15.0dp" android:layout_height="15.0dp" android:scaleType="fitXY" />
+                <TextView android:textSize="10.0sp" android:textColor="#ea3223" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_noe_shake" android:layout_marginStart="5.0dp" />
+            </LinearLayout>
+            <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/my_frame_shake" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+        </FrameLayout>
+        <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/my_native_slide_details_layout" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="start|bottom" android:id="@id/my_upplogo" android:layout_width="30.0dp" android:layout_height="10.0dp" android:layout_margin="3.0dp" />
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

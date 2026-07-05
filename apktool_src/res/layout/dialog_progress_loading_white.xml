@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/roundcorner_background_color_white_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="150.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/progressbar_dialog_process" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" android:text="@string/toast_loading" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogCancel" android:background="@drawable/selector_dialog_button_single" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" />
+    </LinearLayout>
+</LinearLayout>

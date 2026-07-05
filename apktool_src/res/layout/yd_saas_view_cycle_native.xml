@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="240.0dp" android:layout_height="match_parent">
+                <ImageView android:id="@id/img_poster" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+                <FrameLayout android:id="@id/fl_mediaview" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/img_logo" android:layout_width="32.0dp" android:layout_height="32.0dp" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:maxLines="2" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#a0000000" android:ellipsize="end" android:id="@id/text_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:singleLine="true" android:layout_toLeftOf="@id/iv_ad" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_ad" android:layout_width="30.0dp" android:layout_height="15.0dp" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/iv_closed" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@mipmap/yd_sdk_ad_dialog_close" android:scaleType="fitXY" android:layout_alignParentEnd="true" />
+</RelativeLayout>

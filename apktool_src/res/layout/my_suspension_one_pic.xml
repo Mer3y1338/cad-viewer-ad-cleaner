@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/ly_native_ad_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ly_rel_suspension" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/img_one_t" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <ImageView android:id="@id/img_icon" android:layout_width="25.0dp" android:layout_height="20.0dp" android:scaleType="fitXY" android:layout_alignBottom="@id/img_one_t" android:layout_alignParentRight="true" />
+        <com.qq.e.ads.nativ.MediaView android:id="@id/ly_img_suspension_mediaview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

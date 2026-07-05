@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/gstar_bg_color_gray" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.RCView_FrameLayout android:id="@id/viewDrawingAD" android:background="@drawable/background_gradient_horizontal" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="15.0dp" app:clip_background="true" app:round_corner_top_left="10.0dp" app:round_corner_top_right="10.0dp">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/viewStatus_Normal" android:paddingLeft="20.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_about_wx_value" android:singleLine="true" />
+        <ImageView android:layout_gravity="right" android:layout_width="240.0dp" android:layout_height="240.0dp" android:layout_marginTop="-50.0dp" android:layout_marginRight="-20.0dp" android:src="@drawable/app_logo2" android:contentDescription="@string/app_name" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewStatus_Try" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/textViewMoreInfoShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_about_wx_value" android:maxLines="2" android:drawableTop="@drawable/vip_try_icon" />
+            </LinearLayout>
+            <View android:layout_width="30.0dp" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/textViewGotoPayNow" android:background="@drawable/roundcorner_color_orange2" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_pay_now" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.stone.app.ui.widget.RCView_FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+            <LinearLayout android:orientation="vertical" android:id="@id/viewVIP_Show_Function" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewShow_Mobile" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp">
+                    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_weight="1.5" />
+                    <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewVIP_Mobile" android:background="@drawable/roundcorner_background_gray" android:paddingLeft="8.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+                    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_weight="1.5" />
+                </LinearLayout>
+                <com.stone.app.ui.view.EmptyRecyclerView android:id="@id/recyclerView_DataShow_Mobile" android:padding="10.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewShow_Windows" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp">
+                    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_weight="1.5" />
+                    <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewVIP_Windows" android:background="@drawable/roundcorner_background_gray" android:paddingLeft="8.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+                    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="0.0dp" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_weight="1.5" />
+                </LinearLayout>
+                <com.stone.app.ui.view.EmptyRecyclerView android:id="@id/recyclerView_DataShow_Windows" android:padding="10.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

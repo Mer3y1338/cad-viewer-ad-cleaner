@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#ff1e1e1e" />
+            <stroke android:width="1.0dp" android:color="@color/gstar_text_color_blue" android:dashWidth="3.0dp" android:dashGap="3.0dp" />
+            <corners android:radius="5.0dp" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape>
+            <solid android:color="#ff1e1e1e" />
+            <stroke android:width="1.0dp" android:color="@color/gstar_text_color_blue" android:dashWidth="3.0dp" android:dashGap="3.0dp" />
+            <corners android:radius="5.0dp" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="#ff1e1e1e" />
+            <stroke android:width="1.0dp" android:color="@color/gstar_text_color_blue" android:dashWidth="3.0dp" android:dashGap="3.0dp" />
+            <corners android:radius="5.0dp" />
+        </shape>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="1.0dp" android:top="1.0dp" android:right="1.0dp" android:bottom="1.0dp">
+                <shape>
+                    <solid android:color="#ff1e1e1e" />
+                    <corners android:radius="5.0dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="#002b2b2b" />
+                    <stroke android:width="1.0dp" android:color="#ff6a6a6a" android:dashWidth="3.0dp" android:dashGap="3.0dp" />
+                    <corners android:radius="5.0dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/sig_ad_privacy_ll" android:background="@drawable/sig_layout_background_radius" android:layout_width="wrap_content" android:layout_height="15.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" android:maxWidth="30.0dp" android:minWidth="15.0dp">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/sig_ad_privacy_ad_logo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" android:layout_marginRight="5.0dp" android:text="广告" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/sig_ad_privacy_view" android:paddingRight="2.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="名称 | 版本 | 开发者 | 权限 | 隐私 | 介绍" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

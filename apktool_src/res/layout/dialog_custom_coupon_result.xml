@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="0.5dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.RCView_LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:clip_background="true" app:round_corner="10.0dp">
+        <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="@string/coupon_dialog_look_title" />
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="center" android:id="@id/textViewDialogCouponContent" android:padding="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/coupon_dialog_look_content1" android:lineSpacingMultiplier="1.2" />
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogCouponDone" android:background="@drawable/selector_dialog_button_single" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ok" />
+    </com.stone.app.ui.widget.RCView_LinearLayout>
+</FrameLayout>

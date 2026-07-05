@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="10.0dp" />
+    <solid android:color="@color/gstar_bg_color_gray" />
+    <stroke android:width="@dimen/gstar_divider_size_gray" android:color="@color/gstar_bg_color_black_divider1" />
+</shape>

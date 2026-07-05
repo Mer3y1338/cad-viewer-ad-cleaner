@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/dialog_new_bg_transparent_shadow" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stx.xhb.androidx.XBanner android:gravity="center" android:id="@id/banner_DataShow_FunctionDetail" android:layout_width="match_parent" android:layout_height="210.0dp" app:clipChildrenLeftMargin="50.0dp" app:clipChildrenRightMargin="50.0dp" app:isAutoPlay="false" app:isClipChildrenMode="true" app:isClipChildrenModeLessThree="true" app:pointsVisibility="false" app:viewpagerMargin="20.0dp" />
+    <ImageView android:layout_gravity="center" android:id="@id/viewFunctionDetailClose" android:padding="10.0dp" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_margin="10.0dp" android:src="@drawable/icon_close_round_white" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+</LinearLayout>

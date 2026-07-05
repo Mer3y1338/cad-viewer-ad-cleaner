@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/syad_ll_content" android:background="@drawable/syad_bg_permission_desc" android:paddingLeft="10.0dp" android:paddingTop="13.0dp" android:paddingRight="10.0dp" android:paddingBottom="13.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="40.0dp" android:layout_marginRight="10.0dp" android:layout_marginHorizontal="10.0dp" android:paddingHorizontal="10.0dp" android:paddingVertical="13.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syad_color_black" android:id="@id/syad_tv_pers_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syad_color_gray" android:id="@id/syad_tv_pers_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" />
+    </LinearLayout>
+</LinearLayout>

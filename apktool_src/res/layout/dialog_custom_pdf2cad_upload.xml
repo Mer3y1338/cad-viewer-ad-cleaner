@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="250.0dp" android:minHeight="10.0dp" android:text="@string/pdf_show_to_dwg_tips1" android:lineSpacingMultiplier="1.2" android:textIsSelectable="true" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/checkBoxPDF2CADUploadSuccess" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/selector_checkbox_account" android:minHeight="50.0dp" android:text="@string/public_no_remind" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonPDF2CADUploadOk" android:background="@drawable/selector_dialog_button_center" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_view_tips_close" />
+</LinearLayout>

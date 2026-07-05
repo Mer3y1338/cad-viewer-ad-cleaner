@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/live_loading_background" android:layout_width="92.0dp" android:layout_height="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="27.0dp" android:layout_height="27.0dp" android:layout_marginTop="14.0dp" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/live_loading_anim" android:indeterminateBehavior="repeat" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/live_progress_cancel" android:padding="10.0dp" android:layout_width="29.0dp" android:layout_height="29.0dp" android:src="@mipmap/live_loading_cancel" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#e6ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:layout_marginBottom="12.0dp" android:text="@string/live_in_loading" android:layout_centerHorizontal="true" />
+</RelativeLayout>

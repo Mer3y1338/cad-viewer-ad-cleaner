@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/syad_bg_feed_container" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/syad_fl_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sy.adsdk.ui.view.AdRoundImageView android:id="@id/syad_iv_feed_img" android:layout_width="match_parent" android:layout_height="wrap_content" app:rivCornerRadius="10.0dp" />
+        <com.sy.adsdk.ui.view.AdInteractionView android:id="@id/syad_interaction_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.sy.adsdk.adx.ui.view.AdxComplianceView android:id="@id/syad_compliance_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" android:layout_marginHorizontal="10.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/syad_feed_title_text_size" android:textColor="@color/syad_feed_title_text_color" android:id="@id/syad_tv_feed_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="10.0dp" android:maxLines="2" android:layout_marginHorizontal="10.0dp" />
+    <com.sy.adsdk.adx.ui.view.AdxFeedAttachView android:id="@id/syad_attach_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="10.0dp" android:layout_marginHorizontal="10.0dp" />
+</LinearLayout>

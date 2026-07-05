@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stone.app.ui.widget.StoneSquareLayout android:gravity="center" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/viewAdData" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/public_item_grid_ad" />
+    <View android:id="@id/viewEditMode" android:background="@color/gstar_bg_color_gray2" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5" />
+    <com.stone.app.ui.widget.StoneSquareLayout android:gravity="center" android:id="@id/viewFileData" android:descendantFocusability="blocksDescendants" style="@style/public_item_grid2">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:background="@drawable/roundcorner_color_black_bottom_flat" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" android:contentDescription="@string/app_name">
+                <ImageView android:id="@id/imageViewFileIcon" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/file_icon_dwg" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+                <ImageView android:layout_gravity="right|bottom" android:id="@id/imageViewFileNoteIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:src="@drawable/cad_cmd_note_mark" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray_item_title" android:ellipsize="end" android:id="@id/textViewFileName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/viewFileDateAndSize" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:gravity="start" android:id="@id/textViewFileSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_size" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:gravity="start" android:id="@id/textViewFileDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="2016-7-31 16:30" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:id="@id/checkBoxFileSelect" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:button="@drawable/selector_checkbox_circle" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/imageViewFileDetail" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:src="@drawable/selector_button_file_detail" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+    </com.stone.app.ui.widget.StoneSquareLayout>
+</com.stone.app.ui.widget.StoneSquareLayout>

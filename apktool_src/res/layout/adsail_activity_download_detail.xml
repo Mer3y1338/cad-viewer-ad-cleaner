@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50.0dp">
+        <ImageView android:id="@id/adsail_ic_back" android:layout_width="50.0dp" android:layout_height="match_parent" android:src="@drawable/adsail_ic_back" android:scaleType="center" />
+        <TextView android:textSize="18.0sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用详情" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="#cbc9cc" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <ScrollView android:background="#f0f0f0" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/adsail_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="10.0dp">
+                <LinearLayout android:id="@id/adsail_app_name_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="15.0dp" android:text="应用名称 :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:id="@id/adsail_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="15.0dp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/adsail_app_ver_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="版本号     :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:id="@id/adsail_app_ver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/adsail_developer_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="开发者     :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:id="@id/adsail_developer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/adsail_payment_types_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="付费类型 :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:id="@id/adsail_payment_types" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/adsail_app_size_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="包体大小 :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:id="@id/adsail_app_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/adsail_app_feature_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="版本特性 :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:id="@id/adsail_app_feature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/adsail_app_Permiss_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="权限链接 :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:autoLink="all" android:id="@id/adsail_app_permiss_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/adsail_app_private_agrement_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="隐私协议 :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:autoLink="all" android:id="@id/adsail_app_private_agrement_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/adsail_app_intro_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="15.0dp" android:text="应用简介 :" />
+                    <TextView android:textSize="12.0sp" android:textColor="#a7a5a8" android:autoLink="all" android:id="@id/adsail_app_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="15.0dp" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="#000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_marginTop="30.0dp" android:text="权限列表" />
+            <cn.haorui.sdk.adsail_ad.view.ListViewForScrollView android:id="@id/adsail_listView" android:background="@drawable/adsail_bg_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="10.0dp" android:listSelector="@android:color/transparent" android:divider="@null" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

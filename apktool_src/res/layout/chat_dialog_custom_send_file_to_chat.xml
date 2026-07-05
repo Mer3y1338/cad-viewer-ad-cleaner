@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/group_icon_image_view" android:layout_width="60.0dp" android:layout_height="60.0dp" android:src="@drawable/ic_launcher" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom" android:id="@id/company_icon_image_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black" android:id="@id/group_name_text_view" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/cancel_button" android:background="@drawable/selector_dialog_button_left" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/ok_button" android:background="@drawable/selector_dialog_button_right" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</LinearLayout>

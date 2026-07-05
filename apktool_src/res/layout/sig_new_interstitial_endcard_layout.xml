@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sig_endCard_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/sig_ad_rl_close" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/sig_ad_close" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.sigmob.sdk.base.views.CircleImageView android:id="@id/sig_app_icon" android:layout_width="90.0dp" android:layout_height="90.0dp" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:radius="10.0dp" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:id="@id/sig_ad_title" android:layout_width="match_parent" android:layout_height="28.0dp" android:layout_marginTop="30.0dp" android:maxLines="1" android:layout_below="@id/sig_app_icon" />
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:ellipsize="end" android:gravity="center" android:id="@id/sig_ad_desc" android:layout_width="match_parent" android:layout_height="25.0dp" android:layout_marginTop="11.0dp" android:maxLines="1" android:layout_below="@id/sig_ad_title" />
+        <Button android:textSize="18.0sp" android:textColor="#ffffff" android:id="@id/sig_cta_button" android:background="@drawable/sig_interstitial_cta_bg" android:layout_width="200.0dp" android:layout_height="40.0dp" android:layout_marginTop="40.0dp" android:text="立即下载" android:layout_below="@id/sig_ad_desc" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.sigmob.sdk.newInterstitial.SigAdPrivacyInfoView android:id="@id/sig_ad_privacy_info" android:layout_width="wrap_content" android:layout_height="15.0dp" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

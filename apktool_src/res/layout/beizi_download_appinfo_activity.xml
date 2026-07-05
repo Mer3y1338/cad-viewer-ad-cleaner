@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/beizi_download_appinfo_back" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/beizi_icon_back_left" android:layout_alignParentTop="true" android:layout_marginStart="20.0dp" />
+    <TextView android:textSize="15.0dp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/beizi_download_appinfo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignTop="@id/beizi_download_appinfo_back" android:layout_alignBottom="@id/beizi_download_appinfo_back" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/beizi_download_appinfo_tablayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_below="@id/beizi_download_appinfo_back">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/beizi_appinfo_permission_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dp" android:id="@id/beizi_appinfo_permission_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="权限详情" />
+            <View android:id="@id/beizi_appinfo_permission_below_line" android:layout_width="23.0dp" android:layout_height="2.0dp" android:layout_marginTop="2.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/beizi_appinfo_privacy_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dp" android:id="@id/beizi_appinfo_privacy_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私协议" />
+            <View android:id="@id/beizi_appinfo_privacy_below_line" android:layout_width="23.0dp" android:layout_height="2.0dp" android:layout_marginTop="2.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/beizi_appinfo_intro_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dp" android:id="@id/beizi_appinfo_intro_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="功能介绍" />
+            <View android:id="@id/beizi_appinfo_intro_below_line" android:layout_width="23.0dp" android:layout_height="2.0dp" android:layout_marginTop="2.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/beizi_download_appinfo_divider_tablayout" android:background="@color/view_divider_bg" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/beizi_download_appinfo_tablayout" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/beizi_download_appinfo_divider_tablayout">
+        <ScrollView android:id="@id/beizi_download_appinfo_persmission_content_scrollview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@id/beizi_download_appinfo_persmission_content_textview" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <com.beizi.ad.internal.download.BeiZiWebView android:id="@id/beizi_download_appinfo_persmission_content_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ScrollView android:id="@id/beizi_download_appinfo_privacy_content_scrollview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@id/beizi_download_appinfo_privacy_content_textview" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <com.beizi.ad.internal.download.BeiZiWebView android:id="@id/beizi_download_appinfo_privacy_content_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ScrollView android:id="@id/beizi_download_appinfo_intro_content_scrollview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@id/beizi_download_appinfo_intro_content_textview" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <com.beizi.ad.internal.download.BeiZiWebView android:id="@id/beizi_download_appinfo_intro_content_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bd_oauth_sdk_background_color" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bd_oauth_sdk_icon_network_unavailable" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/bd_oauth_sdk_sdk_edit_neting_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/bd_oauth_sdk_common_network_unavailable" />
+    <Button android:textSize="14.0sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@id/btn_network_settings" android:background="@drawable/bd_oauth_sdk_btn_blue" android:layout_width="200.0dp" android:layout_height="35.0dp" android:layout_marginTop="25.0dp" android:layout_marginBottom="40.0dp" android:text="@string/bd_oauth_sdk_common_setting_btn_text" />
+</LinearLayout>

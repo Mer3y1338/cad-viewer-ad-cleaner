@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/roundcorner_background_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="180.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black_title" android:gravity="center" android:id="@id/textViewWaitingTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:text="@string/open_3d_share_transformStatus0" android:lineSpacingMultiplier="1.2" />
+            <ProgressBar android:id="@id/progressBarWaiting" android:padding="10.0dp" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="10.0dp" style="?android:progressBarStyle" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewWaitingProgress" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/open3d_progress" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <include layout="@layout/view_line_horizontal" />
+        <LinearLayout android:orientation="horizontal" android:padding="1.0dp" android:visibility="visible" style="@style/layout_height_wrap">
+            <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/buttonWaitingCancel" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/open_3d_transform_background" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+            <Button android:id="@id/viewLineVertical" android:background="@color/gstar_bg_color_black_divider1" android:visibility="gone" android:layout_width="@dimen/gstar_divider_size_gray" android:layout_height="wrap_content" />
+            <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/buttonWaitingGoTo" android:padding="10.0dp" android:visibility="gone" android:layout_height="match_parent" android:text="@string/open_3d_transform_status_see" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

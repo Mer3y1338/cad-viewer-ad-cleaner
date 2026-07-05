@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:id="@id/viewOperationToolBarBottom" android:background="@drawable/footer_tab_bg_linet" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:cacheColorHint="#00000000" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonOperationUpload" android:text="@string/upload" android:drawableTop="@drawable/selector_file_operation_upload" style="@style/public_bottomt_toolsbar_style" />
+        <include android:id="@id/buttonOperationUploadSpace" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonOperationCopy" android:text="@string/copy" android:drawableTop="@drawable/selector_file_operation_copy" style="@style/public_bottomt_toolsbar_style" />
+        <include android:id="@id/buttonOperationCopySpace" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonOperationMove" android:text="@string/move" android:drawableTop="@drawable/selector_file_operation_move" style="@style/public_bottomt_toolsbar_style" />
+        <include android:id="@id/buttonOperationMoveSpace" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/buttonOperationDelete" android:text="@string/delete" android:drawableTop="@drawable/selector_file_operation_delete" style="@style/public_bottomt_toolsbar_style" />
+        <include layout="@layout/cadmain_padding_space_view" />
+    </LinearLayout>
+</HorizontalScrollView>

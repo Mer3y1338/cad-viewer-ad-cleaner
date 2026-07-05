@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/beizi_interstitial_ad_content_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/beizi_interstitial_ad_container_ll" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/beizi_interstitial_ad_material_container_rl" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.beizi.ad.internal.view.CustomRoundImageView android:id="@id/beizi_interstitial_ad_img_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <VideoView android:id="@id/beizi_interstitial_ad_video_vv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/beizi_interstitial_ad_video_replay_container_rl" android:background="#66000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/beizi_interstitial_ad_material_container_rl" android:layout_alignTop="@id/beizi_interstitial_ad_material_container_rl" android:layout_alignRight="@id/beizi_interstitial_ad_material_container_rl" android:layout_alignBottom="@id/beizi_interstitial_ad_material_container_rl">
+                    <ImageView android:id="@id/beizi_interstitial_ad_video_replay_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/beizi_icon_video_replay" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <FrameLayout android:id="@id/beizi_interstitial_ad_logo_container_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/beizi_interstitial_ad_material_container_rl" android:layout_alignBottom="@id/beizi_interstitial_ad_material_container_rl" />
+                <View android:id="@id/beizi_interstitial_ad_divide_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/beizi_interstitial_ad_material_container_rl" />
+                <com.beizi.ad.internal.view.CustomRoundImageView android:id="@id/beizi_interstitial_ad_app_icon_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignBottom="@id/beizi_interstitial_ad_divide_view" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/beizi_interstitial_ad_complain_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投诉" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                    <RelativeLayout android:id="@id/beizi_interstitial_ad_close_container_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <ImageView android:id="@id/beizi_interstitial_ad_close_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/beizi_interaction_icon_close" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/beizi_interstitial_ad_close_text_container_ll" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/beizi_interstitial_ad_countdown_tv" android:layout_width="wrap_content" android:layout_height="match_parent" />
+                            <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="关闭" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <ImageView android:id="@id/beizi_interstitial_ad_voice_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/beizi_interstitial_ad_close_container_rl" android:layout_alignTop="@id/beizi_interstitial_ad_close_container_rl" android:layout_alignBottom="@id/beizi_interstitial_ad_close_container_rl" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/beizi_interstitial_ad_title_container_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@id/beizi_interstitial_ad_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#666666" android:ellipsize="end" android:gravity="center" android:id="@id/beizi_interstitial_ad_subtitle_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+            <View android:id="@id/beizi_interstitial_ad_title_divider_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/beizi_interstitial_ad_interaction_container_landscape_rl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/beizi_interstitial_ad_container_ll" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/beizi_interstitial_ad_interaction_container_portrait_rl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/beizi_interstitial_ad_container_ll" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="7.0sp" android:textColor="#ffffff" android:id="@id/beizi_interstitial_ad_app_download_info_tv" android:background="#66000000" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

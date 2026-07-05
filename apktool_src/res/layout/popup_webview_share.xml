@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right|top" android:orientation="vertical" android:background="@color/transparent_half_black" android:paddingLeft="5.0dp" android:paddingTop="@dimen/toolbar_height" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/iv_triangle" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/cad_triangle_gray_up" />
+    <LinearLayout android:orientation="vertical" android:id="@id/viewShareContent" android:background="@drawable/selector_button_color_gray_rect" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

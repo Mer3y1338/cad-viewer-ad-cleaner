@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/yd_saas_banner_media_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/yd_saas_banner_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dp" android:textColor="#333333" android:ellipsize="end" android:id="@id/yd_saas_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textSize="12.0dp" android:textColor="#808080" android:ellipsize="end" android:id="@id/yd_saas_banner_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

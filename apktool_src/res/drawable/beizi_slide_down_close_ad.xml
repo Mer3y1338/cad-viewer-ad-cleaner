@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="600" android:drawable="@drawable/beizi_slide_down_one" />
+    <item android:duration="600" android:drawable="@drawable/beizi_slide_down_two" />
+    <item android:duration="600" android:drawable="@drawable/beizi_slide_down_three" />
+</animation-list>

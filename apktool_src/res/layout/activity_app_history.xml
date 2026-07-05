@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_text_color_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_line_horizontal" />
+    <TextView android:textSize="12.0dp" android:textColor="#9b9b9b" android:id="@id/textViewHistory" android:padding="20.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" />
+</LinearLayout>

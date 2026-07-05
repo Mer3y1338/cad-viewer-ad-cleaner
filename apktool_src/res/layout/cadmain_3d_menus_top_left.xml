@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:minHeight="48.0dp" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right|center" android:layout_gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp">
+        <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:background="@drawable/roundcorner_dialog_black1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/viewTopPrevious" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_3d_top_menu_previous" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopNext" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_3d_top_menu_next" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopReset" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_3d_top_menu_reset" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopFitScreen" android:background="@null" android:padding="8.0dp" android:layout_width="26.0dp" android:layout_height="wrap_content" android:src="@drawable/selector_cad_3d_top_menu_fitscreen" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopFullScreen" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_3d_top_menu_fullscreen" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

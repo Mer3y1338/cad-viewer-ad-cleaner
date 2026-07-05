@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/zz_player_player_container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/vp_rl_app_show" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.my.adpoymer.edimob.view.mobvideoplayer.widget.ZZVideoView android:id="@id/zzvv_main" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <com.my.adpoymer.edimob.view.mobvideoplayer.widget.PlayerController android:id="@id/zz_player_controller" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:layout_alignParentBottom="true" />
+        <com.my.adpoymer.edimob.view.mobvideoplayer.widget.PlayerTitleBar android:id="@id/zz_player_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <FrameLayout android:id="@id/zz_player_fl_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/my_video_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/zz_player_pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="38.0dp" android:maxHeight="38.0dp" android:indeterminateDrawable="@drawable/mob_zz_player_loading_rotate" android:minWidth="38.0dp" android:minHeight="38.0dp" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vp_rl_app_recommend" android:background="#00000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/vp_iv_exit" android:visibility="visible" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="24.5dp" android:src="@drawable/mob_r_back" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/qc_rd_c_ll" android:background="@drawable/mob_m_b_rd_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="37.5dp" android:layout_marginRight="37.5dp" android:layout_centerInParent="true">
+            <ImageView android:id="@id/vp_iv_app_logo" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_marginTop="35.0dp" android:layout_marginBottom="20.0dp" />
+            <TextView android:textSize="19.0sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:id="@id/vp_tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0sp" android:textColor="#999999" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/vp_tv_app_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="14.5dp" android:layout_marginRight="15.0dp" android:maxLines="2" />
+            <RatingBar android:id="@id/qc_rd_c_rat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:rating="3.0" style="?android:ratingBarStyleSmall" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/vp_bt_app_download" android:background="@drawable/mob_m_b_rd_c_btn" android:layout_width="230.0dp" android:layout_height="44.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="30.0dp" android:text="马上下载" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

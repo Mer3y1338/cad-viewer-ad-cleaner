@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/ksad_common_app_card_root" android:background="@drawable/ksad_reward_card_bg" android:padding="12.0dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.kwad.sdk.widget.KSFrameLayout android:background="#ffeaeaea" android:padding="1.0px" android:layout_width="@dimen/ksad_reward_apk_info_card_icon_size" android:layout_height="@dimen/ksad_reward_apk_info_card_icon_size" android:layout_marginRight="12.0dp" app:ksad_radius="13.0dp">
+            <ImageView android:id="@id/ksad_common_app_icon" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.kwad.sdk.widget.KSFrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="@dimen/ksad_reward_apk_info_card_icon_size">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/ksad_reward_apk_info_card_tags_height">
+                <TextView android:textSize="17.0sp" android:ellipsize="end" android:layout_gravity="left|top" android:id="@id/ksad_common_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:maxWidth="300.0dp" android:text="王者农药" android:maxLines="1" android:includeFontPadding="false" />
+                <com.kwad.components.ad.widget.KsAppTagsView android:layout_gravity="left|center" android:orientation="horizontal" android:id="@id/ksad_common_app_tags" android:layout_width="wrap_content" android:layout_height="match_parent" android:divider="@drawable/ksad_reward_apk_tags_divider" android:showDividers="middle" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="left|bottom" android:id="@id/ksad_common_app_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.kwad.components.core.widget.KsConvertButton android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/ksad_common_app_action" android:background="@color/ksad_reward_main_color" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:indeterminateOnly="false" android:text="立即下载" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:ksad_radius="200.0dp" />
+</RelativeLayout>

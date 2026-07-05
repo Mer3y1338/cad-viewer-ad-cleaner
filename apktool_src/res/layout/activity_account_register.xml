@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/gstar_bg_color_gray" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_base_header_view2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/viewRegisterStep1" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radioGroupRegisterType" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="20.0dp" android:checkedButton="@id/radioButton0">
+            <RadioButton android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_gray2blue" android:gravity="center" android:id="@id/radioButton0" android:tag="0" android:layout_width="match_parent" android:layout_height="match_parent" android:button="@null" android:text="@string/account_register_type_phone" android:drawableBottom="@drawable/selector_radiobutton_tabline_view" android:layout_weight="1.0" />
+            <RadioButton android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_gray2blue" android:gravity="center" android:id="@id/radioButton1" android:tag="1" android:layout_width="match_parent" android:layout_height="match_parent" android:button="@null" android:text="@string/account_register_type_email" android:drawableBottom="@drawable/selector_radiobutton_tabline_view" android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/viewRegisterPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45.0dp">
+                <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/editTextMobile" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/account_mobile_hint" android:singleLine="true" android:maxLength="15" android:layout_weight="1.5" android:inputType="phone" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/imageViewMobileClear" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete3" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45.0dp">
+                <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/editTextSMS" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/account_mobile_sms_hint" android:singleLine="true" android:maxLength="@dimen/edittext_length_max" android:layout_weight="1.5" android:inputType="number" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/imageViewSMSClear" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete3" android:contentDescription="@string/app_name" />
+                <include android:layout_width="@dimen/gstar_divider_size_gray" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" layout="@layout/view_line_vertical" />
+                <Button android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_blue" android:id="@id/buttonSendSMS" android:background="@color/transparent" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.0dp" android:minWidth="100.0dp" android:text="@string/account_mobile_sms_send" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/viewRegisterEmail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45.0dp">
+                <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/editTextEmail" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:hint="@string/account_email_hint" android:singleLine="true" android:maxLength="@dimen/edittext_length_max" android:layout_weight="1.5" android:inputType="textEmailAddress" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/imageViewEmailClear" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete3" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <include layout="@layout/view_line_horizontal" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/viewRegisterInfo" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                    <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/editTextUserName" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/account_username_hint" android:singleLine="true" android:maxLength="@dimen/edittext_length_max" android:layout_weight="1.5" />
+                    <ImageView android:layout_gravity="right|center" android:id="@id/imageViewUserNameClear" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete3" android:contentDescription="@string/app_name" />
+                </LinearLayout>
+                <include layout="@layout/view_line_horizontal" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                    <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/editTextPassword" android:background="@color/transparent" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/account_password_hint" android:singleLine="true" android:maxLength="@dimen/edittext_length_max" android:layout_weight="1.5" android:inputType="textPassword" />
+                    <ImageView android:layout_gravity="right|center" android:id="@id/imageViewPasswordClear" android:padding="10.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/input_delete3" android:contentDescription="@string/app_name" />
+                    <CheckBox android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_gray" android:gravity="center_vertical" android:id="@id/checkBoxShowPassWord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:checked="false" android:button="@null" android:drawableLeft="@drawable/selector_checkbox_password_gray" android:alpha="0.8" />
+                </LinearLayout>
+                <include layout="@layout/view_line_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewPolicyService" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp">
+            <CheckBox android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/checkBoxServiceOK" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:button="@drawable/selector_checkbox_account" />
+            <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/textViewPolicyService" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="@string/account_register_user_agreement1" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/buttonRegisterOK" android:background="@drawable/selector_button_color_blue" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_margin="40.0dp" android:text="@string/account_register" />
+    </LinearLayout>
+</LinearLayout>

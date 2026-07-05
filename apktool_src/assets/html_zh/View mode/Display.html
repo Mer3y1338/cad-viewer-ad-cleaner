@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>辅助显示</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../menu.css" />
+		<script type="text/javascript" src="../common.js"></script>
+	</head>
+	<body>
+		<div class="row breadcrumb-wrapper">
+			<ul class="breadcrumb main-wrapper container">
+				<li><a href="../link.html">帮助</a></li>
+				<li>&gt;</li>
+				<li class="active">辅助显示</li>
+			</ul>
+		</div>
+		<div class="item-title">辅助显示</div>
+		<p>包括：<a href="Display.html#one">点标记，</a><a href="Display.html#two">坐标标记，</a><a href="Display.html#three">放大镜，</a><a
+			 href="Display.html#five">捕捉，</a><a href="Display.html#six">辅助图元，</a><a href="Display.html#seven">面板，</a><a href="Display.html#eight">关键字，</a><a
+			 href="Display.html#nine">编辑过程中的开关，</a><a href="Display.html#ten">记录测量结果</a></p>
+		<p><strong><a name="one" style="color: #333333;">1. 点标记</a></strong></p>
+		<p><img src="../images/icon_point.png" alt="" width="50" height="50" /></p>
+		<p>
+			点标记可显示当前点的位置。<br />
+			通过手指点击或拖动创建第一点时，手指抬起的位置显示点标记。<br />
+			创建第一点后，拖动点标记可调整该点的位置。 </p>
+
+		<p><strong><a name="two" style="color: #333333;">2. 坐标标记</a></strong></p>
+		<p><img src="../images/icon_coordinate.png" alt="" width="96" height="85" /></p>
+		<p>坐标标记显示当前点的绝对坐标值，包含X值和Y值。<br />
+			设置中，命令面板开启状态下，通过点击或拖动创建点时，手指抬起时，显示该点的坐标标记。<br />
+			点击坐标标记，弹出坐标标记面板，可修改当前点的绝对坐标值。</p>
+		<div style="width:50%;margin:0 auto;">
+			<img src="../images/keypad_absolute.png" alt="" style='width:100%;display:block;' /></div>
+		<p><strong><a  style="color: #333333;" name="three">3. 放大镜</a></strong></p>
+		<p>进行图纸编辑时，长按超过0.5s启动放大镜，放大镜里显示的是触摸区域的放大图形，以便用户观察触摸区域的图形，观察是否捕捉等，如图：<br />
+			<img src="../images/icon_magnifier.png" alt="" width="91" height="91" />
+		</p>
+		<p> 用户可以在设置中放大镜的显示位置：左，右，随动。<br />
+			用户可根据个人习惯设置放大镜的大小尺寸。<br />
+			手指抬起，放大镜消失。</p>
+		<p><strong><a  style="color: #333333;" name="five">4. 捕捉</a></strong></p>
+		<p>最新支持端点，中点，圆心，节点，象限点，交点，插入点，垂足，切点，最近点捕捉。<br />
+			绘制过程中，拖动某一实体，系统自动捕捉其延伸方向内实体的端点或中点，以便精准相交位置。下图所示为端点捕捉，以绿色方块标注端点:<img src="../images/snap.png" width="96" height="84" /></p>
+		<p>支持极轴追踪和对象捕捉追踪。 </p>
+
+		<p><strong><a style="color: #333333;" name="six">5. 辅助图元</a></strong></p>
+		<p><img src="../images/icon_Auxiliary.png" width="102" height="106" /></p>
+		<p><strong>辅助点：</strong><br />
+			在设置中，对象捕捉追踪开启状态下：<br />
+			在实体创建、夹点编辑、实体移动等状态下，手指移动经过的捕捉点（停留0.5秒以上）作为临时辅助点，当手指再次移动与此点水平或垂直坐标一致时，系统自动生成辅助线，以便确定该点的位置。<br />
+			<strong>辅助线</strong>：<br />
+			实体的尺寸线和尺寸界线；<br />
+			实体选择状态下外部矩形框；<br />
+			对象捕捉追踪辅助线，X/Y轴方向虚线，实体端点辅助点延伸相交辅助线；<br />
+			实体移动，夹点编辑过程中，显示橡皮筋，以辅助显示夹点、实体移动方向和距离。<br />
+			<strong>辅助参数：</strong><br />
+			创建实体或编辑实体过程中，显示长度、角度、半径等辅助参数。 </p>
+
+
+		<p><strong><a style="color: #333333;" name="seven">6. 面板</a></strong></p>
+		<p>
+			面板分命令面板和数字面板。<br />
+			以单段线的命令面板为例：点击&ldquo;单段线&rdquo;命令，根据命令提示在屏幕上指定一点，手指抬起时，弹出单段线命令面板。首次启动默认为极坐标输入模式。可点击前面的切换键从极坐标切换到相对坐标输入模式。<br />
+		</p>
+		<p style="padding-left:2.5em;"><strong>6.1 极坐标 </strong><br /><strong>定义</strong>：输入一个距离和一个角度, 以指定定位点的极坐标位置。 </p>
+
+		<p><strong>面板</strong>：</p>
+		<div style="width:50%;margin:0 auto;">
+			<img src="../images/keypad_line_polar.png" alt="" style='width:100%;display:block;' /></div>
+		<p style="padding-left:2.5em;"><strong>案例</strong>：使用极坐标, 绘制一个边长为8.5倾斜 45 度的正方形。 <br />
+			<strong>操作步骤：</strong> <br />
+			（1） 单击选择绘图工具中的&ldquo;多段线&rdquo;命令； <br />
+			（2） 点击指定正方形的第一个顶点； <br />
+			（3） 输入第二个顶点的极坐标值: 8.5，45，然后点击&ldquo;+&rdquo;； <br />
+			（4） 输入第三个顶点的极坐标值: 8.5，315，然后点击&ldquo;+&rdquo;；<br />
+			（5） 输入第四个顶点的极坐标值: 8.5，225；<br />
+			（6） 点击关键字&ldquo;闭合&rdquo;命令，闭合正方形。见下图： </p>
+		<div style="width:25%;margin:0 auto;">
+			<img src="../images/2Dcoordinates-003.png" alt="" style='width:100%;display:block;' />
+		</div>
+
+		<p style="padding-left:2.5em;"><strong>6.2 相对坐标 </strong><br /><strong>定义</strong>：输入X轴方向的增量和Y轴方向的增量指定定位点的相对位置。 </p>
+
+		<p> <strong>面板</strong>：</p>
+		<div style="width:50%;margin:0 auto;">
+			<img src="../images/keypad_polyline_relative.png" alt="" style='width:100%;display:block;' /></div><br />
+		<p style="padding-left:2.5em;"><strong>案例</strong>：使用相对坐标, 绘制一个边长为 8.5 的正方形。 <br />
+			<strong>操作步骤：</strong> <br />
+			（1） 单击选择绘图工具中的&ldquo;多段线&rdquo;命令； <br />
+			（2） 点击指定正方形的第一个顶点；<br />
+			（3） 输入第二个顶点的相对坐标值: 8.5,0，然后点击&ldquo;+&rdquo;； <br />
+			（4） 输入第三个顶点的相对坐标值: 0,8.5，然后点击&ldquo;+&rdquo;；<br />
+			（5） 输入第四个顶点的相对坐标值: -8.5,0；<br />
+			（6） 点击关键字&ldquo;闭合&rdquo;，闭合正方形。见下图： </p>
+		<div style="width:25%;margin:0 auto;">
+			<img src="../images/2Dcoordinates-003.png" alt="" style='width:100%;display:block;' />
+		</div>
+
+		<p><strong><a  style="color: #333333;" name="eight">7. 关键字</a></strong></p>
+		<div style="width:25%;margin:0 auto;"><img src="../images/keywords.png" alt="" style='width:100%;display:block;' />
+		</div>
+		<p>关键字出现在命令提示语后面，在命令执行的不同阶段显示的关键字不同。例如绘制多段线时，绘制第一点前有&ldquo;弧&rdquo;和&ldquo;取消&rdquo;两个关键字，指定了第三点后，出现&ldquo;弧&rdquo;，&ldquo;撤销&rdquo;，&ldquo;闭合&rdquo;，&ldquo;取消&rdquo;和&ldquo;完成&rdquo;五个关键字。
+		</p>
+		<p><strong><a  style="color: #333333;" name="nine">8. 编辑过程中的开关</a></strong></p>
+		<p style="padding-left:2.5em;"><strong>8.1 参数编辑开关 </strong></p>
+		<p style="padding-left:2.5em;"><img src="../images/icon_parameter edit.png" alt="" width="28" height="28" /></p>
+		<p style="padding-left:2.5em;">点击进入参数编辑模式。点击实体的长度，角度等参数编辑框弹出纯数字面板，可修改实体参数。
+		</p>
+		<p style="padding-left:2.5em;"><strong>8.2 夹点编辑开关 </strong></p>
+		<p style="padding-left:2.5em;"><img src="../images/icon_pinch edit.png" alt="" width="28" height="28" /></p>
+		<p style="padding-left:2.5em;">点击进入夹点编辑模式，拖动夹点可拉伸实体。
+		</p>
+		<p style="padding-left:2.5em;"><strong>8.3 简单编辑开关 </strong></p>
+		<p style="padding-left:2.5em;"><img src="../images/icon_simple edit.png" alt="" width="28" height="28" /></p>
+		<p style="padding-left:2.5em;">点击进入简单编辑模式，如有夹点，可拖动夹点实现对象缩放；拖动中心的平移图标实现对象平移；拖动旋转图标实现对象旋转。
+		</p>
+		<p style="padding-left:2.5em;"><strong>8.4 圆心解锁 </strong></p>
+		<p style="padding-left:2.5em;"><img src="../images/icon_center unlock.png" alt="" width="28" height="28" /></p>
+		<p style="padding-left:2.5em;">在圆弧参数编辑时，&ldquo;锁定圆心&rdquo;开关显示解锁为默认状态，圆弧的起点和端点位置固定，圆心位置可动。可通过调整圆心位置修改圆弧的半径，圆心角。
+		</p>
+		<p style="padding-left:2.5em;"><strong>8.5 锁定圆心</strong></p>
+		<p style="padding-left:2.5em;"><img src="../images/icon_center locked.png" alt="" width="28" height="28" /></p>
+		<p style="padding-left:2.5em;">&ldquo;锁定圆心&rdquo;开关显示锁定时，圆心位置固定，可通过调整圆弧的起点和端点的位置修改圆弧的半径，起始角和终止角。
+		</p>
+		<p><strong><a  style="color: #333333;" name="ten">9. 记录测量结果</a></strong></p>
+		<p style="padding-left:2.5em;"><img style="background-color: #d6d6d6;" src="../images/Record result.png" alt="" width="28" height="28" /></p>
+		<p style="padding-left:2.5em;">启动测量命令后，&ldquo;记录结果&rdquo;按钮显示在在测量面板右上角。<br />
+			点击该按钮，测量结果保存到结果列表。<br />
+			设置中有&ldquo;自动记录测量结果&rdquo;的选项，默认为关闭。</p>
+		
+
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:padding="5.0dp" style="@style/public_cad_input_panel_all"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/viewMeasurePoint" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_x" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasurePoint_X" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_y" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasurePoint_Y" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_z" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasurePoint_Z" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/viewMeasureLine" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_length" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasureLine_Length" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/viewMeasureArc" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_radius" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasureArc_Radius" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_3d_main_menu_measure_center_angle" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasureArc_Center" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_arc_length" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasureArc_Length" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/viewMeasurePlane" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_perimeter" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasurePlane_Perimeter" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_area" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasurePlane_Area" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/viewMeasureModel" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_3d_main_menu_measure_model_name" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasureModel_Name" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="id" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasureModel_ID" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_3d_main_menu_measure_surface_area" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="end|center" android:id="@id/textViewMeasureModel_Area" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

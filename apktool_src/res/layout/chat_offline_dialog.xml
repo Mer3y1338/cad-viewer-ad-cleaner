@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/roundcorner_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:id="@id/dialog_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15.0dp" android:text="@string/chat_offline_tips_content" />
+    <androidx.appcompat.widget.AppCompatCheckBox android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:id="@id/dialog_check_box" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/cad_open_mode_tips" android:layout_marginStart="10.0dp" />
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2gray" android:id="@id/dialog_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_view_tips_close" />
+</androidx.appcompat.widget.LinearLayoutCompat>

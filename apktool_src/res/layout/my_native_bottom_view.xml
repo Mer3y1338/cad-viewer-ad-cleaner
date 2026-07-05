@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ly_bottom_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/my_linder_appinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/my_linder_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:ellipsize="end" android:id="@id/my_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" |" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:ellipsize="end" android:id="@id/my_app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" |" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:ellipsize="end" android:id="@id/my_app_version_develop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:maxLength="6" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/my_age_icp_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:ellipsize="end" android:id="@id/my_app_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="5" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" |" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:ellipsize="end" android:id="@id/my_app_icp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="5" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" |" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:id="@id/my_app_version_quanxian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="| 权限" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:id="@id/my_app_version_yinsixieyi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="| 隐私" />
+            <TextView android:textSize="9.0sp" android:textColor="#9c9c9c" android:id="@id/my_app_version_gongnengjieshao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="| 功能" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

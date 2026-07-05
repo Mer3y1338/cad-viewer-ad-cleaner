@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/selector_item_single_choice_black" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="55.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/imageViewFindResultColor" android:background="@color/red" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="15.0dp" android:layout_height="match_parent" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:id="@id/textViewFindResultContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:ellipsize="end" android:id="@id/textViewFindResultType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/app_name" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ptg_rl_bot1" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ptg_img_close" android:paddingLeft="10.0dp" android:paddingRight="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/ptg_icon_close_home" android:layout_alignParentRight="true" android:contentDescription="Close" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <include android:layout_gravity="right|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/ptg_advert_logo" />
+        <TextView android:textSize="10.0sp" android:id="@id/ptg_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:text="" />
+        <TextView android:textSize="10.0sp" android:id="@id/ptg_tv_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:text="" />
+        <TextView android:textSize="10.0sp" android:id="@id/ptg_tv_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

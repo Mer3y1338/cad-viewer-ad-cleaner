@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:ns0="http://schemas.android.com/apk/res-auto">
+    <SplitPairRule ns0:clearTop="true" ns0:finishPrimaryWithSecondary="false" ns0:finishSecondaryWithPrimary="true" ns0:splitMinWidth="600.0dp" ns0:splitRatio="0.5">
+        <SplitPairFilter ns0:primaryActivityName="com.stone.app.ui.activity.MainActivityHome" ns0:secondaryActivityName="*" />
+        <ActivityRule ns0:alwaysExpand="true">
+            <ActivityFilter ns0:activityName="com.stone.app.ui.activity.MainActivityHome" />
+        </ActivityRule>
+    </SplitPairRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.contact.ChatContactsActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.chat.ChatBeginnerGuideActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.contact.ChatContactsSearchActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.chat.ChatActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.contact.ChatSelectContactsActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.chat.ChatSettingsActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.chat.ChatHelpActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.chat.ChatCadFileListActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.chat.ChatSelectFriendGroupActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AppSplashActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AccountProductShowActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.NetDiskCloudDownloadActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.FileUploadMyCloudActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.FileSearchMyCloudActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.FileSearchActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.FileSelectActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.FileMoveActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.CADFilesActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.CADFiles3D_HoopsActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.WebViewActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.WebViewActivityAI" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.WebViewActivityTest" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AppHelpHomeActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AppHelpActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AccountBindDeviceActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AccountRegisterActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AccountLoginActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AccountUserInfoActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.AccountProductPayShowActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.tencent.qcloud.tim.uikit.component.video.CameraActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.PDFShowActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.QRCodeBusinessActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.QRCodeActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.WatermarkCameraActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.ui.activity.TaskListActivity" />
+    </ActivityRule>
+    <ActivityRule ns0:alwaysExpand="true">
+        <ActivityFilter ns0:activityName="com.stone.app.chat.project.ChatProjectActivity" />
+    </ActivityRule>
+    <SplitPairRule ns0:clearTop="true" ns0:splitMinWidth="600.0dp" ns0:splitRatio="0.5">
+        <SplitPairFilter ns0:primaryActivityName="com.stone.app.ui.activity.CADFilesActivity" ns0:secondaryActivityName="*" />
+        <ActivityRule ns0:alwaysExpand="true">
+            <ActivityFilter ns0:activityName="com.stone.app.ui.activity.CADFilesActivity" />
+        </ActivityRule>
+    </SplitPairRule>
+</resources>

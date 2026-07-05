@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yd.saas.common.widget.RoundedFrameLayout android:id="@id/s2s_template_view_media_container" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" app:yd_radius="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

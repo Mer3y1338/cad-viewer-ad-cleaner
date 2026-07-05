@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#a0000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ms_activity_sdk_interstitial_rootView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="80.0dp">
+        <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/ms_download_layer_textview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/ms_splash_download_desc" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ms_activity_sdk_interstitial_adLogoLL" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="15.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/ms_activity_sdk_interstitial_adLogo" android:layout_width="wrap_content" android:layout_height="15.0dp" android:src="@drawable/ms_ad" />
+        <TextView android:textSize="8.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ms_layout_native_interstitial_cid" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.meishu.sdk.core.view.gif.GifImageView android:id="@id/ms_action_shakeImage" android:background="@drawable/ms_bg_alpha_oval" android:visibility="gone" android:layout_width="150.0dp" android:layout_height="150.0dp" android:layout_centerInParent="true" />
+</RelativeLayout>

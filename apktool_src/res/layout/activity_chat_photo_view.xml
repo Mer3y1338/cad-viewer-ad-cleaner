@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/photo_view_back" android:paddingLeft="16.0dp" android:paddingRight="30.0dp" android:layout_width="wrap_content" android:layout_height="45.0dp">
+        <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_title_bar_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/photo_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/photo_gress_bar" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

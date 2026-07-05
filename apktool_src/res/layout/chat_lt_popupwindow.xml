@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="#00000000" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/roundcorner_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/chat_recent_file_view" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cad_cmd_recent_dwg" />
+        <include layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/chat_local_file_view" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_local_dwg" />
+        <include layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/chat_server_file_view" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_cloud_dwg" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/chat_choose_file_cancel_view" android:background="@drawable/roundcorner_color_white" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/cancel" />
+</androidx.appcompat.widget.LinearLayoutCompat>

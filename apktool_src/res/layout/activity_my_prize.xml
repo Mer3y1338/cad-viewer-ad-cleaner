@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserCoupon" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/coupon_mine" android:layout_weight="1.5" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <include android:id="@id/lineUserRecords3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="30.0dp" layout="@layout/view_line_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewUserExchange" android:background="@color/gstar_bg_color_white" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/account_my_exchange" android:layout_weight="1.5" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <include android:id="@id/lineUserExchange" layout="@layout/view_line_horizontal" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/group_icon_layout" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="15.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/item_group_icon_view" android:layout_width="@dimen/contact_avatar_width" android:layout_height="@dimen/contact_avatar_width" android:src="@drawable/chat_icon_lt_contact_group" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom" android:id="@id/company_badge_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#919191" android:id="@id/item_group_admin_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:text="@string/chat_group_admin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#373838" android:ellipsize="end" android:id="@id/item_group_name_view" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="16.0dp" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/item_group_admin_view" app:layout_constraintStart_toEndOf="@id/group_icon_layout" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutCheckMarkResult" android:background="@color/app_color_main_black1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="0.0dp">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:text="@string/cad_text_increase_result" />
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:id="@id/textViewTextIncreaseShow" android:background="@drawable/roundcorner_color_black2" android:padding="10.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="15.0dp" android:text="@string/cad_block_count_block_ignore" />
+    </LinearLayout>
+    <View android:id="@id/viewCheckMarkResultBottomPadding" android:background="@color/gstar_bg_color_black_divider2" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/app_color_main_black1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/input_panel_header_measure">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <ImageButton android:id="@id/imageButtonInputPanel_Add" android:background="@drawable/selector_cad_input_panel_cmd" android:layout_width="@dimen/input_panel_header_measure" android:layout_height="@dimen/input_panel_header_measure" android:src="@drawable/input_panel_cmd_new" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:gravity="center_vertical" android:id="@id/textViewInputPanel_Add" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cad_text_increase_next" />
+        </LinearLayout>
+        <View android:background="@color/gstar_bg_color_black_divider2" android:layout_width="@dimen/gstar_divider_size_gray" android:layout_height="match_parent" />
+        <ImageButton android:id="@id/imageButtonInputPanel_Cancel" android:background="@drawable/selector_cad_input_panel_cmd" android:layout_width="@dimen/input_panel_header_measure" android:layout_height="@dimen/input_panel_header_measure" android:src="@drawable/input_panel_cmd_cancel" android:contentDescription="@string/app_name" />
+        <ImageButton android:id="@id/imageButtonInputPanel_Done" android:background="@drawable/selector_cad_input_panel_cmd" android:layout_width="@dimen/input_panel_header_measure" android:layout_height="@dimen/input_panel_header_measure" android:src="@drawable/input_panel_cmd_done" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</LinearLayout>

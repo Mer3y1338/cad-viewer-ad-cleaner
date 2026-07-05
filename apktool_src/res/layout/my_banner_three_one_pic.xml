@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/ly_native_ad_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_trans" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.my.adpoymer.view.AutoPlayViewPager android:id="@id/banner_three_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/img_icon" android:layout_width="25.0dp" android:layout_height="20.0dp" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ly_rel_click" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

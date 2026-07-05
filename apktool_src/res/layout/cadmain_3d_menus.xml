@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="center_vertical" android:background="@color/app_color_main_black1" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="@dimen/gstar_cadmain_menu_height" android:cacheColorHint="#00000000" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_cadmain_menu_height">
+        <include layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/imageButtonCmd_view_style" android:text="@string/cad_3d_main_menu_view_style" android:drawableTop="@drawable/selector_cad_3d_main_menu_view_style" style="@style/public_cad_menus_first_button_style" />
+        <include android:id="@id/viewShowCmd_view_style_padding" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/imageButtonCmd_view_direction" android:text="@string/cad_3d_main_menu_view_direction" android:drawableTop="@drawable/selector_cad_3d_main_menu_view_direction" style="@style/public_cad_menus_first_button_style" />
+        <include android:id="@id/imageButtonCmd_view_direction_padding" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/imageButtonCmd_structure_tree" android:text="@string/cad_3d_main_menu_structure_tree" android:drawableTop="@drawable/selector_cad_3d_main_menu_structure_tree" style="@style/public_cad_menus_first_button_style" />
+        <include android:id="@id/viewShowCmd_structure_tree_padding" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/imageButtonCmd_measure_3d" android:text="@string/cad_main_menu_measure" android:drawableTop="@drawable/selector_cad_3d_main_menu_measure" style="@style/public_cad_menus_first_button_style" />
+        <include android:id="@id/imageButtonCmd_measure_3d_padding" layout="@layout/cadmain_padding_space_view" />
+        <CheckBox android:id="@id/checkBoxCmd_pmi" android:button="@null" android:text="@string/cad_3d_main_menu_pmi_show" android:drawableTop="@drawable/cad_3d_main_menu_pmi_show" style="@style/public_cad_menus_first_button_style" />
+        <include android:id="@id/viewShowCmd_pmi_padding" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/imageButtonCmd_section" android:text="@string/cad_3d_main_menu_section" android:drawableTop="@drawable/selector_cad_3d_main_menu_section" style="@style/public_cad_menus_first_button_style" />
+        <include android:id="@id/imageButtonCmd_section_padding" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/imageButtonCmd_explosion" android:text="@string/cad_3d_main_menu_explosion" android:drawableTop="@drawable/selector_cad_3d_main_menu_explosion" style="@style/public_cad_menus_first_button_style" />
+        <include android:id="@id/imageButtonCmd_explosion_padding" layout="@layout/cadmain_padding_space_view" />
+        <Button android:id="@id/imageButtonCmd_background_color" android:text="@string/cad_3d_main_menu_background_color" android:drawableTop="@drawable/selector_cad_3d_main_menu_background_color" style="@style/public_cad_menus_first_button_style" />
+        <include android:id="@id/viewShowCmd_background_color_padding" layout="@layout/cadmain_padding_space_view" />
+    </LinearLayout>
+</HorizontalScrollView>

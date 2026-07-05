@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#e6ffffff" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="90.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ksad_app_icon" android:background="@drawable/ksad_video_app_12_bg" android:layout_width="58.0dp" android:layout_height="58.0dp" android:src="@drawable/ksad_default_app_icon" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="17.0dp" android:textColor="#222222" android:ellipsize="end" android:id="@id/ksad_app_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:maxLines="1" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.kwad.components.ad.widget.AppScoreView android:id="@id/ksad_app_score" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" />
+            <TextView android:textSize="14.0dp" android:textColor="#666666" android:ellipsize="end" android:id="@id/ksad_app_download_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dp" android:textColor="#666666" android:ellipsize="end" android:id="@id/ksad_app_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kwad.components.core.page.widget.TextProgressBar android:id="@id/ksad_app_download_btn" android:layout_width="112.0dp" android:layout_height="44.0dp" android:indeterminateOnly="false" android:progressDrawable="@drawable/ksad_video_actionbar_app_progress" />
+        <View android:id="@id/ksad_download_bar_cover" android:background="@drawable/ksad_video_actionbar_cover_bg" android:focusable="true" android:clickable="true" android:layout_width="112.0dp" android:layout_height="44.0dp" />
+    </FrameLayout>
+</LinearLayout>

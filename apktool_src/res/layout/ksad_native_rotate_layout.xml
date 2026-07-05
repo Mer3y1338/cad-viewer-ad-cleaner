@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/rotate_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ksad_native_rotate_circle" />
+    <ImageView android:layout_gravity="center|top" android:id="@id/rotate_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ksad_native_rotate_line" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/rotate_phone" android:layout_width="28.0dp" android:layout_height="44.0dp" android:layout_marginTop="22.0dp" android:src="@drawable/ksad_native_rotate_phone" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/rotate_alpha_phone" android:layout_width="28.0dp" android:layout_height="44.0dp" android:layout_marginTop="22.0dp" android:src="@drawable/ksad_native_rotate_alpha_phone" />
+</com.kwad.sdk.widget.KSFrameLayout>

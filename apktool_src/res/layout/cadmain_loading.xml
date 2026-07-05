@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20.0dp" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewCADLoading_Logo" android:layout_width="150.0dp" android:layout_height="150.0dp" android:src="@drawable/cad_loading" android:contentDescription="TODO" />
+    <TextView android:textSize="30.0sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center_horizontal" android:id="@id/textViewCADLoading_Number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.5" />
+    <Button android:gravity="center" android:id="@id/buttonCADLoading_Close" android:background="@drawable/icon_close_cad_loading" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+</LinearLayout>

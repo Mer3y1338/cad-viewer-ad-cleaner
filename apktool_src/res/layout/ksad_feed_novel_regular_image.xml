@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ksad_feed_novel_image" android:background="@drawable/ksad_feed_novel_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0dp" android:textColor="#020202" android:ellipsize="end" android:id="@id/ksad_ad_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <com.kwad.sdk.widget.RatioFrameLayout android:id="@id/ksad_image_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/ksad_ad_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" />
+        <com.kwad.components.core.widget.KsLogoView android:id="@id/ksad_ad_dislike_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="right|top" android:id="@id/ksad_ad_dislike" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ksad_ad_dislike_gray" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ksad_ad_novel_container" android:background="@drawable/ksad_feed_novel_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="58.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="14.0dp" android:layout_marginRight="12.0dp" layout="@layout/ksad_feed_app_download_novel" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ksad_ad_download_container" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp">
+                <com.kwad.components.ad.widget.NovelDownloadProgressView android:id="@id/ksad_app_download_btn" android:layout_width="match_parent" android:layout_height="match_parent" app:ksad_backgroundDrawable="@drawable/ksad_feed_actionbar_h5_cover" app:ksad_downloadTextColor="#ffffff" app:ksad_downloadTextSize="14.0dp" />
+            </LinearLayout>
+            <FrameLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ksad_ad_h5_container" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp">
+                <TextView android:textSize="14.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_h5_open_btn" android:background="@drawable/ksad_feed_actionbar_h5_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <View android:id="@id/ksad_h5_open_cover" android:background="@drawable/ksad_feed_actionbar_cover_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <TextView android:textSize="11.0dp" android:textColor="#9c9c9c" android:ellipsize="end" android:gravity="left|center" android:id="@id/ksad_h5_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="16.0dp" android:maxLines="1" android:includeFontPadding="false" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="9.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="9.0dp">
+                <com.kwad.components.core.widget.ComplianceTextView android:textSize="10.0dp" android:id="@id/ksad_compliance_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:ksad_privacy_color="#80000000" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.kwad.sdk.widget.RatioFrameLayout>
+</LinearLayout>

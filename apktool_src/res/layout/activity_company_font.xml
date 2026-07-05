@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/font_bottom_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="#c0bfb8" android:gravity="center" android:id="@id/selectAllFontView" android:background="@color/white" android:paddingLeft="16.0dp" android:paddingTop="10.0dp" android:paddingRight="16.0dp" android:paddingBottom="10.0dp" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="@string/select_all" />
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/white" android:gravity="center" android:id="@id/download_font_view" android:background="@drawable/company_font_download_default" android:paddingLeft="16.0dp" android:paddingTop="10.0dp" android:paddingRight="16.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_download_install" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/font_bottom_view">
+        <RelativeLayout android:id="@id/empty_font_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:gravity="center" android:id="@id/empty_font" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_no_font" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nodata_default" android:layout_above="@id/empty_font" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/font_refresh_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/font_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </FrameLayout>
+</RelativeLayout>

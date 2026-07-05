@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_subscription_service" android:maxLines="1" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="end" android:id="@id/textViewSubscriptionServiceTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_deduction_time" android:maxLines="1" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="end" android:id="@id/textViewDeductionTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_pay_type" android:maxLines="1" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="end" android:id="@id/textViewPaymentMethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_opened_auto_renew" android:maxLines="1" android:layout_weight="1.0" />
+        <com.kyleduo.switchbutton.SwitchButton android:id="@id/switchButtonAutoRenew" android:layout_width="60.0dp" android:layout_height="30.0dp" android:checked="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:kswBackColor="@color/switch_bg_gray2blue" app:kswThumbColor="@color/gstar_bg_color_white" app:kswThumbRangeRatio="2.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include layout="@layout/view_line_horizontal" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutApplyRefund" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:ellipsize="end" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_user_apply_refund" android:maxLines="1" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:contentDescription="@string/app_name" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include layout="@layout/view_line_horizontal" />
+</androidx.appcompat.widget.LinearLayoutCompat>

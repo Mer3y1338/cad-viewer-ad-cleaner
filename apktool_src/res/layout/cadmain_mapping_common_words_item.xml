@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/rootCommonWords" android:layout_width="55.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/textCommonWords" android:background="@drawable/selector_mapping_words_no" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp" android:text="@string/cad_cmd_mapping_input_default" android:maxLines="1" android:singleLine="true" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/imageviewWordsBadge_VIP" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" />
+</FrameLayout>

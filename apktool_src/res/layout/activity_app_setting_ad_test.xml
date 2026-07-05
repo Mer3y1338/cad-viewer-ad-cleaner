@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:background="@color/gstar_bg_color_gray" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="广点通广告" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutGdtSplashAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="开屏广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutGdtInsertAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="插屏广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutGdtNativeAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="信息流广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:background="@color/gstar_bg_color_gray" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="头条广告" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutTTSplashAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="开屏广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutTTInsertAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="插屏广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutTTNativeAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="信息流广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:background="@color/gstar_bg_color_gray" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="超鼎广告" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutCDSplashAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="开屏广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutCDInsertAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="插屏广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutCDNativeAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="信息流广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:background="@color/gstar_bg_color_gray" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="猎鹰广告" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutLYSplashAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="开屏广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutLYInsertAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="插屏广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayoutLYNativeAd" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="信息流广告" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <RelativeLayout android:id="@id/frameLayoutAD" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

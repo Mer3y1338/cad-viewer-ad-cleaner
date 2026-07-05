@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ptg.ptgapi.widget.PtgRoundLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ptg_ad_logo" android:background="#2b000000" android:paddingLeft="5.0dp" android:paddingTop="2.0dp" android:paddingRight="5.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ptg_clip_background="true" app:ptg_round_corner="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ptg_sdk_ad_logo_iv" android:layout_width="9.0dp" android:layout_height="9.0dp" android:src="@drawable/ptg_api_logo" android:contentDescription="Logo" />
+    <TextView android:textSize="9.0dp" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="广告" />
+</com.ptg.ptgapi.widget.PtgRoundLinearLayout>

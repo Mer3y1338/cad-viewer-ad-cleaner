@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/roundcorner_dialog_gray" style="@style/layout_height_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:layout_gravity="center_vertical" android:padding="10.0dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:cacheColorHint="#00000000" android:fillViewport="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/cadmain_padding_space_view" />
+            <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_black" android:gravity="center_horizontal" android:id="@id/textViewShareWechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_login_third_party_weixin" android:singleLine="true" android:drawableTop="@drawable/share_wechat" android:drawablePadding="5.0dp" />
+            <include layout="@layout/cadmain_padding_space_view" />
+            <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_black" android:gravity="center_horizontal" android:id="@id/textViewShareWechatMoments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_third_party_wechatmoments" android:singleLine="true" android:drawableTop="@drawable/share_wechatmoments" android:drawablePadding="5.0dp" />
+            <include android:id="@id/shareWechatMomentsView" layout="@layout/cadmain_padding_space_view" />
+            <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_black" android:gravity="center_horizontal" android:id="@id/textViewShareQQ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_login_third_party_qq" android:singleLine="true" android:drawableTop="@drawable/share_qq" android:drawablePadding="5.0dp" />
+            <include android:id="@id/shareQQView" layout="@layout/cadmain_padding_space_view" />
+            <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_black" android:gravity="center_horizontal" android:id="@id/textViewShareMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_third_party_more" android:singleLine="true" android:drawableTop="@drawable/share_more" android:drawablePadding="5.0dp" />
+            <include layout="@layout/cadmain_padding_space_view" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/buttonShareCancel" android:background="@drawable/selector_dialog_button_center" android:padding="10.0dp" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+</LinearLayout>

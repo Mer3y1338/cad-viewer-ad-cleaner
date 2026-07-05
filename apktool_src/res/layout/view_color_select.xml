@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/color_white" android:background="@drawable/cad_water_mark_white" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:scaleType="center" android:layout_marginHorizontal="12.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/color_blue" android:background="@drawable/cad_water_mark_blue" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:scaleType="center" android:layout_marginHorizontal="12.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/color_teal" android:background="@drawable/cad_water_mark_teal" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:scaleType="center" android:layout_marginHorizontal="12.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/color_yellow" android:background="@drawable/cad_water_mark_yellow" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:scaleType="center" android:layout_marginHorizontal="12.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/color_pick" android:background="@drawable/cad_water_mark_pick" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:scaleType="center" android:layout_marginHorizontal="12.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="1.0">
+        <ImageView android:id="@id/color_purple" android:background="@drawable/cad_water_mark_purple" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:scaleType="center" android:layout_marginHorizontal="12.0dp" />
+    </FrameLayout>
+</LinearLayout>

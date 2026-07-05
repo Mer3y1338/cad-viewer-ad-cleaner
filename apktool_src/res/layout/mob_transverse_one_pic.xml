@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/my_native_ad_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_transverse_one" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_one" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_normal_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <ImageView android:id="@id/icon_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:src="@drawable/mob_native_close" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/img_icon" android:layout_width="25.0dp" android:layout_height="20.0dp" android:scaleType="fitXY" android:layout_alignBottom="@id/rl_one" android:layout_alignParentRight="true" />
+        <FrameLayout android:id="@id/frame_shake" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/mob_img_shake" android:layout_width="100.0dp" android:layout_height="100.0dp" android:scaleType="fitXY" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

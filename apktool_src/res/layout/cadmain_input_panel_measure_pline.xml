@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/public_cad_input_panel_all"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="@dimen/input_panel_header_measure" android:layout_weight="1.5">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_area" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="right|center" android:id="@id/textViewInputMeasureArea" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_input_panel_title_length_num" style="@style/public_cad_input_panel_textview_style" />
+            <com.stone.app.ui.widget.AutoResizeTextView android:gravity="right|center" android:id="@id/textViewInputMeasureLength" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="" android:layout_weight="1.5" style="@style/public_cad_input_panel_textview_measure_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gstar_bg_color_black_divider2" android:layout_width="@dimen/gstar_divider_size_gray" android:layout_height="match_parent" />
+    <ImageButton android:id="@id/imageButtonInputPanel_Cancel" android:background="@drawable/selector_cad_input_panel_cmd" android:layout_width="@dimen/input_panel_header_measure" android:layout_height="@dimen/input_panel_header_measure" android:src="@drawable/input_panel_cmd_cancel" android:contentDescription="@string/app_name" />
+</LinearLayout>

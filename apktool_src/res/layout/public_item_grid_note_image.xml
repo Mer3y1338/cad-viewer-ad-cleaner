@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" style="@style/public_item_grid0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.StoneFiexedLayout android:background="@color/gstar_bg_color_black" android:layout_width="match_parent" android:layout_height="300.0dp" app:demoHeight="100" app:demoWidth="100" app:standard="w">
+        <ImageView android:id="@id/imageViewNoteImageShow" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ad_default_flow" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewNoteImageEditShow" android:background="@drawable/cad_note_video_bg" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentTop="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/imageViewNoteImageDelete" android:padding="5.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/icon_note_video_delete" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/imageViewNoteImageEdit" android:padding="5.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/cad_cmd_note_edit_image_update" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/viewImageContent" android:background="#7b000000" android:padding="5.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0dp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="start|center" android:id="@id/textViewNoteImageContent" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="4.0dp" android:drawableStart="@drawable/cad_cmd_note_edit_text" />
+        </LinearLayout>
+    </com.stone.app.ui.widget.StoneFiexedLayout>
+</LinearLayout>

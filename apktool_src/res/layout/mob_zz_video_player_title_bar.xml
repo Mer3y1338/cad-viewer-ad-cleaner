@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" class="androidx.appcompat.app.AlertController$RecycleListView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/qc_top" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_time" android:background="@drawable/mob_r_t_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_voice" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="20.0dp" android:src="@drawable/mob_mute_img_selector" android:layout_toLeftOf="@id/iv_exit" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_exit" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/mob_r_back" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_below="@id/qc_top" layout="@layout/mob_reward_top_view" />
+    <include layout="@layout/my_splash_bottom_webview" />
+</RelativeLayout>

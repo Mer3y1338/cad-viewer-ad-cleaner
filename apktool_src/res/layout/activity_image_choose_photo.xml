@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/gstar_bg_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/imageViewItem" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/default_image_show_choose" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutSelected" android:background="#5f000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="right|top" android:id="@id/imageViewSelected" android:background="@drawable/icon_image_selected" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayoutCamera" android:background="@drawable/default_image_show_choose" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/icon_camera_selected" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/gstar_text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/image_choose_camera_capture" />
+    </LinearLayout>
+</FrameLayout>

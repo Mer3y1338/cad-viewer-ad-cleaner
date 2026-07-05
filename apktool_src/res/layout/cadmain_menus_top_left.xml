@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:minHeight="48.0dp" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end|center" android:layout_gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp">
+        <LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="horizontal" android:background="@drawable/roundcorner_dialog_black1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/viewTopSave" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_top_btn_save" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopUndo" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_top_btn_undo" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopRedo" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_top_btn_redo" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopLaserPen" android:background="@null" android:padding="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_selector_cad_top_btn_laser" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopChangeFile" android:background="@null" android:padding="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_selector_cad_top_btn_change" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopMutiShow" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_top_btn_mutishow" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopFitScreen" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_top_btn_fitscreen" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopFullScreen" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_top_btn_fullscreen" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/viewTopMenusShow" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_top_btn_menus" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

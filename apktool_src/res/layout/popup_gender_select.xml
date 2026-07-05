@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent_half_black" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutCancel" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+    <LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_page_main" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/account_register_gender_choose" />
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/buttonMale" android:background="@drawable/selector_button_color_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/account_register_gender_male" />
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/buttonFemale" android:background="@drawable/selector_button_color_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/account_register_gender_female" />
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/color_button_public" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/buttonCancle" android:background="@drawable/selector_button_color_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/no" />
+    </LinearLayout>
+</LinearLayout>

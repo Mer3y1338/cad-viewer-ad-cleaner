@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/gstar_text_color_white" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <ImageButton android:id="@id/imageButtonLineTypeClose" android:background="@drawable/selector_cad_cmd_click_shadows" android:layout_width="@dimen/toolbar_height" android:layout_height="@dimen/toolbar_height" android:src="@drawable/selector_button_back_black" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/setting_line_type_setting" android:layout_weight="1.5" />
+        <ImageButton android:id="@id/imageButtonLineTypeADD" android:background="@drawable/selector_cad_cmd_click_shadows" android:layout_width="@dimen/toolbar_height" android:layout_height="@dimen/toolbar_height" android:src="@drawable/cad_cmd_measure_scale_add" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_black_subhead" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="5.0dp" android:text="@string/setting_line_type_list" android:singleLine="true" />
+    <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" layout="@layout/view_line_horizontal" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewLineType" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="20.0dp" layout="@layout/view_line_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="20.0dp" android:paddingTop="5.0dp" android:paddingRight="20.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox_circle" android:text="@string/setting_line_type_scale_public" android:layout_alignParentTop="true" />
+        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.5" />
+        <com.hjq.shape.view.ShapeEditText android:textSize="14.0sp" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/shapeEditTextScalePublic" android:layout_width="120.0dp" android:layout_height="wrap_content" android:digits="1234567890." android:inputType="numberDecimal" app:shape_radius="0.0dp" app:shape_strokeColor="@color/gstar_bg_color_black_divider2" app:shape_strokeSize="0.5dp" app:shape_type="rectangle" />
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="20.0dp" android:paddingTop="5.0dp" android:paddingRight="20.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox_circle" android:text="@string/setting_line_type_scale_current" android:layout_alignParentTop="true" />
+        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.5" />
+        <com.hjq.shape.view.ShapeEditText android:textSize="14.0sp" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/shapeEditTextScaleCurrent" android:layout_width="120.0dp" android:layout_height="wrap_content" android:digits="1234567890." android:inputType="numberDecimal" app:shape_radius="0.0dp" app:shape_strokeColor="@color/gstar_bg_color_black_divider2" app:shape_strokeSize="0.5dp" app:shape_type="rectangle" />
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/radioGroupFileOperation" android:background="@color/gstar_bg_color_blue" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:layout_marginTop="20.0dp">
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_white2black" android:gravity="center" android:id="@id/buttonLineTypeCancel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <include layout="@layout/view_line_vertical" />
+        <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_white2black" android:gravity="center" android:id="@id/buttonLineTypeSubmit" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+</LinearLayout>

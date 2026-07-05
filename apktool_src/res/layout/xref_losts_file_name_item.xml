@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewXrefStatus" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/icon_xref_edit_status" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:id="@id/textViewXrefStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_cmd_xref_status_1" android:layout_marginStart="5.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black" android:id="@id/textViewXrefName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二维建筑DWG示例图.dwg" />
+</androidx.appcompat.widget.LinearLayoutCompat>

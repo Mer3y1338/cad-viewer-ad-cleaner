@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutCancel" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="0.0" />
+    <com.stone.app.ui.widget.RCView_LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/dialog_new_bg_main_black1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="10.0" app:clip_background="true" app:round_corner_top_left="10.0dp" app:round_corner_top_right="10.0dp">
+        <FrameLayout android:gravity="center" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+            <CheckBox android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:layout_gravity="left|bottom" android:id="@id/checkBoxBlockSelectAll" android:paddingLeft="20.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/select_all" android:drawablePadding="10.0dp" android:drawableStart="@drawable/selector_checkbox_rect" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/textViewBlockInsertTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cad_cmd_insert_block_select" android:drawablePadding="5.0dp" />
+            <ImageButton android:layout_gravity="right" android:id="@id/imageButtonBlockSelectClose" android:background="@drawable/selector_cad_cmd_click_shadows" android:padding="10.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/icon_close_round_white" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <include layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+            <com.stone.app.ui.view.EmptyRecyclerView android:id="@id/recyclerView_Block_Drawing" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="#b0aaaa" android:gravity="center" android:id="@id/textViewBlock_Enpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_cmd_insert_block_tips5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+            <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonBlockADD_Cancel" android:background="@drawable/selector_radiobutton_tab_choose_black_center" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+            <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonBlockADD_OK" android:background="@drawable/selector_radiobutton_tab_choose_black_center" android:padding="10.0dp" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        </LinearLayout>
+    </com.stone.app.ui.widget.RCView_LinearLayout>
+</LinearLayout>

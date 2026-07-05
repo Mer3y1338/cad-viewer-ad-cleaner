@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="250.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.my.adpoymer.weiget.SplashRoundedView android:id="@id/my_splash_rounded_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center|bottom" android:layout_gravity="center" android:orientation="vertical" android:id="@id/splash_shake_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_click_more" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:gravity="center" android:id="@id/hot_img_shake" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/slide_00000" android:scaleType="fitXY" android:layout_marginEnd="10.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_shake_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_more_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/hot_img_shake" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

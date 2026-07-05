@@ -1,0 +1,169 @@
+[
+  {
+    "type": "dwg",
+    "values": [
+      "41433130"
+    ],
+    "mimeType": "image/vnd.dwg"
+  },
+  {
+    "type": "ttf",
+    "values": [
+      "0001000000"
+    ],
+    "mimeType": "application/x-font-ttf"
+  },
+  {
+    "type": "jpg",
+    "values": [
+      "ffd8ff"
+    ],
+    "mimeType": "image/jpeg"
+  },
+  {
+    "type": "gif",
+    "values": [
+      "47494638"
+    ],
+    "mimeType": "image/gif"
+  },
+  {
+    "type": "png",
+    "values": [
+      "89504e470d0a1a0a"
+    ],
+    "mimeType": "image/png"
+  },
+  {
+    "type": "bmp",
+    "values": [
+      "424d"
+    ],
+    "mimeType": "image/bmp"
+  },
+  {
+    "type": "doc",
+    "values": [
+      "0d444f43",
+      "cf11e0a1b11ae100",
+      "d0cf11e0a1b11ae1",
+      "dba52d00"
+    ],
+    "mimeType": "application/msword"
+  },
+  {
+    "type": "docx",
+    "values": [
+      "504b0304",
+      "504b030414000600"
+    ],
+    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+  },
+  {
+    "type": "pdf",
+    "values": [
+      "25504446"
+    ],
+    "mimeType": "application/pdf"
+  },
+  {
+    "type": "xls",
+    "values": [
+      "d0cf11e0a1b11ae1"
+    ],
+    "mimeType": "application/vnd.ms-excel"
+  },
+  {
+    "type": "xlsx",
+    "values": [
+      "504b0304",
+      "504b030414000600"
+    ],
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+  },
+  {
+    "type": "ppt",
+    "values": [
+      "d0cf11e0a1b11ae1"
+    ],
+    "mimeType": "application/vnd.ms-powerpoint"
+  },
+  {
+    "type": "pptx",
+    "values": [
+      "504b0304",
+      "504b030414000600"
+    ],
+    "mimeType": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+  },
+  {
+    "type": "tif",
+    "values": [
+      "492049",
+      "49492a00",
+      "4d4d002a",
+      "4d4d002b"
+    ],
+    "mimeType": "image/tiff"
+  },
+  {
+    "type": "rtf",
+    "values": [
+      "7b5c72746631"
+    ],
+    "mimeType": "application/rtf"
+  },
+  {
+    "type": "zip",
+    "values": [
+      "504b0304",
+      "504b0304",
+      "504b030414000100",
+      "504b0506",
+      "504b0708"
+    ],
+    "mimeType": "application/zip"
+  },
+  {
+    "type": "rar",
+    "values": [
+      "526172211a0700"
+    ],
+    "mimeType": "application/x-rar-compressed"
+  },
+  {
+    "type": "7z",
+    "values": [
+      "377abcaf271c"
+    ],
+    "mimeType": "application/x-7z-compressed"
+  },
+  {
+    "type": "dxf",
+    "values": [
+      "2020300D"
+    ],
+    "mimeType": ""
+  },
+  {
+    "type": "dws",
+    "values": [
+      "41433130"
+    ],
+    "mimeType": ""
+  },
+  {
+    "type": "dwt",
+    "values": [
+      "41433130"
+    ],
+    "mimeType": ""
+  },
+  {
+    "type": "ocf",
+    "values": [
+      "11111111"
+    ],
+    "mimeType": ""
+  }
+]

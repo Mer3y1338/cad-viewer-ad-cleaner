@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.haorui.sdk.adsail_ad.view.HRVideoTextureView android:id="@id/adsail_video_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/adsail_video_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    <ProgressBar android:id="@id/adsail_progress_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar" />
+    <ImageView android:id="@id/adsail_center_play_button" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/adsail_player_center_play" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/adsail_control" android:background="#8768423e" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_alignBottom="@id/adsail_video_view">
+        <ProgressBar android:id="@id/adsail_video_seekBar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginBottom="5.0dp">
+                <ImageView android:id="@id/adsail_controlbar_video_play_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/adsail_play_btn_style" />
+                <ImageView android:id="@id/adsail_controlbar_video_pause_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/adsail_pause_btn_style" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffffff" android:id="@id/adsail_video_currentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:text="00:00" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / " />
+                <TextView android:textSize="15.0sp" android:textColor="#ffffff" android:id="@id/adsail_video_endTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+            </LinearLayout>
+            <ImageView android:id="@id/adsail_video_volume" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginRight="36.0dp" android:src="@drawable/adsail_video_player_icon_audio_vol_new" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/adsail_video_volume_mute" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginRight="36.0dp" android:src="@drawable/adsail_video_player_icon_audio_vol_mute_new" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="30.0dp" layout="@layout/adsail_ad_tag_view_right" />
+</RelativeLayout>

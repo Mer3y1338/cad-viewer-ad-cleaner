@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/ksad_draw_card_white_bg" android:paddingLeft="16.0dp" android:paddingTop="12.0dp" android:paddingRight="16.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.kwad.components.core.widget.KsLogoView android:id="@id/ksad_draw_h5_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ksad_card_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ksad_draw_card_close" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0dp" android:textColor="#777777" android:ellipsize="end" android:id="@id/ksad_card_ad_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" android:includeFontPadding="false" />
+    <TextView android:textSize="16.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_card_h5_open_btn" android:background="@drawable/ksad_draw_concert_light_bg" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="12.0dp" />
+</LinearLayout>

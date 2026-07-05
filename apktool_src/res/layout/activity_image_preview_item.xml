@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewThumb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+    <com.luck.picture.lib.photoview.PhotoView android:id="@id/photoViewShow" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/viewProgress" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ProgressBar android:id="@id/progressbar_dialog_process" android:layout_width="55.0dp" android:layout_height="55.0dp" style="?android:progressBarStyle" />
+    </LinearLayout>
+</RelativeLayout>

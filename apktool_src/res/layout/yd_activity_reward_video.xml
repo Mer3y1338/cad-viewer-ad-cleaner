@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yd.saas.api.mixNative.NativeAdView android:id="@id/na_root" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_self_render" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/fl_media" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/iv_media" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_yd_reward_video_skip" android:background="@drawable/yd_saas_reward_video_skip_mask" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="36.0dp" android:layout_marginTop="15.0dp" android:text="跳过" android:layout_marginStart="15.0dp" />
+        <ImageView android:id="@id/iv_yd__reward_video_close" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="17.0dp" android:src="@mipmap/yd_sdk_ad_dialog_close" android:layout_marginStart="15.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginEnd="15.0dp" android:layout_alignParentEnd="true">
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_has_reward" android:background="@drawable/yd_saas_reward_video_countdown_mask" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dp" android:text="已获得奖励" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_yd__reward_video_duration_countdown" android:background="@drawable/yd_saas_reward_video_countdown_mask" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_yd__reward_video_tips" android:background="@drawable/yd_saas_reward_video_coins_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginTop="64.0dp" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@mipmap/yd_saas_reward_video_coins" android:layout_marginStart="16.0dp" />
+            <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击一下获得奖励" android:layout_marginStart="8.0dp" android:layout_marginEnd="16.0dp" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/yd_saas_reward_video_adinfo_bg" android:layout_width="wrap_content" android:layout_height="100.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_yd_reward_video_adinfo_logo" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_marginLeft="15.0dp" android:scaleType="centerCrop" android:layout_marginStart="15.0dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_weight="1.0" android:layout_marginStart="15.0dp">
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/tv_yd_reward_video_adinfo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                    <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/tv_yd_reward_video_adinfo_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:lines="1" />
+                </LinearLayout>
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_yd_reward_video_adinfo_button" android:background="@drawable/yd_saas_reward_video_adinfo_btn" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:layout_marginEnd="15.0dp" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_yd_reward_video_adinfo_source" android:layout_width="44.0dp" android:layout_height="15.0dp" android:layout_marginBottom="5.0dp" android:src="@mipmap/yd_saas_icon_logo" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.yd.saas.api.mixNative.NativeAdView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/ly_native_ad_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ly_rel_instal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/ly_img_instal_icon_pic" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:scaleType="centerCrop" />
+        <TextView android:textSize="15.0sp" android:textColor="#000000" android:ellipsize="end" android:id="@id/ly_txt_instal_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:maxLines="1" android:layout_toRightOf="@id/ly_img_instal_icon_pic" android:layout_alignTop="@id/ly_img_instal_icon_pic" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:id="@id/ly_txt_instal_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:maxLines="1" android:layout_toRightOf="@id/ly_img_instal_icon_pic" android:layout_alignBottom="@id/ly_img_instal_icon_pic" />
+        <ImageView android:id="@id/ly_img_instal_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10.0dp" android:scaleType="centerCrop" android:layout_below="@id/ly_img_instal_icon_pic" />
+        <com.qq.e.ads.nativ.MediaView android:id="@id/media_instal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ly_img_instal_icon_pic" />
+    </RelativeLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

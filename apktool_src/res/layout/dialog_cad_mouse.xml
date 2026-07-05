@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundcorner_dialog" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scollView002" android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+        <LinearLayout android:orientation="vertical" android:id="@id/viewShow002" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:id="@id/textViewTitle" android:paddingTop="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cad_measure_change_point_tips5" android:layout_weight="1.5" />
+            <LinearLayout android:orientation="vertical" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewContent" android:padding="5.0dp" android:layout_height="wrap_content" android:minHeight="10.0dp" android:text="@string/cad_measure_change_point_tips6" style="@style/layout_height_wrap" />
+                <com.stone.app.ui.widget.StoneFiexedLayout android:layout_width="match_parent" android:layout_height="300.0dp" android:layout_margin="5.0dp" app:demoHeight="3" app:demoWidth="4" app:standard="w">
+                    <ImageView android:id="@id/imageViewSwitchShow" android:background="@color/gstar_bg_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/simulate_mouse_show" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+                </com.stone.app.ui.widget.StoneFiexedLayout>
+            </LinearLayout>
+            <CheckBox android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/checkBoxSimulatedMouseShowToday" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginBottom="10.0dp" android:checked="true" android:button="@drawable/selector_checkbox_account" android:text="@string/public_no_remind_today" />
+            <CheckBox android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_subhead" android:id="@id/checkBoxSimulatedMouseShow" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginBottom="20.0dp" android:checked="false" android:button="@drawable/selector_checkbox_account" android:text="@string/public_no_remind" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogCancel" android:background="@drawable/selector_dialog_button_left" android:padding="5.0dp" android:visibility="gone" android:layout_height="match_parent" android:text="@string/menu_left_help" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/gstar_text_size_18sp" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogOK" android:background="@drawable/selector_dialog_button_right" android:padding="5.0dp" android:layout_height="match_parent" android:text="@string/guide_view_tips_close" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</LinearLayout>

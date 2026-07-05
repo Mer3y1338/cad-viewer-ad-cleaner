@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/ptg_white" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#646464" android:id="@id/ptg_text_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在下载中" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ptg_progress_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/ptg_text_title">
+            <ProgressBar android:id="@id/ptg_progress" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+            <TextView android:textColor="#646464" android:id="@id/ptg_controller_btn" android:paddingLeft="15.0dp" android:paddingBottom="5.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#646464" android:id="@id/ptgNotifyTextContent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="0%" android:layout_toRightOf="@id/ptg_text_title" android:layout_alignBottom="@id/ptg_text_title" />
+    </RelativeLayout>
+</LinearLayout>

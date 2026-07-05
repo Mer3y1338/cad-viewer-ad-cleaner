@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:layoutDirection="ltr" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <com.stone.app.ui.view.AppX5WebView android:scrollbarStyle="insideOverlay" android:id="@id/appX5WebViewAccount" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:id="@id/appX5WebViewError" android:visibility="gone" layout="@layout/popup_webview_error_page" />
+    </FrameLayout>
+    <Button android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/buttonCompanyGoto" android:background="@color/gstar_bg_color_blue" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_account_apply" />
+</LinearLayout>

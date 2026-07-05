@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_ad_root" android:background="@color/syad_color_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/syad_fl_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/img_adbiding_splash" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.sy.adsdk.adx.ad.splash.view.AdxSplashVideoView android:id="@id/syad_fl_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <com.sy.adsdk.ui.view.AdInteractionView android:layout_gravity="bottom" android:id="@id/syad_interaction_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_marginBottom="40.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="end|top" android:id="@id/iv_ad_skip_countdown" android:background="@drawable/syad_bg_splash_ad_skip" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginTop="15.0dp" android:minWidth="36.0dp" android:includeFontPadding="false" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginEnd="12.0dp" />
+    <com.sy.adsdk.adx.ui.view.AdxComplianceView android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/syad_compliance_view" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luck.picture.lib.widget.SquareRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivPicture" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.luck.picture.lib.widget.MediumBoldTextView android:textSize="12.0sp" android:textColor="@color/ps_color_white" android:gravity="center" android:id="@id/tvCheck" android:background="@drawable/ps_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_alignParentEnd="true" />
+    <View android:id="@id/btnCheck" android:background="@color/ps_color_transparent" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_alignParentEnd="true" />
+    <com.luck.picture.lib.widget.MediumBoldTextView android:textSize="11.0sp" android:textColor="@color/ps_color_white" android:gravity="center_vertical" android:id="@id/tv_duration" android:background="@drawable/ps_ic_shadow_bg" android:paddingLeft="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="00:00" android:drawableLeft="@drawable/ps_ic_video" android:drawablePadding="5.0dp" android:layout_alignParentBottom="true" />
+</com.luck.picture.lib.widget.SquareRelativeLayout>

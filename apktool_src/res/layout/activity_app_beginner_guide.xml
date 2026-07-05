@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewpager_beginner_guide_guidePager" android:fadingEdgeLength="0.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" android:fadeScrollbars="false" android:requiresFadingEdge="none" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/buttonRegisterGo" android:background="@drawable/selector_button_color_blue_rect" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="180.0dp" android:text="@string/app_start_enter" />
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="#727272" android:layout_gravity="center" android:id="@id/buttonAppStart" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/app_start_skip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/radioGroupBanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="30.0dp">
+                <RadioButton android:textColor="@color/black" android:gravity="center" android:id="@id/radioButton0" android:tag="0" android:background="@drawable/selector_banner_point" android:padding="5.0dp" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_margin="5.0dp" android:button="@null" android:text="" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

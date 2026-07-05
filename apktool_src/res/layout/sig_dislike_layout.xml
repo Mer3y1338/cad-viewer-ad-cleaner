@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/sig_dislike_layout_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="10.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/sig_not_show_tv" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="内容无法正常显示（卡顿、黑白屏）" />
+            <View android:background="#e0e6ec" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/sig_not_close_tv" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="无法关闭" />
+            <View android:background="#e0e6ec" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/sig_dislike_tv" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="不感兴趣" />
+            <View android:background="#e0e6ec" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="举报广告" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sig_flow_sl" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <View android:background="#e0e6ec" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10.0dp" />
+            <RelativeLayout android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他建议" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#c2c2c2" android:id="@id/sig_commit_sl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提交" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <EditText android:textSize="13.0sp" android:textColor="#fe7e03" android:textColorHint="#80161823" android:gravity="start" android:id="@id/sig_suggest_et" android:background="@drawable/sig_dislike_suggest_ev" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginBottom="20.0dp" android:hint="输入你的建议..." />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/s2s_video_view_finish_logo_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:scaleType="centerCrop" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/s2s_video_view_finish_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:lines="1" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/s2s_video_view_finish_button" android:background="@drawable/yd_saas_reward_video_adinfo_btn" android:paddingLeft="8.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+    </LinearLayout>
+</RelativeLayout>

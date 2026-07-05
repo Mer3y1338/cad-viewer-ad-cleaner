@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stone.app.ui.widget.StoneSquareLayout android:gravity="center" android:descendantFocusability="blocksDescendants" android:layout_margin="10.0dp" style="@style/public_item_grid0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/public_item_grid0">
+        <ImageView android:id="@id/imageViewAdIcon" android:layout_width="match_parent" android:layout_height="0.0dp" android:src="@drawable/ad_default_flow" android:scaleType="fitCenter" android:layout_weight="1.5" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="vertical" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray_item_title" android:ellipsize="end" android:id="@id/textViewAdName" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="1.5" />
+                <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="right" android:id="@id/textViewFlowAD_Cancel" android:background="@drawable/roundcorner_background_color_black_half_skip" android:paddingLeft="7.0dp" android:paddingTop="3.0dp" android:paddingRight="7.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="@string/account_user_vip_ad_close" android:singleLine="true" android:alpha="0.3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:gravity="start" android:id="@id/textViewAdSubject" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="1.5" />
+                <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray" android:ellipsize="end" android:gravity="start" android:id="@id/textViewAdMark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/ad_mark" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.stone.app.ui.widget.StoneSquareLayout>

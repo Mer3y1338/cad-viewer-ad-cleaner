@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.view.flowlayout.TagFlowLayout android:id="@id/task_list_flow_layout" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="@dimen/input_panel_header" app:max_select="1" app:tag_gravity="left" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/task_list_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

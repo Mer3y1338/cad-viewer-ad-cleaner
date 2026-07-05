@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/selectable_contact_item" android:background="#fcfcfc" android:focusable="true" android:layout_width="match_parent" android:layout_height="70.0dp" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:paddingLeft="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivAvatar" android:focusable="false" android:clickable="false" android:layout_width="@dimen/contact_avatar_width" android:layout_height="@dimen/contact_avatar_height" android:src="@drawable/ic_launcher" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom" android:id="@id/item_mobile_badge_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <RelativeLayout android:paddingLeft="17.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16.0sp" android:textColor="#373838" android:id="@id/tvCity" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="15" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#7a7a7a" android:id="@id/tvPhone" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/tvCity" android:layout_alignLeft="@id/tvCity" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/item_friend_request_status_view" android:background="@drawable/chat_mobile_selector_button_color_blue" android:paddingLeft="12.0dp" android:paddingTop="8.0dp" android:paddingRight="12.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="28.0dp" android:text="View" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/view_line" android:background="@color/split_lint_color" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+    <CheckBox android:id="@id/contact_check_box" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dp" android:button="@drawable/chat_checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

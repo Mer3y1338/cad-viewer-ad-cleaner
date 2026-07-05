@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:layout_width="match_parent" android:layout_height="35.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkBoxColorSelect" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:button="@drawable/selector_checkbox_circle" />
+    <ImageButton android:id="@id/imageButtonColorShow" android:background="@color/red" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="20.0dp" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:gravity="center_vertical" android:id="@id/textViewColorRGB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="@string/app_name" />
+</LinearLayout>

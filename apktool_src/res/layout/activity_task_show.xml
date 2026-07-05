@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/base_header" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayoutPath" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pdf_show_to_dwg_place" />
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_bottom_cloud" android:drawableRight="@drawable/chat_icon_lt_arrow_right" />
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/pdf_show_to_dwg_title" />
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1.5" />
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_blue" android:layout_gravity="right|center" android:id="@id/viewOpenPlace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/open" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutList" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.stone.app.ui.view.EmptyRecyclerView android:id="@id/recyclerView_DataShow" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/linearLayoutPDF2CAD" android:background="@drawable/selector_button_color_blue" android:paddingLeft="50.0dp" android:paddingRight="50.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/toolbar_height" android:layout_marginBottom="30.0dp">
+            <ImageView android:layout_gravity="right|top" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/selector_text_white2black" android:gravity="center" android:id="@id/buttonPDF2CAD" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/add_pdf_to_cad" />
+            <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIPPDF2CAD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/public_operation_toolbar_cloud" />
+</LinearLayout>

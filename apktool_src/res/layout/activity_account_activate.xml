@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/gstar_bg_color_gray" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_base_header_view2" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.stone.app.ui.widget.RCView_ImageView android:id="@id/imageViewLoignIcon" android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@drawable/email_icon" />
+            <TextView android:textSize="@dimen/gstar_text_size_18sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black_title" android:ellipsize="end" android:gravity="center" android:id="@id/textViewLoginName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/account_email_check_yourself" android:singleLine="true" />
+            <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_email_check_tips" />
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:ellipsize="end" android:paddingTop="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_email_send_register_success_email" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/buttonEmail_Resend" android:background="@drawable/selector_button_color_blue" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_margin="10.0dp" android:text="@string/resend" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:id="@id/buttonEmail_Later" android:background="@drawable/selector_button_color_gray" android:padding="5.0dp" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_margin="10.0dp" android:text="@string/app_start_skip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_email_check_tips1" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:ellipsize="end" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+                    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:ellipsize="end" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/account_email_check_tips2" android:layout_weight="1.5" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:ellipsize="end" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+                    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_content" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/account_email_check_tips3" android:layout_weight="1.5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

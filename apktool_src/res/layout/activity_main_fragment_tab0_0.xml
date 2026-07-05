@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stone.app.ui.widget.RCView_FrameLayout android:id="@id/viewBannerAD" android:background="@drawable/roundcorner_item_bg_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" app:round_corner="10.0dp">
+        <com.stx.xhb.androidx.XBanner android:id="@id/bannerAD" android:layout_width="match_parent" android:layout_height="200.0dp" android:scaleType="centerCrop" app:isAutoPlay="true" app:pageChangeDuration="800" app:pointsContainerBackground="@null" app:pointsPosition="CENTER" app:tipTextSize="12.0sp" />
+        <TextView android:textSize="@dimen/gstar_text_size_10sp" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="right" android:id="@id/textViewBannerAD_Cancel" android:background="@drawable/roundcorner_background_color_black_half_skip" android:paddingLeft="7.0dp" android:paddingTop="3.0dp" android:paddingRight="7.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="@string/account_user_vip_ad_close" android:singleLine="true" android:alpha="0.7" />
+    </com.stone.app.ui.widget.RCView_FrameLayout>
+    <include layout="@layout/public_file_tools_path_no" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearlayoutHeader" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp">
+        <com.stone.app.ui.view.NoDataTipsWidget android:id="@id/nodata_tipsview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutList" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:gravity="center" android:id="@id/appDataShow_ListView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:soundEffectsEnabled="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayoutGrid" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.stone.app.ui.widget.GridViewWithHeaderAndFooter android:gravity="center" android:id="@id/appDataShow_GridView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:columnWidth="100.0dp" android:numColumns="2" android:divider="@null" android:soundEffectsEnabled="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

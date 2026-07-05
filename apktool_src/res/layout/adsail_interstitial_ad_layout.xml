@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.haorui.sdk.core.view.TouchAdContainer android:layout_gravity="center" android:id="@id/adsail_interstitial_touch_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="11.0dp" app:cardElevation="0.0dp">
+        <RelativeLayout android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+            <cn.haorui.sdk.core.view.gif.GifImageView android:id="@id/adsail_interstitial_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/adsail_popupwindow_cancel" android:padding="5.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/adsail_close_btn" android:scaleType="fitXY" android:cropToPadding="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popupwindow_bottomShakeImage_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/popupwindow_action_icon_ll" android:layout_alignParentLeft="true">
+                    <ImageView android:id="@id/popupwindow_bottomShakeImage" android:visibility="visible" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/adsail_shake_bottom" />
+                    <TextView android:textSize="12.0sp" android:textColor="#f65322" android:id="@id/popupwindow_bottomShakeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="摇一摇" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popupwindow_action_icon_ll" android:background="@drawable/adsail_bg_logo_shape" android:paddingLeft="5.0dp" android:paddingTop="3.0dp" android:paddingRight="5.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginBottom="10.0dp" android:layout_above="@id/adsail_popupwindow_bottomParent" android:layout_alignParentRight="true">
+                    <ImageView android:id="@id/adsail_popupwindow_logo" android:layout_width="40.0dp" android:layout_height="15.0dp" android:layout_marginLeft="2.0dp" android:src="@drawable/adsail_ad" android:scaleType="fitXY" />
+                    <View android:id="@id/adsail_popupwindow_shuxian" android:background="#b2ffffff" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="3.0dp" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" />
+                    <TextView android:textSize="10.0sp" android:textColor="#b2ffffff" android:id="@id/adsail_popupwindow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="广告" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/adsail_popupwindow_bottomParent" android:background="#b28a9dac" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="14.0sp" android:textColor="#b2ffffff" android:id="@id/adsail_popupwindow_action_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="#b2ffffff" android:id="@id/adsail_popupwindow_action_btn" android:background="@drawable/adsail_bg_button_white" android:paddingLeft="15.0dp" android:paddingTop="3.0dp" android:paddingRight="15.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="下载" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="40.0dp">
+                <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/adsail_download_layer_textview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/adsail_splash_download_desc" android:shadowColor="#000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+            </RelativeLayout>
+            <cn.haorui.sdk.core.view.gif.GifImageView android:id="@id/popupwindow_action_shakeImage" android:layout_width="150.0dp" android:layout_height="150.0dp" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</cn.haorui.sdk.core.view.TouchAdContainer>

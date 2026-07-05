@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ksad_reward_main_color" />
+    <size android:height="14.0dp" android:width="20.0dp" />
+    <corners android:topLeftRadius="7.0dp" android:topRightRadius="7.0dp" android:bottomRightRadius="7.0dp" />
+</shape>

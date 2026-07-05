@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/gstar_bg_color_toolbar_top" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <FrameLayout android:layout_width="@dimen/toolbar_height" android:layout_height="@dimen/toolbar_height">
+            <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="left" android:id="@id/buttonBack" android:background="@null" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/selector_button_back_white" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/textViewFileName" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="5.0dp" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/viewMoreShowPop" android:visibility="visible" android:layout_width="@dimen/toolbar_height" android:layout_height="@dimen/toolbar_height">
+            <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/gstar_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/buttonSubmit" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/cad_cmd_note_edit_image" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.stone.app.ui.view.HackyViewPagerFixed android:id="@id/viewpager_multi_image_preview" android:background="@color/black" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:minHeight="48.0dp" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/cadmain_padding_space_view" />
+        <FrameLayout android:id="@id/viewShowCmd_View_2D" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/buttonView_2D" android:text="@string/cad_showview_2D" android:drawableTop="@drawable/cad_cmd_view_2d" style="@style/public_cad_menus_second_button_style" />
+            <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_View_2D" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <include android:id="@id/buttonCmd_View_2D_padding" layout="@layout/cadmain_padding_space_view" />
+        <FrameLayout android:id="@id/viewShowCmd_View_3D" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/buttonView_3D" android:text="@string/cad_showview_3D_wireframe" android:drawableTop="@drawable/cad_cmd_view_3d_frame" style="@style/public_cad_menus_second_button_style" />
+            <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_View_3D" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <include android:id="@id/buttonCmd_View_3D_padding" layout="@layout/cadmain_padding_space_view" />
+        <FrameLayout android:id="@id/viewShowCmd_View_3DReal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/buttonView_3DReal" android:text="@string/cad_showview_3D_real" android:drawableTop="@drawable/cad_cmd_view_3d_real" style="@style/public_cad_menus_second_button_style" />
+            <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_View_3DReal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <include android:id="@id/buttonCmd_View_3DReal_padding" layout="@layout/cadmain_padding_space_view" />
+        <FrameLayout android:id="@id/viewShowCmd_View_3DHide" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/buttonView_3DHide" android:text="@string/cad_showview_3D_hide" android:drawableTop="@drawable/cad_cmd_view_3d_hide" style="@style/public_cad_menus_second_button_style" />
+            <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_View_3DHide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <include android:id="@id/buttonCmd_View_3DHide_padding" layout="@layout/cadmain_padding_space_view" />
+        <View android:layout_width="10.0dp" android:layout_height="match_parent" />
+    </LinearLayout>
+</HorizontalScrollView>

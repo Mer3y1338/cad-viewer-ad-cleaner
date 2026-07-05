@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/imageViewLineTypeSelect" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:src="@drawable/file_filter_sort_select_no" android:contentDescription="TODO" />
+        <ImageView android:id="@id/imageViewLineTypeSelectMuti" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:src="@drawable/checkbox_circle_nor" android:contentDescription="TODO" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_title" android:ellipsize="end" android:gravity="center" android:id="@id/textViewLineTypeName" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+            <TextView android:id="@id/textViewSpace" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minWidth="20.0dp" android:layout_weight="1.5" />
+            <TextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_black_subhead" android:ellipsize="end" android:gravity="center" android:id="@id/textViewLineTypeExplain" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/viewDividingLine" android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="20.0dp" />
+</LinearLayout>

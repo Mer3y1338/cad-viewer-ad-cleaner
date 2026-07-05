@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/gstar_bg_color_gray" android:layoutDirection="ltr" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_base_header_view2" />
+    <include layout="@layout/view_line_horizontal" />
+    <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="0.0dp" android:layout_marginTop="20.0dp" layout="@layout/view_line_horizontal" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/gstar_bg_color_white" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:ellipsize="end" android:layout_width="150.0dp" android:layout_height="wrap_content" android:text="@string/company_account_keep_type" android:maxLines="2" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="right|center" android:id="@id/textViewCompanyKeepType" android:paddingLeft="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="1.5" />
+    </LinearLayout>
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="20.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/gstar_bg_color_white" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:ellipsize="end" android:layout_width="150.0dp" android:layout_height="wrap_content" android:text="@string/company_account_keep_date" android:maxLines="2" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="right|center" android:id="@id/textViewCompanyKeepDate" android:paddingLeft="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="1.5" />
+    </LinearLayout>
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" android:layout_marginLeft="20.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/gstar_bg_color_white" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:ellipsize="end" android:layout_width="150.0dp" android:layout_height="wrap_content" android:text="@string/company_account_keep_days" android:maxLines="2" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="right|center" android:id="@id/textViewCompanyKeepDays" android:paddingLeft="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="1.5" />
+    </LinearLayout>
+    <include layout="@layout/view_line_horizontal" />
+    <LinearLayout android:orientation="vertical" android:padding="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/account_user_pay_explain1" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_title" android:id="@id/textViewCompanyKeepTip1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/company_account_keep_tips1" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_title" android:id="@id/textViewCompanyKeepTip2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/company_account_keep_tips2" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewCompanyKeepHelp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/icon_help_blue" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</LinearLayout>

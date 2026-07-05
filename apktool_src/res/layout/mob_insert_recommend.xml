@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:star="http://schemas.android.com/apk/res-auto">
+    <com.my.adpoymer.edimob.view.OutFrameLayout android:layout_gravity="center" android:id="@id/myapi_native_ad_container" android:background="#feeddd" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rel_open" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30.0dp">
+            <RelativeLayout android:id="@id/rel_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true">
+                <ImageView android:textSize="15.0sp" android:textColor="#ffffff" android:id="@id/my_txt_close" android:background="@drawable/mob_btn_close_click" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="#654f37" android:id="@id/my_open_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" android:text="今日推荐" android:layout_centerHorizontal="true" />
+            <com.my.adpoymer.edimob.view.MobStarRatingView android:id="@id/my_star_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_below="@id/my_open_recommend" android:layout_centerHorizontal="true" star:mob_ratable="false" star:mob_star_padding="10.0dp" star:mob_stat_half="@drawable/mob_frodo_rate_star_small_on_holo_light" star:mob_stat_off="@drawable/mob_frodo_rate_star_small_on_holo_light" star:mob_stat_on="@drawable/mob_frodo_rate_star_small_on_holo_light" />
+            <TextView android:id="@id/ly_img_h" android:background="@drawable/mob_splash_txt_h_shape" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_marginLeft="24.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="24.0dp" android:layout_below="@id/my_star_rate" />
+            <TextView android:id="@id/ly_img_l" android:background="@drawable/mob_splash_txt_l_shape" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_marginLeft="22.0dp" android:layout_marginRight="22.0dp" android:layout_below="@id/ly_img_h" />
+            <RelativeLayout android:id="@id/rel_insert_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ly_img_l">
+                <ImageView android:id="@id/my_img_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:scaleType="fitXY" />
+                <FrameLayout android:id="@id/media_my_splash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" />
+            </RelativeLayout>
+            <com.my.adpoymer.weiget.AdCornerView android:id="@id/ad_corner_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#674f35" android:id="@id/my_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_below="@id/rel_insert_center" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#674f35" android:gravity="center" android:id="@id/my_txt_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="25.0dp" android:maxLines="2" android:layout_below="@id/my_txt_title" android:layout_centerHorizontal="true" android:lineSpacingExtra="5.0dp" />
+            <FrameLayout android:id="@id/frame_shake" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/mob_img_shake" android:layout_width="120.0dp" android:layout_height="120.0dp" android:scaleType="fitXY" />
+            </FrameLayout>
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/ly_btn_open" android:background="@drawable/mob_splash_txt_shape" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="50.0dp" android:layout_marginRight="50.0dp" android:text="查看详情" android:layout_above="@id/ly_bottom_view" />
+            <include layout="@layout/my_splash_bottom_view" />
+            <include layout="@layout/my_splash_bottom_webview" />
+        </RelativeLayout>
+    </com.my.adpoymer.edimob.view.OutFrameLayout>
+</FrameLayout>

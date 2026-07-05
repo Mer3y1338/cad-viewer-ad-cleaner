@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/jad_banner_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <ImageView android:gravity="center" android:layout_width="32.0dp" android:layout_height="12.0dp" android:layout_marginLeft="5.0dp" android:layout_marginBottom="5.0dp" android:src="@drawable/jad_banner_logo_default" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="10.0dp" android:textStyle="bold" android:textColor="#979797" android:gravity="end|top" android:id="@id/jad_banner_close" android:paddingTop="3.0dp" android:paddingRight="5.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:text="✕" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

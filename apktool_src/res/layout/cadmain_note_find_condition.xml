@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/app_color_main_black1" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/white" android:id="@id/note_condition_button" android:background="@drawable/selector_button_color_blue_rect" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ok" android:layout_alignParentBottom="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/note_condition_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/note_condition_button" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_creator_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nodata_search" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cad_cmd_note_no_creator" />
+    </LinearLayout>
+</RelativeLayout>

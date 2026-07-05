@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="10.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ptgImgBack" android:padding="6.0dp" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/ptg_img_back_arrow" android:scaleType="fitStart" android:layout_centerVertical="true" android:contentDescription="Back" />
+    <ImageView android:id="@id/ptgImgClose" android:padding="9.0dp" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/ptg_img_web_close" android:scaleType="fitStart" android:layout_toRightOf="@id/ptgImgBack" android:layout_centerVertical="true" android:contentDescription="Close" />
+</RelativeLayout>

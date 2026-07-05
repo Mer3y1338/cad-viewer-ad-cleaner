@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/menu_drawer_layout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/main_header_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/activity_main_qq6_topbar" />
+                <include layout="@layout/view_line_horizontal" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/main_fragment" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+            <include android:id="@id/main_footer_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/activity_base_footer_view" />
+        </LinearLayout>
+        <include android:id="@id/bottomChatGuideTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_alignParentBottom="true" android:layout_marginEnd="45.0dp" android:layout_alignParentEnd="true" layout="@layout/chat_popupwindow_bottom_tab" />
+    </RelativeLayout>
+    <include android:layout_gravity="start" android:layout_width="300.0dp" android:layout_height="match_parent" layout="@layout/activity_main_qq6_leftbar_new" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/background_cad_toolbar_new" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray_dialog" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_3d_main_menu_measure_distance" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewDistance_001" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_Smart" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_Smart" android:text="@string/cad_3d_main_menu_measure_distance_intelligent" android:drawableTop="@drawable/selector_cad_3d_measure_distance_smart" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_Smart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_P2P" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_P2P" android:text="@string/cad_3d_main_menu_measure_distance_p2p" android:drawableTop="@drawable/selector_cad_3d_measure_distance_p2p" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_P2P" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_P2L" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_P2L" android:text="@string/cad_3d_main_menu_measure_distance_p2l" android:drawableTop="@drawable/selector_cad_3d_measure_distance_p2l" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_P2L" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_P2S" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_P2S" android:text="@string/cad_3d_main_menu_measure_distance_p2s" android:drawableTop="@drawable/selector_cad_3d_measure_distance_p2s" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_P2S" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_L2L" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_L2L" android:text="@string/cad_3d_main_menu_measure_distance_l2l" android:drawableTop="@drawable/selector_cad_3d_measure_distance_l2l" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_L2L" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_L2S01" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_L2S01" android:text="@string/cad_3d_main_menu_measure_distance_l2s" android:drawableTop="@drawable/selector_cad_3d_measure_distance_l2s" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_L2S01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_S2S01" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_S2S01" android:text="@string/cad_3d_main_menu_measure_distance_s2s" android:drawableTop="@drawable/selector_cad_3d_measure_distance_s2s" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_S2S01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewDistance_002" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_L2S" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_L2S" android:text="@string/cad_3d_main_menu_measure_distance_l2s" android:drawableTop="@drawable/selector_cad_3d_measure_distance_l2s" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_L2S" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewDistance_S2S" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonDistance_S2S" android:text="@string/cad_3d_main_menu_measure_distance_s2s" android:drawableTop="@drawable/selector_cad_3d_measure_distance_s2s" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Distance_S2S" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray_dialog" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_3d_main_menu_measure_circle" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewCircle_Radius" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonCircle_Radius" android:text="@string/cad_3d_main_menu_measure_circle_radius" android:drawableTop="@drawable/selector_cad_3d_measure_circle_radius" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Circle_Radius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewCircle_Diameter" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonCircle_Diameter" android:text="@string/cad_3d_main_menu_measure_circle_diameter" android:drawableTop="@drawable/selector_cad_3d_measure_circle_diameter" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Circle_Diameter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewCircle_Arc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonCircle_Arc" android:text="@string/cad_input_panel_title_arc_length" android:drawableTop="@drawable/selector_cad_3d_measure_circle_arc" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Circle_Arc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewCircle_4" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewCircle_5" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray_dialog" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_3d_main_menu_measure_attribute" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewAttribute_Point" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonViewAttribute_Point" android:text="@string/cad_3d_main_menu_measure_attribute_point" android:drawableTop="@drawable/selector_cad_3d_measure_attribute_point" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Attribute_Point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewAttribute_Line" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonViewAttribute_Line" android:text="@string/cad_3d_main_menu_measure_attribute_line" android:drawableTop="@drawable/selector_cad_3d_measure_attribute_line" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Attribute_Line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewAttribute_Surface" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonViewAttribute_Surface" android:text="@string/cad_3d_main_menu_measure_attribute_surface" android:drawableTop="@drawable/selector_cad_3d_measure_attribute_surface" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Attribute_Surface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewAttribute_Model" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/buttonViewAttribute_Model" android:text="@string/cad_3d_main_menu_measure_attribute_model" android:drawableTop="@drawable/selector_cad_3d_measure_attribute_model" style="@style/public_cad_menus_first_button_style" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/imageViewVIP_Attribute_Model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_mark_pay" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/viewAttribute_5" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray_dialog" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_3d_main_menu_measure_setting" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp">
+            <CheckBox android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:id="@id/checkBoxMeasureResultStatus" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:checked="true" android:button="@drawable/selector_checkbox_circle" android:text="@string/cad_3d_main_menu_measure_result_switch_on" />
+            <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_white" android:id="@id/textViewMeasureClear" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/cad_3d_main_menu_measure_clear" android:singleLine="true" android:drawableLeft="@drawable/icon_clear" android:drawablePadding="5.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

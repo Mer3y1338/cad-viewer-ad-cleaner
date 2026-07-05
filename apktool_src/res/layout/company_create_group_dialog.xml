@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/company_group_bg" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#424242" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/company_choose_group_type" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/company_choose_group_type_hint" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_company_view" android:background="@drawable/company_border_bg" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="16.0dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_create_company_group" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="#a5a5a5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/company_create_company_group_hint" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_ordinary_view" android:background="@drawable/company_border_bg" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="16.0dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_create_ordinary_group" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="#a5a5a5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/company_create_ordinary_group_hint" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:id="@id/close_view" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:src="@drawable/icon_close_black" />
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:padding="1.0dp" android:layout_width="@dimen/listitem_image_width" android:layout_height="@dimen/listitem_image_height" android:layout_margin="5.0dp" android:contentDescription="@string/app_name">
+                <ImageView android:id="@id/imageViewFileIcon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/file_icon_dwg" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+                <ImageView android:layout_gravity="right|bottom" android:id="@id/imageViewFileNoteIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:src="@drawable/cad_cmd_note_mark" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:id="@id/textViewFileName" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="AAAAAAAAAAAAAAAAAAAAAAA的沙发沙发的身份舒服舒服的沙发沙发大沙发沙发的" android:layout_weight="1.5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_type" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFileType" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="DWG" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:id="@id/viewDwgVersionLine" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewDwgVersion" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_update_version" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewDwgVersion" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:id="@id/viewFileSizeLine" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewFileSizeAll" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_size" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFileSize" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="1.66MB" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_path" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFilePath" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="/storage/GstarCAD/Local/AA.dwg" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_time" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFileTime" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="2016-7-31 16:30" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewMenuList" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</ScrollView>

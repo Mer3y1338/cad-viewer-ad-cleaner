@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/expired_file_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/expired_file_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="62.0dp" android:src="@drawable/chat_file_icon_jpg" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#373838" android:id="@id/expired_file_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#373838" android:id="@id/expired_file_size_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#f05151" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="76.0dp" android:text="@string/chat_file_is_expired" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/expired_image_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_expired" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#373838" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/chat_image_is_expired" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</FrameLayout>

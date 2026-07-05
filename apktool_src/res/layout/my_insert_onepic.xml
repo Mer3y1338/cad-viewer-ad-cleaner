@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qq.e.ads.nativ.widget.NativeAdContainer android:layout_gravity="center" android:id="@id/my_native_ad_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rel_open" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:id="@id/rel_insert_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/my_img_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+                    <com.qq.e.ads.nativ.MediaView android:id="@id/media_splash_img_pic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.5">
+                    <ImageView android:id="@id/my_insert_icon" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="60.0dp" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#674f35" android:id="@id/my_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="标题" android:layout_below="@id/my_insert_icon" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#817f7d" android:gravity="center" android:id="@id/my_txt_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="25.0dp" android:text="我是描述" android:maxLines="2" android:layout_below="@id/my_txt_title" android:layout_centerHorizontal="true" android:lineSpacingExtra="5.0dp" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/my_btn_open" android:background="@drawable/my_insert_blue_cir_shape" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:text="查看详情" android:layout_above="@id/my_bottom_view" />
+                    <View android:id="@id/my_bottom_view" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rel_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginEnd="20.0dp" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/my_txt_close" android:background="@drawable/my_insert_close_btn" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <include layout="@layout/my_splash_bottom_view" />
+            <com.my.adpoymer.view.fall.FallingView android:id="@id/falling" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:id="@id/my_img_logo" android:layout_width="30.0dp" android:layout_height="10.0dp" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </com.qq.e.ads.nativ.widget.NativeAdContainer>
+</FrameLayout>

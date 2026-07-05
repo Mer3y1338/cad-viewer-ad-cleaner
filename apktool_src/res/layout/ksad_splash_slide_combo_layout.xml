@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/ksad_slide_combo_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="460.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kwad.components.ad.splashscreen.widget.KsSlideHandView android:layout_gravity="center|bottom" android:id="@id/ksad_slide_combo_slide_hand" android:layout_width="306.0dp" android:layout_height="242.0dp" android:layout_marginBottom="200.0dp" />
+    <com.kwad.components.ad.splashscreen.widget.KsSlideRoundView android:layout_gravity="bottom" android:id="@id/ksad_slide_combo_round_bg" android:layout_width="match_parent" android:layout_height="210.0dp" app:ksad_shakeIcon="@drawable/ksad_splash_slide_round_white_bg" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="348.0dp">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/ksad_slide_combo_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ksad_splash_slide_combo_guide_text" android:shadowColor="#99000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/ksad_slide_combo_action_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/ksad_splash_slide_combo_sub_text" android:shadowColor="#99000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" />
+    </LinearLayout>
+</FrameLayout>

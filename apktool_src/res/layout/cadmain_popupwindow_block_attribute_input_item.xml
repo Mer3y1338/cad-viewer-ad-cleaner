@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerPadding="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/cad_cmd_block_attribute_remark" />
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray_dialog" android:id="@id/textviewBlockAttribute_Tag" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="@string/app_name" />
+    </LinearLayout>
+    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/public_prompt" />
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray_dialog" android:id="@id/textviewBlockAttribute_Prompt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="@string/app_name" />
+    </LinearLayout>
+    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/dialog_new_bg_main_black2" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_white" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/cad_cmd_block_attribute_value" />
+        <EditText android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_white" android:id="@id/editTextBlockAttribute_Value" android:background="@drawable/block_attribute_round_bg" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="" android:maxLines="3" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="15.0dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

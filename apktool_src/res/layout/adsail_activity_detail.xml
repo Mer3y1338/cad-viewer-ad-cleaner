@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextureView android:id="@id/adsail_texture_view" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <ProgressBar android:id="@id/adsail_progress_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar" />
+        <ImageView android:id="@id/adsail_img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/adsail_ic_express_close_big" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <cn.haorui.sdk.core.view.LollipopFixedWebView android:id="@id/adsail_web_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/adsail_layout_app_detail" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/adsail_img_background" android:layout_width="match_parent" android:layout_height="700.0dp" android:layout_marginTop="-580.0dp" android:src="@drawable/adsail_detail_background" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="280.0dp" android:layout_height="match_parent" android:layout_marginTop="-30.0dp" android:layout_below="@id/adsail_img_background" android:layout_centerHorizontal="true">
+                <cn.haorui.sdk.adsail_ad.view.HRImageView android:id="@id/adsail_img_icon" android:layout_width="80.0dp" android:layout_height="80.0dp" android:src="@mipmap/adsail_ic_launcher" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/adsail_layout_app_detail_info" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/adsail_reward_video_title_text_color" android:id="@id/adsail_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:text="app名称" android:maxLines="1" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/adsail_sub_text_color" android:id="@id/adsail_text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="两行内容两行内容两行内容两行内容两行内容两行内容两行内容两行内容两行内容两行内容" android:maxLines="2" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/adsail_sub_text_color" android:id="@id/adsail_text_download_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载量: 23333" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/adsail_sub_text_color" android:id="@id/adsail_text_comments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论量：233" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/adsail_sub_text_color" android:id="@id/adsail_text_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评分: 4" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textColor="@color/adsail_reward_video_button_text_color" android:id="@id/adsail_button_download" android:background="#4ab855" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_marginTop="220.0dp" android:text="点击下载" android:layout_below="@id/adsail_img_background" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

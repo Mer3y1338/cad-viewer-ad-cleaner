@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gstar_bg_color_black_divider1" android:layout_width="match_parent" android:layout_height="@dimen/gstar_divider_size_gray" />
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:id="@id/chat_detail_left_layout" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="16.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/chat_detail_user_icon_view" android:layout_width="54.0dp" android:layout_height="54.0dp" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom" android:id="@id/item_group_company_badge_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#4b4b4b" android:ellipsize="end" android:gravity="center" android:id="@id/chat_detail_user_name_view" android:layout_width="54.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxWidth="80.0dp" android:singleLine="true" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/chat_detail_add_view" android:layout_width="54.0dp" android:layout_height="54.0dp" android:layout_marginTop="16.0dp" android:src="@drawable/chat_icon_lt_group_member_add" android:layout_toRightOf="@id/chat_detail_left_layout" />
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="8.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#3a3a3a" android:id="@id/chat_detail_record_view" android:background="@color/white" android:paddingLeft="16.0dp" android:paddingTop="11.0dp" android:paddingRight="16.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_search_history" android:drawableRight="@drawable/chat_icon_lt_arrow_right" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@id/progressbar_dialog_process" android:layout_width="55.0dp" android:layout_height="55.0dp" style="?android:progressBarStyle" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/gstar_text_color_gray" android:id="@id/tv_title" android:visibility="gone" android:layout_marginTop="5.0dp" style="@style/layout_wrap" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+    </LinearLayout>
+</LinearLayout>

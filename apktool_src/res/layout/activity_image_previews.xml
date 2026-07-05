@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.stone.app.ui.view.HackyViewPagerFixed android:id="@id/viewpager_multi_image_preview" android:background="@color/black" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/radioGroupBanner" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_alignParentBottom="true">
+        <RadioButton android:textColor="@color/black" android:gravity="center" android:id="@id/radioButton0" android:tag="0" android:background="@drawable/selector_banner_point" android:padding="5.0dp" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_margin="5.0dp" android:button="@null" android:text="" />
+    </RadioGroup>
+</RelativeLayout>

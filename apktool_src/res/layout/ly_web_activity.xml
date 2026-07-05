@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/web" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/iv_close" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:src="@mipmap/ly_reward_close" />
+</RelativeLayout>

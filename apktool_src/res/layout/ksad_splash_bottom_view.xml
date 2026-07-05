@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBaseFrameLayout android:id="@id/ksad_splash_root_container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="center|bottom" android:id="@id/ksad_shake_layout" android:layout="@layout/ksad_splash_shake_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center|bottom" android:id="@id/ksad_rotate_layout" android:layout="@layout/ksad_splash_rotate_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center|bottom" android:id="@id/ksad_slide_layout" android:layout="@layout/ksad_splash_slidelayout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center|bottom" android:id="@id/ksad_rotate_combo_layout" android:layout="@layout/ksad_splash_rotate_combo_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center|bottom" android:id="@id/ksad_shake_combo_layout" android:layout="@layout/ksad_splash_shake_combo_layout" android:layout_width="match_parent" android:layout_height="177.0dp" />
+    <ViewStub android:layout_gravity="center|bottom" android:id="@id/ksad_slide_combo_layout" android:layout="@layout/ksad_splash_slide_combo_layout" android:layout_width="match_parent" android:layout_height="460.0dp" />
+</com.kwad.sdk.core.view.AdBaseFrameLayout>

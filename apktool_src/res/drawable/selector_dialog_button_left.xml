@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gstar_color_dialog_down" />
+            <stroke android:width="@dimen/gstar_divider_size_gray" android:color="@color/gstar_bg_color_black_divider1" />
+            <corners android:topLeftRadius="0.0dp" android:topRightRadius="0.0dp" android:bottomLeftRadius="10.0dp" android:bottomRightRadius="0.0dp" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gstar_color_dialog_down" />
+            <stroke android:width="@dimen/gstar_divider_size_gray" android:color="@color/gstar_bg_color_black_divider1" />
+            <corners android:topLeftRadius="0.0dp" android:topRightRadius="0.0dp" android:bottomLeftRadius="10.0dp" android:bottomRightRadius="0.0dp" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gstar_color_dialog_down" />
+            <stroke android:width="@dimen/gstar_divider_size_gray" android:color="@color/gstar_bg_color_black_divider1" />
+            <corners android:topLeftRadius="0.0dp" android:topRightRadius="0.0dp" android:bottomLeftRadius="10.0dp" android:bottomRightRadius="0.0dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gstar_color_dialog_nor" />
+            <stroke android:width="@dimen/gstar_divider_size_gray" android:color="@color/gstar_bg_color_black_divider1" />
+            <corners android:topLeftRadius="0.0dp" android:topRightRadius="0.0dp" android:bottomLeftRadius="10.0dp" android:bottomRightRadius="0.0dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/my_native_ad_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/my_img_splash" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        <com.qq.e.ads.nativ.MediaView android:id="@id/media_splash_img_pic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/my_img_logo" android:layout_width="30.0dp" android:layout_height="10.0dp" android:layout_alignParentBottom="true" />
+        <com.my.adpoymer.view.fall.FallingView android:id="@id/falling" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp" android:layout_alignParentBottom="true">
+            <include layout="@layout/my_shake_content_layout" />
+        </FrameLayout>
+        <include layout="@layout/my_splash_bottom_view" />
+        <include layout="@layout/my_splash_bottom_webview" />
+    </RelativeLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

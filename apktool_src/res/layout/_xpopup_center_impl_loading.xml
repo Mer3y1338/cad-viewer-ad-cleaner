@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="22.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/loadProgress" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+    <com.lxj.xpopup.widget.LoadingView android:id="@id/loadview" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="#eeeeee" android:ellipsize="end" android:id="@id/tv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="  " android:maxLines="1" />
+</LinearLayout>

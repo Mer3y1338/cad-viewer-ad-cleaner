@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_gray_tab_title" android:ellipsize="end" android:gravity="center" android:id="@id/project_tab_title_view" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_project_add_group_member" android:singleLine="true" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end" android:id="@id/project_tab_msg_view" android:background="@drawable/chat_red_point" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

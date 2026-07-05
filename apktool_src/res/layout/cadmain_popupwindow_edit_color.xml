@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/roundcorner_dialog_black2" android:padding="5.0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/buttonColor_red" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_color_red" android:scaleType="fitCenter" style="@style/public_cad_menus_second_button_style" />
+        <ImageButton android:id="@id/buttonColor_yellow" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_color_yellow" android:scaleType="fitCenter" style="@style/public_cad_menus_second_button_style" />
+        <ImageButton android:id="@id/buttonColor_green" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_color_green" android:scaleType="fitCenter" style="@style/public_cad_menus_second_button_style" />
+        <ImageButton android:id="@id/buttonColor_cyan" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_color_cyan" android:scaleType="fitCenter" style="@style/public_cad_menus_second_button_style" />
+        <ImageButton android:id="@id/buttonColor_blue" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_color_blue" android:scaleType="fitCenter" style="@style/public_cad_menus_second_button_style" />
+        <ImageButton android:id="@id/buttonColor_purple" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_color_purple" android:scaleType="fitCenter" style="@style/public_cad_menus_second_button_style" />
+        <ImageButton android:id="@id/buttonColor_white" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_color_white" android:scaleType="fitCenter" style="@style/public_cad_menus_second_button_style" />
+        <ImageButton android:id="@id/buttonColor_black" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_cad_color_black" android:scaleType="fitCenter" style="@style/public_cad_menus_second_button_style" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/iv_triangle" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginRight="20.0dp" android:src="@drawable/cad_triangle_black_down" android:layout_centerHorizontal="true" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent_half_black" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutCancel1" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+    <ListView android:gravity="center" android:id="@id/listViewDataShow" android:background="@drawable/roundcorner_dialog" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@color/gstar_bg_color_black_divider1" android:dividerHeight="@dimen/gstar_divider_size_gray" android:choiceMode="singleChoice" android:soundEffectsEnabled="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutCancel2" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.5" />
+</LinearLayout>

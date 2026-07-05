@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/roundcorner_color_transparent" android:padding="0.5dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="right|top" android:id="@id/imageViewDialogCouponClose" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_round_black" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <com.stone.app.ui.widget.StoneFiexedLayout android:layout_width="400.0dp" android:layout_height="wrap_content" app:demoHeight="147" app:demoWidth="108" app:standard="w">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageViewDialogCouponBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/coupon_backgroung_show" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="35.0">
+                <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="13.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:weightSum="6.0" android:layout_weight="14.0" />
+                <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="center" android:id="@id/textViewDialogCouponContent" android:padding="30.0dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0.0dp" android:text="@string/coupon_dialog_list" android:layout_weight="8.0" android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.stone.app.ui.widget.StoneFiexedLayout>
+</LinearLayout>

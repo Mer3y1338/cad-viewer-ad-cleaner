@@ -1,0 +1,304 @@
+# APK ad-removal patch report
+
+## Launcher change
+- Removed `MAIN`/`LAUNCHER` from `com.stone.app.ui.activity.AppSplashActivity`.
+- Added `com.codex.clean.NoAdLauncherActivity`, which immediately starts `com.stone.app.ui.activity.MainActivityHome`.
+
+## Manifest ad components removed
+- `uses-permission com.gstarmc.android.openadsdk.permission.tt_pangolin`
+- `permission com.gstarmc.android.openadsdk.permission.tt_pangolin`
+- `activity com.stone.app.ui.activity.AppAdDetailActivityTest `
+- `activity com.stone.app.ui.activity.AppSettingAdTestActivity `
+- `provider com.stone.ad.GDTFileProvider com.gstarmc.android.gdt.fileprovider`
+- `provider com.bytedance.sdk.openadsdk.TTFileProvider com.gstarmc.android.TTFileProvider`
+- `provider com.bytedance.sdk.openadsdk.multipro.TTMultiProvider com.gstarmc.android.TTMultiProvider`
+- `provider com.baidu.mobads.sdk.api.BdFileProvider com.gstarmc.android.bd.provider`
+- `service com.qq.e.comm.DownloadService `
+- `activity com.qq.e.ads.ADActivity `
+- `activity com.qq.e.ads.PortraitADActivity `
+- `activity com.qq.e.ads.LandscapeADActivity `
+- `provider com.sigmob.sdk.SigmobFileProvider com.gstarmc.android.sigprovider`
+- `activity com.sigmob.sdk.base.common.TransparentAdActivity `
+- `activity com.sigmob.sdk.base.common.AdActivity `
+- `activity com.sigmob.sdk.base.common.PortraitAdActivity `
+- `activity com.sigmob.sdk.base.common.LandscapeAdActivity `
+- `activity com.sigmob.sdk.base.common.PortraitTransparentAdActivity `
+- `activity com.sigmob.sdk.base.common.LandscapeTransparentAdActivity `
+- `provider com.yd.saas.adhub.provider.AdHubFileProvider com.gstarmc.android.fileprovider`
+- `activity com.hailiang.advlib.ui.front.InciteADActivity `
+- `activity com.hailiang.advlib.ui.front.ADBrowser `
+- `provider com.hailiang.advlib.core.CPCFileProvider com.gstarmc.android.CPCFileProvider`
+- `provider com.sy.adsdk.adx.provider.AdxFileProvider com.gstarmc.android.sysdkFileProvider`
+- `activity com.beizi.ad.AdActivity `
+- `activity com.beizi.ad.v2.activity.BeiZiNewInterstitialActivity `
+- `activity com.beizi.ad.v2.activity.BeiZiNewRewardVideoActivity `
+- `activity com.beizi.ad.internal.activity.DownloadAppInfoActivity `
+- `activity com.beizi.ad.internal.activity.BeiZiDownloadDialogActivity `
+- `service com.beizi.ad.DownloadService `
+- `activity com.ptg.ptgapi.activity.PtgWebActivity `
+- `activity com.ptg.ptgapi.activity.PtgRewardVideoPortraitActivity `
+- `activity com.ptg.ptgapi.activity.PtgRewardVideoLandscapeActivity `
+- `activity com.ptg.ptgapi.activity.PtgInteractionPortraitActivity `
+- `activity com.ptg.ptgapi.activity.PtgInteractionLandscapeActivity `
+- `service com.ptg.ptgapi.download.DownloadService `
+- `activity com.ptg.ptgapi.activity.PtgLaunchActivity `
+- `provider com.ptg.adsdk.lib.provider.PtgFileProvider com.gstarmc.android.fileProvider`
+- `activity com.bun.miitmdid.utilsforrequestpermission.PermissionTransparentActivity `
+- `activity com.hxad.sdk.ling.ad.supply.WebActivity `
+- `activity com.hxad.sdk.ling.ad.supply.reward.SupplyVideoActivity `
+- `activity com.hxad.sdk.ling.content.horoscope.CJHoroscopeDetailsActivity `
+- `activity com.hxad.sdk.ling.content.horoscope.CJHoroscopeActivity `
+- `activity com.hxad.sdk.ling.content.videoContent.CJVideoContentActivity `
+- `activity com.hxad.sdk.ling.content.news.CJNewsActivity `
+- `activity com.hxad.sdk.ling.content.news.NewsDetailsActivity `
+- `activity com.hxad.sdk.ling.content.oil.CJOilPriceActivity `
+- `activity com.hxad.sdk.ling.content.history.CJHistoryDayActivity `
+- `activity com.hxad.sdk.ling.content.mbti.CJMBTIActivity `
+- `activity com.hxad.sdk.ling.content.game.CJGameActivity `
+- `activity com.hxad.sdk.ling.content.ContentWebViewActivity `
+- `provider com.hxad.sdk.ling.utils.CJFileProvider com.gstarmc.android.cjAdFileProvider`
+- `activity cj.mobile.wm.appsdkdex.WMPortraitActivity `
+- `activity cj.mobile.wm.appsdkdex.WMLandscapeActivity `
+- `activity cj.mobile.wm.appsdkdex.TransActivity `
+- `provider cj.mobile.wm.appsdkdex.provider.WMLifecycleProvider com.gstarmc.android.lywmLifecycleProvider`
+- `provider cj.mobile.wm.appsdkdex.WMFileProvider com.gstarmc.android.lywmfileprovider`
+- `activity com.wangmai.insightvision.openadsdk.view.web.WebViewActivity `
+- `activity com.wangmai.insightvision.openadsdk.download.DownloadAppActivity `
+- `activity com.wangmai.insightvision.openadsdk.template.rendering.reward.activity.RewardAdActivity `
+- `activity com.wangmai.insightvision.openadsdk.template.rendering.table.activity.TableScreenActivity `
+- `provider com.wangmai.insightvision.openadsdk.FanTiApkProvider com.gstarmc.android.FanTiApkProvider`
+- `activity cn.haorui.sdk.activity.HRNativeInterstitialActivity `
+- `activity cn.haorui.sdk.activity.HRDownloadDetailActivity `
+- `activity cn.haorui.sdk.activity.HRRewardVideoPlayerActivity `
+- `activity cn.haorui.sdk.activity.HRRewardH5Activity `
+- `activity cn.haorui.sdk.activity.HRWebviewActivity `
+- `activity cn.haorui.sdk.core.webview.TaskCenterWebActivity `
+- `activity cn.haorui.sdk.adsail_ad.view.DownLoadDialogActivity `
+- `activity cn.haorui.sdk.activity.HROpenDeepLinkActivity `
+- `activity cn.haorui.sdk.activity.HRAlertDialogActivity `
+- `activity cn.haorui.sdk.activity.HRDetailActivity `
+- `provider cn.haorui.sdk.core.service.HrLifeCycleContent com.gstarmc.android.HrLifeCycleContent`
+- `activity com.my.adpoymer.edimob.activity.MobAdActivity `
+- `activity com.my.adpoymer.edimob.activity.MobVideoActivity `
+- `activity com.my.adpoymer.activity.MyWebActivity `
+- `provider com.my.adpoymer.edimob.util.MobFileProvider com.gstarmc.android.fileprovider`
+- `activity com.qq.e.ads.RewardvideoPortraitADActivity `
+- `activity com.qq.e.ads.RewardvideoLandscapeADActivity `
+- `activity com.qq.e.ads.DialogActivity `
+- `activity com.baidu.mobads.sdk.api.AppActivity `
+- `activity com.baidu.mobads.sdk.api.MobRewardVideoActivity `
+- `activity com.baidu.mobads.sdk.api.BdShellActivity `
+- `activity com.kwad.sdk.api.proxy.app.AdWebViewActivity `
+- `activity com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity `
+- `activity com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity `
+- `activity com.kwad.sdk.api.proxy.app.KsRewardVideoActivity `
+- `activity com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity `
+- `activity com.kwad.sdk.api.proxy.app.FeedDownloadActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$KsTrendsActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileHomeActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileVideoDetailActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeProfileActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ChannelDetailActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeDetailActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$EpisodeDetailActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$RequestInstallPermissionActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity1 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$GoodsPlayBackActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity2 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity3 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity4 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity5 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity6 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity7 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity8 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity9 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity10 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity11 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity12 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity13 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity14 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity15 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity16 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity17 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity18 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop1 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop2 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop3 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance1 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance2 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance3 `
+- `activity com.kwai.auth.login.kwailogin.applogin.RouteHandlerActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$DeveloperConfigActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivity `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTop1 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTop2 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTask1 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTask2 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleInstance1 `
+- `activity com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleInstance2 `
+- `activity com.kwad.sdk.api.proxy.app.WebPageActivity `
+- `activity com.kwad.sdk.api.proxy.app.PayResultActivity `
+- `service com.kwad.sdk.api.proxy.app.FileDownloadService$SharedMainProcessService `
+- `service com.kwad.sdk.api.proxy.app.FileDownloadService$SeparateProcessService `
+- `service com.kwad.sdk.api.proxy.app.DownloadService `
+- `service com.kwad.sdk.api.proxy.app.ServiceProxyRemote `
+- `provider com.kwad.sdk.api.proxy.app.AdSdkFileProvider com.gstarmc.android.adFileProvider`
+- `provider cn.haorui.sdk.core.service.HRFileProvider com.gstarmc.android.HRFileProvider`
+- `activity com.sy.adsdk.adx.ad.interstitial.AdxInterstitialActivity `
+- `activity com.sy.adsdk.adx.ad.interstitial.AdxInterstitialLandscapeActivity `
+- `activity com.sy.adsdk.adx.ad.reward.AdxRewardVideoActivity `
+- `activity com.sy.adsdk.adx.dialog.AdDownloadDetailDialog `
+- `activity com.sy.adsdk.adx.ui.activity.AdxDpActivity `
+- `service com.sy.adsdk.core.download.SYDownloadService `
+- `receiver com.sy.adsdk.core.download.SYDownloadReceiver `
+- `receiver com.sy.adsdk.core.download.SYDownloadNotificationReceiver `
+- `activity com.sy.adsdk.core.permission.AdPermissionActivity `
+- `activity com.sy.adsdk.plugin.activity.StubActivity `
+- `activity com.sy.adsdk.plugin.activity.StubSingleTaskActivity `
+- `activity com.sy.adsdk.plugin.activity.StubLandscapeActivity `
+- `activity com.sy.adsdk.plugin.activity.StubSingleTopActivity `
+- `activity com.sy.adsdk.plugin.activity.StubSingleInstanceActivity `
+- `activity com.sy.adsdk.plugin.activity.StubTranslucentActivity `
+- `activity com.sy.adsdk.plugin.activity.StubTranslucentLandscapeActivity `
+- `activity com.sy.adsdk.ui.activity.AdLPageActivity `
+- `activity com.sy.adsdk.ui.dialog.AdComplianceDialog `
+- `activity com.jd.ad.sdk.bl.adinteraction.deeplink.JADWebViewActivity `
+- `provider com.jd.ad.sdk.dl.cache.multiprocess.JADMultiProvider com.gstarmc.android.JADMultiProvider`
+- `activity com.jd.ad.sdk.bl.adinteraction.deeplink.JADTransparentActivity `
+- `service com.my.ubudget.open.comm.DownloadService `
+- `activity com.my.ubudget.open.comm.AdActivity `
+- `provider com.my.ubudget.open.comm.UBiXFileProvider com.gstarmc.android.UBiXFileProvider`
+- `activity com.my.ubudget.open.comm.UBiXWebViewActivity `
+- `activity com.my.ubudget.open.comm.UBiXVideoActivity `
+- `provider com.my.ubudget.ad.core.monitor.data.UbixDataContentProvider com.gstarmc.android.UbixDataContentProvider`
+- `activity com.meishu.sdk.activity.SdkInterstitialActivity `
+- `activity com.meishu.sdk.activity.MeishuDownloadDetailActivity `
+- `activity com.meishu.sdk.activity.MeishuOpenDeepLinkActivity `
+- `activity com.meishu.sdk.activity.MeishuRewardVideoPlayerActivity `
+- `activity com.meishu.sdk.activity.MeishuRewardH5Activity `
+- `activity com.meishu.sdk.activity.MeishuWebviewActivity `
+- `activity com.meishu.sdk.meishu_ad.view.DownLoadDialogActivity `
+- `activity com.meishu.sdk.activity.MeishuAlertDialogActivity `
+- `activity com.meishu.sdk.activity.MeishuDetailActivity `
+- `provider com.meishu.sdk.core.service.MsLifeCycleContent com.gstarmc.android.MsLifeCycleContent`
+- `activity com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity `
+- `activity com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity `
+- `activity com.ss.android.downloadlib.activity.TTDelegateActivity `
+- `activity com.ss.android.downloadlib.activity.JumpKllkActivity `
+- `receiver com.ss.android.downloadlib.core.download.DownloadReceiver `
+- `activity com.ss.android.socialbase.appdownloader.view.DownloadHandleNotificationActivity `
+- `service com.ss.android.socialbase.appdownloader.DownloadHandlerService `
+- `activity com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity `
+- `activity com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity `
+- `service com.ss.android.socialbase.appdownloader.RetryJobSchedulerService `
+- `service com.ss.android.socialbase.downloader.downloader.CSJIndependentProcessDownloadService `
+- `service com.ss.android.socialbase.downloader.notification.DownloadNotificationService `
+- `service com.ss.android.socialbase.downloader.downloader.CSJDownloadService `
+- `service com.ss.android.socialbase.downloader.impls.DownloadHandleService `
+- `service com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService `
+- `activity com.bytedance.sdk.openadsdk.core.activity.base.TTNativePageActivity `
+- `activity com.bytedance.sdk.openadsdk.core.activity.base.TTWebPageActivity `
+- `activity com.bytedance.sdk.openadsdk.core.activity.base.TTVideoWebPageActivity `
+- `activity com.bytedance.sdk.openadsdk.core.activity.base.TTVideoScrollWebPageActivity `
+- `activity com.bytedance.sdk.openadsdk.core.activity.base.TTDelegateActivity `
+- `activity com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity `
+- `activity com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity `
+- `activity com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoLandscapeActivity `
+- `activity com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoLandscapeActivity `
+- `service com.bytedance.sdk.openadsdk.core.multipro.aidl.BinderPoolService `
+- `activity com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity `
+- `activity com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity `
+- `activity com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T `
+- `activity com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity `
+- `activity com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity `
+- `activity com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T `
+- `activity com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity `
+- `provider com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager com.gstarmc.android.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost`
+- `provider com.bytedance.sdk.openadsdk.stub.server.MainServerManager com.gstarmc.android.pangle.servermanager.main`
+- `service com.bytedance.sdk.openadsdk.downloadnew.ApiDownloadHandlerService `
+- `activity com.bytedance.sdk.openadsdk.downloadnew.ApiDownloadHandleNotificationActivity `
+- `provider com.bytedance.pangle.provider.MainProcessProviderProxy com.gstarmc.android.pangle.provider.proxy.main`
+- `provider com.bytedance.pangle.FileProvider com.gstarmc.android.pangle.fileprovider`
+- `activity com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityProxy `
+- `activity com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityLiveProcessProxy `
+- `provider com.bytedance.android.openliveplugin.process.server.LiveServerManager com.gstarmc.android.bytedance.android.openliveplugin.process.server.LiveServerManager`
+- `activity com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait `
+- `activity com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait2 `
+- `activity com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait3 `
+- `activity com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait4 `
+- `activity com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait5 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTask4 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTop3 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTop2 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTop5 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTop4 `
+- `activity com.byted.live.lite.Activity_bytelive_standard `
+- `activity com.byted.live.lite.Activity_bytelive_singleTop1 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTask1 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTop6 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTask2 `
+- `activity com.byted.live.lite.Activity_bytelive_singleTask3 `
+- `activity com.byted.live.lite.Activity_main_singleTask1 `
+- `activity com.byted.live.lite.Activity_main_singleTask2 `
+- `activity com.byted.live.lite.Activity_main_singleTask3 `
+- `activity com.byted.live.lite.Activity_main_singleTask4 `
+- `activity com.byted.live.lite.Activity_main_standard `
+- `activity com.byted.live.lite.Activity_main_singleTop1 `
+- `activity com.byted.live.lite.Activity_main_singleTop2 `
+- `activity com.byted.live.lite.Activity_main_singleInstance1 `
+- `activity com.byted.live.lite.Activity_main_singleTop5 `
+- `activity com.byted.live.lite.Activity_main_singleTop6 `
+- `activity com.byted.live.lite.Activity_main_singleTop3 `
+- `activity com.byted.live.lite.Activity_main_singleTop4 `
+- `activity com.byted.live.lite.Activity_bytelive_singleInstance1 `
+- `provider com.byted.live.lite.ServerManager_bytelive com.gstarmc.android.pangle.servermanager.bytelive.com.byted.live.lite`
+- `provider com.byted.live.lite.ServerManager_push com.gstarmc.android.pangle.servermanager.push.com.byted.live.lite`
+- `provider com.byted.live.lite.ServerManager_downloader com.gstarmc.android.pangle.servermanager.downloader.com.byted.live.lite`
+- `activity com.bytedance.msdk.api.activity.TTDelegateActivity `
+- `activity com.bytedance.msdk.api.activity.TTTransparentActivity `
+- `activity com.bytedance.msdk.core.admanager.reward.rewardagain.GMRewardAgainDialogActivity `
+- `activity com.yd.saas.s2s.sdk.ad.video.reward.S2SRewardVideoActivity `
+- `activity com.yd.saas.s2s.sdk.ad.video.fullscreen.S2SFullVideoActivity `
+- `provider com.yd.saas.s2s.sdk.helper.download.UpdateApkFileProvider com.gstarmc.android.update.provider`
+- `receiver com.yd.saas.s2s.sdk.helper.download.DownloadActionReceiver `
+- `service com.yd.saas.s2s.sdk.helper.download.DownloadService `
+- `provider com.yd.saas.config.utils.YdInitProvider com.gstarmc.android.initprovider`
+- `activity com.yd.saas.common.widget.h5.YdH5Activity `
+- `activity com.yd.saas.base.inner.interstitial.YdInterstitialActivity `
+- `activity com.yd.saas.base.inner.spread.YdSpreadActivity `
+- `activity com.yd.saas.base.inner.reward.YdInnerRewardVideoActivity `
+- `provider com.huawei.hms.aaid.InitProvider com.gstarmc.android.aaidinitprovider`
+- `launcher intent-filter com.stone.app.ui.activity.AppSplashActivity`
+- `added launcher com.codex.clean.NoAdLauncherActivity`
+
+## Ad assets/native libraries removed
+- `assets/ad_mate_error.png`
+- `assets/bdxadsdk.jar`
+- `assets/gdt_plugin/`
+- `assets/hailiang`
+- `assets/jad_click.json`
+- `assets/jad_shake.json`
+- `assets/jad_slideup.json`
+- `assets/jutui/`
+- `assets/ksad_common_encrypt_image.png`
+- `assets/ksad_idc.json`
+- `assets/lottie_json/`
+- `assets/lywm7.13.7`
+- `assets/output.json`
+- `assets/syadv2`
+- `assets/ubix/`
+- `unknown/META-INF/services/com.sy.adsdk.api.mediation.AdnAdapter`
+- `unknown/META-INF/services/com.yd.saas.base.adapter.AdapterPreInitialize`
+- `unknown/META-INF/services/com.yd.saas.base.adapter.MixNativeAPI`
+- `unknown/META-INF/services/com.yd.saas.base.base.AdapterAPI`
+- `unknown/META-INF/services/com.yd.saas.base.bidding.Bidding`
+- `lib/arm64-v8a/libavmdl_lite.so`
+- `lib/arm64-v8a/liblywmAliAgainstId.so`
+- `lib/arm64-v8a/libpanglearmor.so`
+- `lib/arm64-v8a/libpangleflipped.so`
+- `lib/arm64-v8a/libPglbizssdk_ml.so`
+- `lib/arm64-v8a/libqmcheat.so`
+- `lib/arm64-v8a/libsaas.so`
+- `lib/arm64-v8a/libtt_ugen_layout.so`
+- `lib/arm64-v8a/libttmplayer_lite.so`
+

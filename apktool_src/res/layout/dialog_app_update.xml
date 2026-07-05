@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/roundcorner_dialog" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" style="@style/layout_height_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewFileIcon" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginTop="40.0dp" android:src="@drawable/ic_launcher" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_black" android:gravity="center" android:padding="10.0dp" android:text="@string/app_update_title" style="@style/layout_height_wrap" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="center" android:id="@id/textViewAppVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_update_version" />
+        <TextView android:layout_width="30.0dp" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_subhead" android:gravity="center" android:id="@id/textViewAppSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_update_size" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/gstar_text_size_14sp" android:textColor="@color/gstar_text_color_black_content" android:id="@id/textViewAppIntro" android:padding="25.0dp" android:text="本次升级主要修复了系统若干问题，增加了云图和网盘的全面支持。后期将加入更多好玩有趣的实用性工具" style="@style/layout_height_wrap" />
+    <LinearLayout android:orientation="horizontal" style="@style/layout_height_wrap">
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogCancel" android:background="@drawable/selector_dialog_button_left" android:padding="10.0dp" android:text="@string/app_update_skip" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+        <Button android:textSize="@dimen/text_size_small" android:textColor="@color/selector_text_blue2black" android:gravity="center" android:id="@id/buttonDialogOK" android:background="@drawable/selector_dialog_button_right" android:padding="10.0dp" android:text="@string/app_update_now" android:layout_weight="1.0" style="@style/layout_height_wrap" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qcloud.tim.uikit.modules.chat.ChatLayout android:id="@id/chat_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:layout_width="match_parent" android:layout_height="30.0dp" />
+</FrameLayout>

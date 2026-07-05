@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ptg_splash_express_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_gravity="right|bottom" android:paddingRight="15.0dp" android:paddingBottom="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+        <com.ptg.ptgapi.component.widgets.PtgLogoView android:id="@id/ptg_ad_logo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ptgSplashSkipFl" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <com.ptg.ptgapi.widget.PtgRoundLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ptgSkipLayout" android:background="#4d000000" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ptg_clip_background="true" app:ptg_round_corner="100.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/ptg_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ptg_white" android:id="@id/ptgSplashSec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </com.ptg.ptgapi.widget.PtgRoundLinearLayout>
+    </FrameLayout>
+</merge>

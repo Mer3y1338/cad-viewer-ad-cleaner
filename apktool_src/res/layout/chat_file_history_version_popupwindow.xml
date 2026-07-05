@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="#00000000" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/roundcorner_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewDownload" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/download" />
+        <include layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewFallback" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_file_history_version_fallback" />
+        <include layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewDelete" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delete" />
+        <include layout="@layout/view_line_horizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewRemarks" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/company_account_info_remarks" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_20sp" android:textStyle="bold" android:textColor="@color/gstar_text_color_blue" android:gravity="center" android:id="@id/textViewCancel" android:background="@drawable/roundcorner_color_white" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/cancel" />
+</androidx.appcompat.widget.LinearLayoutCompat>

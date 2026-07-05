@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_gravity="center_vertical" android:padding="5.0dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:minHeight="48.0dp" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_up" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_up" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_down" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_down" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_front" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_front" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_back" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_back" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_left" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_left" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_right" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_right" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_es" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_es" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_ws" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_ws" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_en" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_en" />
+        <include layout="@layout/cadmain_padding_space_view" />
+        <ImageButton android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/buttonView3D_wn" android:background="@drawable/selector_cad_cmd" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cad_cmdview_wn" />
+        <include layout="@layout/cadmain_padding_space_view" />
+    </LinearLayout>
+</HorizontalScrollView>

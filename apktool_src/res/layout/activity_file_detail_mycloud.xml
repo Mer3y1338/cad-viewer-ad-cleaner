@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scollViewFileDetail" android:background="@color/gstar_bg_color_page_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:padding="1.0dp" android:layout_width="@dimen/listitem_image_width" android:layout_height="@dimen/listitem_image_height" android:layout_margin="5.0dp" android:contentDescription="@string/app_name">
+                <ImageView android:id="@id/imageViewFileIcon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/file_icon_dwg" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+                <ImageView android:layout_gravity="right|bottom" android:id="@id/imageViewFileNoteIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:src="@drawable/cad_cmd_note_mark" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:id="@id/textViewFileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="AAAAAAAAAAAAAAAAAAAAAAA的沙发沙发的身份舒服舒服的沙发沙发大沙发沙发的" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gstar_text_size_12sp" android:textColor="@color/gstar_text_color_gray" android:id="@id/textViewFileUploader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="xxx 上传于 xxx/xxx/xxx" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewLinearLayoutType" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_type" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFileType" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="DWG" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:id="@id/viewLinearLayoutTypeLine" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:orientation="horizontal" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_size" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFileSize" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="ads;lkflks;fk;skskfks;kfsk;fks;ls                 sfsdfsfl;sk;fks;lkfs;fksl;kfskfs;fkslkf                 sfjlksjflksjkfjskjflksjf                 sldflksjflks" android:layout_weight="1.5" android:lineSpacingMultiplier="1.1" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewFileNoteInfoCount" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cad_cmd_note_count" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFileNoteInfoCount" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="0" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:id="@id/viewFileNoteInfoCountLine" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/viewLinearLayoutStatus" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/file_info_state" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFileStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="@string/networkdisk_file_status0" android:drawableLeft="@drawable/netdisk_state_network" android:drawablePadding="10.0dp" />
+        </LinearLayout>
+        <include android:id="@id/viewLinearLayoutStatusLine" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/textViewLocalLayout" android:padding="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_file_local_version" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewLocalVersion" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:id="@id/textViewLocalLine" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/textViewCloudLayout" android:padding="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_file_cloud_version" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewCloudVersion" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:id="@id/textViewCloudLine" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_path" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFilePath" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="/storage/GstarCAD/Local/AA.dwg" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/time_layout" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_black_title" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_info_time" />
+            <TextView android:textSize="@dimen/gstar_text_size_16sp" android:textColor="@color/gstar_text_color_gray" android:gravity="end" android:id="@id/textViewFileTime" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="2016-7-31 16:30" android:layout_weight="1.5" />
+        </LinearLayout>
+        <include android:id="@id/time_line_view" android:layout_width="wrap_content" android:layout_height="@dimen/gstar_divider_size_gray" layout="@layout/view_line_horizontal" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerViewMenuList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10.0dp" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

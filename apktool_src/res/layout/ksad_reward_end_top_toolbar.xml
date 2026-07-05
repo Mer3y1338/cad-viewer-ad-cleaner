@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ksad_play_end_top_toolbar" android:background="@android:color/transparent" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="75.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ksad_end_reward_icon_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ksad_end_reward_icon" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/ksad_video_reward_icon" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ksad_detail_reward_deep_task_view_playend" android:background="@drawable/ksad_reward_deep_task_view_bg" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="10.0dp">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ksad_reward_deep_task_icon_bg" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="2.0dp" android:src="@drawable/ksad_video_reward_deep_task_icon" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="15.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_reward_deep_task_count_down_playend" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="1.0dp" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="14.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_end_left_call_btn" android:background="@drawable/ksad_reward_call_bg" android:paddingLeft="12.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginTop="16.0dp" android:drawableRight="@drawable/ksad_arrow_left" android:drawablePadding="4.0dp" android:layout_toRightOf="@id/ksad_end_reward_icon_layout" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginTop="16.0dp" android:layout_alignParentRight="true">
+        <TextView android:textSize="14.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ksad_end_right_call_btn" android:background="@drawable/ksad_reward_call_bg" android:paddingLeft="12.0dp" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/ksad_arrow_left" android:drawablePadding="4.0dp" />
+        <ImageView android:id="@id/ksad_end_close_btn" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:src="@drawable/ksad_page_close" android:scaleType="centerInside" />
+    </LinearLayout>
+</RelativeLayout>
