@@ -152,6 +152,14 @@ def remove_manifest_ads():
             removed.append(f'{tag} {attr(child, "name")} {attr(child, "authorities")}')
             app.remove(child)
 
+    # Remove activity aliases whose target activity was removed with an ad SDK.
+    activities = {attr(c, 'name') for c in app if c.tag.split('}', 1)[-1] == 'activity'}
+    for child in list(app):
+        tag = child.tag.split('}', 1)[-1]
+        if tag == 'activity-alias' and attr(child, 'targetActivity') and attr(child, 'targetActivity') not in activities:
+            removed.append(f'activity-alias {attr(child, "name")} -> missing {attr(child, "targetActivity")}')
+            app.remove(child)
+
     # Remove original splash launcher entry; keep any non-launcher deep links.
     splash = None
     for child in list(app):

@@ -12,6 +12,7 @@ from __future__ import annotations
 import os
 import shutil
 import subprocess
+import sys
 import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -20,9 +21,13 @@ ROOT = Path(__file__).resolve().parents[1]
 APKTOOL_SRC = ROOT / "apktool_src"
 TMP = ROOT / ".tmp" / "min_src"
 TMP_BUILT = ROOT / ".tmp" / "min_manifest_build.apk"
-UNSIGNED = ROOT / "out" / "cad-noads-minimal-unsigned.apk"
+UNSIGNED = ROOT / "out" / "cad-noads-minimal-collide-unsigned.apk"
 SIGNED_DIR = ROOT / "dist"
-SIGNED = SIGNED_DIR / "cad-noads-minimal-aligned-debugSigned.apk"
+SIGNED = SIGNED_DIR / "cad-noads-minimal-collide-aligned-signed.apk"
+COLLIDE_DIR = ROOT / ".tmp" / "certcollide"
+COLLIDE_P12 = COLLIDE_DIR / "collide.p12"
+COLLIDE_ALIAS = "collide"
+COLLIDE_PASSWORD = "android"
 
 ANDROID_NS = "http://schemas.android.com/apk/res/android"
 A = "{%s}" % ANDROID_NS
@@ -134,13 +139,49 @@ def inject_manifest(original: Path, manifest_bin: bytes) -> None:
             raise RuntimeError(f"Bad zip entry: {bad}")
 
 
-def sign() -> None:
+def ensure_collision_keystore(original: Path) -> None:
+    helper = ROOT / "scripts" / "make_signature_hash_keystore.py"
+    if not helper.exists():
+        raise FileNotFoundError(helper)
+    subprocess.check_call(
+        [sys.executable, str(helper), str(original), "--out-dir", str(COLLIDE_DIR)],
+        cwd=ROOT,
+    )
+    if not COLLIDE_P12.exists():
+        raise FileNotFoundError(COLLIDE_P12)
+
+
+def sign(original: Path) -> None:
     signer = ROOT / ".tools" / "uber-apk-signer.jar"
     if not signer.exists():
         raise FileNotFoundError(signer)
+    ensure_collision_keystore(original)
     SIGNED_DIR.mkdir(exist_ok=True)
-    subprocess.check_call([java_cmd(), "-jar", str(signer), "--allowResign", "-a", str(UNSIGNED), "-o", str(SIGNED_DIR)], cwd=ROOT)
-    produced = next(SIGNED_DIR.glob("cad-noads-minimal-aligned-debugSigned.apk"), None)
+    for stale in [SIGNED, SIGNED.with_suffix(SIGNED.suffix + ".idsig")]:
+        if stale.exists():
+            stale.unlink()
+    subprocess.check_call(
+        [
+            java_cmd(),
+            "-jar",
+            str(signer),
+            "--allowResign",
+            "-a",
+            str(UNSIGNED),
+            "-o",
+            str(SIGNED_DIR),
+            "--ks",
+            str(COLLIDE_P12),
+            "--ksAlias",
+            COLLIDE_ALIAS,
+            "--ksPass",
+            COLLIDE_PASSWORD,
+            "--ksKeyPass",
+            COLLIDE_PASSWORD,
+        ],
+        cwd=ROOT,
+    )
+    produced = next(SIGNED_DIR.glob("cad-noads-minimal-collide-aligned-signed.apk"), None)
     if produced is None:
         raise RuntimeError("Signed APK was not produced")
     print(f"Signed APK: {produced}")
@@ -151,7 +192,7 @@ def main() -> None:
     prepare_min_src()
     manifest_bin = build_binary_manifest()
     inject_manifest(original, manifest_bin)
-    sign()
+    sign(original)
 
 
 if __name__ == "__main__":
