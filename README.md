@@ -129,4 +129,5 @@ FINAL_TEST_REPORT.md
 git remote add origin 你的GitHub仓库地址
 git push -u origin main
 ```
-
+## 友链
+【感谢Linux.do社区及GitHub社区各位开发者对项目的支持与贡献】
