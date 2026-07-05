@@ -1,4 +1,5 @@
-﻿import xml.etree.ElementTree as ET
+﻿import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -255,15 +256,16 @@ def write_launcher_smali():
 
 if __name__ == '__main__':
     manifest_removed = remove_manifest_ads()
-    file_removed = remove_files()
+    strip_payload = '--strip-payload' in sys.argv
+    file_removed = remove_files() if strip_payload else []
     smali = write_launcher_smali()
     report = ROOT / 'AD_REMOVAL_REPORT.md'
     report.write_text('# APK ad-removal patch report\n\n'
                       '## Launcher change\n'
                       '- Removed `MAIN`/`LAUNCHER` from `com.stone.app.ui.activity.AppSplashActivity`.\n'
                       '- Added `com.codex.clean.NoAdLauncherActivity`, which immediately starts `com.stone.app.ui.activity.MainActivityHome`.\n\n'
-                      '## Manifest ad components removed\n' + ''.join(f'- `{x}`\n' for x in manifest_removed) + '\n'
-                      '## Ad assets/native libraries removed\n' + ''.join(f'- `{x}`\n' for x in file_removed) + '\n', encoding='utf-8')
+                      '## Manifest ad components removed\n' + ''.join(f'- `{x}`\n' for x in manifest_removed) + '\n' +
+                      ('## Ad assets/native libraries removed\n' + ''.join(f'- `{x}`\n' for x in file_removed) if file_removed else '## Ad assets/native libraries\n- Preserved for installer/packer compatibility. Use `--strip-payload` only for experimental aggressive builds.\n') + '\n', encoding='utf-8')
     print(f'manifest removed/changed: {len(manifest_removed)}')
     print(f'files removed: {len(file_removed)}')
     print(f'launcher smali: {smali}')
