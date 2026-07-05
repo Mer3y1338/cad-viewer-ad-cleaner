@@ -115,19 +115,5 @@ dist/      # 最终成品 APK
 FINAL_TEST_REPORT.md
 ```
 
-## 上传 GitHub 说明
-
-`dist/` 默认不会被提交到 Git。建议：
-
-1. 代码推送到 GitHub 仓库。
-2. 构建出的 APK 作为 GitHub Release 附件上传。
-3. 不要提交原始 APK 或成品 APK；`*.apk` 已被 `.gitignore` 忽略。
-
-推送示例：
-
-```powershell
-git remote add origin 你的GitHub仓库地址
-git push -u origin main
-```
 ## 友链
 【感谢Linux.do社区及GitHub社区各位开发者对项目的支持与贡献】
