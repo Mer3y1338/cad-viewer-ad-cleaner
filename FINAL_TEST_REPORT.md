@@ -2,7 +2,7 @@
 
 ## Artifact
 
-- `D:\Code\clean_cad_god\dist\cad-noads-minimal-collide-aligned-signed.apk`
+- `D:\Code\cad-viewer-ad-cleaner\dist\cad-noads-minimal-collide-aligned-signed.apk`
 - Package: `com.gstarmc.android`
 - Version observed on MuMu: `5.18.4` / `604`
 
@@ -27,7 +27,7 @@ Commands passed:
 
 ```powershell
 adb -s emulator-5554 uninstall com.gstarmc.android
-adb -s emulator-5554 install --no-incremental -r -d -g D:\Code\clean_cad_god\dist\cad-noads-minimal-collide-aligned-signed.apk
+adb -s emulator-5554 install --no-incremental -r -d -g D:\Code\cad-viewer-ad-cleaner\dist\cad-noads-minimal-collide-aligned-signed.apk
 adb -s emulator-5554 shell monkey -p com.gstarmc.android -c android.intent.category.LAUNCHER 1
 ```
 
@@ -37,4 +37,4 @@ Observed:
 - Cold launch displayed: `com.gstarmc.android/com.stone.app.ui.activity.MainActivityHome`
 - Three repeated force-stop/cold-launch runs all resumed `MainActivityHome`.
 - No `Fatal signal`, `FATAL EXCEPTION`, `UnsatisfiedLinkError`, or `sigCheck` crash lines were produced during the launch test window.
-- Screenshot evidence saved locally at `D:\Code\clean_cad_god\.tmp\cad_noads_test_pull.png`.
+- Screenshot evidence saved locally at `D:\Code\cad-viewer-ad-cleaner\.tmp\cad_noads_test_pull.png`.
